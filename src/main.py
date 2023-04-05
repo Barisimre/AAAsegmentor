@@ -1,7 +1,7 @@
 
 from src.constants import *
 from src.model.baselines import *
-from src.data.data_loaders import train_loader, test_loader
+from src.data.data_loaders import get_loaders
 from src.training.train import train_single_epoch
 from src.training.test import test_single_epoch
 import wandb
@@ -23,6 +23,8 @@ def main():
         entity="barisimre",
         name=RUN_NAME
     )
+
+    train_loader, test_loader = get_loaders()
 
     for e in tqdm(range(NUM_EPOCHS)):
 
