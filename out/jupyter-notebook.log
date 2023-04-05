@@ -1,0 +1,84 @@
+	Adding anaconda3 2022.05 to your environment
+	Adding nVidia Cuda Toolkit 11.5
+[W 2023-04-05 16:38:52.780 ServerApp] The module 'notebook_shim' could not be found (No module named 'notebook_shim'). Are you sure the extension is installed?
+[I 2023-04-05 16:38:52.857 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-04-05 16:38:52.925 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-05 16:38:52.925 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-05 16:38:52.925 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-04-05 16:38:57.496 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-04-05 16:38:58.734 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-04-05 16:38:58.737 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/jupyterlab
+[I 2023-04-05 16:38:58.737 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/my_env/share/jupyter/lab
+[I 2023-04-05 16:38:58.744 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-04-05 16:38:58.744 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
+[I 2023-04-05 16:38:58.745 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
+[I 2023-04-05 16:38:58.745 ServerApp] Jupyter Server 1.18.1 is running at:
+[I 2023-04-05 16:38:58.745 ServerApp] http://ctit094.ewi.utwente.nl:8807/lab?token=325933846df1ac7de789133324d1526a6f859c538ed36e90
+[I 2023-04-05 16:38:58.745 ServerApp]  or http://127.0.0.1:8807/lab?token=325933846df1ac7de789133324d1526a6f859c538ed36e90
+[I 2023-04-05 16:38:58.745 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-04-05 16:38:58.803 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-2113638-open.html
+    Or copy and paste one of these URLs:
+        http://ctit094.ewi.utwente.nl:8807/lab?token=325933846df1ac7de789133324d1526a6f859c538ed36e90
+     or http://127.0.0.1:8807/lab?token=325933846df1ac7de789133324d1526a6f859c538ed36e90
+[W 2023-04-05 16:39:35.744 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-04-05 16:39:48.608 ServerApp] 404 GET /api/contents/test.ipynb?content=0&1680705576368 (130.89.163.83): file or directory does not exist: 'test.ipynb'
+[W 2023-04-05 16:39:48.608 ServerApp] file or directory does not exist: 'test.ipynb'
+[W 2023-04-05 16:39:48.609 ServerApp] 404 GET /api/contents/test.ipynb?content=0&1680705576368 (130.89.163.83) 6.06ms referer=http://ctit094.ewi.utwente.nl:8807/lab
+[W 2023-04-05 16:39:48.610 ServerApp] 404 GET /api/contents/data_investigation.ipynb?content=0&1680705576369 (130.89.163.83): file or directory does not exist: 'data_investigation.ipynb'
+[W 2023-04-05 16:39:48.610 ServerApp] file or directory does not exist: 'data_investigation.ipynb'
+[W 2023-04-05 16:39:48.610 ServerApp] 404 GET /api/contents/data_investigation.ipynb?content=0&1680705576369 (130.89.163.83) 6.43ms referer=http://ctit094.ewi.utwente.nl:8807/lab
+[W 2023-04-05 16:39:48.626 ServerApp] 404 GET /api/contents/train_init.ipynb?content=0&1680705576370 (130.89.163.83): file or directory does not exist: 'train_init.ipynb'
+[W 2023-04-05 16:39:48.626 ServerApp] file or directory does not exist: 'train_init.ipynb'
+[W 2023-04-05 16:39:48.627 ServerApp] 404 GET /api/contents/train_init.ipynb?content=0&1680705576370 (130.89.163.83) 15.17ms referer=http://ctit094.ewi.utwente.nl:8807/lab
+[W 2023-04-05 16:39:48.631 ServerApp] 404 GET /api/contents/run.sbatch?content=0&1680705576371 (130.89.163.83): file or directory does not exist: 'run.sbatch'
+[W 2023-04-05 16:39:48.631 ServerApp] file or directory does not exist: 'run.sbatch'
+[W 2023-04-05 16:39:48.631 ServerApp] 404 GET /api/contents/run.sbatch?content=0&1680705576371 (130.89.163.83) 19.23ms referer=http://ctit094.ewi.utwente.nl:8807/lab
+[W 2023-04-05 16:39:48.651 ServerApp] 404 GET /api/contents/src/blocks.py?content=0&1680705576372 (130.89.163.83): file or directory does not exist: 'src/blocks.py'
+[W 2023-04-05 16:39:48.651 ServerApp] file or directory does not exist: 'src/blocks.py'
+[W 2023-04-05 16:39:48.652 ServerApp] 404 GET /api/contents/src/blocks.py?content=0&1680705576372 (130.89.163.83) 20.02ms referer=http://ctit094.ewi.utwente.nl:8807/lab
+[W 2023-04-05 16:39:48.657 ServerApp] 404 GET /api/contents/src/ViT.py?content=0&1680705576373 (130.89.163.83): file or directory does not exist: 'src/ViT.py'
+[W 2023-04-05 16:39:48.658 ServerApp] file or directory does not exist: 'src/ViT.py'
+[W 2023-04-05 16:39:48.658 ServerApp] 404 GET /api/contents/src/ViT.py?content=0&1680705576373 (130.89.163.83) 25.31ms referer=http://ctit094.ewi.utwente.nl:8807/lab
+[W 2023-04-05 16:39:48.664 ServerApp] 404 GET /api/contents/src/model.py?content=0&1680705576374 (130.89.163.83): file or directory does not exist: 'src/model.py'
+[W 2023-04-05 16:39:48.665 ServerApp] file or directory does not exist: 'src/model.py'
+[W 2023-04-05 16:39:48.665 ServerApp] 404 GET /api/contents/src/model.py?content=0&1680705576374 (130.89.163.83) 5.31ms referer=http://ctit094.ewi.utwente.nl:8807/lab
+[W 2023-04-05 16:39:48.671 ServerApp] 404 GET /api/contents/middle_pooling.py?content=0&1680705576376 (130.89.163.83): file or directory does not exist: 'middle_pooling.py'
+[W 2023-04-05 16:39:48.671 ServerApp] file or directory does not exist: 'middle_pooling.py'
+[W 2023-04-05 16:39:48.671 ServerApp] 404 GET /api/contents/middle_pooling.py?content=0&1680705576376 (130.89.163.83) 9.84ms referer=http://ctit094.ewi.utwente.nl:8807/lab
+[W 2023-04-05 16:39:48.675 ServerApp] 404 GET /api/contents/src/loaders.py?content=0&1680705576377 (130.89.163.83): file or directory does not exist: 'src/loaders.py'
+[W 2023-04-05 16:39:48.675 ServerApp] file or directory does not exist: 'src/loaders.py'
+[W 2023-04-05 16:39:48.675 ServerApp] 404 GET /api/contents/src/loaders.py?content=0&1680705576377 (130.89.163.83) 3.90ms referer=http://ctit094.ewi.utwente.nl:8807/lab
+[W 2023-04-05 16:39:48.677 ServerApp] 404 GET /api/contents/run_file.sbatch?content=0&1680705576377 (130.89.163.83): file or directory does not exist: 'run_file.sbatch'
+[W 2023-04-05 16:39:48.677 ServerApp] file or directory does not exist: 'run_file.sbatch'
+[W 2023-04-05 16:39:48.677 ServerApp] 404 GET /api/contents/run_file.sbatch?content=0&1680705576377 (130.89.163.83) 4.80ms referer=http://ctit094.ewi.utwente.nl:8807/lab
+[W 2023-04-05 16:39:48.686 ServerApp] 404 GET /api/contents/src/experiments.py?content=0&1680705576379 (130.89.163.83): file or directory does not exist: 'src/experiments.py'
+[W 2023-04-05 16:39:48.687 ServerApp] file or directory does not exist: 'src/experiments.py'
+[W 2023-04-05 16:39:48.687 ServerApp] 404 GET /api/contents/src/experiments.py?content=0&1680705576379 (130.89.163.83) 9.19ms referer=http://ctit094.ewi.utwente.nl:8807/lab
+[I 2023-04-05 16:40:01.540 ServerApp] Creating new notebook in /notebooks
+[W 2023-04-05 16:40:04.277 ServerApp] Notebook notebooks/test_data_loading.ipynb is not trusted
+[I 2023-04-05 16:40:04.914 ServerApp] Kernel started: a6d8ac05-3c4d-424e-a05a-58dffa29ac53
+[I 2023-04-05 16:40:04.914 ServerApp] Culling kernels with idle durations > 3600 seconds at 300 second intervals ...
+[I 2023-04-05 16:40:04.916 ServerApp] Kernel started: 581f9b72-bbc0-4b44-89c2-3e16e44f106d
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 0448d924-461c-43cd-a90b-b48235f2e7f7
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: c2307088-c710-425b-aa4a-c3352965a49f
+[I 2023-04-05 16:42:04.407 ServerApp] Saving file at /notebooks/test_data_loading.ipynb
+[I 2023-04-05 16:42:04.804 ServerApp] Saving file at /notebooks/Untitled.ipynb
+[I 2023-04-05 16:44:04.694 ServerApp] Saving file at /notebooks/test_data_loading.ipynb
+[I 2023-04-05 16:45:01.416 ServerApp] Kernel restarted: 581f9b72-bbc0-4b44-89c2-3e16e44f106d
+[W 2023-04-05 16:45:05.964 ServerApp] Nudge: attempt 10 on kernel 581f9b72-bbc0-4b44-89c2-3e16e44f106d
+[W 2023-04-05 16:45:10.981 ServerApp] Nudge: attempt 20 on kernel 581f9b72-bbc0-4b44-89c2-3e16e44f106d
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 5082e707-e4a7-4332-be4f-46e6df59f689
+[I 2023-04-05 16:46:04.852 ServerApp] Saving file at /notebooks/test_data_loading.ipynb
+[I 2023-04-05 16:48:05.111 ServerApp] Saving file at /notebooks/test_data_loading.ipynb
+slurmstepd-ctit094: error: *** JOB 204600 ON ctit094 CANCELLED AT 2023-04-05T16:51:39 ***
+[C 2023-04-05 16:51:39.974 ServerApp] received signal 15, stopping
+[I 2023-04-05 16:51:39.986 ServerApp] Shutting down 2 extensions
+[I 2023-04-05 16:51:39.987 ServerApp] Shutting down 2 kernels
+[I 2023-04-05 16:51:39.988 ServerApp] Kernel shutdown: a6d8ac05-3c4d-424e-a05a-58dffa29ac53
+[I 2023-04-05 16:51:39.988 ServerApp] Kernel shutdown: 581f9b72-bbc0-4b44-89c2-3e16e44f106d

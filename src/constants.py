@@ -3,8 +3,8 @@ import torch
 # Constants
 
 # Paths
-GENERAL_PATH = "/home/baris/Documents/uni/AAAsegmentor"
-DATA_PATH = f"/data/AAA"
+GENERAL_PATH = "/home/s1797743/thesis/final/AAAsegmentor"
+DATA_PATH = f"/home/s1797743/thesis/AAAdata"
 MODEL_SAVE_PATH = f"{GENERAL_PATH}/models"
 RESULTS_SAVE_PATH = f"{GENERAL_PATH}/results"
 

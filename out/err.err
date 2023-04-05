@@ -1,0 +1,64 @@
+	Adding anaconda3 2022.05 to your environment
+	Adding nVidia Cuda Toolkit 11.5
+<class 'monai.transforms.utility.array.AddChannel'>: Class `AddChannel` has been deprecated since version 0.8. please use MetaTensor data type and monai.transforms.EnsureChannelFirst instead.
+<class 'monai.transforms.utility.array.AsChannelFirst'>: Class `AsChannelFirst` has been deprecated since version 0.8. please use MetaTensor data type and monai.transforms.EnsureChannelFirst instead.
+Loading dataset:   0%|          | 0/70 [00:00<?, ?it/s]Loading dataset: 100%|██████████| 70/70 [00:00<00:00, 23733.03it/s]
+Loading dataset:   0%|          | 0/10 [00:00<?, ?it/s]Loading dataset: 100%|██████████| 10/10 [00:00<00:00, 9558.58it/s]
+wandb: Currently logged in as: barisimre. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.14.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /local/204598/wandb/run-20230405_163515-2gp2o75k
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run debug
+wandb: ⭐️ View project at https://wandb.ai/barisimre/AAA
+wandb: 🚀 View run at https://wandb.ai/barisimre/AAA/runs/2gp2o75k
+  0%|          | 0/500 [00:00<?, ?it/s]  0%|          | 0/500 [02:43<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/monai/transforms/transform.py", line 91, in apply_transform
+    return _apply_transform(transform, data, unpack_items)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/monai/transforms/transform.py", line 55, in _apply_transform
+    return transform(parameters)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/monai/transforms/croppad/dictionary.py", line 861, in __call__
+    self.randomize(label, fg_indices, bg_indices, image)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/monai/transforms/croppad/dictionary.py", line 852, in randomize
+    self.cropper.randomize(label=label, fg_indices=fg_indices, bg_indices=bg_indices, image=image)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/monai/transforms/croppad/array.py", line 1056, in randomize
+    fg_indices_, bg_indices_ = map_binary_to_indices(label, image, self.image_threshold)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/monai/transforms/utils.py", line 320, in map_binary_to_indices
+    bg_indices = nonzero(img_flat & ~label_flat)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/monai/data/meta_tensor.py", line 249, in __torch_function__
+    ret = super().__torch_function__(func, types, args, kwargs)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/torch/_tensor.py", line 1121, in __torch_function__
+    ret = func(*args, **kwargs)
+RuntimeError: The size of tensor a (57674452) must match the size of tensor b (57562896) at non-singleton dimension 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/local/204598/src/main.py", line 37, in <module>
+    main()
+  File "/local/204598/src/main.py", line 29, in main
+    train_single_epoch(model=model, optimizer=optimizer, train_loader=train_loader)
+  File "/local/204598/src/training/train.py", line 10, in train_single_epoch
+    for d in train_loader:
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 721, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/monai/data/dataset.py", line 105, in __getitem__
+    return self._transform(index)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/monai/data/dataset.py", line 878, in _transform
+    data = apply_transform(_transform, data)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/monai/transforms/transform.py", line 118, in apply_transform
+    raise RuntimeError(f"applying transform {transform}") from e
+RuntimeError: applying transform <monai.transforms.croppad.dictionary.RandCropByPosNegLabeld object at 0x7f9303fcf9a0>
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: \ 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: | 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: / 0.000 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.000 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced debug: https://wandb.ai/barisimre/AAA/runs/2gp2o75k
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230405_163515-2gp2o75k/logs
