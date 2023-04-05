@@ -3,8 +3,8 @@ import torch
 # Constants
 
 # Paths
-GENERAL_PATH = "/home/baris/Documents/uni/thesis/AAAsegmentor"
-DATA_PATH = f"{GENERAL_PATH}/data"
+GENERAL_PATH = "/home/baris/Documents/uni/AAAsegmentor"
+DATA_PATH = f"/data/AAA"
 MODEL_SAVE_PATH = f"{GENERAL_PATH}/models"
 RESULTS_SAVE_PATH = f"{GENERAL_PATH}/results"
 
@@ -20,5 +20,5 @@ CT_WINDOW_MAX = 200
 DEVICE = "cuda"
 INITIAL_LEARNING_RATE = 3e-4
 NUM_EPOCHS = 500
-BATCH_SIZE = 8
+BATCH_SIZE = 1
 LOSS = monai.losses.DiceLoss()

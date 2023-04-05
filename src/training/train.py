@@ -4,10 +4,11 @@ from monai.networks import one_hot
 
 
 def train_single_epoch(model, optimizer, train_loader):
-    model.train()
     losses = []
 
+    # TODO: make this dataloading fast, this seems to be the bottleneck
     for d in train_loader:
+
         img = d['img'].to(DEVICE)
         mask = d['mask'].to(DEVICE)
 
@@ -16,7 +17,7 @@ def train_single_epoch(model, optimizer, train_loader):
         outputs = model(img)
 
         outputs = torch.softmax(outputs, dim=1)
-        mask = one_hot(mask, num_classes=4)
+        mask = one_hot(mask, num_classes=3)
 
         loss = LOSS(outputs, mask)
         loss.backward()

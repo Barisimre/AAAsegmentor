@@ -5,17 +5,15 @@ import monai
 class LoadMHD(monai.transforms.Transform):
 
     def __init__(self, keys=None):
-        pass
+        self.reader = monai.data.ITKReader()
 
     def __call__(self, item):
         # Paths
         img = item['img']
         mask = item['mask']
 
-        reader = monai.data.ITKReader()
-
-        img, img_meta = reader.get_data(reader.read(img))
-        mask, mask_meta = reader.get_data(reader.read(mask))
+        img, img_meta = self.reader.get_data(self.reader.read(img))
+        mask, mask_meta = self.reader.get_data(self.reader.read(mask))
 
         return {
             'img': monai.data.MetaTensor(img, affine=img_meta['affine']),

@@ -1,0 +1,45 @@
+
+  0%|          | 0/500 [00:00<?, ?it/s]
+in
+out
+in
+out
+in
+out
+in
+  0%|          | 0/500 [01:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/baris/Documents/uni/AAAsegmentor/src/main.py", line 36, in <module>
+    main()
+  File "/home/baris/Documents/uni/AAAsegmentor/src/main.py", line 31, in main
+    test_loss = test_single_epoch(model=model, test_loader=test_loader)
+  File "/home/baris/Documents/uni/AAAsegmentor/src/training/test.py", line 31, in test_single_epoch
+    out = largest_component(out)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/post/array.py", line 322, in __call__
+    mask = get_largest_connected_component_mask(foreground, self.connectivity, self.num_components)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/utils.py", line 997, in get_largest_connected_component_mask
+    out = lib.isin(features, features_to_keep)
+  File "<__array_function__ internals>", line 180, in isin
+  File "/home/baris/.local/lib/python3.10/site-packages/numpy/lib/arraysetops.py", line 739, in isin
+    return in1d(element, test_elements, assume_unique=assume_unique,
+  File "<__array_function__ internals>", line 180, in in1d
+  File "/home/baris/.local/lib/python3.10/site-packages/numpy/lib/arraysetops.py", line 612, in in1d
+    mask |= (ar1 == a)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/baris/Documents/uni/AAAsegmentor/src/main.py", line 36, in <module>
+    main()
+  File "/home/baris/Documents/uni/AAAsegmentor/src/main.py", line 31, in main
+    test_loss = test_single_epoch(model=model, test_loader=test_loader)
+  File "/home/baris/Documents/uni/AAAsegmentor/src/training/test.py", line 31, in test_single_epoch
+    out = largest_component(out)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/post/array.py", line 322, in __call__
+    mask = get_largest_connected_component_mask(foreground, self.connectivity, self.num_components)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/utils.py", line 997, in get_largest_connected_component_mask
+    out = lib.isin(features, features_to_keep)
+  File "<__array_function__ internals>", line 180, in isin
+  File "/home/baris/.local/lib/python3.10/site-packages/numpy/lib/arraysetops.py", line 739, in isin
+    return in1d(element, test_elements, assume_unique=assume_unique,
+  File "<__array_function__ internals>", line 180, in in1d
+  File "/home/baris/.local/lib/python3.10/site-packages/numpy/lib/arraysetops.py", line 612, in in1d
+    mask |= (ar1 == a)

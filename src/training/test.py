@@ -2,6 +2,7 @@ from src.constants import *
 from src.utils.metrics import dice_scores
 import numpy as np
 import wandb
+from src.utils.visualisations import visualize_sample_to_wandb
 
 
 def test_single_epoch(model, test_loader):
@@ -9,6 +10,8 @@ def test_single_epoch(model, test_loader):
     scores = []
 
     largest_component = monai.transforms.KeepLargestConnectedComponent()
+
+    visualised = False
 
     with torch.no_grad():
         for d in test_loader:
@@ -26,8 +29,13 @@ def test_single_epoch(model, test_loader):
                                                           )
             out = torch.argmax(out, 1, keepdim=True)
             out = largest_component(out)
+            s = dice_scores(out, mask)
+            scores.append(s)
 
-            scores.append(dice_scores(out, mask))
+            # Send one sample to wandb
+            if not visualised:
+                visualize_sample_to_wandb(img, mask, out, s)
+                visualised = True
 
         scores = np.array(scores)
         scores = np.nan_to_num(scores, copy=True, nan=1.0)
@@ -39,5 +47,7 @@ def test_single_epoch(model, test_loader):
                "background": scores[0],
                "lumen": scores[1],
                "thrombus": scores[2]})
+
+    model.train()
 
     return test_score

@@ -1,9 +1,8 @@
 from src.constants import *
-from src.data.custom_transforms import GetFilesTrain, LoadMHD
+from src.data.custom_transforms import GetFilesTrain, LoadMHD, GetFilesTest
 
 joint_transforms = monai.transforms.Compose(
     [
-        GetFilesTrain(),
         LoadMHD(),
         monai.transforms.AddChanneld(keys=['img', 'mask']),
         monai.transforms.Spacingd(keys=["img", "mask"], pixdim=SPACINGS, mode=("bilinear", "nearest")),
@@ -17,12 +16,14 @@ joint_transforms = monai.transforms.Compose(
 
 train_transform = monai.transforms.Compose(
     [
+        GetFilesTrain(),
         joint_transforms,
         monai.transforms.RandCropByPosNegLabeld(keys=["img", "mask"],
                                                 spatial_size=CROP_SIZE,
                                                 pos=1,
                                                 neg=1,
                                                 num_samples=1,
+                                                image_key="img",
                                                 label_key="mask",
                                                 ),
         monai.transforms.SpatialPadd(keys=['img', 'mask'], spatial_size=CROP_SIZE),
@@ -33,6 +34,7 @@ train_transform = monai.transforms.Compose(
 
 test_transform = monai.transforms.Compose(
     [
+        GetFilesTest(),
         joint_transforms,
     ]
 )

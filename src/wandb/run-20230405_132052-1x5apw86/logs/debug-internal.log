@@ -1,0 +1,99 @@
+2023-04-05 13:20:52,966 INFO    StreamThr :16233 [internal.py:wandb_internal():88] W&B internal server running at pid: 16233, started at: 2023-04-05 13:20:52.965896
+2023-04-05 13:20:52,967 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: status
+2023-04-05 13:20:52,968 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: status
+2023-04-05 13:20:52,969 DEBUG   SenderThread:16233 [sender.py:send():301] send: header
+2023-04-05 13:20:52,969 INFO    WriterThread:16233 [datastore.py:open_for_write():75] open: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/run-1x5apw86.wandb
+2023-04-05 13:20:52,969 DEBUG   SenderThread:16233 [sender.py:send():301] send: run
+2023-04-05 13:20:53,384 INFO    SenderThread:16233 [dir_watcher.py:__init__():216] watching files in: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files
+2023-04-05 13:20:53,384 INFO    SenderThread:16233 [sender.py:_start_run_threads():912] run started: 1x5apw86 with start time 1680693652.965153
+2023-04-05 13:20:53,384 DEBUG   SenderThread:16233 [sender.py:send():301] send: summary
+2023-04-05 13:20:53,384 INFO    SenderThread:16233 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2023-04-05 13:20:53,385 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: check_version
+2023-04-05 13:20:53,385 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: check_version
+2023-04-05 13:20:53,474 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: run_start
+2023-04-05 13:20:53,478 DEBUG   HandlerThread:16233 [meta.py:__init__():34] meta init
+2023-04-05 13:20:53,478 DEBUG   HandlerThread:16233 [meta.py:__init__():49] meta init done
+2023-04-05 13:20:53,478 DEBUG   HandlerThread:16233 [meta.py:probe():215] probe
+2023-04-05 13:20:53,484 DEBUG   HandlerThread:16233 [meta.py:_setup_git():205] setup git
+2023-04-05 13:20:53,487 DEBUG   HandlerThread:16233 [meta.py:_setup_git():212] setup git done
+2023-04-05 13:20:53,487 DEBUG   HandlerThread:16233 [meta.py:_save_pip():53] save pip
+2023-04-05 13:20:53,487 DEBUG   HandlerThread:16233 [meta.py:_save_pip():67] save pip done
+2023-04-05 13:20:53,487 DEBUG   HandlerThread:16233 [meta.py:probe():253] probe done
+2023-04-05 13:20:53,507 DEBUG   SenderThread:16233 [sender.py:send():301] send: files
+2023-04-05 13:20:53,507 INFO    SenderThread:16233 [sender.py:_save_file():1155] saving file wandb-metadata.json with policy now
+2023-04-05 13:20:53,510 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:20:53,510 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:20:53,723 DEBUG   SenderThread:16233 [sender.py:send():301] send: telemetry
+2023-04-05 13:20:54,192 INFO    Thread-17 :16233 [upload_job.py:push():139] Uploaded file /tmp/tmpbop7yq22wandb/1wk1cprm-wandb-metadata.json
+2023-04-05 13:20:54,384 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_created():275] file/dir created: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/wandb-metadata.json
+2023-04-05 13:20:54,385 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_created():275] file/dir created: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/requirements.txt
+2023-04-05 13:20:54,385 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_created():275] file/dir created: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/output.log
+2023-04-05 13:20:54,385 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_created():275] file/dir created: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/wandb-summary.json
+2023-04-05 13:20:56,384 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/output.log
+2023-04-05 13:21:09,926 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:21:09,926 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:21:21,696 DEBUG   SenderThread:16233 [sender.py:send():301] send: stats
+2023-04-05 13:21:24,395 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/config.yaml
+2023-04-05 13:21:25,308 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:21:25,308 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:21:39,023 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: partial_history
+2023-04-05 13:21:39,024 DEBUG   SenderThread:16233 [sender.py:send():301] send: history
+2023-04-05 13:21:39,024 DEBUG   SenderThread:16233 [sender.py:send():301] send: summary
+2023-04-05 13:21:39,025 INFO    SenderThread:16233 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2023-04-05 13:21:39,399 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/wandb-summary.json
+2023-04-05 13:21:41,668 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:21:41,669 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:21:51,886 DEBUG   SenderThread:16233 [sender.py:send():301] send: stats
+2023-04-05 13:21:57,172 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:21:57,172 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:21:57,625 DEBUG   SenderThread:16233 [sender.py:send():301] send: files
+2023-04-05 13:21:57,625 INFO    SenderThread:16233 [sender.py:_save_file():1155] saving file media/images/plot_1_97a84791f111c75488c0.png with policy now
+2023-04-05 13:21:57,668 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: partial_history
+2023-04-05 13:21:57,668 DEBUG   SenderThread:16233 [sender.py:send():301] send: history
+2023-04-05 13:21:57,668 DEBUG   SenderThread:16233 [sender.py:send():301] send: summary
+2023-04-05 13:21:57,669 INFO    SenderThread:16233 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2023-04-05 13:21:58,404 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/wandb-summary.json
+2023-04-05 13:21:58,404 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_created():275] file/dir created: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/media/images/plot_1_97a84791f111c75488c0.png
+2023-04-05 13:21:58,404 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_created():275] file/dir created: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/media
+2023-04-05 13:21:58,404 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_created():275] file/dir created: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/media/images
+2023-04-05 13:21:58,420 INFO    Thread-18 :16233 [upload_job.py:push():139] Uploaded file /tmp/tmpbop7yq22wandb/3o4sb66x-media/images/plot_1_97a84791f111c75488c0.png
+2023-04-05 13:21:59,283 INFO    Thread-19 :16233 [upload_job.py:push():139] Uploaded file /tmp/tmpbop7yq22wandb/1oe6t44v-media/images/plot_1_97a84791f111c75488c0.png
+2023-04-05 13:22:12,351 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:22:12,351 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:22:15,779 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: partial_history
+2023-04-05 13:22:15,779 DEBUG   SenderThread:16233 [sender.py:send():301] send: history
+2023-04-05 13:22:15,779 DEBUG   SenderThread:16233 [sender.py:send():301] send: summary
+2023-04-05 13:22:15,780 INFO    SenderThread:16233 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2023-04-05 13:22:16,410 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/wandb-summary.json
+2023-04-05 13:22:18,410 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/output.log
+2023-04-05 13:22:22,060 DEBUG   SenderThread:16233 [sender.py:send():301] send: stats
+2023-04-05 13:22:27,520 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:22:27,521 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:22:42,743 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:22:42,743 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:22:52,244 DEBUG   SenderThread:16233 [sender.py:send():301] send: stats
+2023-04-05 13:22:57,912 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:22:57,912 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:22:59,393 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: partial_history
+2023-04-05 13:22:59,393 DEBUG   SenderThread:16233 [sender.py:send():301] send: history
+2023-04-05 13:22:59,394 DEBUG   SenderThread:16233 [sender.py:send():301] send: summary
+2023-04-05 13:22:59,394 INFO    SenderThread:16233 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2023-04-05 13:22:59,432 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/wandb-summary.json
+2023-04-05 13:23:02,433 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/output.log
+2023-04-05 13:23:14,093 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:23:14,093 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:23:22,431 DEBUG   SenderThread:16233 [sender.py:send():301] send: stats
+2023-04-05 13:23:29,514 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:23:29,514 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:23:43,328 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: partial_history
+2023-04-05 13:23:43,329 DEBUG   SenderThread:16233 [sender.py:send():301] send: history
+2023-04-05 13:23:43,329 DEBUG   SenderThread:16233 [sender.py:send():301] send: summary
+2023-04-05 13:23:43,330 INFO    SenderThread:16233 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2023-04-05 13:23:43,446 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/wandb-summary.json
+2023-04-05 13:23:44,447 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/output.log
+2023-04-05 13:23:45,769 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:23:45,769 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:23:52,621 DEBUG   SenderThread:16233 [sender.py:send():301] send: stats
+2023-04-05 13:24:00,993 DEBUG   HandlerThread:16233 [handler.py:handle_request():138] handle_request: stop_status
+2023-04-05 13:24:00,993 DEBUG   SenderThread:16233 [sender.py:send_request():315] send_request: stop_status
+2023-04-05 13:24:06,454 INFO    Thread-13 :16233 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/baris/Documents/uni/AAAsegmentor/src/wandb/run-20230405_132052-1x5apw86/files/output.log

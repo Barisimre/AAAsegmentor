@@ -1,0 +1,89 @@
+
+  0%|          | 0/500 [00:00<?, ?it/s]
+Getting
+Got
+Running
+Run
+start back
+end back
+Getting
+Got
+Running
+Run
+start back
+  0%|          | 0/500 [00:35<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/baris/Documents/uni/AAAsegmentor/src/main.py", line 36, in <module>
+    main()
+  File "/home/baris/Documents/uni/AAAsegmentor/src/main.py", line 28, in main
+    train_single_epoch(model=model, optimizer=optimizer, train_loader=train_loader)
+  File "/home/baris/Documents/uni/AAAsegmentor/src/training/train.py", line 9, in train_single_epoch
+    for d in train_loader:
+  File "/home/baris/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/home/baris/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 721, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/baris/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/baris/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/data/dataset.py", line 105, in __getitem__
+    return self._transform(index)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/data/dataset.py", line 878, in _transform
+    data = apply_transform(_transform, data)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/transform.py", line 91, in apply_transform
+    return _apply_transform(transform, data, unpack_items)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/transform.py", line 55, in _apply_transform
+    return transform(parameters)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/croppad/dictionary.py", line 861, in __call__
+    self.randomize(label, fg_indices, bg_indices, image)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/croppad/dictionary.py", line 852, in randomize
+    self.cropper.randomize(label=label, fg_indices=fg_indices, bg_indices=bg_indices, image=image)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/croppad/array.py", line 1056, in randomize
+    fg_indices_, bg_indices_ = map_binary_to_indices(label, image, self.image_threshold)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/utils.py", line 315, in map_binary_to_indices
+    label_flat = ravel(any_np_pt(label, 0))  # in case label has multiple dimensions
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/utils_pytorch_numpy_unification.py", line 242, in any_np_pt
+    x = torch.any(x, ax)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/data/meta_tensor.py", line 249, in __torch_function__
+    ret = super().__torch_function__(func, types, args, kwargs)
+  File "/home/baris/.local/lib/python3.10/site-packages/torch/_tensor.py", line 1121, in __torch_function__
+    ret = func(*args, **kwargs)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/baris/Documents/uni/AAAsegmentor/src/main.py", line 36, in <module>
+    main()
+  File "/home/baris/Documents/uni/AAAsegmentor/src/main.py", line 28, in main
+    train_single_epoch(model=model, optimizer=optimizer, train_loader=train_loader)
+  File "/home/baris/Documents/uni/AAAsegmentor/src/training/train.py", line 9, in train_single_epoch
+    for d in train_loader:
+  File "/home/baris/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/home/baris/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 721, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/baris/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/baris/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/data/dataset.py", line 105, in __getitem__
+    return self._transform(index)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/data/dataset.py", line 878, in _transform
+    data = apply_transform(_transform, data)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/transform.py", line 91, in apply_transform
+    return _apply_transform(transform, data, unpack_items)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/transform.py", line 55, in _apply_transform
+    return transform(parameters)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/croppad/dictionary.py", line 861, in __call__
+    self.randomize(label, fg_indices, bg_indices, image)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/croppad/dictionary.py", line 852, in randomize
+    self.cropper.randomize(label=label, fg_indices=fg_indices, bg_indices=bg_indices, image=image)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/croppad/array.py", line 1056, in randomize
+    fg_indices_, bg_indices_ = map_binary_to_indices(label, image, self.image_threshold)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/utils.py", line 315, in map_binary_to_indices
+    label_flat = ravel(any_np_pt(label, 0))  # in case label has multiple dimensions
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/transforms/utils_pytorch_numpy_unification.py", line 242, in any_np_pt
+    x = torch.any(x, ax)
+  File "/home/baris/.local/lib/python3.10/site-packages/monai/data/meta_tensor.py", line 249, in __torch_function__
+    ret = super().__torch_function__(func, types, args, kwargs)
+  File "/home/baris/.local/lib/python3.10/site-packages/torch/_tensor.py", line 1121, in __torch_function__
+    ret = func(*args, **kwargs)
