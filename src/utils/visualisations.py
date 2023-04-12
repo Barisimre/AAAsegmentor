@@ -9,13 +9,18 @@ def visualize_sample_to_wandb(image, label, prediction, scores):
     label = label.cpu().numpy()
     prediction = prediction.cpu().numpy()
 
-    # Choose a random slice index
-    slice_idx = np.random.randint(0, image.shape[2])
+    # Force a 2D example where at least one class is present
+    while True:
+        # Choose a random slice index
+        slice_idx = np.random.randint(0, image.shape[2])
 
-    # Extract the 2D slices
-    image_slice = image[0, 0, slice_idx, :, :]
-    label_slice = label[0, 0, slice_idx, :, :]
-    pred_slice = prediction[0, 0, slice_idx, :, :]
+        # Extract the 2D slices
+        image_slice = image[0, 0, slice_idx, :, :]
+        label_slice = label[0, 0, slice_idx, :, :]
+        pred_slice = prediction[0, 0, slice_idx, :, :]
+
+        if len(np.unique(label_slice)) > 1:
+            break
 
     # Plot the slices
     fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(15, 5))

@@ -16,7 +16,7 @@ def main():
     model = UNet.to(DEVICE)
 
     optimizer = torch.optim.Adam(params=model.parameters(), lr=INITIAL_LEARNING_RATE)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer=optimizer, cooldown=0, patience=2, factor=0.5)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer=optimizer, cooldown=1, patience=2, factor=0.3, verbose=True)
 
     wandb.init(
         project="AAA",
@@ -30,7 +30,7 @@ def main():
 
         train_single_epoch(model=model, optimizer=optimizer, train_loader=train_loader)
 
-        if e % 50 == 0:
+        if e % 25 == 0:
             test_loss = test_single_epoch(model=model, test_loader=test_loader)
             scheduler.step(test_loss)
 

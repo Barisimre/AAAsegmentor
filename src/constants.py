@@ -5,6 +5,7 @@ import torch
 # Paths
 GENERAL_PATH = "/home/s1797743/thesis/final/AAAsegmentor"
 DATA_PATH = f"/home/s1797743/thesis/AAAdata"
+# DATA_PATH = "/data/AAA"
 MODEL_SAVE_PATH = f"{GENERAL_PATH}/models"
 RESULTS_SAVE_PATH = f"{GENERAL_PATH}/results"
 
