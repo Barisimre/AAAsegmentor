@@ -1,6 +1,11 @@
 import monai
 import torch
+
+
 # Constants
+
+RUN_NAME = "SWINUNETR"
+
 
 # Paths
 GENERAL_PATH = "/home/s1797743/thesis/final/AAAsegmentor"
@@ -20,6 +25,9 @@ CT_WINDOW_MAX = 200
 # Training hyper-parameters
 DEVICE = "cuda"
 INITIAL_LEARNING_RATE = 3e-4
-NUM_EPOCHS = 500
-BATCH_SIZE = 8
+NUM_EPOCHS = 1000
+BATCH_SIZE = 4
 LOSS = monai.losses.DiceLoss()
+
+
+

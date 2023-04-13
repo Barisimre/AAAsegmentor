@@ -27,7 +27,7 @@ train_transform = monai.transforms.Compose(
         monai.transforms.AsChannelFirstd(keys=['img', 'mask']),
         monai.transforms.AddChanneld(keys=['img', 'mask']),
         monai.transforms.ScaleIntensityRanged(keys=["img"], a_min=CT_WINDOW_MIN, a_max=CT_WINDOW_MAX, b_min=0, b_max=1, clip=True),
-        monai.transforms.RandRotated(keys=['img', 'mask'], range_x=np.pi/2, prob=1, mode=['bilinear', 'nearest'], padding_mode="zeros"),
+        # monai.transforms.RandRotated(keys=['img', 'mask'], range_x=np.pi/2, prob=1, mode=['bilinear', 'nearest'], padding_mode="zeros"),
         monai.transforms.RandCropByPosNegLabeld(keys=["img", "mask"],
                                                 spatial_size=CROP_SIZE,
                                                 pos=1,
