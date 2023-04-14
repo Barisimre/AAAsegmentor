@@ -9,8 +9,8 @@ RUN_NAME = "SWINUNETR_moreoverlap_ce_1on1sampling_noscheduler"
 
 # Paths
 GENERAL_PATH = "/home/s1797743/thesis/final/AAAsegmentor"
-DATA_PATH = f"/home/s1797743/thesis/AAAdata"
-# DATA_PATH = "/data/AAA"
+# DATA_PATH = f"/home/s1797743/thesis/AAAdata"
+DATA_PATH = "/data/AAA"
 MODEL_SAVE_PATH = f"{GENERAL_PATH}/models"
 RESULTS_SAVE_PATH = f"{GENERAL_PATH}/results"
 
@@ -24,7 +24,8 @@ CT_WINDOW_MAX = 200
 
 # Training hyper-parameters
 DEVICE = "cuda"
-INITIAL_LEARNING_RATE = 3e-4
+INITIAL_LEARNING_RATE = 0.01
+LEARNING_RATES = {0: INITIAL_LEARNING_RATE, 100: 6e-4, 200: 3e-4, 500: 1e-4, 750: 5e-5}
 NUM_EPOCHS = 1000
 BATCH_SIZE = 4
 LOSS = monai.losses.DiceCELoss(lambda_ce=0.4)

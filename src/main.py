@@ -1,4 +1,3 @@
-
 from src.constants import *
 from src.data.data_loaders import get_loaders
 from src.training.train import train_single_epoch
@@ -6,15 +5,14 @@ from src.training.test import test_single_epoch
 import wandb
 from tqdm import tqdm
 from src.model.baselines import *
+from src.training.lr_schedule import set_learning_rate
 
 
 def main():
+    # Model to be trained. Baseline options are Unet, SWINUNETR
+    model = SWINUNETR.to(DEVICE)
 
-	# Model to be trained. Baseline options are Unet, SWINUNETR
-    MODEL = SWINUNETR.to(DEVICE)
-
-    OPTIMIZER = torch.optim.Adam(params=MODEL.parameters(), lr=INITIAL_LEARNING_RATE)
-    SCHEDULER = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer=OPTIMIZER, cooldown=4, patience=2, factor=0.3, verbose=True)
+    optimizer = torch.optim.Adam(params=model.parameters(), lr=INITIAL_LEARNING_RATE)
 
     wandb.init(
         project="AAA",
@@ -26,11 +24,20 @@ def main():
 
     for e in tqdm(range(NUM_EPOCHS)):
 
-        train_single_epoch(model=MODEL, optimizer=OPTIMIZER, train_loader=train_loader)
+        best_test_loss = 2.0
+
+        train_single_epoch(model=model, optimizer=optimizer, train_loader=train_loader)
 
         if e % 25 == 0:
-            test_loss = test_single_epoch(model=MODEL, test_loader=test_loader)
-            # SCHEDULER.step(test_loss)
+            test_loss = test_single_epoch(model=model, test_loader=test_loader)
+
+            #  If test loss is the best, save the model
+            if test_loss <= best_test_loss:
+                torch.save(model.state_dict(), f"{MODEL_SAVE_PATH}/{RUN_NAME}_{test_loss}.pt")
+                best_test_loss = test_loss
+
+            # Set new learning rate if it is time
+            set_learning_rate(e, optimizer)
 
 
 if __name__ == '__main__':
