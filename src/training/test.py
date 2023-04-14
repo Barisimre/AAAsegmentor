@@ -22,7 +22,7 @@ def test_single_epoch(model, test_loader):
                                                           roi_size=CROP_SIZE,
                                                           sw_batch_size=BATCH_SIZE,
                                                           predictor=model,
-                                                          overlap=0.2,
+                                                          overlap=0.5,
                                                           sw_device=DEVICE,
                                                           device="cpu",
                                                           progress=False,
@@ -39,7 +39,7 @@ def test_single_epoch(model, test_loader):
 
         scores = np.array(scores)
         scores = np.nan_to_num(scores, copy=True, nan=1.0)
-        scores = np.nansum(scores, axis=0) / scores.shape[0]
+        scores = np.sum(scores, axis=0) / scores.shape[0]
 
     test_score = np.sum(scores) / (len(scores) * 1.0)
 

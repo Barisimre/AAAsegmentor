@@ -14,7 +14,7 @@ def main():
     MODEL = SWINUNETR.to(DEVICE)
 
     OPTIMIZER = torch.optim.Adam(params=MODEL.parameters(), lr=INITIAL_LEARNING_RATE)
-    SCHEDULER = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer=OPTIMIZER, cooldown=1, patience=2, factor=0.3, verbose=True)
+    SCHEDULER = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer=OPTIMIZER, cooldown=4, patience=2, factor=0.3, verbose=True)
 
     wandb.init(
         project="AAA",
@@ -30,7 +30,7 @@ def main():
 
         if e % 25 == 0:
             test_loss = test_single_epoch(model=MODEL, test_loader=test_loader)
-            SCHEDULER.step(test_loss)
+            # SCHEDULER.step(test_loss)
 
 
 if __name__ == '__main__':

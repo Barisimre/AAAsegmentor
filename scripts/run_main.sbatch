@@ -4,9 +4,9 @@
 #SBATCH --mem=16gb
 #SBATCH --output out/main_output.log
 #SBATCH -c 16 
-#SBATCH --time=10:00:00
+#SBATCH --time=12:00:00
 #SBATCH --partition=mia
-#SBATCH --nodelist=ctit093
+#SBATCH --nodelist=ctit091
 #SBATCH --error=out/err.err
 
 module load anaconda3/2022.05
