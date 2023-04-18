@@ -12,7 +12,7 @@ def main():
     # Model to be trained. Baseline options are Unet, SWINUNETR
     model = SWINUNETR.to(DEVICE)
 
-    optimizer = torch.optim.Adam(params=model.parameters(), lr=INITIAL_LEARNING_RATE)
+    optimizer = torch.optim.Adam(params=model.parameters(), lr=LEARNING_RATES[0])
 
     wandb.init(
         project="AAA",

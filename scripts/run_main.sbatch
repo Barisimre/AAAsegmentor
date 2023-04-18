@@ -6,7 +6,7 @@
 #SBATCH -c 16 
 #SBATCH --time=12:00:00
 #SBATCH --partition=mia
-#SBATCH --nodelist=ctit091
+#SBATCH --nodelist=ctit094
 #SBATCH --error=out/err.err
 
 module load anaconda3/2022.05
