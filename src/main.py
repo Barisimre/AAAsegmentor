@@ -6,11 +6,13 @@ import wandb
 from tqdm import tqdm
 from src.model.baselines import *
 from src.training.lr_schedule import set_learning_rate
+from src.model.my_model import MyModel
 
 
 def main():
     # Model to be trained. Baseline options are Unet, SWINUNETR
-    model = SWINUNETR.to(DEVICE)
+    # model = SWINUNETR.to(DEVICE)
+    model = MyModel(in_channels=1, out_channels=3, embed_dim=512).to(DEVICE)
 
     optimizer = torch.optim.Adam(params=model.parameters(), lr=LEARNING_RATES[0])
 

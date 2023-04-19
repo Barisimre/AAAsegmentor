@@ -4,7 +4,7 @@ import torch
 
 # Constants
 
-RUN_NAME = "SWINUNETR_manuallr_flips"
+RUN_NAME = "MyAttempt1_512"
 
 
 # Paths

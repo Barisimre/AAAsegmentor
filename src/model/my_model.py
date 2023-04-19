@@ -51,7 +51,7 @@ class MyModel(nn.Module):
 
         if not self.skip_transformer:
             t = self.transformer_channels
-            vit_outs = self.vit([residual[:, :t], x1[:, :t], x2[:, :t], x3[:, :t]])
+            vit_outs = self.vit([residual[:, :t].clone(), x1[:, :t].clone(), x2[:, :t].clone(), x3[:, :t].clone()])
             residual[:, :t], x1[:, :t], x2[:, :t], x3[:, :t] = vit_outs
 
         x = self.up1(x4, x3)
