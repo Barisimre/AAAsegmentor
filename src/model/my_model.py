@@ -1,3 +1,4 @@
+import torch
 import torch.nn as nn
 from src.model.blocks import *
 from src.model.vit import ViT
@@ -52,7 +53,10 @@ class MyModel(nn.Module):
         if not self.skip_transformer:
             t = self.transformer_channels
             vit_outs = self.vit([residual[:, :t].clone(), x1[:, :t].clone(), x2[:, :t].clone(), x3[:, :t].clone()])
-            residual[:, :t], x1[:, :t], x2[:, :t], x3[:, :t] = vit_outs
+            residual = torch.concat([vit_outs[0], residual[:, t:]], dim=1)
+            x1 = torch.concat([vit_outs[1], x1[:, t:]], dim=1)
+            x2 = torch.concat([vit_outs[2], x2[:, t:]], dim=1)
+            x3 = torch.concat([vit_outs[3], x3[:, t:]], dim=1)
 
         x = self.up1(x4, x3)
         x = self.up2(x, x2)
