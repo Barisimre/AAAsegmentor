@@ -26,6 +26,33 @@ class DoubleConv(nn.Module):
         return self.double_conv(x)
 
 
+class ViTEmbedder(nn.Module):
+
+    def __init__(self, patch_size, embed_dim, in_channels):
+        super().__init__()
+        self.convs = nn.Sequential(
+            nn.Conv3d(kernel_size=patch_size, stride=patch_size, in_channels=in_channels, out_channels=in_channels * 2),
+            nn.Conv3d(kernel_size=3, stride=1, padding="same", in_channels=in_channels * 2, out_channels=embed_dim)
+        )
+
+    def forward(self, x):
+        return self.convs(x)
+
+
+class ViTDeEmbedder(nn.Module):
+
+    def __init__(self, patch_size, embed_dim, out_channels):
+        super().__init__()
+        self.convs = nn.Sequential(
+            nn.Conv3d(kernel_size=3, stride=1, padding="same", in_channels=embed_dim, out_channels=out_channels * 2),
+            nn.ConvTranspose3d(kernel_size=patch_size, stride=patch_size, in_channels=out_channels * 2,
+                               out_channels=out_channels)
+        )
+
+    def forward(self, x):
+        return self.convs(x)
+
+
 class Down(nn.Module):
 
     def __init__(self, in_channels, out_channels):

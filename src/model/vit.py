@@ -1,6 +1,6 @@
 import einops
 import torch.nn as nn
-from src.model.blocks import TransformerBlock
+from src.model.blocks import TransformerBlock, ViTEmbedder, ViTDeEmbedder
 import torch
 
 
@@ -51,17 +51,26 @@ class ViT(nn.Module):
 
         self.patch_size = patch_size
 
+        # self.embedders = nn.ModuleList([
+        #     nn.Conv3d(kernel_size=patch_size, stride=patch_size, in_channels=channels, out_channels=embed_dim)
+        #     for _ in range(levels)])
+
         self.embedders = nn.ModuleList([
-            nn.Conv3d(kernel_size=patch_size, stride=patch_size, in_channels=channels, out_channels=embed_dim)
-            for _ in range(levels)])
+            ViTEmbedder(patch_size=patch_size, in_channels=channels, embed_dim=embed_dim) for _ in range(levels)
+        ])
+
+        # self.de_embedders = nn.ModuleList([
+        #     nn.ConvTranspose3d(kernel_size=patch_size, stride=patch_size, in_channels=embed_dim, out_channels=channels)
+        #     for _ in range(levels)])
 
         self.de_embedders = nn.ModuleList([
-            nn.ConvTranspose3d(kernel_size=patch_size, stride=patch_size, in_channels=embed_dim, out_channels=channels)
-            for _ in range(levels)])
+            ViTDeEmbedder(patch_size=patch_size, out_channels=channels, embed_dim=embed_dim) for _ in range(levels)
+        ])
 
         # self.vit = DefaultViT(hidden_size=embed_dim, mlp_dim=embed_dim * 2)
 
-        encoder_layer = torch.nn.TransformerEncoderLayer(d_model=embed_dim, nhead=8, dim_feedforward=embed_dim*2, dropout=0.1,
+        encoder_layer = torch.nn.TransformerEncoderLayer(d_model=embed_dim, nhead=8, dim_feedforward=embed_dim * 2,
+                                                         dropout=0.1,
                                                          activation="gelu", layer_norm_eps=1e-5, batch_first=False,
                                                          norm_first=False)
 
@@ -80,7 +89,6 @@ class ViT(nn.Module):
         # TODO: positional encoding
 
         # ViT
-        print(torch.cat(xs, dim=1).shape)
         xs = self.encoder(torch.cat(xs, dim=1))
         xs = torch.split(xs, token_counts, dim=1)
 
