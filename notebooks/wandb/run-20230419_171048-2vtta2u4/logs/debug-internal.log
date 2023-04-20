@@ -1,0 +1,282 @@
+2023-04-19 17:10:48,425 INFO    StreamThr :1696226 [internal.py:wandb_internal():90] W&B internal server running at pid: 1696226, started at: 2023-04-19 17:10:48.423953
+2023-04-19 17:10:48,428 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: status
+2023-04-19 17:10:48,433 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: status
+2023-04-19 17:10:48,436 INFO    WriterThread:1696226 [datastore.py:open_for_write():75] open: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/run-2vtta2u4.wandb
+2023-04-19 17:10:48,436 DEBUG   SenderThread:1696226 [sender.py:send():302] send: header
+2023-04-19 17:10:48,483 DEBUG   SenderThread:1696226 [sender.py:send():302] send: run
+2023-04-19 17:10:48,864 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: check_version
+2023-04-19 17:10:48,871 INFO    SenderThread:1696226 [dir_watcher.py:__init__():216] watching files in: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files
+2023-04-19 17:10:48,871 INFO    SenderThread:1696226 [sender.py:_start_run_threads():913] run started: 2vtta2u4 with start time 1681917048.411687
+2023-04-19 17:10:48,871 DEBUG   SenderThread:1696226 [sender.py:send():302] send: summary
+2023-04-19 17:10:48,872 INFO    SenderThread:1696226 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-04-19 17:10:48,873 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: check_version
+2023-04-19 17:10:48,943 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: run_start
+2023-04-19 17:10:48,960 DEBUG   HandlerThread:1696226 [meta.py:__init__():35] meta init
+2023-04-19 17:10:48,960 DEBUG   HandlerThread:1696226 [meta.py:__init__():50] meta init done
+2023-04-19 17:10:48,960 DEBUG   HandlerThread:1696226 [meta.py:probe():216] probe
+2023-04-19 17:10:48,968 DEBUG   HandlerThread:1696226 [meta.py:_setup_git():206] setup git
+2023-04-19 17:10:48,985 DEBUG   HandlerThread:1696226 [meta.py:_setup_git():213] setup git done
+2023-04-19 17:10:48,985 DEBUG   HandlerThread:1696226 [meta.py:_save_pip():54] save pip
+2023-04-19 17:10:48,987 DEBUG   HandlerThread:1696226 [meta.py:_save_pip():68] save pip done
+2023-04-19 17:10:48,987 DEBUG   HandlerThread:1696226 [meta.py:_save_conda():75] save conda
+2023-04-19 17:10:48,989 ERROR   HandlerThread:1696226 [meta.py:_save_conda():84] Error saving conda packages
+Traceback (most recent call last):
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/meta.py", line 80, in _save_conda
+    subprocess.call(
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/subprocess.py", line 345, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/subprocess.py", line 966, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/subprocess.py", line 1842, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2023-04-19 17:10:48,990 DEBUG   HandlerThread:1696226 [meta.py:_save_conda():85] save conda done
+2023-04-19 17:10:48,990 DEBUG   HandlerThread:1696226 [meta.py:probe():254] probe done
+2023-04-19 17:10:49,067 DEBUG   SenderThread:1696226 [sender.py:send():302] send: files
+2023-04-19 17:10:49,067 INFO    SenderThread:1696226 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2023-04-19 17:10:49,094 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:10:49,094 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:10:49,255 DEBUG   SenderThread:1696226 [sender.py:send():302] send: telemetry
+2023-04-19 17:10:49,587 INFO    Thread-16 :1696226 [upload_job.py:push():138] Uploaded file /tmp/tmp29v57p2rwandb/bkziyf8k-wandb-metadata.json
+2023-04-19 17:10:49,876 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_created():275] file/dir created: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/requirements.txt
+2023-04-19 17:10:49,877 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_created():275] file/dir created: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/conda-environment.yaml
+2023-04-19 17:10:49,877 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_created():275] file/dir created: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/wandb-summary.json
+2023-04-19 17:10:49,877 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_created():275] file/dir created: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/wandb-metadata.json
+2023-04-19 17:10:49,878 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_created():275] file/dir created: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:10:51,874 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:11:09,148 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:11:09,149 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:11:18,120 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:11:19,905 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/config.yaml
+2023-04-19 17:11:45,369 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:11:45,370 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:11:49,177 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:12:07,620 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:12:07,620 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:12:22,800 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:12:22,800 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:12:25,741 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:12:40,517 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:12:40,518 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:12:58,088 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:12:58,889 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:13:01,841 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:13:01,841 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:13:14,113 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:13:30,636 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:13:39,591 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:13:39,592 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:13:52,176 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:14:02,978 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:14:03,906 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:14:03,906 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:14:06,199 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:14:20,013 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:14:20,013 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:14:24,218 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:14:26,220 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:14:37,268 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:14:38,276 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:14:38,277 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:14:40,237 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:14:52,250 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:14:54,256 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:14:54,431 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:14:54,431 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:15:10,820 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:15:10,821 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:15:13,027 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:15:28,314 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:15:44,587 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:15:44,587 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:15:45,991 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:15:46,333 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:16:02,032 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:16:02,032 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:16:17,700 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:16:25,983 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:16:25,983 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:16:28,380 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:16:46,292 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:16:46,292 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:16:52,382 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:17:06,422 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:17:09,388 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:17:09,388 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:17:26,288 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:17:28,349 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:17:28,350 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:17:32,484 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:17:36,488 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:17:38,512 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:17:57,599 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:17:57,599 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:17:58,855 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:18:14,567 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:18:16,569 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:18:21,631 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:18:21,632 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:18:33,596 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:18:57,029 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:18:57,029 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:18:58,656 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:19:02,661 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:19:06,652 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:19:12,671 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:19:20,680 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:19:26,011 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:19:26,011 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:19:28,689 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:19:30,691 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:19:40,131 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:19:43,535 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:19:43,535 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:19:50,738 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:20:08,160 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:20:08,160 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:20:14,334 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:20:18,775 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:20:24,780 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:20:39,756 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:20:39,757 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:20:42,799 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:20:46,808 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:20:47,026 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:20:59,419 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:20:59,419 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:21:00,822 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:21:08,830 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:21:16,839 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:21:18,841 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:21:19,323 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:21:19,323 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:21:20,368 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:21:30,870 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:21:52,016 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:21:52,894 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:21:57,180 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:21:57,181 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:22:00,903 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:22:20,594 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:22:20,595 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:22:25,808 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:22:36,101 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:22:36,101 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:22:52,154 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:22:52,155 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:22:59,019 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:22:59,311 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:23:07,651 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:23:07,651 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:23:22,864 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:23:22,864 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:23:30,321 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:23:38,041 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:23:38,041 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:23:53,203 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:23:53,203 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:24:01,354 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:24:08,362 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:24:08,363 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:24:23,537 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:24:23,538 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:24:32,372 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:24:38,705 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:24:38,705 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:24:53,861 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:24:53,861 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:25:03,375 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:25:09,025 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:25:09,025 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:25:24,188 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:25:24,189 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:25:34,398 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:25:39,353 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:25:39,354 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:25:54,541 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:25:54,541 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:26:05,437 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:26:12,116 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:26:12,116 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:26:32,117 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:26:45,332 ERROR   SenderThread:1696226 [retry.py:__call__():154] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/ssl.py", line 1273, in recv_into
+    return self.read(nbytes, buffer)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/ssl.py", line 1129, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 204, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/requests/adapters.py", line 578, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+2023-04-19 17:26:52,119 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:26:59,510 WARNING FileStreamThread:1696226 [file_stream.py:request_with_retry():666] requests_with_retry encountered retryable exception: 500 Server Error: Internal Server Error for url: https://api.wandb.ai/files/barisimre/AAA/2vtta2u4/file_stream. func: <bound method Session.post of <requests.sessions.Session object at 0x7f2c857ca290>>, args: ('https://api.wandb.ai/files/barisimre/AAA/2vtta2u4/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 26, 'content': ['{"system.gpu.0.gpu": 100.0, "system.gpu.0.memory": 0.0, "system.gpu.0.memoryAllocated": 37.9, "system.gpu.0.temp": 70.0, "system.gpu.process.0.gpu": 100.0, "system.gpu.process.0.memory": 0.0, "system.gpu.process.0.memoryAllocated": 37.9, "system.gpu.process.0.temp": 70.0, "system.gpu.0.powerWatts": 252.05, "system.gpu.0.powerPercent": 84.02, "system.gpu.process.0.powerWatts": 252.05, "system.gpu.process.0.powerPercent": 84.02, "system.gpu.1.gpu": 0.0, "system.gpu.1.memory": 0.0, "system.gpu.1.memoryAllocated": 1.25, "system.gpu.1.temp": 34.0, "system.gpu.1.powerWatts": 32.2, "system.gpu.1.powerPercent": 10.73, "system.gpu.2.gpu": 0.0, "system.gpu.2.memory": 0.0, "system.gpu.2.memoryAllocated": 1.25, "system.gpu.2.temp": 33.0, "system.gpu.2.powerWatts": 29.59, "system.gpu.2.powerPercent": 9.86, "system.gpu.3.gpu": 0.0, "system.gpu.3.memory": 0.0, "system.gpu.3.memoryAllocated": 1.39, "system.gpu.3.temp": 33.0, "system.gpu.3.powerWatts": 17.89, "system.gpu.3.powerPercent": 8.95, "system.cpu": 1.63, "system.memory": 22.6, "system.disk": 18.2, "system.proc.memory.availableMB": 199394.69, "system.proc.memory.rssMB": 52053.5, "system.proc.memory.percent": 20.21, "system.proc.cpu.threads": 42.0, "system.network.sent": 14806263, "system.network.recv": 91236755, "_wandb": true, "_timestamp": 1681917934.397504, "_runtime": 885.985817}']}}, 'dropped': 0}}
+2023-04-19 17:27:12,120 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:27:32,122 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:27:38,764 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:27:40,005 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:27:40,007 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:27:41,316 INFO    Thread-12 :1696226 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/s1797743/thesis/final/AAAsegmentor/notebooks/wandb/run-20230419_171048-2vtta2u4/files/output.log
+2023-04-19 17:27:42,079 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:27:42,080 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:27:43,158 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:27:43,876 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:27:52,122 DEBUG   HandlerThread:1696226 [handler.py:handle_request():141] handle_request: stop_status
+2023-04-19 17:27:52,123 DEBUG   SenderThread:1696226 [sender.py:send_request():316] send_request: stop_status
+2023-04-19 17:28:09,365 DEBUG   SenderThread:1696226 [sender.py:send():302] send: stats
+2023-04-19 17:28:09,594 INFO    MainThread:1696226 [internal.py:handle_exit():80] Internal process exited
+2023-04-19 17:28:09,595 WARNING MsgRouterThr:1696226 [router.py:message_loop():73] EOFError seen in message_loop

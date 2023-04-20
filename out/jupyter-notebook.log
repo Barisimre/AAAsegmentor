@@ -1,250 +1,154 @@
 	Adding anaconda3 2022.05 to your environment
 	Adding nVidia Cuda Toolkit 11.5
-[W 2023-04-12 16:41:58.569 ServerApp] The module 'notebook_shim' could not be found (No module named 'notebook_shim'). Are you sure the extension is installed?
-[I 2023-04-12 16:41:58.584 ServerApp] jupyterlab | extension was successfully linked.
-[W 2023-04-12 16:41:58.592 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-04-12 16:41:58.592 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-04-12 16:41:58.592 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[I 2023-04-12 16:41:59.281 ServerApp] nbclassic | extension was successfully linked.
-[I 2023-04-12 16:41:59.466 ServerApp] nbclassic | extension was successfully loaded.
-[I 2023-04-12 16:41:59.467 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/jupyterlab
-[I 2023-04-12 16:41:59.467 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/my_env/share/jupyter/lab
-[I 2023-04-12 16:41:59.472 ServerApp] jupyterlab | extension was successfully loaded.
-[I 2023-04-12 16:41:59.472 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
-[I 2023-04-12 16:41:59.472 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
-[I 2023-04-12 16:41:59.472 ServerApp] Jupyter Server 1.18.1 is running at:
-[I 2023-04-12 16:41:59.472 ServerApp] http://ctit094.ewi.utwente.nl:8802/lab?token=f8a56e3eb835fe10175dee5ab1d88421dcf5995c465280e2
-[I 2023-04-12 16:41:59.472 ServerApp]  or http://127.0.0.1:8802/lab?token=f8a56e3eb835fe10175dee5ab1d88421dcf5995c465280e2
-[I 2023-04-12 16:41:59.472 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 2023-04-12 16:41:59.507 ServerApp] 
+[W 2023-04-19 17:08:13.668 ServerApp] The module 'notebook_shim' could not be found (No module named 'notebook_shim'). Are you sure the extension is installed?
+[I 2023-04-19 17:08:13.692 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-04-19 17:08:13.713 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-19 17:08:13.713 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-19 17:08:13.713 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-04-19 17:08:14.374 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-04-19 17:08:14.956 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-04-19 17:08:14.959 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/jupyterlab
+[I 2023-04-19 17:08:14.959 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/my_env/share/jupyter/lab
+[I 2023-04-19 17:08:14.967 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-04-19 17:08:14.967 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
+[I 2023-04-19 17:08:14.968 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
+[I 2023-04-19 17:08:14.968 ServerApp] Jupyter Server 1.18.1 is running at:
+[I 2023-04-19 17:08:14.968 ServerApp] http://ctit093.ewi.utwente.nl:8809/lab?token=6027593c3f9cd3711373a91a02d2084917dcf0f2e757904f
+[I 2023-04-19 17:08:14.968 ServerApp]  or http://127.0.0.1:8809/lab?token=6027593c3f9cd3711373a91a02d2084917dcf0f2e757904f
+[I 2023-04-19 17:08:14.968 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-04-19 17:08:15.007 ServerApp] 
     
     To access the server, open this file in a browser:
-        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-2959596-open.html
+        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-1695539-open.html
     Or copy and paste one of these URLs:
-        http://ctit094.ewi.utwente.nl:8802/lab?token=f8a56e3eb835fe10175dee5ab1d88421dcf5995c465280e2
-     or http://127.0.0.1:8802/lab?token=f8a56e3eb835fe10175dee5ab1d88421dcf5995c465280e2
-[W 2023-04-12 16:42:44.970 LabApp] Could not determine jupyterlab build status without nodejs
-[W 2023-04-12 16:42:47.336 ServerApp] Notebook notebooks/test_data_loading.ipynb is not trusted
-[I 2023-04-12 16:42:47.700 ServerApp] Kernel started: 91fe0d62-3a9f-42ee-95d4-63056b1d3eeb
-[I 2023-04-12 16:42:47.700 ServerApp] Culling kernels with idle durations > 3600 seconds at 300 second intervals ...
-[I 2023-04-12 16:42:47.709 ServerApp] Kernel started: 672bf6ee-0b29-4dc4-a6b7-1630a229f815
-[I 2023-04-12 16:42:47.754 ServerApp] Kernel started: f02f1f5a-7092-4d30-ab85-4927a9e2dba9
-[I 2023-04-12 16:42:49.258 ServerApp] Starting buffering for 672bf6ee-0b29-4dc4-a6b7-1630a229f815:7e2a9988-6a79-4e7f-b1a2-1d3d2908667f
+        http://ctit093.ewi.utwente.nl:8809/lab?token=6027593c3f9cd3711373a91a02d2084917dcf0f2e757904f
+     or http://127.0.0.1:8809/lab?token=6027593c3f9cd3711373a91a02d2084917dcf0f2e757904f
+[W 2023-04-19 17:08:55.226 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-04-19 17:08:57.886 ServerApp] Notebook notebooks/test_data_loading.ipynb is not trusted
+[I 2023-04-19 17:08:58.504 ServerApp] Kernel started: cded5cad-e66f-45b4-a36b-fff798a49af4
+[I 2023-04-19 17:08:58.504 ServerApp] Culling kernels with idle durations > 3600 seconds at 300 second intervals ...
+[I 2023-04-19 17:08:58.510 ServerApp] Kernel started: 1bcd08c9-2629-4e9d-9e32-684d43833b9a
+[I 2023-04-19 17:08:58.513 ServerApp] Kernel started: c2f8998b-6d11-4415-9ef6-ca053c79d7b3
 [IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 90546f91-a839-4beb-9a0f-0b4843f02635
+[IPKernelApp] WARNING | No such comm: dcbb43cb-178b-4bdd-9c7c-6b5623ac0bac
 [IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: f056849a-02e9-468b-b43c-c6d4a50910c8
+[IPKernelApp] WARNING | No such comm: 09b9be5f-26a1-4392-819c-23bb5a1a03d2
 [IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: abd3fef2-28cd-4593-bcb2-ca86f2ae630e
-[I 2023-04-12 16:44:47.424 ServerApp] Saving file at /notebooks/test_main.ipynb
-[I 2023-04-12 16:46:48.026 ServerApp] Saving file at /notebooks/test_main.ipynb
-[I 2023-04-12 16:48:48.068 ServerApp] Saving file at /notebooks/test_main.ipynb
+[IPKernelApp] WARNING | No such comm: ef28fcb7-e863-4446-9cd0-f10e1c8f8a30
+[I 2023-04-19 17:09:09.991 ServerApp] Creating new notebook in /notebooks
+[I 2023-04-19 17:09:10.380 ServerApp] Kernel started: 7e29af75-29ef-45b6-a866-30208776aea2
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 7dd36acf-272a-4241-8110-9834197ca6fd
+[I 2023-04-19 17:10:11.965 ServerApp] Saving file at /src/training/lr_schedule.py
+[I 2023-04-19 17:10:12.244 ServerApp] Saving file at /src/training/lr_schedule.py
+[I 2023-04-19 17:11:10.314 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 17:13:10.383 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 17:15:10.463 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 17:17:10.567 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 17:19:10.622 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 17:21:10.665 ServerApp] Saving file at /notebooks/test_training.ipynb
 IOStream.flush timed out
-[I 2023-04-12 16:50:48.112 ServerApp] Saving file at /notebooks/test_main.ipynb
+[I 2023-04-19 17:23:10.757 ServerApp] Saving file at /notebooks/test_training.ipynb
+wandb: Network error (ReadTimeout), entering retry loop.
+[I 2023-04-19 17:27:10.844 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 17:27:17.415 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:17.600 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:20.229 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:20.408 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:20.591 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:27.281 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:27.521 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:27.689 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:27.877 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:28.067 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:28.251 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:28.444 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:28.628 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:28.822 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:29.001 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:29.179 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:27:29.343 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:28:07.140 ServerApp] Kernel restarted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:28:07.190 ServerApp] Starting buffering for 7e29af75-29ef-45b6-a866-30208776aea2:7179df28-6d44-4544-acf8-ecabc1b9ea78
+[I 2023-04-19 17:28:07.202 ServerApp] Restoring connection for 7e29af75-29ef-45b6-a866-30208776aea2:7179df28-6d44-4544-acf8-ecabc1b9ea78
+[I 2023-04-19 17:29:10.912 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 17:31:10.972 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 17:33:11.015 ServerApp] Saving file at /notebooks/test_training.ipynb
 IOStream.flush timed out
-Wed Apr 12 16:52:25 2023       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
-|  0%   45C    P0    81W / 300W |   5187MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
-|  0%   32C    P8    30W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|    0   N/A  N/A   2959609      C   ...da/envs/my_env/bin/python     5185MiB |
-+-----------------------------------------------------------------------------+
-Wed Apr 12 16:52:31 2023       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
-|  0%   45C    P0    81W / 300W |   5187MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
-|  0%   32C    P8    30W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|    0   N/A  N/A   2959609      C   ...da/envs/my_env/bin/python     5185MiB |
-+-----------------------------------------------------------------------------+
-[I 2023-04-12 16:52:47.269 ServerApp] Saving file at /notebooks/Untitled.ipynb
-[I 2023-04-12 16:52:48.200 ServerApp] Saving file at /notebooks/test_main.ipynb
-Wed Apr 12 16:52:53 2023       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
-|  0%   45C    P0    81W / 300W |   5193MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
-|  0%   32C    P8    30W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|    0   N/A  N/A   2959609      C   ...da/envs/my_env/bin/python     5191MiB |
-+-----------------------------------------------------------------------------+
-Wed Apr 12 16:52:55 2023       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
-|  0%   45C    P0    81W / 300W |   5193MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
-|  0%   33C    P8    49W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|    0   N/A  N/A   2959609      C   ...da/envs/my_env/bin/python     5191MiB |
-+-----------------------------------------------------------------------------+
-Wed Apr 12 16:52:59 2023       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
-|  0%   45C    P0    81W / 300W |   5193MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
-|  0%   33C    P8    30W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|    0   N/A  N/A   2959609      C   ...da/envs/my_env/bin/python     5191MiB |
-+-----------------------------------------------------------------------------+
-Wed Apr 12 16:53:38 2023       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
-|  0%   45C    P0    81W / 300W |   5193MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
-|  0%   32C    P8    30W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|    0   N/A  N/A   2959609      C   ...da/envs/my_env/bin/python     5191MiB |
-+-----------------------------------------------------------------------------+
-Wed Apr 12 16:53:43 2023       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
-|  0%   45C    P0    81W / 300W |   5193MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
-|  0%   33C    P8    30W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|    0   N/A  N/A   2959609      C   ...da/envs/my_env/bin/python     5191MiB |
-+-----------------------------------------------------------------------------+
-[I 2023-04-12 16:54:21.344 ServerApp] Kernel interrupted: 672bf6ee-0b29-4dc4-a6b7-1630a229f815
-[I 2023-04-12 16:54:21.504 ServerApp] Kernel interrupted: 672bf6ee-0b29-4dc4-a6b7-1630a229f815
-[I 2023-04-12 16:54:21.681 ServerApp] Kernel interrupted: 672bf6ee-0b29-4dc4-a6b7-1630a229f815
-[I 2023-04-12 16:54:21.839 ServerApp] Kernel interrupted: 672bf6ee-0b29-4dc4-a6b7-1630a229f815
-[I 2023-04-12 16:54:47.314 ServerApp] Saving file at /notebooks/Untitled.ipynb
-[I 2023-04-12 16:54:48.396 ServerApp] Saving file at /notebooks/test_main.ipynb
-[I 2023-04-12 16:56:48.802 ServerApp] Saving file at /src/data/transforms.py
-[I 2023-04-12 16:56:49.823 ServerApp] Saving file at /notebooks/test_main.ipynb
-[I 2023-04-12 17:00:37.353 ServerApp] Saving file at /notebooks/test_main.ipynb
-[I 2023-04-12 17:00:45.179 ServerApp] Kernel restarted: 672bf6ee-0b29-4dc4-a6b7-1630a229f815
-[I 2023-04-12 17:00:45.189 ServerApp] Starting buffering for 672bf6ee-0b29-4dc4-a6b7-1630a229f815:dcacc67d-b880-4422-9a82-a426828f7ede
-[I 2023-04-12 17:00:45.201 ServerApp] Restoring connection for 672bf6ee-0b29-4dc4-a6b7-1630a229f815:dcacc67d-b880-4422-9a82-a426828f7ede
+[I 2023-04-19 17:35:11.083 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 17:37:11.256 ServerApp] Saving file at /notebooks/test_training.ipynb
+IOStream.flush timed out
+IOStream.flush timed out
+[I 2023-04-19 17:39:11.309 ServerApp] Saving file at /notebooks/test_training.ipynb
+IOStream.flush timed out
 [IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 5976cbc4-1fb7-47a4-b4d2-e87eda5f8d79
-[I 2023-04-12 17:02:38.913 ServerApp] Saving file at /notebooks/test_main.ipynb
-[I 2023-04-12 17:04:40.081 ServerApp] Saving file at /notebooks/test_main.ipynb
-[I 2023-04-12 17:06:41.181 ServerApp] Saving file at /notebooks/test_main.ipynb
-[I 2023-04-12 17:08:42.817 ServerApp] Saving file at /notebooks/test_main.ipynb
-IOStream.flush timed out
-[I 2023-04-12 17:10:43.944 ServerApp] Saving file at /notebooks/test_main.ipynb
-[I 2023-04-12 17:18:17.533 ServerApp] Saving file at /scripts/run_main.sbatch
-[I 2023-04-12 17:19:02.605 ServerApp] Saving file at /src/main.py
-[I 2023-04-12 17:19:47.242 ServerApp] Saving file at /src/main.py
-[I 2023-04-12 17:19:49.797 ServerApp] Saving file at /src/constants.py
-[I 2023-04-12 17:19:55.790 ServerApp] Saving file at /src/main.py
-[I 2023-04-12 17:20:11.049 ServerApp] Saving file at /src/constants.py
-[I 2023-04-12 17:20:17.177 ServerApp] Saving file at /src/constants.py
-[I 2023-04-12 17:27:46.617 ServerApp] Saving file at /src/constants.py
-[I 2023-04-12 17:27:47.659 ServerApp] Saving file at /src/main.py
-slurmstepd-ctit094: error: *** JOB 205405 ON ctit094 CANCELLED AT 2023-04-12T17:30:13 ***
-[C 2023-04-12 17:30:13.407 ServerApp] received signal 15, stopping
-[I 2023-04-12 17:30:13.408 ServerApp] Shutting down 2 extensions
-[I 2023-04-12 17:30:13.409 ServerApp] Shutting down 3 kernels
-[I 2023-04-12 17:30:13.410 ServerApp] Kernel shutdown: f02f1f5a-7092-4d30-ab85-4927a9e2dba9
-[I 2023-04-12 17:30:13.410 ServerApp] Kernel shutdown: 91fe0d62-3a9f-42ee-95d4-63056b1d3eeb
-[I 2023-04-12 17:30:13.411 ServerApp] Kernel shutdown: 672bf6ee-0b29-4dc4-a6b7-1630a229f815
+[IPKernelApp] WARNING | No such comm: f4beda0a-8322-4c91-8563-cd40fc48acb0
+[I 2023-04-19 17:41:11.372 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 17:46:10.283 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:46:10.462 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:46:10.613 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:46:10.789 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:46:10.972 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:46:11.164 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:46:11.328 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:46:11.512 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:46:11.675 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:46:11.853 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:46:12.031 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:46:12.201 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:46:29.075 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:49:11.422 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 17:49:15.237 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:49:15.424 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:49:15.609 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:49:15.793 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:49:16.001 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:49:16.197 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:52:15.760 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:52:15.916 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:52:16.068 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:52:16.226 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:52:16.384 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:52:16.551 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:52:16.725 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:52:16.871 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:52:17.036 ServerApp] Kernel interrupted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 17:57:11.502 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 18:01:11.573 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 18:05:11.680 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 18:05:44.656 ServerApp] Kernel restarted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 18:05:44.664 ServerApp] Starting buffering for 7e29af75-29ef-45b6-a866-30208776aea2:7179df28-6d44-4544-acf8-ecabc1b9ea78
+[I 2023-04-19 18:05:44.672 ServerApp] Restoring connection for 7e29af75-29ef-45b6-a866-30208776aea2:7179df28-6d44-4544-acf8-ecabc1b9ea78
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: b1bca135-bcd3-431b-bf92-d5a63f573f5d
+[I 2023-04-19 18:07:11.758 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 18:09:11.871 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 18:11:05.419 ServerApp] Kernel restarted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 18:11:05.429 ServerApp] Starting buffering for 7e29af75-29ef-45b6-a866-30208776aea2:7179df28-6d44-4544-acf8-ecabc1b9ea78
+[I 2023-04-19 18:11:05.448 ServerApp] Restoring connection for 7e29af75-29ef-45b6-a866-30208776aea2:7179df28-6d44-4544-acf8-ecabc1b9ea78
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 441983db-b956-45f2-a998-5c6fb6b00799
+[I 2023-04-19 18:11:11.968 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 18:12:09.626 ServerApp] Kernel restarted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 18:12:09.641 ServerApp] Starting buffering for 7e29af75-29ef-45b6-a866-30208776aea2:7179df28-6d44-4544-acf8-ecabc1b9ea78
+[I 2023-04-19 18:12:09.659 ServerApp] Restoring connection for 7e29af75-29ef-45b6-a866-30208776aea2:7179df28-6d44-4544-acf8-ecabc1b9ea78
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: be940aff-c811-479d-a84d-9556e241f160
+[I 2023-04-19 18:12:53.499 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 18:13:00.555 ServerApp] Kernel restarted: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 18:13:00.560 ServerApp] Starting buffering for 7e29af75-29ef-45b6-a866-30208776aea2:7179df28-6d44-4544-acf8-ecabc1b9ea78
+[I 2023-04-19 18:13:00.566 ServerApp] Restoring connection for 7e29af75-29ef-45b6-a866-30208776aea2:7179df28-6d44-4544-acf8-ecabc1b9ea78
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: c59b88aa-df8d-43c2-ab8f-9955373ed75d
+[I 2023-04-19 18:14:53.543 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-19 19:38:05.122 ServerApp] Saving file at /src/constants.py
+[I 2023-04-19 19:38:09.981 ServerApp] Saving file at /src/constants.py
+[I 2023-04-19 19:38:40.704 ServerApp] Saving file at /src/main.py
+slurmstepd-ctit093: error: *** JOB 206458 ON ctit093 CANCELLED AT 2023-04-19T19:38:57 ***
+[C 2023-04-19 19:38:57.530 ServerApp] received signal 15, stopping
+[I 2023-04-19 19:38:57.532 ServerApp] Shutting down 2 extensions
+[I 2023-04-19 19:38:57.532 ServerApp] Shutting down 4 kernels
+[I 2023-04-19 19:38:57.534 ServerApp] Kernel shutdown: 7e29af75-29ef-45b6-a866-30208776aea2
+[I 2023-04-19 19:38:57.534 ServerApp] Kernel shutdown: 1bcd08c9-2629-4e9d-9e32-684d43833b9a
+[I 2023-04-19 19:38:57.535 ServerApp] Kernel shutdown: c2f8998b-6d11-4415-9ef6-ca053c79d7b3
+[I 2023-04-19 19:38:57.535 ServerApp] Kernel shutdown: cded5cad-e66f-45b4-a36b-fff798a49af4
