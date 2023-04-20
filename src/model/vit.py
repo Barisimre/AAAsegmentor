@@ -59,7 +59,14 @@ class ViT(nn.Module):
             nn.ConvTranspose3d(kernel_size=patch_size, stride=patch_size, in_channels=embed_dim, out_channels=channels)
             for _ in range(levels)])
 
-        self.vit = DefaultViT(hidden_size=embed_dim, mlp_dim=embed_dim * 2)
+        # self.vit = DefaultViT(hidden_size=embed_dim, mlp_dim=embed_dim * 2)
+
+        encoder_layer = torch.nn.TransformerEncoderLayer(d_model=embed_dim, nhead=8, dim_feedforward=embed_dim*2, dropout=0.1,
+                                                         activation="gelu", layer_norm_eps=1e-5, batch_first=False,
+                                                         norm_first=False)
+
+        encoder_norm = torch.nn.LayerNorm(embed_dim, eps=1e-5)
+        self.encoder = torch.nn.TransformerEncoder(encoder_layer, num_layers=6, norm=encoder_norm)
 
     # xs: one x per level of the encoder. They should all halve in every size. Channel counts don't matter.
     def forward(self, xs):
@@ -73,7 +80,8 @@ class ViT(nn.Module):
         # TODO: positional encoding
 
         # ViT
-        xs = self.vit(torch.cat(xs, dim=1))
+        print(torch.cat(xs, dim=1).shape)
+        xs = self.encoder(torch.cat(xs, dim=1))
         xs = torch.split(xs, token_counts, dim=1)
 
         # De-Embed
