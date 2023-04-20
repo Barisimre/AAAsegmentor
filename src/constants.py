@@ -4,7 +4,7 @@ import torch
 
 # Constants
 
-RUN_NAME = "MyAttempt1_512"
+RUN_NAME = "MyAttempt_torchTransformer_256"
 
 
 # Paths
