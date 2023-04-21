@@ -22,6 +22,6 @@ cp -r ${SLURM_SUBMIT_DIR}/src .
 
 
 
-python3 src/benchmark.py > 90.txt
+python3 src/utils/benchmark.py > 90.txt
 
 rm -r /local/${SLURM_JOBID}
