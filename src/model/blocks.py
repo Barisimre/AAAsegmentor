@@ -40,36 +40,32 @@ class ViTEmbedder(nn.Module):
         return self.convs(x)
 
 
-    
-
-# class ViTDeEmbedder(nn.Module):
-
-#     def __init__(self, patch_size, embed_dim, out_channels):
-#         super().__init__()
-#         self.convs = nn.Sequential(
-#             nn.Conv3d(kernel_size=3, stride=1, padding="same", in_channels=embed_dim, out_channels=out_channels),
-#             nn.ConvTranspose3d(kernel_size=patch_size, stride=patch_size, in_channels=out_channels,
-#                                out_channels=out_channels)
-#         )
-
-#     def forward(self, x):
-#         return self.convs(x)
-
 class ViTDeEmbedder(nn.Module):
 
     def __init__(self, patch_size, embed_dim, out_channels):
         super().__init__()
-        self.upsample = nn.Upsample(scale_factor=patch_size, mode='trilinear', align_corners=False)
         self.convs = nn.Sequential(
-            nn.Conv3d(kernel_size=3, stride=1, padding=1, in_channels=embed_dim, out_channels=out_channels * 2),
-            nn.ReLU(),
-            nn.Conv3d(kernel_size=3, stride=1, padding=1, in_channels=out_channels * 2, out_channels=out_channels),
-            nn.Upsample(scale_factor=patch_size, mode='trilinear', align_corners=False)
+            nn.Conv3d(kernel_size=3, stride=1, padding="same", in_channels=embed_dim, out_channels=out_channels),
+            nn.ConvTranspose3d(kernel_size=patch_size, stride=patch_size, in_channels=out_channels,
+                               out_channels=out_channels)
         )
 
     def forward(self, x):
-        # x = self.upsample(x)
         return self.convs(x)
+
+# class ViTDeEmbedder(nn.Module):
+#
+#     def __init__(self, patch_size, embed_dim, out_channels):
+#         super().__init__()
+#         self.convs = nn.Sequential(
+#             nn.Conv3d(kernel_size=3, stride=1, padding=1, in_channels=embed_dim, out_channels=out_channels * 2),
+#             nn.ReLU(),
+#             nn.Conv3d(kernel_size=3, stride=1, padding=1, in_channels=out_channels * 2, out_channels=out_channels),
+#             nn.Upsample(scale_factor=patch_size, mode='trilinear', align_corners=False)
+#         )
+#
+#     def forward(self, x):
+#         return self.convs(x)
 
 
 class Down(nn.Module):
