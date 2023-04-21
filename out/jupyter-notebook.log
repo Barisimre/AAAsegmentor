@@ -1,228 +1,28 @@
 	Adding anaconda3 2022.05 to your environment
 	Adding nVidia Cuda Toolkit 11.5
-[W 2023-04-20 15:17:29.864 ServerApp] The module 'notebook_shim' could not be found (No module named 'notebook_shim'). Are you sure the extension is installed?
-[I 2023-04-20 15:17:29.883 ServerApp] jupyterlab | extension was successfully linked.
-[W 2023-04-20 15:17:29.896 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-04-20 15:17:29.897 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-04-20 15:17:29.897 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[I 2023-04-20 15:17:38.710 ServerApp] nbclassic | extension was successfully linked.
-[I 2023-04-20 15:17:50.305 ServerApp] nbclassic | extension was successfully loaded.
-[I 2023-04-20 15:17:50.329 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/jupyterlab
-[I 2023-04-20 15:17:50.329 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/my_env/share/jupyter/lab
-[I 2023-04-20 15:17:51.000 ServerApp] jupyterlab | extension was successfully loaded.
-[I 2023-04-20 15:17:51.000 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
-[I 2023-04-20 15:17:51.001 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
-[I 2023-04-20 15:17:51.001 ServerApp] Jupyter Server 1.18.1 is running at:
-[I 2023-04-20 15:17:51.001 ServerApp] http://ctit093.ewi.utwente.nl:8803/lab?token=b30877ee6367680dfbf9392be4242657af499203dc21f6aa
-[I 2023-04-20 15:17:51.001 ServerApp]  or http://127.0.0.1:8803/lab?token=b30877ee6367680dfbf9392be4242657af499203dc21f6aa
-[I 2023-04-20 15:17:51.001 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 2023-04-20 15:17:51.865 ServerApp] 
+[W 2023-04-21 12:52:21.752 ServerApp] The module 'notebook_shim' could not be found (No module named 'notebook_shim'). Are you sure the extension is installed?
+[I 2023-04-21 12:52:21.765 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-04-21 12:52:21.769 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-21 12:52:21.769 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-21 12:52:21.769 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-04-21 12:52:23.722 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-04-21 12:52:23.935 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-04-21 12:52:23.936 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/jupyterlab
+[I 2023-04-21 12:52:23.936 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/my_env/share/jupyter/lab
+[I 2023-04-21 12:52:23.955 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-04-21 12:52:23.955 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
+[I 2023-04-21 12:52:23.956 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
+[I 2023-04-21 12:52:23.956 ServerApp] Jupyter Server 1.18.1 is running at:
+[I 2023-04-21 12:52:23.956 ServerApp] http://ctit093.ewi.utwente.nl:8809/lab?token=792304e84187d0ab9c79879db57deb947b4bb19ffc572980
+[I 2023-04-21 12:52:23.956 ServerApp]  or http://127.0.0.1:8809/lab?token=792304e84187d0ab9c79879db57deb947b4bb19ffc572980
+[I 2023-04-21 12:52:23.956 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-04-21 12:52:24.012 ServerApp] 
     
     To access the server, open this file in a browser:
-        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-1853030-open.html
+        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-2004966-open.html
     Or copy and paste one of these URLs:
-        http://ctit093.ewi.utwente.nl:8803/lab?token=b30877ee6367680dfbf9392be4242657af499203dc21f6aa
-     or http://127.0.0.1:8803/lab?token=b30877ee6367680dfbf9392be4242657af499203dc21f6aa
-[W 2023-04-20 15:19:11.598 LabApp] Could not determine jupyterlab build status without nodejs
-[W 2023-04-20 15:19:34.103 ServerApp] Notebook notebooks/test_data_loading.ipynb is not trusted
-[I 2023-04-20 15:19:35.260 ServerApp] Kernel started: 9e7ed6bb-6006-404b-9ae6-fd601431b65e
-[I 2023-04-20 15:19:35.260 ServerApp] Culling kernels with idle durations > 3600 seconds at 300 second intervals ...
-[I 2023-04-20 15:19:35.261 ServerApp] Kernel started: 2e61d494-2e04-471d-a2f6-8d49b8d76714
-[I 2023-04-20 15:19:35.263 ServerApp] Kernel started: bfb3e921-464e-43e3-b77b-0e947b5975f5
-[I 2023-04-20 15:19:35.265 ServerApp] Kernel started: 16f10213-115f-4986-918f-f969fe73f62c
-[I 2023-04-20 15:19:48.257 ServerApp] Starting buffering for 16f10213-115f-4986-918f-f969fe73f62c:8be3c0f3-9fdb-4237-a200-d32c9d512a39
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 7d27eac5-4090-4988-a82a-12aa088e9d2d
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 3544498f-0ef4-412f-9612-8dbc386ca267
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: a660886d-f689-48ea-932f-f82454314420
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 38e2dd07-753a-4a2a-96ab-9ffdc3b482b3
-[W 2023-04-20 15:19:57.006 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 15:19:59.624 ServerApp] Kernel started: 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 7682d595-9143-460e-b662-fb7aefeedabe
-[I 2023-04-20 15:20:54.438 ServerApp] Starting buffering for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:02e89ce5-bacf-460b-b74c-4c2f98ed3acc
-[W 2023-04-20 15:20:56.072 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 61d3fea0-8df7-4e6b-b3be-3fb588daca60
-[I 2023-04-20 15:22:56.371 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 15:22:56.378 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 15:24:56.762 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 15:24:56.764 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 15:26:56.907 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 15:26:56.909 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 15:38:57.007 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 15:38:57.189 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 15:48:21.529 ServerApp] Saving file at /src/main.py
-[I 2023-04-20 15:48:23.679 ServerApp] Saving file at /src/main.py
-[I 2023-04-20 15:48:24.615 ServerApp] Saving file at /src/main.py
-[I 2023-04-20 15:49:01.051 ServerApp] Saving file at /src/constants.py
-[I 2023-04-20 15:52:08.831 ServerApp] Saving file at /src/main.py
-[I 2023-04-20 15:52:09.081 ServerApp] Saving file at /src/main.py
-[I 2023-04-20 16:12:57.696 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 16:12:57.870 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 16:31:00.405 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 16:31:00.411 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 16:33:00.528 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 16:33:00.537 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 16:37:00.689 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 16:37:00.690 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 16:37:52.127 ServerApp] Saving file at /src/model/vit.py
-[I 2023-04-20 16:38:39.546 ServerApp] Saving file at /src/model/vit.py
-[I 2023-04-20 16:38:46.253 ServerApp] Kernel restarted: 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 16:38:46.265 ServerApp] Starting buffering for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[I 2023-04-20 16:38:46.281 ServerApp] Restoring connection for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[W 2023-04-20 16:38:50.800 ServerApp] Nudge: attempt 10 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[W 2023-04-20 16:38:55.817 ServerApp] Nudge: attempt 20 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 16:39:00.839 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 16:39:00.840 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[W 2023-04-20 16:39:01.034 ServerApp] Nudge: attempt 30 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 473773b0-69d0-40ab-9a26-6ad98b43818e
-[I 2023-04-20 16:41:01.116 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 16:41:01.142 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 16:44:13.094 ServerApp] Saving file at /src/model/vit.py
-[I 2023-04-20 16:44:13.633 ServerApp] Saving file at /src/model/vit.py
-[I 2023-04-20 16:44:23.623 ServerApp] Kernel restarted: 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 16:44:23.629 ServerApp] Starting buffering for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[I 2023-04-20 16:44:23.637 ServerApp] Restoring connection for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[W 2023-04-20 16:44:28.155 ServerApp] Nudge: attempt 10 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[W 2023-04-20 16:44:33.175 ServerApp] Nudge: attempt 20 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[W 2023-04-20 16:44:38.194 ServerApp] Nudge: attempt 30 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 16:45:01.986 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 16:45:01.987 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 8f5ecc90-cd82-429e-885f-4a9a8ef32d92
-[I 2023-04-20 16:47:02.346 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 16:47:02.347 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 16:50:39.407 ServerApp] Saving file at /src/model/blocks.py
-[I 2023-04-20 16:50:39.702 ServerApp] Saving file at /src/model/blocks.py
-[I 2023-04-20 16:50:40.029 ServerApp] Saving file at /src/model/blocks.py
-[I 2023-04-20 16:51:02.484 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 16:51:02.485 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 16:51:04.639 ServerApp] Kernel restarted: 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 16:51:04.648 ServerApp] Starting buffering for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[I 2023-04-20 16:51:04.656 ServerApp] Restoring connection for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[W 2023-04-20 16:51:09.176 ServerApp] Nudge: attempt 10 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[W 2023-04-20 16:51:14.194 ServerApp] Nudge: attempt 20 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 88d166da-7ac9-4bae-b0b4-5bc0c7acc8fb
-[I 2023-04-20 16:53:03.563 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 16:53:03.707 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 16:55:06.540 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 16:55:06.549 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 16:57:02.616 ServerApp] Saving file at /src/model/blocks.py
-[I 2023-04-20 16:57:08.584 ServerApp] Kernel restarted: 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 16:57:08.588 ServerApp] Starting buffering for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[I 2023-04-20 16:57:08.596 ServerApp] Restoring connection for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[W 2023-04-20 16:57:13.115 ServerApp] Nudge: attempt 10 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[W 2023-04-20 16:57:18.136 ServerApp] Nudge: attempt 20 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 11b10d11-fa4a-4be4-b9be-c32ea5e7814a
-[I 2023-04-20 16:57:26.363 ServerApp] Kernel restarted: 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 16:57:26.379 ServerApp] Starting buffering for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[I 2023-04-20 16:57:26.389 ServerApp] Restoring connection for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[W 2023-04-20 16:57:30.908 ServerApp] Nudge: attempt 10 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 16:57:32.082 ServerApp] Saving file at /src/model/blocks.py
-[W 2023-04-20 16:57:35.927 ServerApp] Nudge: attempt 20 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 36b2d8aa-c8d1-4b95-83ca-c5ddc967576d
-[I 2023-04-20 16:58:32.604 ServerApp] Saving file at /src/model/blocks.py
-[I 2023-04-20 16:58:35.400 ServerApp] Kernel restarted: 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 16:58:35.411 ServerApp] Starting buffering for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[I 2023-04-20 16:58:35.420 ServerApp] Restoring connection for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[W 2023-04-20 16:58:39.940 ServerApp] Nudge: attempt 10 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[W 2023-04-20 16:58:44.958 ServerApp] Nudge: attempt 20 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: cb5eb2ff-d15a-422a-b4a4-e59378f5ad61
-[I 2023-04-20 16:58:52.461 ServerApp] Saving file at /src/model/blocks.py
-[I 2023-04-20 16:58:57.066 ServerApp] Kernel restarted: 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 16:58:57.073 ServerApp] Starting buffering for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[I 2023-04-20 16:58:57.086 ServerApp] Restoring connection for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[W 2023-04-20 16:59:01.608 ServerApp] Nudge: attempt 10 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[W 2023-04-20 16:59:06.627 ServerApp] Nudge: attempt 20 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 16:59:06.681 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 16:59:06.683 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[W 2023-04-20 16:59:11.646 ServerApp] Nudge: attempt 30 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[W 2023-04-20 16:59:16.666 ServerApp] Nudge: attempt 40 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 33e41fda-13b6-4a33-9fde-2fc776c3369f
-[I 2023-04-20 17:01:06.874 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 17:01:06.877 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 17:02:52.556 ServerApp] Saving file at /src/model/blocks.py
-[I 2023-04-20 17:05:35.247 ServerApp] Saving file at /src/model/blocks.py
-[I 2023-04-20 17:05:43.983 ServerApp] Kernel restarted: 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 17:05:43.988 ServerApp] Starting buffering for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[I 2023-04-20 17:05:43.995 ServerApp] Restoring connection for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[W 2023-04-20 17:05:48.513 ServerApp] Nudge: attempt 10 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[W 2023-04-20 17:05:53.532 ServerApp] Nudge: attempt 20 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[W 2023-04-20 17:05:58.550 ServerApp] Nudge: attempt 30 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 5dcaf86d-9669-4bcd-bd86-a22a54af69af
-[I 2023-04-20 17:07:07.457 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 17:07:07.461 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 17:08:35.715 ServerApp] Saving file at /src/model/blocks.py
-[I 2023-04-20 17:09:13.165 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 17:09:13.168 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 17:09:35.374 ServerApp] Kernel restarted: 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 17:09:35.384 ServerApp] Starting buffering for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[I 2023-04-20 17:09:35.394 ServerApp] Restoring connection for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[W 2023-04-20 17:09:39.912 ServerApp] Nudge: attempt 10 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[W 2023-04-20 17:09:44.930 ServerApp] Nudge: attempt 20 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[W 2023-04-20 17:09:50.409 ServerApp] Nudge: attempt 30 on kernel 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 08f9da99-5843-44c3-8da6-41c09128d21c
-Thu Apr 20 17:10:46 2023       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  NVIDIA A40          On   | 00000000:3B:00.0 Off |                    0 |
-|  0%   42C    P0    79W / 300W |  16707MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   1  NVIDIA A40          On   | 00000000:5E:00.0 Off |                    0 |
-|  0%   35C    P8    32W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   2  NVIDIA A40          On   | 00000000:B1:00.0 Off |                    0 |
-|  0%   34C    P8    29W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   3  NVIDIA RTX A4500    On   | 00000000:D9:00.0 Off |                  Off |
-| 30%   33C    P8    17W / 200W |      1MiB / 20470MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|    0   N/A  N/A   1867109      C   ...da/envs/my_env/bin/python    16705MiB |
-+-----------------------------------------------------------------------------+
-[I 2023-04-20 17:11:11.522 ServerApp] Kernel restarted: 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6
-[I 2023-04-20 17:11:11.530 ServerApp] Starting buffering for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[I 2023-04-20 17:11:11.538 ServerApp] Restoring connection for 2790f075-f1c8-4f93-bbe9-3ed6dc8908a6:a73f3963-d20a-4d23-9575-d0d2be13158d
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: d8a7b960-b838-471c-951b-680cab53e469
-[I 2023-04-20 17:11:15.789 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 17:11:15.790 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 17:12:46.125 ServerApp] Saving file at /notebooks/Untitled.ipynb
-[I 2023-04-20 17:12:46.539 ServerApp] Saving file at /notebooks/test_main.ipynb
-[I 2023-04-20 17:12:46.652 ServerApp] Saving file at /src/training/train.py
-[I 2023-04-20 17:12:46.711 ServerApp] Saving file at /notebooks/building_vit.ipynb
-[W 2023-04-20 17:12:46.713 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
-[I 2023-04-20 17:12:46.771 ServerApp] Saving file at /scripts/run_main.sbatch
-[I 2023-04-20 17:12:46.968 ServerApp] Saving file at /notebooks/test_data_loading.ipynb
-[W 2023-04-20 17:12:46.969 ServerApp] Notebook notebooks/test_data_loading.ipynb is not trusted
-[I 2023-04-20 17:12:47.044 ServerApp] Saving file at /src/data/data_loaders.py
-[I 2023-04-20 17:12:47.575 ServerApp] Saving file at /notebooks/test_training.ipynb
-[I 2023-04-20 17:12:49.827 ServerApp] Saving file at /src/data/transforms.py
-[I 2023-04-20 17:12:50.008 ServerApp] Saving file at /src/main.py
-[I 2023-04-20 17:12:50.683 ServerApp] Saving file at /src/model/blocks.py
+        http://ctit093.ewi.utwente.nl:8809/lab?token=792304e84187d0ab9c79879db57deb947b4bb19ffc572980
+     or http://127.0.0.1:8809/lab?token=792304e84187d0ab9c79879db57deb947b4bb19ffc572980
+slurmstepd-ctit093: error: *** JOB 206618 ON ctit093 CANCELLED AT 2023-04-21T12:52:49 ***
+[C 2023-04-21 12:52:49.554 ServerApp] received signal 15, stopping
+[I 2023-04-21 12:52:49.556 ServerApp] Shutting down 2 extensions
