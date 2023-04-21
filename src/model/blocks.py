@@ -44,14 +44,10 @@ class ViTDeEmbedder(nn.Module):
 
     def __init__(self, patch_size, embed_dim, out_channels):
         super().__init__()
-        self.convs = nn.Sequential(
-            nn.Conv3d(kernel_size=3, stride=1, padding="same", in_channels=embed_dim, out_channels=out_channels),
-            nn.ConvTranspose3d(kernel_size=patch_size, stride=patch_size, in_channels=out_channels,
-                               out_channels=out_channels)
-        )
+        self.conv = nn.ConvTranspose3d(kernel_size=patch_size, stride=patch_size, in_channels=embed_dim, out_channels=out_channels)
 
     def forward(self, x):
-        return self.convs(x)
+        return self.conv(x)
 
 # class ViTDeEmbedder(nn.Module):
 #
