@@ -51,8 +51,6 @@ class ViT(nn.Module):
         super().__init__()
 
         self.patch_size = patch_size
-        
-
 
         self.embedders = nn.ModuleList([
             ViTEmbedder(patch_size=patch_size, in_channels=channels, embed_dim=embed_dim) for _ in range(levels)
@@ -82,12 +80,11 @@ class ViT(nn.Module):
 
         xs = [einops.rearrange(em(x), "b em x y z -> b (x y z) em") for x, em in zip(xs, self.embedders)]
         token_counts = [x.shape[1] for x in xs]
-        
+
         torch.cuda.synchronize()
         end_time = time.time()
         time_elapsed = end_time - start_time
         print(f'Embed: {time_elapsed:.6f} seconds')
-
 
         # TODO: positional encoding
 
@@ -96,25 +93,21 @@ class ViT(nn.Module):
 
         xs = self.encoder(torch.cat(xs, dim=1))
         xs = torch.split(xs, token_counts, dim=1)
-        
+
         torch.cuda.synchronize()
         end_time = time.time()
         time_elapsed = end_time - start_time
         print(f'ViT: {time_elapsed:.6f} seconds')
-
-
 
         # De-Embed
         start_time = time.time()
 
         xs = [einops.rearrange(x, "b (x y z) em -> b em x y z", x=s, y=s, z=s) for x, s in zip(xs, shapes)]
         xs = [dem(x) for x, dem in zip(xs, self.de_embedders)]
-        
+
         torch.cuda.synchronize()
         end_time = time.time()
         time_elapsed = end_time - start_time
         print(f'De-Embed: {time_elapsed:.6f} seconds')
-
-
 
         return xs
