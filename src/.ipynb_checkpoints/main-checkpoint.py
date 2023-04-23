@@ -11,8 +11,15 @@ from src.model.my_model import MyModel
 
 def main():
     # Model to be trained. Baseline options are Unet, SWINUNETR
-    # model = SWINUNETR.to(DEVICE)
-    model = MyModel(in_channels=1, patch_size=PATCH_SIZE, out_channels=3, skip_transformer=False, channels=(32, 32, 32, 32, 32),transformer_channels=8, embed_dim=256).to(DEVICE)
+
+    model = MyModel(in_channels=1,
+                    out_channels=3,
+                    embed_dim=256,
+                    skip_transformer=False,
+                    channels=(4, 16, 32, 32, 32, 32),
+                    transformer_channels=(2, 8, 16, 16, 16, 16),
+                    patch_size=8
+                    ).to(DEVICE)
 
     optimizer = torch.optim.Adam(params=model.parameters(), lr=LEARNING_RATES[0])
 

@@ -2,7 +2,7 @@ from monai.networks.blocks.mlp import MLPBlock
 from einops.layers.torch import Rearrange
 import torch.nn as nn
 import torch
-from constants import *
+from src.constants import *
 
 
 class DoubleConv(nn.Module):

@@ -73,7 +73,7 @@ class ViT(nn.Module):
 
     # xs: one x per level of the encoder. They should all halve in every size. Channel counts don't matter.
     def forward(self, xs):
-        shapes = [int(x.shape[-1] / self.patch_size) for x in xs]
+        shapes = [(int(x.shape[-3] / self.patch_size), int(x.shape[-2] / self.patch_size), int(x.shape[-1] / self.patch_size)) for x in xs]
 
         # Embed
         xs = [einops.rearrange(em(x), "b em x y z -> b (x y z) em") for x, em in zip(xs, self.embedders)]
@@ -88,7 +88,7 @@ class ViT(nn.Module):
 
 
         # De-Embed
-        xs = [einops.rearrange(x, "b (x y z) em -> b em x y z", x=s, y=s, z=s) for x, s in zip(xs, shapes)]
+        xs = [einops.rearrange(x, "b (x y z) em -> b em x y z", x=s[0], y=s[1], z=s[2]) for x, s in zip(xs, shapes)]
         xs = [dem(x) for x, dem in zip(xs, self.de_embedders)]
 
 

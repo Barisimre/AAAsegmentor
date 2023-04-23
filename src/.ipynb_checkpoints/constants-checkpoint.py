@@ -4,7 +4,7 @@ import torch
 
 # Constants
 
-RUN_NAME = "MyAttempt_torch2_patch8"
+RUN_NAME = "MyAttempt_256_torch2_patch8"
 
 
 # Paths
@@ -15,18 +15,18 @@ MODEL_SAVE_PATH = f"{GENERAL_PATH}/models"
 RESULTS_SAVE_PATH = f"{GENERAL_PATH}/results"
 
 # Sizes and transformations
-CROP_SIZE = (128, 128, 128)
+CROP_SIZE = (256, 256, 256)
 PATCH_SIZE = 8
 SPACINGS = (1.2, 1.2, 0.9)
-CT_WINDOW_MIN = -100
-CT_WINDOW_MAX = 200
+CT_WINDOW_MIN = -300
+CT_WINDOW_MAX = 500
 
 
 # Training hyper-parameters
 DEVICE = "cuda"
-LEARNING_RATES = {0: 1e-3, 25: 6e-4, 75: 3e-4, 300: 1e-4, 500: 5e-5}
-NUM_EPOCHS = 1000
-BATCH_SIZE = 4
+LEARNING_RATES = {0: 1e-3, 25: 6e-4, 75: 3e-4, 800: 1e-4, 1250: 5e-5}
+NUM_EPOCHS = 1500
+BATCH_SIZE = 2
 LOSS = monai.losses.DiceCELoss(lambda_ce=0.1)
 
 
