@@ -1,0 +1,368 @@
+{
+    "os": "Linux-5.4.0-137-generic-x86_64-with-glibc2.31",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-04-22T14:51:37.645012",
+    "startedAt": "2023-04-22T14:51:32.817918",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "notebooks/building_vit.ipynb",
+    "root": "/home/s1797743/thesis/final/AAAsegmentor",
+    "git": {
+        "remote": "https://github.com/Barisimre/AAAsegmentor.git",
+        "commit": "8732457c9e2148a20e02b114d903e5e7a87732c4"
+    },
+    "email": null,
+    "host": "ctit094",
+    "username": "s1797743",
+    "executable": "/home/s1797743/.conda/envs/final/bin/python3.10",
+    "cpu_count": 32,
+    "cpu_count_logical": 64,
+    "cpu_freq": {
+        "current": 801.437546875,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 959.377,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.562,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.179,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.211,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.811,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.22,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.366,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.772,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.768,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.856,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.397,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.792,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 901.908,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.209,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.786,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.207,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.155,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.804,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.807,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.406,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.388,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.793,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.776,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.798,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.206,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.8,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.793,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.794,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.178,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.391,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1394.572,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.329,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.396,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.81,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.781,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.81,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.763,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.792,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.772,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.248,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.217,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.826,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.823,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.819,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.395,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.291,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.404,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.235,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.267,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.814,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.156,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.801,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.801,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.772,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.651,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.271,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.803,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.792,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.584,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.766,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.159,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 97.87200164794922,
+        "used": 13.783222198486328
+    },
+    "gpu": "NVIDIA A40",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A40",
+            "memory_total": 48305799168
+        },
+        {
+            "name": "NVIDIA A40",
+            "memory_total": 48305799168
+        }
+    ],
+    "memory": {
+        "total": 251.3637237548828
+    }
+}

@@ -1,28 +1,319 @@
 	Adding anaconda3 2022.05 to your environment
-	Adding nVidia Cuda Toolkit 11.5
-[W 2023-04-21 12:52:21.752 ServerApp] The module 'notebook_shim' could not be found (No module named 'notebook_shim'). Are you sure the extension is installed?
-[I 2023-04-21 12:52:21.765 ServerApp] jupyterlab | extension was successfully linked.
-[W 2023-04-21 12:52:21.769 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-04-21 12:52:21.769 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-04-21 12:52:21.769 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[I 2023-04-21 12:52:23.722 ServerApp] nbclassic | extension was successfully linked.
-[I 2023-04-21 12:52:23.935 ServerApp] nbclassic | extension was successfully loaded.
-[I 2023-04-21 12:52:23.936 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/jupyterlab
-[I 2023-04-21 12:52:23.936 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/my_env/share/jupyter/lab
-[I 2023-04-21 12:52:23.955 ServerApp] jupyterlab | extension was successfully loaded.
-[I 2023-04-21 12:52:23.955 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
-[I 2023-04-21 12:52:23.956 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
-[I 2023-04-21 12:52:23.956 ServerApp] Jupyter Server 1.18.1 is running at:
-[I 2023-04-21 12:52:23.956 ServerApp] http://ctit093.ewi.utwente.nl:8809/lab?token=792304e84187d0ab9c79879db57deb947b4bb19ffc572980
-[I 2023-04-21 12:52:23.956 ServerApp]  or http://127.0.0.1:8809/lab?token=792304e84187d0ab9c79879db57deb947b4bb19ffc572980
-[I 2023-04-21 12:52:23.956 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 2023-04-21 12:52:24.012 ServerApp] 
+	Adding nVidia Cuda Toolkit 11.7
+[I 2023-04-22 20:40:51.555 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-04-22 20:40:51.557 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-22 20:40:51.557 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-22 20:40:51.557 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-04-22 20:40:51.559 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-04-22 20:40:51.859 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-04-22 20:40:51.882 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-04-22 20:40:51.882 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/final/lib/python3.10/site-packages/jupyterlab
+[I 2023-04-22 20:40:51.882 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/final/share/jupyter/lab
+[I 2023-04-22 20:40:51.885 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-04-22 20:40:51.890 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-04-22 20:40:51.890 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
+[I 2023-04-22 20:40:51.890 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
+[I 2023-04-22 20:40:51.890 ServerApp] Jupyter Server 1.23.6 is running at:
+[I 2023-04-22 20:40:51.890 ServerApp] http://ctit094.ewi.utwente.nl:8800/lab?token=5bd1d35ac94f5080423f6cde7a661a3ef92dfe76332db354
+[I 2023-04-22 20:40:51.890 ServerApp]  or http://127.0.0.1:8800/lab?token=5bd1d35ac94f5080423f6cde7a661a3ef92dfe76332db354
+[I 2023-04-22 20:40:51.890 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-04-22 20:40:51.894 ServerApp] 
     
     To access the server, open this file in a browser:
-        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-2004966-open.html
+        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-55924-open.html
     Or copy and paste one of these URLs:
-        http://ctit093.ewi.utwente.nl:8809/lab?token=792304e84187d0ab9c79879db57deb947b4bb19ffc572980
-     or http://127.0.0.1:8809/lab?token=792304e84187d0ab9c79879db57deb947b4bb19ffc572980
-slurmstepd-ctit093: error: *** JOB 206618 ON ctit093 CANCELLED AT 2023-04-21T12:52:49 ***
-[C 2023-04-21 12:52:49.554 ServerApp] received signal 15, stopping
-[I 2023-04-21 12:52:49.556 ServerApp] Shutting down 2 extensions
+        http://ctit094.ewi.utwente.nl:8800/lab?token=5bd1d35ac94f5080423f6cde7a661a3ef92dfe76332db354
+     or http://127.0.0.1:8800/lab?token=5bd1d35ac94f5080423f6cde7a661a3ef92dfe76332db354
+[W 2023-04-22 20:41:06.200 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-04-22 20:41:07.218 ServerApp] Notebook notebooks/test_data_loading.ipynb is not trusted
+[I 2023-04-22 20:41:07.926 ServerApp] Kernel started: 84ccd8df-5d82-4122-8542-1f6edb47627d
+[I 2023-04-22 20:41:07.927 ServerApp] Culling kernels with idle durations > 3600 seconds at 300 second intervals ...
+[I 2023-04-22 20:41:07.928 ServerApp] Kernel started: c304b8d0-74ad-47bf-abd5-fb9ee2d6ef77
+[I 2023-04-22 20:41:07.929 ServerApp] Kernel started: 037b8e60-c945-4d8b-ab67-08812cd01d85
+[I 2023-04-22 20:41:07.934 ServerApp] Kernel started: 6fd8a403-8646-425c-8646-099562148edd
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: a8e442ec-bba7-40a9-aa3a-a2ea35326a1f
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 9e17ab78-d7f9-470d-b8fa-238fcdbec9b6
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 8a5b176f-803e-40b5-8ac6-f43e2dba70af
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: b47b290d-278e-45e7-a0a3-26425d9c425b
+Sat Apr 22 20:42:04 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
+|  0%   39C    P0    77W / 300W |    661MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
+|  0%   65C    P0   180W / 300W |  19199MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A     55934      C   ...envs/final/bin/python3.10      659MiB |
+|    1   N/A  N/A     40086      C   python3                         19197MiB |
++-----------------------------------------------------------------------------+
+Sat Apr 22 20:42:16 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
+|  0%   40C    P0    78W / 300W |    661MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
+|  0%   71C    P0   177W / 300W |  19199MiB / 46068MiB |    100%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A     55934      C   ...envs/final/bin/python3.10      659MiB |
+|    1   N/A  N/A     40086      C   python3                         19197MiB |
++-----------------------------------------------------------------------------+
+Sat Apr 22 20:42:51 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
+|  0%   41C    P0   126W / 300W |  31481MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
+|  0%   69C    P0   202W / 300W |  19199MiB / 46068MiB |     85%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A     55934      C   ...envs/final/bin/python3.10    31479MiB |
+|    1   N/A  N/A     40086      C   python3                         19197MiB |
++-----------------------------------------------------------------------------+
+[I 2023-04-22 20:43:07.305 ServerApp] Saving file at /notebooks/test_data_loading.ipynb
+[W 2023-04-22 20:43:07.306 ServerApp] Notebook notebooks/test_data_loading.ipynb is not trusted
+[I 2023-04-22 20:43:07.361 ServerApp] Saving file at /notebooks/test_main.ipynb
+[I 2023-04-22 20:43:07.632 ServerApp] Saving file at /notebooks/building_vit.ipynb
+[I 2023-04-22 20:43:07.791 ServerApp] Saving file at /notebooks/Untitled.ipynb
+[I 2023-04-22 20:44:15.486 ServerApp] Saving file at /src/model/vit.py
+[I 2023-04-22 20:44:38.596 ServerApp] Saving file at /src/model/vit.py
+[I 2023-04-22 20:45:07.819 ServerApp] Saving file at /src/constants.py
+[I 2023-04-22 20:45:09.317 ServerApp] Saving file at /src/constants.py
+[I 2023-04-22 20:47:09.349 ServerApp] Saving file at /src/constants.py
+[W 2023-04-22 20:57:34.859 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2023-04-22 20:57:45.778 ServerApp] Saving file at /notebooks/building_vit.ipynb
+[W 2023-04-22 20:57:45.780 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 12cc7a7f-b529-4c24-8c89-89ec9cfdfd7d
+[I 2023-04-22 20:59:06.166 ServerApp] Kernel restarted: 84ccd8df-5d82-4122-8542-1f6edb47627d
+[I 2023-04-22 20:59:07.729 ServerApp] Saving file at /notebooks/building_vit.ipynb
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 673a25ef-9544-4b9f-ae8e-e3e65c4d9059
+[I 2023-04-22 20:59:45.855 ServerApp] Saving file at /notebooks/building_vit.ipynb
+[W 2023-04-22 20:59:45.856 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
+[I 2023-04-22 20:59:56.415 ServerApp] Kernel restarted: 84ccd8df-5d82-4122-8542-1f6edb47627d
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: fcdb662f-bed3-41e5-aad6-5d2b48e14518
+[I 2023-04-22 21:00:50.619 ServerApp] Saving file at /src/model/vit.py
+[I 2023-04-22 21:01:07.817 ServerApp] Saving file at /notebooks/building_vit.ipynb
+[I 2023-04-22 21:04:19.700 ServerApp] Kernel restarted: 84ccd8df-5d82-4122-8542-1f6edb47627d
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 5d018ae4-a1ac-4c75-99c7-b664fb370d6a
+[I 2023-04-22 21:05:07.912 ServerApp] Saving file at /notebooks/building_vit.ipynb
+[I 2023-04-22 21:07:18.039 ServerApp] Kernel restarted: 84ccd8df-5d82-4122-8542-1f6edb47627d
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 45a5ba26-feef-4777-aed3-3e70ef6d1401
+Sat Apr 22 21:07:43 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
+|  0%   36C    P0    76W / 300W |  44237MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
+|  0%   67C    P0    99W / 300W |  19199MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A     58455      C   ...envs/final/bin/python3.10    44235MiB |
+|    1   N/A  N/A     40086      C   python3                         19197MiB |
++-----------------------------------------------------------------------------+
+[I 2023-04-22 21:07:46.699 ServerApp] Saving file at /notebooks/building_vit.ipynb
+[W 2023-04-22 21:07:46.700 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
+[I 2023-04-22 21:08:00.798 ServerApp] Kernel interrupted: 84ccd8df-5d82-4122-8542-1f6edb47627d
+[I 2023-04-22 21:08:04.426 ServerApp] Kernel restarted: 84ccd8df-5d82-4122-8542-1f6edb47627d
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: f1018b09-83f9-4fe8-a44b-4a2929a79815
+Sat Apr 22 21:08:14 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
+|  0%   44C    P0   158W / 300W |  44237MiB / 46068MiB |     10%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
+|  0%   73C    P0   218W / 300W |  19199MiB / 46068MiB |     73%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A     58504      C   ...envs/final/bin/python3.10    44235MiB |
+|    1   N/A  N/A     40086      C   python3                         19197MiB |
++-----------------------------------------------------------------------------+
+[I 2023-04-22 21:08:56.685 ServerApp] Kernel restarted: 84ccd8df-5d82-4122-8542-1f6edb47627d
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 3c7d720d-8d6c-45b3-8135-b27ce5657d21
+Sat Apr 22 21:08:59 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
+|  0%   39C    P0    72W / 300W |      0MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
+|  0%   62C    P0    92W / 300W |  19199MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    1   N/A  N/A     40086      C   python3                         19197MiB |
++-----------------------------------------------------------------------------+
+[I 2023-04-22 21:09:08.011 ServerApp] Saving file at /notebooks/building_vit.ipynb
+Sat Apr 22 21:09:34 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
+|  0%   38C    P0    76W / 300W |    937MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
+|  0%   65C    P0    96W / 300W |  19199MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A     58539      C   ...envs/final/bin/python3.10      935MiB |
+|    1   N/A  N/A     40086      C   python3                         19197MiB |
++-----------------------------------------------------------------------------+
+[I 2023-04-22 21:09:46.850 ServerApp] Saving file at /notebooks/building_vit.ipynb
+[W 2023-04-22 21:09:46.852 ServerApp] Notebook notebooks/building_vit.ipynb is not trusted
+Sat Apr 22 21:09:58 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
+|  0%   39C    P0    77W / 300W |   1485MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
+|  0%   68C    P0   185W / 300W |  19199MiB / 46068MiB |     74%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A     58539      C   ...envs/final/bin/python3.10     1483MiB |
+|    1   N/A  N/A     40086      C   python3                         19197MiB |
++-----------------------------------------------------------------------------+
+Sat Apr 22 21:10:05 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A40          On   | 00000000:65:00.0 Off |                    0 |
+|  0%   41C    P0    78W / 300W |  44289MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40          On   | 00000000:CA:00.0 Off |                    0 |
+|  0%   65C    P0    96W / 300W |  19199MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A     58539      C   ...envs/final/bin/python3.10    44287MiB |
+|    1   N/A  N/A     40086      C   python3                         19197MiB |
++-----------------------------------------------------------------------------+
+[I 2023-04-22 21:10:29.919 ServerApp] Saving file at /src/model/my_model.py
+[I 2023-04-22 21:11:07.938 ServerApp] Saving file at /src/model/my_model.py
+[I 2023-04-22 21:11:08.074 ServerApp] Saving file at /notebooks/building_vit.ipynb
+slurmstepd-ctit094: error: *** JOB 206777 ON ctit094 CANCELLED AT 2023-04-22T23:40:55 DUE TO TIME LIMIT ***
+[C 2023-04-22 23:40:55.073 ServerApp] received signal 15, stopping
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.

@@ -42,6 +42,7 @@ class MyModel(nn.Module):
         # Vision Transformer
         self.vit = ViT(embed_dim=embed_dim, channels=transformer_channels, patch_size=patch_size, levels=levels)
 
+
     def forward(self, x):
         residual = self.residual_conv(x)
 
@@ -52,7 +53,7 @@ class MyModel(nn.Module):
 
         if not self.skip_transformer:
             t = self.transformer_channels
-            vit_outs = self.vit([residual[:, :t].clone(), x1[:, :t].clone(), x2[:, :t].clone(), x3[:, :t].clone()])
+            vit_outs = self.vit([residual[:, :t], x1[:, :t], x2[:, :t], x3[:, :t]])
             residual = torch.concat([vit_outs[0], residual[:, t:]], dim=1)
             x1 = torch.concat([vit_outs[1], x1[:, t:]], dim=1)
             x2 = torch.concat([vit_outs[2], x2[:, t:]], dim=1)

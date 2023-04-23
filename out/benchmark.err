@@ -1,0 +1,8 @@
+	Adding anaconda3 2022.05 to your environment
+	Adding nVidia Cuda Toolkit 11.7
+Traceback (most recent call last):
+  File "/local/206652/src/utils/benchmark.py", line 40, in <module>
+    main()
+  File "/local/206652/src/utils/benchmark.py", line 36, in main
+    raise Exception(sum(ts) / len(ts))
+Exception: 53905.84453125

@@ -28,7 +28,7 @@ def test_single_epoch(model, test_loader):
                                                           progress=False,
                                                           )
             out = torch.argmax(out, 1, keepdim=True)
-            out = largest_component(out)
+            out = largest_component(out).to(DEVICE)
             s = dice_scores(out, mask)
             scores.append(s)
 

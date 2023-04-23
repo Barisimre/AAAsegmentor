@@ -25,7 +25,7 @@ class MyModel(nn.Module):
         self.transformer_channels = transformer_channels
 
         # Conv block for the input to have some channels
-        self.residual_conv = DoubleConv(in_channels=in_channels, out_channels=channels[-1])
+        self.residual_conv = DoubleConv(in_channels=in_channels, out_channels=channels[0])
 
         # Unet encoder
         self.down1 = Down(in_channels, channels[1])
