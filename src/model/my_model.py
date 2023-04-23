@@ -13,7 +13,6 @@ class MyModel(nn.Module):
                  channels=(4, 8, 16, 16, 16, 16),
                  patch_size=16,
                  embed_dim=128,
-                 levels=4,
                  transformer_channels=(2, 4, 8, 8, 8, 8),
                  skip_transformer=False):
         super(MyModel, self).__init__()
@@ -26,14 +25,14 @@ class MyModel(nn.Module):
 
         # First and last blocks, do  not change shape
         self.initial_conv = DoubleConv(in_channels=in_channels, out_channels=channels[0])
-        self.end_conv = Up(in_channels=channels[1], out_channels=out_channels)
+        self.end_conv = Up(in_channels_x1=channels[1], in_channels_x2=channels[0], out_channels=out_channels)
 
         self.encoder = nn.ModuleList([
             Down(channels[i], channels[i + 1]) for i in range(len(channels) - 1)
         ])
 
         self.decoder = nn.ModuleList([
-            Up(channels[i], channels[i - 1]) for i in range(len(channels))[::-1]
+            Up(channels[i], channels[i - 1], channels[i - 1]) for i in range(len(channels))[::-1][:-1]
         ])
 
         # Vision Transformer
@@ -65,6 +64,8 @@ class MyModel(nn.Module):
         for i in range(len(xs) - 1):
             x = self.decoder[i](xs[i], xs[i + 1])
 
+        print(x.shape)
+        print(residual.shape)
         x = self.end_conv(x, residual)
 
         return x

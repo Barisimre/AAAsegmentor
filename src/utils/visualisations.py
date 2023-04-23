@@ -1,13 +1,16 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import wandb
+from src.utils.save import save_numpy_to_nifti
 
 
-def visualize_sample_to_wandb(image, label, prediction, scores):
+def visualize_sample_to_wandb(image, label, prediction, scores, result_path):
 
     image = image.cpu().numpy()
     label = label.cpu().numpy()
     prediction = prediction.cpu().numpy()
+
+    # TODO Save the images to results
 
     # Force a 2D example where at least one class is present
     while True:

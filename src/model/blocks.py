@@ -50,20 +50,6 @@ class ViTDeEmbedder(nn.Module):
     def forward(self, x):
         return self.conv(x)
 
-# class ViTDeEmbedder(nn.Module):
-#
-#     def __init__(self, patch_size, embed_dim, out_channels):
-#         super().__init__()
-#         self.convs = nn.Sequential(
-#             nn.Conv3d(kernel_size=3, stride=1, padding=1, in_channels=embed_dim, out_channels=out_channels * 2),
-#             nn.ReLU(),
-#             nn.Conv3d(kernel_size=3, stride=1, padding=1, in_channels=out_channels * 2, out_channels=out_channels),
-#             nn.Upsample(scale_factor=patch_size, mode='trilinear', align_corners=False)
-#         )
-#
-#     def forward(self, x):
-#         return self.convs(x)
-
 
 class Down(nn.Module):
 
@@ -79,24 +65,19 @@ class Down(nn.Module):
         return self.maxpool_conv(x)
 
 
-# TODO: onl;y concat and then channel
+# X1 gets upscaled
 class Up(nn.Module):
 
-    def __init__(self, in_channels, out_channels):
+    def __init__(self, in_channels_x1, in_channels_x2, out_channels):
         super().__init__()
 
-        self.up = nn.ConvTranspose3d(in_channels, in_channels, kernel_size=2, stride=2)
-        self.conv = None
-        self.out_channels = out_channels
+        self.up = nn.ConvTranspose3d(in_channels_x1, in_channels_x1 // 2, kernel_size=2, stride=2)
+        self.conv = DoubleConv(in_channels=(in_channels_x1 // 2) + in_channels_x2, out_channels=out_channels)
 
     def forward(self, x1, x2):
         x1 = self.up(x1)
 
         x = torch.concat([x1, x2], dim=1)
-
-        if self.conv is None:
-            self.conv = DoubleConv(x.shape[1], self.out_channels).to(DEVICE)
-
         return self.conv(x)
 
 

@@ -7,6 +7,8 @@ from tqdm import tqdm
 from src.model.baselines import *
 from src.training.lr_schedule import set_learning_rate
 from src.model.my_model import MyModel
+import os
+import time
 
 
 def main():
@@ -30,6 +32,8 @@ def main():
     )
 
     train_loader, test_loader = get_loaders()
+    save_path = f"{RESULTS_SAVE_PATH}/{RUN_NAME}_{time.time()}"
+    # os.mkdir(path=save_path)
 
     for e in tqdm(range(NUM_EPOCHS)):
 
@@ -37,8 +41,8 @@ def main():
 
         train_single_epoch(model=model, optimizer=optimizer, train_loader=train_loader)
 
-        if e % 25 == 0:
-            test_loss = test_single_epoch(model=model, test_loader=test_loader)
+        if e % 25 == 24:
+            test_loss = test_single_epoch(model=model, test_loader=test_loader, result_path=save_path)
 
             #  If test loss is the best, save the model
             if test_loss <= best_test_loss:

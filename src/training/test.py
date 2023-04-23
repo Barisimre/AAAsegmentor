@@ -5,11 +5,11 @@ import wandb
 from src.utils.visualisations import visualize_sample_to_wandb
 
 
-def test_single_epoch(model, test_loader):
+def test_single_epoch(model, test_loader, result_path):
     model.eval()
     scores = []
 
-    largest_component = monai.transforms.KeepLargestConnectedComponent()
+    # largest_component = monai.transforms.KeepLargestConnectedComponent()
 
     visualised = False
 
@@ -27,14 +27,14 @@ def test_single_epoch(model, test_loader):
                                                           device="cpu",
                                                           progress=False,
                                                           )
-            out = torch.argmax(out, 1, keepdim=True)
-            out = largest_component(out).to(DEVICE)
+            out = torch.argmax(out, 1, keepdim=True).to(DEVICE)
+            # out = largest_component(out)
             s = dice_scores(out, mask)
             scores.append(s)
 
             # Send one sample to wandb
             if not visualised:
-                visualize_sample_to_wandb(img, mask, out, s)
+                visualize_sample_to_wandb(img, mask, out, s, result_path)
                 visualised = True
 
         scores = np.array(scores)
