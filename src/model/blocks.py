@@ -2,6 +2,7 @@ from monai.networks.blocks.mlp import MLPBlock
 from einops.layers.torch import Rearrange
 import torch.nn as nn
 import torch
+from constants import *
 
 
 class DoubleConv(nn.Module):
@@ -78,18 +79,23 @@ class Down(nn.Module):
         return self.maxpool_conv(x)
 
 
+# TODO: onl;y concat and then channel
 class Up(nn.Module):
 
     def __init__(self, in_channels, out_channels):
         super().__init__()
 
         self.up = nn.ConvTranspose3d(in_channels, in_channels, kernel_size=2, stride=2)
-        self.conv = DoubleConv(in_channels, out_channels)
+        self.conv = None
+        self.out_channels = out_channels
 
     def forward(self, x1, x2):
         x1 = self.up(x1)
 
-        x = x1 + x2
+        x = torch.concat([x1, x2], dim=1)
+
+        if self.conv is None:
+            self.conv = DoubleConv(x.shape[1], self.out_channels).to(DEVICE)
 
         return self.conv(x)
 

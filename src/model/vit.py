@@ -48,17 +48,17 @@ class DefaultViT(nn.Module):
 
 class ViT(nn.Module):
 
-    def __init__(self, embed_dim, patch_size, channels=8, levels=3):
+    def __init__(self, embed_dim, patch_size, channels, levels=3):
         super().__init__()
 
         self.patch_size = patch_size
 
         self.embedders = nn.ModuleList([
-            ViTEmbedder(patch_size=patch_size, in_channels=channels, embed_dim=embed_dim) for _ in range(levels)
+            ViTEmbedder(patch_size=patch_size, in_channels=channels[i], embed_dim=embed_dim) for i in range(levels)
         ])
 
         self.de_embedders = nn.ModuleList([
-            ViTDeEmbedder(patch_size=patch_size, out_channels=channels, embed_dim=embed_dim) for _ in range(levels)
+            ViTDeEmbedder(patch_size=patch_size, out_channels=channels[i], embed_dim=embed_dim) for i in range(levels)
         ])
 
         # self.vit = DefaultViT(hidden_size=embed_dim, mlp_dim=embed_dim * 2)
