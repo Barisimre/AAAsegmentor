@@ -6,7 +6,6 @@ from monai.networks import one_hot
 def train_single_epoch(model, optimizer, train_loader):
     losses = []
 
-    # TODO: make this dataloading fast, this seems to be the bottleneck
     for d in train_loader:
 
         img = d['img'].to(DEVICE)
