@@ -9,7 +9,7 @@ def test_single_epoch(model, test_loader, result_path):
     model.eval()
     scores = []
 
-    # largest_component = monai.transforms.KeepLargestConnectedComponent()
+    largest_component = monai.transforms.KeepLargestConnectedComponent()
 
     visualised = False
 
@@ -27,13 +27,9 @@ def test_single_epoch(model, test_loader, result_path):
                                                           device="cpu",
                                                           progress=False,
                                                           )
-<<<<<<< HEAD
-            out = torch.argmax(out, 1, keepdim=True).to(DEVICE)
-            # out = largest_component(out)
-=======
+
             out = torch.argmax(out, 1, keepdim=True)
-            out = largest_component(out)
->>>>>>> parent of d8f4d45... One day of cluster work, torch2.0
+            out = largest_component(out).to(DEVICE)
             s = dice_scores(out, mask)
             scores.append(s)
 
