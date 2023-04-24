@@ -50,7 +50,9 @@ test_transform = monai.transforms.Compose(
         monai.transforms.SqueezeDimd(keys=['img', 'mask'], dim=0),
         monai.transforms.AsChannelFirstd(keys=['img', 'mask']),
         monai.transforms.AddChanneld(keys=['img', 'mask']),
-        monai.transforms.ScaleIntensityRanged(keys=["img"], a_min=CT_WINDOW_MIN, a_max=CT_WINDOW_MAX, b_min=0, b_max=1, clip=True),    ]
+        monai.transforms.ScaleIntensityRanged(keys=["img"], a_min=CT_WINDOW_MIN, a_max=CT_WINDOW_MAX, b_min=0, b_max=1, clip=True),
+
+    ]
 )
 
 
