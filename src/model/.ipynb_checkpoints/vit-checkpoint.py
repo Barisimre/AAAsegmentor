@@ -3,7 +3,6 @@ import torch.nn as nn
 from src.model.blocks import TransformerBlock, ViTEmbedder, ViTDeEmbedder
 import torch
 import time
-from src.constants import *
 
 
 # TODO: add positional encoding
@@ -52,6 +51,8 @@ class ViT(nn.Module):
         super().__init__()
 
         self.patch_size = patch_size
+        
+
 
         self.embedders = nn.ModuleList([
             ViTEmbedder(patch_size=patch_size, in_channels=channels[i], embed_dim=embed_dim) for i in range(levels)
@@ -63,33 +64,61 @@ class ViT(nn.Module):
 
         # self.vit = DefaultViT(hidden_size=embed_dim, mlp_dim=embed_dim * 2)
 
-        encoder_layer = torch.nn.TransformerEncoderLayer(d_model=embed_dim, nhead=NUM_HEADS, dim_feedforward=embed_dim * HIDDEN_FACTOR,
+        encoder_layer = torch.nn.TransformerEncoderLayer(d_model=embed_dim, nhead=8, dim_feedforward=embed_dim * 2,
                                                          dropout=0.1,
                                                          activation="gelu", layer_norm_eps=1e-5, batch_first=False,
                                                          norm_first=False)
 
         encoder_norm = torch.nn.LayerNorm(embed_dim, eps=1e-5)
-        self.encoder = torch.nn.TransformerEncoder(encoder_layer, num_layers=NUM_LAYERS, norm=encoder_norm)
+        self.encoder = torch.nn.TransformerEncoder(encoder_layer, num_layers=6, norm=encoder_norm)
 
     # xs: one x per level of the encoder. They should all halve in every size. Channel counts don't matter.
     def forward(self, xs):
         shapes = [(int(x.shape[-3] / self.patch_size), int(x.shape[-2] / self.patch_size), int(x.shape[-1] / self.patch_size)) for x in xs]
 
         # Embed
+        torch.cuda.synchronize()
+        start_time = time.time()
+
         xs = [einops.rearrange(em(x), "b em x y z -> b (x y z) em") for x, em in zip(xs, self.embedders)]
         token_counts = [x.shape[1] for x in xs]
+        
+        torch.cuda.synchronize()
+        end_time = time.time()
+        time_elapsed = end_time - start_time
+        print(f'Embed: {time_elapsed:.6f} seconds')
 
 
         # TODO: positional encoding
 
         # ViT
+        start_time = time.time()
+
         xs = self.encoder(torch.cat(xs, dim=1))
         xs = torch.split(xs, token_counts, dim=1)
+        
+        torch.cuda.synchronize()
+        end_time = time.time()
+        time_elapsed = end_time - start_time
+        print(f'ViT: {time_elapsed:.6f} seconds')
+
 
 
         # De-Embed
+<<<<<<< HEAD
         xs = [einops.rearrange(x, "b (x y z) em -> b em x y z", x=s[0], y=s[1], z=s[2]) for x, s in zip(xs, shapes)]
+=======
+        start_time = time.time()
+
+        xs = [einops.rearrange(x, "b (x y z) em -> b em x y z", x=s, y=s, z=s) for x, s in zip(xs, shapes)]
+>>>>>>> parent of d8f4d45... One day of cluster work, torch2.0
         xs = [dem(x) for x, dem in zip(xs, self.de_embedders)]
+        
+        torch.cuda.synchronize()
+        end_time = time.time()
+        time_elapsed = end_time - start_time
+        print(f'De-Embed: {time_elapsed:.6f} seconds')
+
 
 
         return xs

@@ -23,9 +23,14 @@ class MyModel(nn.Module):
         self.skip_transformer = skip_transformer
         self.transformer_channels = transformer_channels
 
+<<<<<<< HEAD
         # First and last blocks, do  not change shape
         self.initial_conv = DoubleConv(in_channels=in_channels, out_channels=channels[0])
         self.end_conv = Up(in_channels_x1=channels[1], in_channels_x2=channels[0], out_channels=out_channels)
+=======
+        # Conv block for the input to have some channels
+        self.residual_conv = DoubleConv(in_channels=in_channels, out_channels=channels[-1])
+>>>>>>> parent of d8f4d45... One day of cluster work, torch2.0
 
         self.encoder = nn.ModuleList([
             Down(channels[i], channels[i + 1]) for i in range(len(channels) - 1)

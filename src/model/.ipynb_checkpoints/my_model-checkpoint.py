@@ -36,6 +36,7 @@ class MyModel(nn.Module):
         ])
 
         # Vision Transformer
+<<<<<<< HEAD
         self.vit = ViT(embed_dim=embed_dim, channels=transformer_channels, patch_size=patch_size, levels=len(channels))
 
     def forward(self, x):
@@ -65,5 +66,29 @@ class MyModel(nn.Module):
             x = self.decoder[i](xs[i], xs[i + 1])
 
         x = self.end_conv(x, residual)
+=======
+        self.vit = ViT(embed_dim=embed_dim, channels=transformer_channels, patch_size=patch_size, levels=levels)
+
+    def forward(self, x):
+        residual = self.residual_conv(x)
+
+        x1 = self.down1(x)
+        x2 = self.down2(x1)
+        x3 = self.down3(x2)
+        x4 = self.down4(x3)
+
+        if not self.skip_transformer:
+            t = self.transformer_channels
+            vit_outs = self.vit([residual[:, :t].clone(), x1[:, :t].clone(), x2[:, :t].clone(), x3[:, :t].clone()])
+            residual = torch.concat([vit_outs[0], residual[:, t:]], dim=1)
+            x1 = torch.concat([vit_outs[1], x1[:, t:]], dim=1)
+            x2 = torch.concat([vit_outs[2], x2[:, t:]], dim=1)
+            x3 = torch.concat([vit_outs[3], x3[:, t:]], dim=1)
+
+        x = self.up1(x4, x3)
+        x = self.up2(x, x2)
+        x = self.up3(x, x1)
+        x = self.up4(x, residual)
+>>>>>>> parent of d8f4d45... One day of cluster work, torch2.0
 
         return x

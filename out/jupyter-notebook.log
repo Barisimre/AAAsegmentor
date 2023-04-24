@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /tmp/slurmd/job207057/slurm_script: line 12: activate: No such file or directory
 	Adding nVidia Cuda Toolkit 11.7
 [I 2023-04-23 21:23:35.268 ServerApp] jupyterlab | extension was successfully linked.
@@ -250,3 +251,33 @@ slurmstepd-ctit093: error: *** JOB 207057 ON ctit093 CANCELLED AT 2023-04-24T00:
 [IPKernelApp] WARNING | Parent appears to have exited, shutting down.
 [IPKernelApp] WARNING | Parent appears to have exited, shutting down.
 [IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+=======
+	Adding anaconda3 2022.05 to your environment
+	Adding nVidia Cuda Toolkit 11.5
+[W 2023-04-21 12:52:21.752 ServerApp] The module 'notebook_shim' could not be found (No module named 'notebook_shim'). Are you sure the extension is installed?
+[I 2023-04-21 12:52:21.765 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-04-21 12:52:21.769 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-21 12:52:21.769 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-21 12:52:21.769 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-04-21 12:52:23.722 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-04-21 12:52:23.935 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-04-21 12:52:23.936 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/my_env/lib/python3.10/site-packages/jupyterlab
+[I 2023-04-21 12:52:23.936 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/my_env/share/jupyter/lab
+[I 2023-04-21 12:52:23.955 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-04-21 12:52:23.955 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
+[I 2023-04-21 12:52:23.956 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
+[I 2023-04-21 12:52:23.956 ServerApp] Jupyter Server 1.18.1 is running at:
+[I 2023-04-21 12:52:23.956 ServerApp] http://ctit093.ewi.utwente.nl:8809/lab?token=792304e84187d0ab9c79879db57deb947b4bb19ffc572980
+[I 2023-04-21 12:52:23.956 ServerApp]  or http://127.0.0.1:8809/lab?token=792304e84187d0ab9c79879db57deb947b4bb19ffc572980
+[I 2023-04-21 12:52:23.956 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-04-21 12:52:24.012 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-2004966-open.html
+    Or copy and paste one of these URLs:
+        http://ctit093.ewi.utwente.nl:8809/lab?token=792304e84187d0ab9c79879db57deb947b4bb19ffc572980
+     or http://127.0.0.1:8809/lab?token=792304e84187d0ab9c79879db57deb947b4bb19ffc572980
+slurmstepd-ctit093: error: *** JOB 206618 ON ctit093 CANCELLED AT 2023-04-21T12:52:49 ***
+[C 2023-04-21 12:52:49.554 ServerApp] received signal 15, stopping
+[I 2023-04-21 12:52:49.556 ServerApp] Shutting down 2 extensions
+>>>>>>> parent of d8f4d45... One day of cluster work, torch2.0

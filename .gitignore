@@ -3,4 +3,3 @@ models/*
 results/*
 .idea
 src/wandb/*
-src/model/__pycache__

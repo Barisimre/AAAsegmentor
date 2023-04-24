@@ -1,17 +1,17 @@
 #!/bin/bash
 
 #SBATCH --gres=gpu:1 
-#SBATCH --mem=32gb
+#SBATCH --mem=16gb
 #SBATCH --output out/main_output.log
 #SBATCH -c 16 
 #SBATCH --time=16:00:00
 #SBATCH --partition=mia
-#SBATCH --nodelist=ctit094
+#SBATCH --nodelist=ctit090
 #SBATCH --error=out/err.err
 
 module load anaconda3/2022.05
-source activate final
-module load nvidia/cuda-11.7 
+source activate my_env
+module load nvidia/cuda-11.5 
 
 export PYTHONPATH="${PYTHONPATH}:/home/s1797743/thesis/final/AAAsegmentor/"
 

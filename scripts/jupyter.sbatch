@@ -9,8 +9,8 @@
 
 
 module load anaconda3/2022.05
-source activate final
-module load nvidia/cuda-11.7 
+source activate my_env
+module load nvidia/cuda-11.5 
 
 export PYTHONPATH="${PYTHONPATH}:/home/s1797743/thesis/final/AAAsegmentor/"
 
