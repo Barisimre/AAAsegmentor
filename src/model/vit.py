@@ -7,7 +7,6 @@ from src.constants import *
 
 
 # TODO: add positional encoding
-# Untouched ViT from MONAI, used as an internal class
 class DefaultViT(nn.Module):
 
     def __init__(
@@ -61,15 +60,15 @@ class ViT(nn.Module):
             ViTDeEmbedder(patch_size=patch_size, out_channels=channels, embed_dim=embed_dim) for _ in range(levels)
         ])
 
-        # self.vit = DefaultViT(hidden_size=embed_dim, mlp_dim=embed_dim * 2)
+        self.vit = DefaultViT(hidden_size=embed_dim, mlp_dim=embed_dim * HIDDEN_FACTOR, num_heads=NUM_HEADS, num_layers=NUM_LAYERS)
 
-        encoder_layer = torch.nn.TransformerEncoderLayer(d_model=embed_dim, nhead=NUM_HEADS, dim_feedforward=embed_dim * HIDDEN_FACTOR,
-                                                         dropout=0.1,
-                                                         activation="gelu", layer_norm_eps=1e-5, batch_first=False,
-                                                         norm_first=False)
-
-        encoder_norm = torch.nn.LayerNorm(embed_dim, eps=1e-5)
-        self.encoder = torch.nn.TransformerEncoder(encoder_layer, num_layers=NUM_LAYERS, norm=encoder_norm)
+        # encoder_layer = torch.nn.TransformerEncoderLayer(d_model=embed_dim, nhead=NUM_HEADS, dim_feedforward=embed_dim * HIDDEN_FACTOR,
+        #                                                  dropout=0.1,
+        #                                                  activation="gelu", layer_norm_eps=1e-5, batch_first=False,
+        #                                                  norm_first=False)
+        #
+        # encoder_norm = torch.nn.LayerNorm(embed_dim, eps=1e-5)
+        # self.encoder = torch.nn.TransformerEncoder(encoder_layer, num_layers=NUM_LAYERS, norm=encoder_norm)
 
     # xs: one x per level of the encoder. They should all halve in every size. Channel counts don't matter.
     def forward(self, xs):
@@ -78,12 +77,12 @@ class ViT(nn.Module):
         # Embed
         xs = [einops.rearrange(em(x), "b em x y z -> b (x y z) em") for x, em in zip(xs, self.embedders)]
         token_counts = [x.shape[1] for x in xs]
-
+        xs = torch.cat(xs, dim=1)
 
         # TODO: positional encoding
 
         # ViT
-        xs = self.encoder(torch.cat(xs, dim=1))
+        xs = self.vit(xs)
         xs = torch.split(xs, token_counts, dim=1)
 
 

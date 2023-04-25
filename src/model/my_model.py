@@ -8,26 +8,32 @@ import numpy as np
 class MyModel(nn.Module):
 
     def __init__(self,
-                 in_channels,
-                 out_channels,
-                 channels=(32, 32, 32, 32, 32),
-                 patch_size=16,
-                 embed_dim=128,
-                 levels=4,
-                 transformer_channels=16,
+                 in_channels=1,
+                 out_channels=3,
+                 channels=(4, 8, 8, 8),
+                 patch_size=8,
+                 embed_dim=256,
+                 transformer_channels=(1, 2, 4, 4, 4),
                  skip_transformer=False):
         super(MyModel, self).__init__()
 
-        self.n_channels = in_channels
         self.n_classes = out_channels
         self.patch_size = patch_size
         self.skip_transformer = skip_transformer
         self.transformer_channels = transformer_channels
 
         # Conv block for the input to have some channels
-        self.residual_conv = DoubleConv(in_channels=in_channels, out_channels=channels[0])
 
         # Unet encoder
+        self.encoder = []
+        # Don't downsize first
+        self.encoder.append(DoubleConv(in_channels=in_channels, out_channels=channels[0]))
+
+        for c in range(len(channels) - 1):
+            self.encoder.append(Down(channels[c], channels[c + 1]))
+        self.encoder = nn.ModuleList(self.encoder)
+
+        # Unet decoder
         self.down1 = Down(in_channels, channels[1])
         self.down2 = Down(channels[1], channels[2])
         self.down3 = Down(channels[2], channels[3])
@@ -41,7 +47,6 @@ class MyModel(nn.Module):
 
         # Vision Transformer
         self.vit = ViT(embed_dim=embed_dim, channels=transformer_channels, patch_size=patch_size, levels=levels)
-
 
     def forward(self, x):
         residual = self.residual_conv(x)
