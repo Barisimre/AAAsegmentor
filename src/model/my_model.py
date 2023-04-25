@@ -14,14 +14,12 @@ class MyModel(nn.Module):
                  big_channel=4,
                  patch_size=8,
                  embed_dim=256,
-                 transformer_channels=(1, 2, 4, 4, 4),
                  skip_transformer=False):
         super(MyModel, self).__init__()
 
         self.n_classes = out_channels
         self.patch_size = patch_size
         self.skip_transformer = skip_transformer
-        self.transformer_channels = transformer_channels
 
         self.in_conv = DoubleConv(in_channels=in_channels, out_channels=big_channel)
 
@@ -40,8 +38,8 @@ class MyModel(nn.Module):
         self.out_conv = DoubleConv(in_channels=big_channel, out_channels=in_channels)
 
         # Vision Transformer
-        self.vit = ViT(embed_dim=embed_dim, channels=transformer_channels, patch_size=patch_size,
-                       levels=len(transformer_channels))
+        transformer_channels = [big_channel] + [lower_channels for i in range(4)]
+        self.vit = ViT(embed_dim=embed_dim, channels=transformer_channels, patch_size=patch_size)
 
     def forward(self, x):
         residual = self.in_conv(x)
