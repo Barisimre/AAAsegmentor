@@ -53,11 +53,11 @@ class ViT(nn.Module):
         self.patch_size = patch_size
 
         self.embedders = nn.ModuleList([
-            ViTEmbedder(patch_size=patch_size, in_channels=channels, embed_dim=embed_dim) for c in channels
+            ViTEmbedder(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
         ])
 
         self.de_embedders = nn.ModuleList([
-            ViTDeEmbedder(patch_size=patch_size, out_channels=channels, embed_dim=embed_dim) for c in channels
+            ViTDeEmbedder(patch_size=patch_size, out_channels=c, embed_dim=embed_dim) for c in channels
         ])
 
         self.vit = DefaultViT(hidden_size=embed_dim, mlp_dim=embed_dim * HIDDEN_FACTOR, num_heads=NUM_HEADS, num_layers=NUM_LAYERS)

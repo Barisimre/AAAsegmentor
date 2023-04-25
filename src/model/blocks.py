@@ -8,8 +8,6 @@ class SingleConvBlock(nn.Module):
 
     def __init__(self, in_channels, out_channels, kernel_size=3, stride=1, padding=0, dropout=0.1):
         super().__init__()
-        if padding == 0:
-            padding = "same"
         self.block = nn.Sequential(
             nn.Conv3d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride,
                       padding=padding),
@@ -47,13 +45,13 @@ class DoubleConv(nn.Module):
             mid_channels = out_channels
 
         self.double_conv = nn.Sequential(
-            SingleConvBlock(in_channels=in_channels, out_channels=mid_channels, kernel_size=3),
-            SingleConvBlock(in_channels=mid_channels, out_channels=out_channels, kernel_size=3),
+            SingleConvBlock(in_channels=in_channels, out_channels=mid_channels, kernel_size=3, padding='same'),
+            SingleConvBlock(in_channels=mid_channels, out_channels=out_channels, kernel_size=3, padding='same'),
         )
 
         # Define a 1x1 convolution to match the number of channels for the residual connection
         if in_channels != out_channels:
-            self.match_channels = SingleConvBlock(in_channels=in_channels, out_channels=out_channels, kernel_size=1)
+            self.match_channels = SingleConvBlock(in_channels=in_channels, out_channels=out_channels, kernel_size=1, padding='same')
         else:
             self.match_channels = None
 
@@ -104,7 +102,7 @@ class Down(nn.Module):
         super().__init__()
 
         self.down_conv = nn.Sequential(
-            SingleConvBlock(in_channels=in_channels, out_channels=out_channels, kernel_size=3, stride=2, padding=1),
+            SingleConvBlock(in_channels=in_channels, out_channels=in_channels, kernel_size=3, stride=2, padding=1),
             DoubleConv(in_channels, out_channels)
         )
 
