@@ -10,7 +10,8 @@ class MyModel(nn.Module):
     def __init__(self,
                  in_channels=1,
                  out_channels=3,
-                 channels=(4, 8, 8, 8),
+                 lower_channels=16,
+                 big_channel=4,
                  patch_size=8,
                  embed_dim=256,
                  transformer_channels=(1, 2, 4, 4, 4),
@@ -22,47 +23,45 @@ class MyModel(nn.Module):
         self.skip_transformer = skip_transformer
         self.transformer_channels = transformer_channels
 
-        # Conv block for the input to have some channels
+        self.in_conv = DoubleConv(in_channels=in_channels, out_channels=big_channel)
 
         # Unet encoder
-        self.encoder = []
-        # Don't downsize first
-        self.encoder.append(DoubleConv(in_channels=in_channels, out_channels=channels[0]))
-
-        for c in range(len(channels) - 1):
-            self.encoder.append(Down(channels[c], channels[c + 1]))
-        self.encoder = nn.ModuleList(self.encoder)
+        self.down1 = Down(big_channel, lower_channels)
+        self.down2 = Down(lower_channels, lower_channels)
+        self.down3 = Down(lower_channels, lower_channels)
+        self.down4 = Down(lower_channels, lower_channels)
 
         # Unet decoder
-        self.down1 = Down(in_channels, channels[1])
-        self.down2 = Down(channels[1], channels[2])
-        self.down3 = Down(channels[2], channels[3])
-        self.down4 = Down(channels[3], channels[4])
+        self.up1 = Up(lower_channels, lower_channels)
+        self.up2 = Up(lower_channels, lower_channels)
+        self.up3 = Up(lower_channels, lower_channels)
+        self.up4 = Up(lower_channels, big_channel)
 
-        # Unet decoder
-        self.up1 = Up(channels[4], channels[3])
-        self.up2 = Up(channels[3], channels[2])
-        self.up3 = Up(channels[2], channels[1])
-        self.up4 = Up(channels[1], out_channels)
+        self.out_conv = DoubleConv(in_channels=big_channel, out_channels=in_channels)
 
         # Vision Transformer
-        self.vit = ViT(embed_dim=embed_dim, channels=transformer_channels, patch_size=patch_size, levels=levels)
+        self.vit = ViT(embed_dim=embed_dim, channels=transformer_channels, patch_size=patch_size,
+                       levels=len(transformer_channels))
 
     def forward(self, x):
-        residual = self.residual_conv(x)
+        residual = self.in_conv(x)
 
         x1 = self.down1(x)
         x2 = self.down2(x1)
         x3 = self.down3(x2)
         x4 = self.down4(x3)
 
+        # if not self.skip_transformer:
+        #     t = self.transformer_channels
+        #     vit_outs = self.vit([residual[:, :t], x1[:, :t], x2[:, :t], x3[:, :t], x4[:, :t]])
+        #     residual = torch.concat([vit_outs[0], residual[:, t:]], dim=1)
+        #     x1 = torch.concat([vit_outs[1], x1[:, t:]], dim=1)
+        #     x2 = torch.concat([vit_outs[2], x2[:, t:]], dim=1)
+        #     x3 = torch.concat([vit_outs[3], x3[:, t:]], dim=1)
+        #     x4 = torch.concat([vit_outs[4], x4[:, t:]], dim=1)
+
         if not self.skip_transformer:
-            t = self.transformer_channels
-            vit_outs = self.vit([residual[:, :t], x1[:, :t], x2[:, :t], x3[:, :t]])
-            residual = torch.concat([vit_outs[0], residual[:, t:]], dim=1)
-            x1 = torch.concat([vit_outs[1], x1[:, t:]], dim=1)
-            x2 = torch.concat([vit_outs[2], x2[:, t:]], dim=1)
-            x3 = torch.concat([vit_outs[3], x3[:, t:]], dim=1)
+            residual, x1, x2, x3, x4 = self.vit([residual, x1, x2, x3, x4])
 
         x = self.up1(x4, x3)
         x = self.up2(x, x2)

@@ -117,13 +117,13 @@ class Up(nn.Module):
     def __init__(self, in_channels, out_channels):
         super().__init__()
 
-        self.up = SingleConvBlockTransposed(in_channels=in_channels, out_channels=out_channels, kernel_size=2, stride=2)
-        self.conv = DoubleConv(in_channels, out_channels)
+        self.up = SingleConvBlockTransposed(in_channels=in_channels, out_channels=in_channels, kernel_size=2, stride=2)
+        self.conv = DoubleConv(in_channels*2, out_channels)
 
     def forward(self, x1, x2):
         x1 = self.up(x1)
 
-        x = x1 + x2
+        x = torch.concat([x1, x2], dim=1)
 
         return self.conv(x)
 
