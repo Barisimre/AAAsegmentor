@@ -1,33 +1,100 @@
-	Adding anaconda3 2022.05 to your environment
+/tmp/slurmd/job207641/slurm_script: line 12: activate: No such file or directory
 	Adding nVidia Cuda Toolkit 11.7
-[I 2023-04-24 14:48:37.493 ServerApp] jupyterlab | extension was successfully linked.
-[W 2023-04-24 14:48:37.498 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-04-24 14:48:37.498 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-04-24 14:48:37.498 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[I 2023-04-24 14:48:37.500 ServerApp] nbclassic | extension was successfully linked.
-[I 2023-04-24 14:48:38.377 ServerApp] notebook_shim | extension was successfully linked.
-[I 2023-04-24 14:48:38.459 ServerApp] notebook_shim | extension was successfully loaded.
-[I 2023-04-24 14:48:38.460 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/final/lib/python3.10/site-packages/jupyterlab
-[I 2023-04-24 14:48:38.460 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/final/share/jupyter/lab
-[I 2023-04-24 14:48:38.464 ServerApp] jupyterlab | extension was successfully loaded.
-[I 2023-04-24 14:48:38.514 ServerApp] nbclassic | extension was successfully loaded.
-[I 2023-04-24 14:48:38.514 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
-[I 2023-04-24 14:48:38.515 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
-[I 2023-04-24 14:48:38.515 ServerApp] Jupyter Server 1.23.6 is running at:
-[I 2023-04-24 14:48:38.516 ServerApp] http://ctit094.ewi.utwente.nl:8802/lab?token=4247e1f236e4cf0b5e8771e9a84e9a0b78ee0b355fc53fae
-[I 2023-04-24 14:48:38.516 ServerApp]  or http://127.0.0.1:8802/lab?token=4247e1f236e4cf0b5e8771e9a84e9a0b78ee0b355fc53fae
-[I 2023-04-24 14:48:38.516 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 2023-04-24 14:48:38.525 ServerApp] 
+[I 2023-04-26 01:07:42.196 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-04-26 01:07:42.215 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-26 01:07:42.215 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-26 01:07:42.215 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-04-26 01:07:42.218 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-04-26 01:07:42.836 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-04-26 01:07:43.452 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-04-26 01:07:43.453 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/final/lib/python3.10/site-packages/jupyterlab
+[I 2023-04-26 01:07:43.453 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/final/share/jupyter/lab
+[I 2023-04-26 01:07:43.464 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-04-26 01:07:43.623 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-04-26 01:07:43.624 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
+[I 2023-04-26 01:07:43.625 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
+[I 2023-04-26 01:07:43.625 ServerApp] Jupyter Server 1.23.6 is running at:
+[I 2023-04-26 01:07:43.625 ServerApp] http://ctit094.ewi.utwente.nl:8808/lab?token=f4fd604b8a68c242d923495b68483f19f703a8d7252d0f39
+[I 2023-04-26 01:07:43.625 ServerApp]  or http://127.0.0.1:8808/lab?token=f4fd604b8a68c242d923495b68483f19f703a8d7252d0f39
+[I 2023-04-26 01:07:43.625 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-04-26 01:07:43.673 ServerApp] 
     
     To access the server, open this file in a browser:
-        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-272278-open.html
+        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-447932-open.html
     Or copy and paste one of these URLs:
-        http://ctit094.ewi.utwente.nl:8802/lab?token=4247e1f236e4cf0b5e8771e9a84e9a0b78ee0b355fc53fae
-     or http://127.0.0.1:8802/lab?token=4247e1f236e4cf0b5e8771e9a84e9a0b78ee0b355fc53fae
-[W 2023-04-24 14:49:12.380 LabApp] Could not determine jupyterlab build status without nodejs
-[I 2023-04-24 14:49:14.140 ServerApp] Kernel started: 11074c12-9187-49b5-8ff8-d2dfdd673e2e
-[I 2023-04-24 14:49:14.140 ServerApp] Culling kernels with idle durations > 3600 seconds at 300 second intervals ...
+        http://ctit094.ewi.utwente.nl:8808/lab?token=f4fd604b8a68c242d923495b68483f19f703a8d7252d0f39
+     or http://127.0.0.1:8808/lab?token=f4fd604b8a68c242d923495b68483f19f703a8d7252d0f39
+[W 2023-04-26 01:08:03.077 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-04-26 01:08:07.575 ServerApp] Notebook notebooks/Untitled.ipynb is not trusted
+[I 2023-04-26 01:08:08.128 ServerApp] Kernel started: f83a3d27-ef9b-4cab-acf4-2239f5acda82
+[I 2023-04-26 01:08:08.129 ServerApp] Culling kernels with idle durations > 3600 seconds at 300 second intervals ...
+[I 2023-04-26 01:08:08.132 ServerApp] Kernel started: dc0c4384-7686-4af1-becd-63daa6238673
+[I 2023-04-26 01:08:08.146 ServerApp] Kernel started: 9f0c3e51-317c-4016-bcba-125d97b6cd76
+[I 2023-04-26 01:08:09.696 ServerApp] Starting buffering for 9f0c3e51-317c-4016-bcba-125d97b6cd76:922db6e0-db1d-4056-b578-4f32d8a331e8
 [IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: b3b39dfc-ce62-4a37-b6bd-7fdcb36618a9
-[I 2023-04-24 14:49:23.558 ServerApp] Kernel restarted: 11074c12-9187-49b5-8ff8-d2dfdd673e2e
-[I 2023-04-24 14:49:25.555 ServerApp] Kernel restarted: 11074c12-9187-49b5-8ff8-d2dfdd673e2e
+[IPKernelApp] WARNING | No such comm: c4d0521f-4794-48e3-a928-43a58d314494
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 44788919-4f2c-40ca-915b-c1725f20310b
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 816b6e17-11e4-4910-833c-dd8eba186007
+[I 2023-04-26 01:09:24.020 ServerApp] Saving file at /src/model/blocks.py
+[I 2023-04-26 01:09:25.306 ServerApp] Starting buffering for dc0c4384-7686-4af1-becd-63daa6238673:a00379e9-fdba-4e5d-9fde-1d17c2b4bb93
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 14b1c71a-020c-4f18-8f70-bdc9739d1abf
+[I 2023-04-26 01:09:33.318 ServerApp] Kernel restarted: dc0c4384-7686-4af1-becd-63daa6238673
+[I 2023-04-26 01:09:33.327 ServerApp] Starting buffering for dc0c4384-7686-4af1-becd-63daa6238673:e4d36601-af01-4938-a2dc-5c4cfe89caf3
+[I 2023-04-26 01:09:33.343 ServerApp] Restoring connection for dc0c4384-7686-4af1-becd-63daa6238673:e4d36601-af01-4938-a2dc-5c4cfe89caf3
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: a78fa93c-258c-4643-8584-6f87e5b603b5
+[I 2023-04-26 01:11:29.899 ServerApp] Saving file at /notebooks/test_model_random_datat.ipynb
+[I 2023-04-26 01:12:12.176 ServerApp] Saving file at /src/model/blocks.py
+[I 2023-04-26 01:12:15.449 ServerApp] Kernel restarted: dc0c4384-7686-4af1-becd-63daa6238673
+[I 2023-04-26 01:12:15.455 ServerApp] Starting buffering for dc0c4384-7686-4af1-becd-63daa6238673:e4d36601-af01-4938-a2dc-5c4cfe89caf3
+[I 2023-04-26 01:12:15.467 ServerApp] Restoring connection for dc0c4384-7686-4af1-becd-63daa6238673:e4d36601-af01-4938-a2dc-5c4cfe89caf3
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: ef230c47-10a6-495d-86b2-6ec705446e03
+[I 2023-04-26 01:12:58.114 ServerApp] Saving file at /src/model/vit.py
+[I 2023-04-26 01:12:58.578 ServerApp] Saving file at /src/model/vit.py
+[I 2023-04-26 01:13:01.964 ServerApp] Kernel restarted: f83a3d27-ef9b-4cab-acf4-2239f5acda82
+[I 2023-04-26 01:13:01.988 ServerApp] Starting buffering for f83a3d27-ef9b-4cab-acf4-2239f5acda82:20d95abb-1004-4bda-9bc2-282ce37bfb10
+[I 2023-04-26 01:13:02.020 ServerApp] Restoring connection for f83a3d27-ef9b-4cab-acf4-2239f5acda82:20d95abb-1004-4bda-9bc2-282ce37bfb10
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: f7d7f99b-903c-437f-8439-d705b27b495a
+[I 2023-04-26 01:13:08.567 ServerApp] Kernel restarted: dc0c4384-7686-4af1-becd-63daa6238673
+[I 2023-04-26 01:13:08.573 ServerApp] Starting buffering for dc0c4384-7686-4af1-becd-63daa6238673:e4d36601-af01-4938-a2dc-5c4cfe89caf3
+[I 2023-04-26 01:13:08.581 ServerApp] Restoring connection for dc0c4384-7686-4af1-becd-63daa6238673:e4d36601-af01-4938-a2dc-5c4cfe89caf3
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 91155fe5-6141-41bf-9eea-c3c2af55e60e
+[I 2023-04-26 01:13:30.031 ServerApp] Saving file at /notebooks/test_model_random_datat.ipynb
+[I 2023-04-26 01:14:07.628 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-26 01:16:07.714 ServerApp] Saving file at /notebooks/test_training.ipynb
+IOStream.flush timed out
+[I 2023-04-26 01:18:07.946 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-26 01:20:08.102 ServerApp] Saving file at /notebooks/test_training.ipynb
+IOStream.flush timed out
+[I 2023-04-26 01:22:08.177 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-26 01:24:08.227 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-26 01:26:08.423 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-26 01:28:08.463 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-26 01:28:44.898 ServerApp] Kernel interrupted: f83a3d27-ef9b-4cab-acf4-2239f5acda82
+[I 2023-04-26 01:30:08.613 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-26 01:32:08.686 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-26 01:32:12.134 ServerApp] Kernel interrupted: f83a3d27-ef9b-4cab-acf4-2239f5acda82
+[I 2023-04-26 01:32:58.423 ServerApp] Saving file at /src/main.py
+[I 2023-04-26 01:33:15.532 ServerApp] Saving file at /src/constants.py
+[I 2023-04-26 01:33:50.659 ServerApp] Saving file at /scripts/run_main.sbatch
+[I 2023-04-26 01:34:08.829 ServerApp] Saving file at /notebooks/test_training.ipynb
+[I 2023-04-26 01:34:39.979 ServerApp] Saving file at /src/main.py
+[I 2023-04-26 01:35:15.580 ServerApp] Saving file at /src/constants.py
+[I 2023-04-26 01:35:18.492 ServerApp] Saving file at /src/constants.py
+[I 2023-04-26 01:35:19.606 ServerApp] Saving file at /src/constants.py
+[I 2023-04-26 01:35:32.485 ServerApp] Saving file at /src/main.py
+[I 2023-04-26 01:35:33.298 ServerApp] Saving file at /src/main.py
+slurmstepd-ctit094: error: *** JOB 207641 ON ctit094 CANCELLED AT 2023-04-26T01:35:53 ***
+[C 2023-04-26 01:35:53.753 ServerApp] received signal 15, stopping
+[I 2023-04-26 01:35:53.755 ServerApp] Shutting down 3 extensions
+[I 2023-04-26 01:35:53.756 ServerApp] Shutting down 3 kernels
+[I 2023-04-26 01:35:53.757 ServerApp] Kernel shutdown: dc0c4384-7686-4af1-becd-63daa6238673
+[I 2023-04-26 01:35:53.757 ServerApp] Kernel shutdown: 9f0c3e51-317c-4016-bcba-125d97b6cd76
+[I 2023-04-26 01:35:53.758 ServerApp] Kernel shutdown: f83a3d27-ef9b-4cab-acf4-2239f5acda82
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.

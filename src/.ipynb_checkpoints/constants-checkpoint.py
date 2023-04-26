@@ -4,7 +4,7 @@ import torch
 
 # Constants
 
-RUN_NAME = "MyAttempt_torch2_patch8"
+RUN_NAME = "NewBoiNOTRANSFORMER"
 
 
 # Paths
@@ -24,13 +24,13 @@ CT_WINDOW_MAX = 200
 
 # Training hyper-parameters
 DEVICE = "cuda"
-LEARNING_RATES = {0: 1e-3, 25: 6e-4, 75: 3e-4, 300: 1e-4, 500: 5e-5}
-NUM_EPOCHS = 1000
-BATCH_SIZE = 4
-LOSS = monai.losses.DiceCELoss(lambda_ce=0.1)
+LEARNING_RATES = {0: 1e-3, 25: 6e-4, 75: 3e-4, 800: 1e-4, 1250: 5e-5}
+NUM_EPOCHS = 1500
+BATCH_SIZE = 2
+LOSS = monai.losses.DiceCELoss(lambda_ce=0.4)
 
 
 # Transformer stuff
 NUM_HEADS = 8
-NUM_LAYERS = 12
-HIDDEN_FACTOR = 3
+NUM_LAYERS = 8
+HIDDEN_FACTOR = 4
