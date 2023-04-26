@@ -35,7 +35,7 @@ class MyModel(nn.Module):
         self.up3 = Up(lower_channels, lower_channels, lower_channels)
         self.up4 = Up(lower_channels, big_channel, big_channel)
 
-        self.out_conv = SingleConvBlock(in_channels=big_channel, out_channels=out_channels, padding='same')
+        self.out_conv = nn.Conv3d(in_channels=big_channel, out_channels=out_channels, kernel_size=3, stride=1, padding='same')
 
         # Vision Transformer
         transformer_channels = [big_channel] + [lower_channels for i in range(4)]
