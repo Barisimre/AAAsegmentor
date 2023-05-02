@@ -5,7 +5,7 @@
 #SBATCH --output out/jupyter-notebook.log
 #SBATCH -c 16
 #SBATCH --partition=mia
-#SBATCH --nodelist=ctit094
+#SBATCH --nodelist=ctit093
 
 
 module load anaconda3/2022.05

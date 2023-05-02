@@ -14,16 +14,21 @@ def main():
     # model = SWINUNETR.to(DEVICE)
     model = MyModel(in_channels=1,
                      out_channels=3,
-                     lower_channels=16,
-                     big_channel=3,
+                     lower_channels=32,
+                     big_channel=32,
                      patch_size=8,
                      embed_dim=128,
-                     skip_transformer=True).to(DEVICE)
+                     skip_transformer=True)
 
-    optimizer = torch.optim.Adam(params=model.parameters(), lr=LEARNING_RATES[0])
+    model.load_state_dict(torch.load(f"{MODEL_SAVE_PATH}/focus/all_transformer_seed.pt"))
+
+    model = model.to(DEVICE)
+
+
+    optimizer = torch.optim.Adam(params=model.parameters(), lr=1e-4)
 
     wandb.init(
-        project="AAA",
+        project="Meeting",
         entity="barisimre",
         name=RUN_NAME
     )
@@ -45,7 +50,8 @@ def main():
                 best_test_loss = test_loss
 
             # Set new learning rate if it is time
-            set_learning_rate(e, optimizer)
+            # TODO: set it back
+            # set_learning_rate(e, optimizer)
 
 
 if __name__ == '__main__':

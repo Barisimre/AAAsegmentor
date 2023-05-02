@@ -27,6 +27,9 @@ train_transform = monai.transforms.Compose(
         monai.transforms.AsChannelFirstd(keys=['img', 'mask']),
         monai.transforms.AddChanneld(keys=['img', 'mask']),
         monai.transforms.ScaleIntensityRanged(keys=["img"], a_min=CT_WINDOW_MIN, a_max=CT_WINDOW_MAX, b_min=0, b_max=1, clip=True),
+        monai.transforms.CropForegroundd(keys=["img", "mask"], source_key="img"),
+        # monai.transforms.EnsureTyped(keys=["img", "mask"], track_meta=False),
+
         monai.transforms.RandCropByPosNegLabeld(keys=["img", "mask"],
                                                 spatial_size=CROP_SIZE,
                                                 pos=1,
@@ -35,8 +38,12 @@ train_transform = monai.transforms.Compose(
                                                 label_key="mask",
                                                 ),
         monai.transforms.SpatialPadd(keys=['img', 'mask'], spatial_size=CROP_SIZE),
-        monai.transforms.RandFlipd(keys=['img', 'mask'], prob=0.5, spatial_axis=(0, 1, 2)),
+        monai.transforms.RandFlipd(keys=['img', 'mask'], prob=0.1, spatial_axis=-1),
+        monai.transforms.RandFlipd(keys=['img', 'mask'], prob=0.1, spatial_axis=-2),
+        monai.transforms.RandFlipd(keys=['img', 'mask'], prob=0.1, spatial_axis=-3),
 
+        monai.transforms.RandShiftIntensityd(keys=["img"], offsets=0.02, prob=0.50),
+ 
     ]
 )
 
@@ -51,6 +58,9 @@ test_transform = monai.transforms.Compose(
         monai.transforms.AsChannelFirstd(keys=['img', 'mask']),
         monai.transforms.AddChanneld(keys=['img', 'mask']),
         monai.transforms.ScaleIntensityRanged(keys=["img"], a_min=CT_WINDOW_MIN, a_max=CT_WINDOW_MAX, b_min=0, b_max=1, clip=True),
+        monai.transforms.CropForegroundd(keys=["img", "mask"], source_key="img"),
+        # monai.transforms.EnsureTyped(keys=["img", "mask"], track_meta=True),
+
 
     ]
 )

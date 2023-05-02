@@ -5,17 +5,23 @@ from functools import partial
 from typing import Any, Callable, Dict, List, NamedTuple, Optional
 from collections import OrderedDict
 
+
 class SingleConvBlock(nn.Module):
 
-    def __init__(self, in_channels, out_channels, kernel_size=3, stride=1, padding=0, dropout=0.1):
+    def __init__(self, in_channels, out_channels, kernel_size=3, stride=1, padding=0, dropout=0.1, no_adn=False):
         super().__init__()
-        self.block = nn.Sequential(
-            nn.Conv3d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride,
-                      padding=padding),
-            nn.PReLU(),
-            nn.Dropout(p=dropout),
-            nn.InstanceNorm3d(out_channels),
-        )
+        
+        if no_adn:
+            self.block = nn.Conv3d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride, padding=padding)
+        
+        else:
+            self.block = nn.Sequential(
+                nn.Conv3d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride,
+                          padding=padding),
+                nn.PReLU(),
+                nn.Dropout(p=dropout, inplace=True),
+                nn.InstanceNorm3d(out_channels),
+            )
 
     def forward(self, x):
         return self.block(x)
@@ -23,14 +29,19 @@ class SingleConvBlock(nn.Module):
 
 class SingleConvBlockTransposed(nn.Module):
 
-    def __init__(self, in_channels, out_channels, kernel_size=3, stride=1, dropout=0.1):
+    def __init__(self, in_channels, out_channels, kernel_size=3, stride=1, dropout=0.1, no_adn=False):
         super().__init__()
-        self.block = nn.Sequential(
-            nn.ConvTranspose3d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride),
-            nn.PReLU(),
-            nn.Dropout(p=dropout),
-            nn.InstanceNorm3d(out_channels),
-        )
+        
+        if no_adn:
+            self.block = nn.ConvTranspose3d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride)
+        
+        else:
+            self.block = nn.Sequential(
+                nn.ConvTranspose3d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride),
+                nn.PReLU(),
+                nn.Dropout(p=dropout, inplace=True),
+                nn.InstanceNorm3d(out_channels),
+            )
 
     def forward(self, x):
         return self.block(x)
@@ -39,20 +50,21 @@ class SingleConvBlockTransposed(nn.Module):
 class DoubleConv(nn.Module):
     """(convolution => [IN] => ReLU) * 2 with residual connection"""
 
-    def __init__(self, in_channels, out_channels, mid_channels=None):
+    def __init__(self, in_channels, out_channels, mid_channels=None, no_adn=False):
         super().__init__()
 
         if not mid_channels:
             mid_channels = out_channels
 
         self.double_conv = nn.Sequential(
-            SingleConvBlock(in_channels=in_channels, out_channels=mid_channels, kernel_size=3, padding='same'),
-            SingleConvBlock(in_channels=mid_channels, out_channels=out_channels, kernel_size=3, padding='same'),
+            SingleConvBlock(in_channels=in_channels, out_channels=mid_channels, kernel_size=3, padding='same', no_adn=no_adn),
+            SingleConvBlock(in_channels=mid_channels, out_channels=out_channels, kernel_size=3, padding='same', no_adn=no_adn),
         )
 
         # Define a 1x1 convolution to match the number of channels for the residual connection
         if in_channels != out_channels:
-            self.match_channels = SingleConvBlock(in_channels=in_channels, out_channels=out_channels, kernel_size=1, padding='same')
+            self.match_channels = SingleConvBlock(in_channels=in_channels, out_channels=out_channels, kernel_size=1,
+                                                  padding='same', no_adn=no_adn)
         else:
             self.match_channels = None
 
@@ -73,8 +85,9 @@ class ViTEmbedder(nn.Module):
     def __init__(self, patch_size, embed_dim, in_channels):
         super().__init__()
         self.block = nn.Sequential(
-            SingleConvBlock(kernel_size=patch_size, stride=patch_size, in_channels=in_channels, out_channels=in_channels),
-            DoubleConv(in_channels=in_channels, out_channels=embed_dim),
+            SingleConvBlock(kernel_size=patch_size, stride=patch_size, in_channels=in_channels,
+                            out_channels=in_channels, no_adn=True),
+            DoubleConv(in_channels=in_channels, out_channels=embed_dim, no_adn=True),
         )
 
     def forward(self, x):
@@ -85,12 +98,13 @@ class ViTDeEmbedder(nn.Module):
 
     def __init__(self, patch_size, embed_dim, out_channels):
         super().__init__()
-        self.conv = nn.ConvTranspose3d(kernel_size=patch_size, stride=patch_size, in_channels=embed_dim,
-                                       out_channels=out_channels)
+        self.conv = SingleConvBlockTransposed(kernel_size=patch_size, stride=patch_size, in_channels=embed_dim,
+                                       out_channels=out_channels, no_adn=True)
 
         self.block = nn.Sequential(
             DoubleConv(in_channels=embed_dim, out_channels=out_channels),
-            SingleConvBlockTransposed(kernel_size=patch_size, stride=patch_size, in_channels=out_channels, out_channels=out_channels),
+            SingleConvBlockTransposed(kernel_size=patch_size, stride=patch_size, in_channels=out_channels,
+                                      out_channels=out_channels, no_adn=True),
         )
 
     def forward(self, x):
@@ -105,7 +119,6 @@ class Down(nn.Module):
         self.down_conv = nn.Sequential(
             SingleConvBlock(in_channels=in_channels, out_channels=in_channels, kernel_size=3, stride=2, padding=1),
             DoubleConv(in_channels, out_channels)
-            # SingleConvBlock(in_channels=in_channels, out_channels=out_channels, kernel_size=3, stride=1, padding=1),
         )
 
     def forward(self, x):
@@ -117,8 +130,9 @@ class Up(nn.Module):
     def __init__(self, in_channels1, in_channels2, out_channels):
         super().__init__()
 
-        self.up = SingleConvBlockTransposed(in_channels=in_channels1, out_channels=in_channels2, kernel_size=2, stride=2)
-        self.conv = DoubleConv(in_channels2+in_channels2, out_channels)
+        self.up = SingleConvBlockTransposed(in_channels=in_channels1, out_channels=in_channels2, kernel_size=2,
+                                            stride=2)
+        self.conv = DoubleConv(in_channels2 + in_channels2, out_channels)
 
     def forward(self, x1, x2):
         x1 = self.up(x1)
@@ -155,7 +169,8 @@ class TransformerBlock(nn.Module):
         x = x + self.attn(self.norm1(x))
         x = x + self.mlp(self.norm2(x))
         return x
-    
+
+
 class MLP(torch.nn.Sequential):
     """This block implements the multi-layer perceptron (MLP) module.
 
@@ -171,14 +186,14 @@ class MLP(torch.nn.Sequential):
     """
 
     def __init__(
-        self,
-        in_channels: int,
-        hidden_channels: List[int],
-        norm_layer: Optional[Callable[..., torch.nn.Module]] = None,
-        activation_layer: Optional[Callable[..., torch.nn.Module]] = torch.nn.ReLU,
-        inplace: Optional[bool] = None,
-        bias: bool = True,
-        dropout: float = 0.0,
+            self,
+            in_channels: int,
+            hidden_channels: List[int],
+            norm_layer: Optional[Callable[..., torch.nn.Module]] = None,
+            activation_layer: Optional[Callable[..., torch.nn.Module]] = torch.nn.ReLU,
+            inplace: Optional[bool] = None,
+            bias: bool = True,
+            dropout: float = 0.0,
     ):
         # The addition of `norm_layer` is inspired from the implementation of TorchMultimodal:
         # https://github.com/facebookresearch/multimodal/blob/5dec8a/torchmultimodal/modules/layers/mlp.py
@@ -199,6 +214,7 @@ class MLP(torch.nn.Sequential):
 
         super().__init__(*layers)
 
+
 class MLPBlock(MLP):
     """Transformer MLP block."""
 
@@ -214,14 +230,14 @@ class MLPBlock(MLP):
                     nn.init.normal_(m.bias, std=1e-6)
 
     def _load_from_state_dict(
-        self,
-        state_dict,
-        prefix,
-        local_metadata,
-        strict,
-        missing_keys,
-        unexpected_keys,
-        error_msgs,
+            self,
+            state_dict,
+            prefix,
+            local_metadata,
+            strict,
+            missing_keys,
+            unexpected_keys,
+            error_msgs,
     ):
         version = local_metadata.get("version", None)
 
@@ -229,8 +245,8 @@ class MLPBlock(MLP):
             # Replacing legacy MLPBlock with MLP. See https://github.com/pytorch/vision/pull/6053
             for i in range(2):
                 for type in ["weight", "bias"]:
-                    old_key = f"{prefix}linear_{i+1}.{type}"
-                    new_key = f"{prefix}{3*i}.{type}"
+                    old_key = f"{prefix}linear_{i + 1}.{type}"
+                    new_key = f"{prefix}{3 * i}.{type}"
                     if old_key in state_dict:
                         state_dict[new_key] = state_dict.pop(old_key)
 
@@ -243,6 +259,7 @@ class MLPBlock(MLP):
             unexpected_keys,
             error_msgs,
         )
+
 
 class SABlock(nn.Module):
 
@@ -277,17 +294,18 @@ class SABlock(nn.Module):
         x = self.drop_output(x)
         return x
 
+
 class EncoderBlock(nn.Module):
     """Transformer encoder block."""
 
     def __init__(
-        self,
-        num_heads: int,
-        hidden_dim: int,
-        mlp_dim: int,
-        dropout: float,
-        attention_dropout: float,
-        norm_layer: Callable[..., torch.nn.Module] = partial(nn.LayerNorm, eps=1e-6),
+            self,
+            num_heads: int,
+            hidden_dim: int,
+            mlp_dim: int,
+            dropout: float,
+            attention_dropout: float,
+            norm_layer: Callable[..., torch.nn.Module] = partial(nn.LayerNorm, eps=1e-6),
     ):
         super().__init__()
         self.num_heads = num_heads
@@ -317,15 +335,15 @@ class ViTEncoder(nn.Module):
     """Transformer Model Encoder for sequence to sequence translation."""
 
     def __init__(
-        self,
-        seq_length: int,
-        num_layers: int,
-        num_heads: int,
-        hidden_dim: int,
-        mlp_dim: int,
-        dropout: float,
-        attention_dropout: float,
-        norm_layer: Callable[..., torch.nn.Module] = partial(nn.LayerNorm, eps=1e-6),
+            self,
+            seq_length: int,
+            num_layers: int,
+            num_heads: int,
+            hidden_dim: int,
+            mlp_dim: int,
+            dropout: float,
+            attention_dropout: float,
+            norm_layer: Callable[..., torch.nn.Module] = partial(nn.LayerNorm, eps=1e-6),
     ):
         super().__init__()
         # Note that batch_size is on the first dim because

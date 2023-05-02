@@ -35,7 +35,14 @@ class MyModel(nn.Module):
         self.up3 = Up(lower_channels, lower_channels, lower_channels)
         self.up4 = Up(lower_channels, big_channel, big_channel)
 
-        self.out_conv = nn.Conv3d(in_channels=big_channel, out_channels=out_channels, kernel_size=3, stride=1, padding='same')
+        # For Autoencoder
+        # self.up1 = SingleUp(lower_channels, lower_channels)
+        # self.up2 = SingleUp(lower_channels, lower_channels)
+        # self.up3 = SingleUp(lower_channels, lower_channels)
+        # self.up4 = SingleUp(lower_channels, big_channel)
+
+        self.out_conv1 = nn.Conv3d(in_channels=big_channel, out_channels=out_channels, kernel_size=3, stride=1, padding='same')
+        self.out_conv2 = nn.Conv3d(in_channels=out_channels, out_channels=out_channels, kernel_size=3, stride=1, padding='same')
 
         # Vision Transformer
         transformer_channels = [big_channel] + [lower_channels for i in range(4)]
@@ -49,23 +56,29 @@ class MyModel(nn.Module):
         x3 = self.down3(x2)
         x4 = self.down4(x3)
 
-#         if not self.skip_transformer:
-#             t = self.transformer_channels
-#             vit_outs = self.vit([residual[:, :t], x1[:, :t], x2[:, :t], x3[:, :t], x4[:, :t]])
-#             residual = torch.concat([vit_outs[0], residual[:, t:]], dim=1)
-#             x1 = torch.concat([vit_outs[1], x1[:, t:]], dim=1)
-#             x2 = torch.concat([vit_outs[2], x2[:, t:]], dim=1)
-#             x3 = torch.concat([vit_outs[3], x3[:, t:]], dim=1)
-#             x4 = torch.concat([vit_outs[4], x4[:, t:]], dim=1)
+        # if not self.skip_transformer:
+        #     t = 16
+        #     vit_outs = self.vit([residual[:, :t], x1[:, :t], x2[:, :t], x3[:, :t], x4[:, :t]])
+        #     residual = torch.concat([vit_outs[0], residual[:, t:]], dim=1)
+        #     x1 = torch.concat([vit_outs[1], x1[:, t:]], dim=1)
+        #     x2 = torch.concat([vit_outs[2], x2[:, t:]], dim=1)
+        #     x3 = torch.concat([vit_outs[3], x3[:, t:]], dim=1)
+        #     x4 = torch.concat([vit_outs[4], x4[:, t:]], dim=1)
 
         if not self.skip_transformer:
-            residual, x1, x2, x3 = self.vit([residual, x1, x2, x3])
+            residual, x1, x2, x3, x4 = self.vit([residual, x1, x2, x3, x4])
 
         x = self.up1(x4, x3)
         x = self.up2(x, x2)
         x = self.up3(x, x1)
         x = self.up4(x, residual)
-        
-        x = self.out_conv(x)
 
-        return x
+        # x = self.up1(x4)
+        # x = self.up2(x)
+        # x = self.up3(x)
+        # x = self.up4(x)
+        
+        x1 = self.out_conv1(x)
+        x = self.out_conv2(x1)
+
+        return x + x1

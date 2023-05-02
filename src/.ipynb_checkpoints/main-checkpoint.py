@@ -14,8 +14,8 @@ def main():
     # model = SWINUNETR.to(DEVICE)
     model = MyModel(in_channels=1,
                      out_channels=3,
-                     lower_channels=16,
-                     big_channel=3,
+                     lower_channels=32,
+                     big_channel=32,
                      patch_size=8,
                      embed_dim=128,
                      skip_transformer=True).to(DEVICE)

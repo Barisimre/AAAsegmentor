@@ -70,7 +70,7 @@ class ViT(nn.Module):
         encoder_norm = torch.nn.LayerNorm(embed_dim, eps=1e-5)
         # self.vit = torch.nn.TransformerEncoder(encoder_layer, num_layers=NUM_LAYERS, norm=encoder_norm)
         
-        self.vit = ViTEncoder(seq_length=4680, num_layers=NUM_LAYERS, num_heads=NUM_HEADS, hidden_dim=embed_dim, mlp_dim=embed_dim*HIDDEN_FACTOR, dropout=0.1, attention_dropout=0.1)
+        self.vit = ViTEncoder(seq_length=4681, num_layers=NUM_LAYERS, num_heads=NUM_HEADS, hidden_dim=embed_dim, mlp_dim=embed_dim*HIDDEN_FACTOR, dropout=0.1, attention_dropout=0.1)
 
     # xs: one x per level of the encoder. They should all halve in every size. Channel counts don't matter.
     def forward(self, xs):

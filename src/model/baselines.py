@@ -5,6 +5,6 @@ SWINUNETR = monai.networks.nets.SwinUNETR(img_size=CROP_SIZE, in_channels=1, out
                                           drop_rate=0.1, attn_drop_rate=0.0, dropout_path_rate=0.0, normalize=True,
                                           use_checkpoint=True, spatial_dims=3)
 
-UNet = monai.networks.nets.UNet(spatial_dims=3, in_channels=1, out_channels=3, channels=[8, 16, 32, 64, 128],
+UNet = monai.networks.nets.UNet(spatial_dims=3, in_channels=1, out_channels=3, channels=[16, 32, 64, 128, 256],
                                 strides=[2, 2, 2, 2], kernel_size=3, up_kernel_size=3, num_res_units=2, act='PRELU',
                                 norm='INSTANCE', dropout=0.1, bias=True, adn_ordering='ADN')

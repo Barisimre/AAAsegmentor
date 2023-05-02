@@ -4,7 +4,7 @@ import torch
 
 # Constants
 
-RUN_NAME = "NewBoiNOTRANSFORMER"
+RUN_NAME = "NewBoiNTFocal"
 
 
 # Paths
@@ -27,7 +27,7 @@ DEVICE = "cuda"
 LEARNING_RATES = {0: 1e-3, 25: 6e-4, 75: 3e-4, 800: 1e-4, 1250: 5e-5}
 NUM_EPOCHS = 1500
 BATCH_SIZE = 2
-LOSS = monai.losses.DiceCELoss(lambda_ce=0.4)
+LOSS = monai.losses.GeneralizedDiceFocalLoss()
 
 
 # Transformer stuff

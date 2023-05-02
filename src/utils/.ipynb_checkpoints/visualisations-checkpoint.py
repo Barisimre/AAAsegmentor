@@ -32,10 +32,10 @@ def visualize_sample_to_wandb(image, label, prediction, scores):
     ax3.imshow(pred_slice)
     ax3.set_title("Prediction")
 
-    # Remove axis ticks
-    for ax in [ax1, ax2, ax3]:
-        ax.set_xticks([])
-        ax.set_yticks([])
+    # # Remove axis ticks
+    # for ax in [ax1, ax2, ax3]:
+    #     ax.set_xticks([])
+    #     ax.set_yticks([])
 
     wandb.log({"plot": fig})
     plt.close(fig)
