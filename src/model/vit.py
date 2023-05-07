@@ -77,7 +77,9 @@ class ViT(nn.Module):
         shapes = [int(x.shape[-1] / self.patch_size) for x in xs]
 
         # Embed
-        xs = [einops.rearrange(em(x), "b em x y z -> b (x y z) em") for x, em in zip(xs, self.embedders)]
+        # xs = [einops.rearrange(em(x), "b em x y z -> b (x y z) em") for x, em in zip(xs, self.embedders)]
+        xs = [einops.rearrange(em(xs[i]), "b em x y z -> b (x y z) em") for i, em in enumerate(self.embedders)]
+
         token_counts = [x.shape[1] for x in xs]
         xs = torch.cat(xs, dim=1)
         # print(xs.shape)
@@ -90,8 +92,8 @@ class ViT(nn.Module):
 
 
         # De-Embed
-        xs = [einops.rearrange(x, "b (x y z) em -> b em x y z", x=s, y=s, z=s) for x, s in zip(xs, shapes)]
-        xs = [dem(x) for x, dem in zip(xs, self.de_embedders)]
+        xs = [einops.rearrange(xs[i], "b (x y z) em -> b em x y z", x=s, y=s, z=s) for i, s in enumerate(shapes)]
+        xs = [dem(xs[i]) for i, dem in enumerate(self.de_embedders)]
 
 
         return xs

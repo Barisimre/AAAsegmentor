@@ -50,15 +50,15 @@ class SingleConvBlockTransposed(nn.Module):
 class DoubleConv(nn.Module):
     """(convolution => [IN] => ReLU) * 2 with residual connection"""
 
-    def __init__(self, in_channels, out_channels, mid_channels=None, no_adn=False):
+    def __init__(self, in_channels, out_channels, mid_channels=None, no_adn=False, kernel_size=3):
         super().__init__()
 
         if not mid_channels:
             mid_channels = out_channels
 
         self.double_conv = nn.Sequential(
-            SingleConvBlock(in_channels=in_channels, out_channels=mid_channels, kernel_size=3, padding='same', no_adn=no_adn),
-            SingleConvBlock(in_channels=mid_channels, out_channels=out_channels, kernel_size=3, padding='same', no_adn=no_adn),
+            SingleConvBlock(in_channels=in_channels, out_channels=mid_channels, kernel_size=kernel_size, padding='same', no_adn=no_adn),
+            SingleConvBlock(in_channels=mid_channels, out_channels=out_channels, kernel_size=kernel_size, padding='same', no_adn=no_adn),
         )
 
         # Define a 1x1 convolution to match the number of channels for the residual connection
@@ -71,7 +71,7 @@ class DoubleConv(nn.Module):
     def forward(self, x):
         identity = x
 
-        if self.match_channels:
+        if self.match_channels is not None:
             identity = self.match_channels(identity)
 
         out = self.double_conv(x)
@@ -86,8 +86,8 @@ class ViTEmbedder(nn.Module):
         super().__init__()
         self.block = nn.Sequential(
             SingleConvBlock(kernel_size=patch_size, stride=patch_size, in_channels=in_channels,
-                            out_channels=in_channels, no_adn=True),
-            DoubleConv(in_channels=in_channels, out_channels=embed_dim, no_adn=True),
+                            out_channels=in_channels*2, no_adn=True),
+            DoubleConv(in_channels=in_channels*2, out_channels=embed_dim, no_adn=True, kernel_size=1),
         )
 
     def forward(self, x):
@@ -102,13 +102,13 @@ class ViTDeEmbedder(nn.Module):
                                        out_channels=out_channels, no_adn=True)
 
         self.block = nn.Sequential(
-            DoubleConv(in_channels=embed_dim, out_channels=out_channels),
-            SingleConvBlockTransposed(kernel_size=patch_size, stride=patch_size, in_channels=out_channels,
+            DoubleConv(in_channels=embed_dim, out_channels=out_channels*2, kernel_size=1, no_adn=True),
+            SingleConvBlockTransposed(kernel_size=patch_size, stride=patch_size, in_channels=out_channels*2,
                                       out_channels=out_channels, no_adn=True),
         )
 
     def forward(self, x):
-        return self.conv(x)
+        return self.block(x)
 
 
 class Down(nn.Module):

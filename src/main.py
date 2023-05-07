@@ -11,16 +11,16 @@ from src.model.my_model import MyModel
 
 def main():
     # Model to be trained. Baseline options are Unet, SWINUNETR
-    # model = SWINUNETR.to(DEVICE)
-    model = MyModel(in_channels=1,
-                     out_channels=3,
-                     lower_channels=32,
-                     big_channel=32,
-                     patch_size=8,
-                     embed_dim=128,
-                     skip_transformer=True)
+    model = SWINUNETR
+    # model = MyModel(in_channels=1,
+    #                  out_channels=3,
+    #                  lower_channels=32,
+    #                  big_channel=32,
+    #                  patch_size=8,
+    #                  embed_dim=128,
+    #                  skip_transformer=True)
 
-    model.load_state_dict(torch.load(f"{MODEL_SAVE_PATH}/focus/all_transformer_seed.pt"))
+    # model.load_state_dict(torch.load(f"{MODEL_SAVE_PATH}/focus/all_transformer_seed.pt"))
 
     model = model.to(DEVICE)
 
@@ -47,11 +47,13 @@ def main():
             #  If test loss is the best, save the model
             if test_loss <= best_test_loss:
                 torch.save(model.state_dict(), f"{MODEL_SAVE_PATH}/{RUN_NAME}_{test_loss}.pt")
+                # model_scripted = torch.jit.script(model)
+                # model_scripted.save(f"{MODEL_SAVE_PATH}/{RUN_NAME}_{test_loss}.pt")
                 best_test_loss = test_loss
 
             # Set new learning rate if it is time
             # TODO: set it back
-            # set_learning_rate(e, optimizer)
+            set_learning_rate(e, optimizer)
 
 
 if __name__ == '__main__':

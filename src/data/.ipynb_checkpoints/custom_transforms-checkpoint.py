@@ -17,8 +17,7 @@ class LoadMHD(monai.transforms.Transform):
 
         return {
             'img': monai.data.MetaTensor(img, affine=img_meta['affine']),
-            'mask': monai.data.MetaTensor(mask, affine=mask_meta['affine']),
-            'name': item['name']
+            'mask': monai.data.MetaTensor(mask, affine=mask_meta['affine'])
         }
 
 
@@ -28,7 +27,7 @@ class GetFilesTrain(monai.transforms.Transform):
         pass
 
     def __call__(self, item):
-        return {'img': f"{DATA_PATH}/images/{item}", 'mask': f"{DATA_PATH}/masks/{item}", 'name': item}
+        return {'img': f"{DATA_PATH}/images/{item}", 'mask': f"{DATA_PATH}/masks/{item}"}
 
 
 class GetFilesTest(monai.transforms.Transform):
@@ -37,7 +36,7 @@ class GetFilesTest(monai.transforms.Transform):
         pass
 
     def __call__(self, item):
-        return {'img': f"{DATA_PATH}/test_images/{item}", 'mask': f"{DATA_PATH}/test_masks/{item}", 'name': item}
+        return {'img': f"{DATA_PATH}/test_images/{item}", 'mask': f"{DATA_PATH}/test_masks/{item}"}
     
     
 class GetAll(monai.transforms.Transform):
@@ -46,4 +45,4 @@ class GetAll(monai.transforms.Transform):
         pass
 
     def __call__(self, item):
-        return {'img': f"{DATA_PATH}/all/images/{item}", 'mask': f"{DATA_PATH}/all/masks/{item}", 'name': item}
+        return {'img': f"{DATA_PATH}/all/images/{item}", 'mask': f"{DATA_PATH}/all/masks/{item}"}

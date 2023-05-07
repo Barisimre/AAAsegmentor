@@ -1,11 +1,11 @@
 #!/bin/bash
 #SBATCH --gres=gpu:1
 #SBATCH --mem=32G
-#SBATCH --time=3:00:00
+#SBATCH --time=10:00:00
 #SBATCH --output out/jupyter-notebook.log
 #SBATCH -c 16
 #SBATCH --partition=mia
-#SBATCH --nodelist=ctit093
+#SBATCH --nodelist=ctit091
 
 
 module load anaconda3/2022.05

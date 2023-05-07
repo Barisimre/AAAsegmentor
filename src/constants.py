@@ -4,7 +4,7 @@ import torch
 
 # Constants
 
-RUN_NAME = "AllTransformerTune"
+RUN_NAME = "swin"
 
 
 # Paths
@@ -18,17 +18,20 @@ RESULTS_SAVE_PATH = f"{GENERAL_PATH}/results"
 CROP_SIZE = (128, 128, 128)
 PATCH_SIZE = 8
 SPACINGS = (1.2, 1.2, 0.9)
-CT_WINDOW_MIN = -100
-CT_WINDOW_MAX = 200
+# SPACINGS = (0.77, 0.77, 0.62)
+
+CT_WINDOW_MIN = -300
+CT_WINDOW_MAX = 300
 
 
 # Training hyper-parameters
 DEVICE = "cuda"
-LEARNING_RATES = {0: 1e-3, 25: 6e-4, 75: 3e-4, 800: 1e-4, 1250: 5e-5}
-NUM_EPOCHS = 1000
+LEARNING_RATES = {0: 1e-3, 25: 6e-4, 75: 3e-4, 800: 1e-4, 1250: 5e-5, 2000: 5e-6}
+NUM_EPOCHS = 2500
 BATCH_SIZE = 2
 LOSS = monai.losses.DiceCELoss(lambda_ce=0.4)
-
+# LOSS = monai.losses.GeneralizedDiceFocalLoss(lambda_gdl=0.5, lambda_focal=1.0)
+#
 
 # Transformer stuff
 NUM_HEADS = 8
