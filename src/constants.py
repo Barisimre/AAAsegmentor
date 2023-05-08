@@ -4,7 +4,7 @@ import torch
 
 # Constants
 
-RUN_NAME = "swin"
+RUN_NAME = "skip_32_8"
 
 
 # Paths
@@ -26,14 +26,18 @@ CT_WINDOW_MAX = 300
 
 # Training hyper-parameters
 DEVICE = "cuda"
-LEARNING_RATES = {0: 1e-3, 25: 6e-4, 75: 3e-4, 800: 1e-4, 1250: 5e-5, 2000: 5e-6}
+# LEARNING_RATES = {0: 1e-3, 25: 6e-4, 75: 3e-4, 800: 1e-4, 1250: 5e-5, 2000: 1e-5}
+
+LEARNING_RATES = {0: 3e-4, 1000: 1e-4, 1750: 7e-5, 2000: 2e-5}
+
+
 NUM_EPOCHS = 2500
-BATCH_SIZE = 2
+BATCH_SIZE = 4
 LOSS = monai.losses.DiceCELoss(lambda_ce=0.4)
 # LOSS = monai.losses.GeneralizedDiceFocalLoss(lambda_gdl=0.5, lambda_focal=1.0)
 #
 
 # Transformer stuff
-NUM_HEADS = 8
-NUM_LAYERS = 8
-HIDDEN_FACTOR = 4
+NUM_HEADS = 16
+NUM_LAYERS = 12
+HIDDEN_FACTOR = 3

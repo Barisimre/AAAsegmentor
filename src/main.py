@@ -11,14 +11,17 @@ from src.model.my_model import MyModel
 
 def main():
     # Model to be trained. Baseline options are Unet, SWINUNETR
-    model = SWINUNETR
-    # model = MyModel(in_channels=1,
-    #                  out_channels=3,
-    #                  lower_channels=32,
-    #                  big_channel=32,
-    #                  patch_size=8,
-    #                  embed_dim=128,
-    #                  skip_transformer=True)
+    # model = SWINUNETR
+
+    # modes = normal, skip, autoencoder, half_half, no_vit
+
+    model = MyModel(in_channels=1,
+                    out_channels=3,
+                    lower_channels=32,
+                    big_channel=32,
+                    patch_size=8,
+                    embed_dim=256,
+                    mode="skip")
 
     # model.load_state_dict(torch.load(f"{MODEL_SAVE_PATH}/focus/all_transformer_seed.pt"))
 

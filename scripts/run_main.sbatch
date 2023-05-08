@@ -7,7 +7,7 @@
 #SBATCH --time=48:00:00
 #SBATCH --partition=mia
 #SBATCH --nodelist=ctit091
-#SBATCH --error=out/err1.err
+#SBATCH --error=out/err2.err
 
 module load anaconda3/2022.05
 source activate final

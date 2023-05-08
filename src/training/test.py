@@ -26,9 +26,9 @@ def test_single_epoch(model, test_loader):
                                                           sw_device=DEVICE,
                                                           device="cpu",
                                                           progress=False,
-                                                          mode="gaussian")
+                                                          mode="constant")
             out = torch.argmax(out, 1, keepdim=True).to(DEVICE)
-            # out = largest_component(out).to(DEVICE)
+            out = largest_component(out)
             s = dice_scores(out, mask)
             scores.append(s)
 
