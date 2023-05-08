@@ -113,6 +113,63 @@ class ViTDeEmbedder(nn.Module):
         return self.block(x)
 
 
+class PatchEmbedding(nn.Module):
+    def __init__(self, patch_size, in_channels, embed_dim):
+        super().__init__()
+        self.patch_size = patch_size
+        self.in_channels = in_channels
+        self.embed_dim = embed_dim
+        self.projection = nn.Linear(in_channels * patch_size**3, embed_dim)
+        
+    def forward(self, x):
+        # x shape: (batch, channels, x, y, z)
+        batch_size, channels, x_dim, y_dim, z_dim = x.shape
+
+        # Create non-overlapping patches
+        patches = x.unfold(2, self.patch_size, self.patch_size)
+        patches = patches.unfold(3, self.patch_size, self.patch_size)
+        patches = patches.unfold(4, self.patch_size, self.patch_size)
+
+        # Flatten patches
+        patches_flat = patches.contiguous().view(batch_size, -1, channels * self.patch_size**3)
+
+        # Apply linear embeddings
+        embeddings = self.projection(patches_flat)
+
+        print(embeddings.shape)
+
+        return embeddings, patches.shape
+
+class InversePatchEmbedding(nn.Module):
+    def __init__(self, patch_size, in_channels, embed_dim):
+        super().__init__()
+        self.patch_size = patch_size
+        self.in_channels = in_channels
+        self.embed_dim = embed_dim
+        self.inverse_projection = nn.Linear(embed_dim, in_channels * patch_size**3)
+        
+    def forward(self, x, patch_shape):
+        # x shape: (batch, num_patches, embed_dim)
+        batch_size = x.shape[0]
+
+        # Inverse linear embeddings
+        patches_flat = self.inverse_projection(x)
+
+        # Reshape patches
+        patches = patches_flat.view(*patch_shape).contiguous()
+
+        # Reconstruct the original tensor
+        x_dim, y_dim, z_dim = patch_shape[2] * self.patch_size, patch_shape[3] * self.patch_size, patch_shape[4] * self.patch_size
+        reconstructed = torch.zeros(batch_size, self.in_channels, x_dim, y_dim, z_dim, device=x.device).contiguous()
+
+        for i in range(patch_shape[2]):
+            for j in range(patch_shape[3]):
+                for k in range(patch_shape[4]):
+                    reconstructed[:, :, i*self.patch_size:(i+1)*self.patch_size, j*self.patch_size:(j+1)*self.patch_size, k*self.patch_size:(k+1)*self.patch_size] = patches[:, :, i, j, k]
+
+        return reconstructed
+
+
 class Down(nn.Module):
 
     def __init__(self, in_channels, out_channels):

@@ -14,7 +14,8 @@ class MyModel(nn.Module):
                  big_channel=4,
                  patch_size=8,
                  embed_dim=256,
-                 mode="normal"):
+                 mode="normal",
+                 old_embedder = False):
         super(MyModel, self).__init__()
 
         self.n_classes = out_channels
@@ -50,7 +51,7 @@ class MyModel(nn.Module):
         if mode == "half_half":
             transformer_channels = np.array(transformer_channels) // 2
         if mode not in ["autoencoder", "skip"]:
-            self.vit = ViT(embed_dim=embed_dim, channels=transformer_channels, patch_size=patch_size, no_vit=mode=="no_vit")
+            self.vit = ViT(embed_dim=embed_dim, channels=transformer_channels, patch_size=patch_size, no_vit=mode=="no_vit", old=old_embedder)
 
     def forward(self, x):
         residual = self.in_conv(x)

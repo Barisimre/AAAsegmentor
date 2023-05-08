@@ -8,21 +8,35 @@ from src.constants import *
 
 class ViT(nn.Module):
 
-    def __init__(self, embed_dim, patch_size, channels, no_vit=False):
+    def __init__(self, embed_dim, patch_size, channels, no_vit=False, old=False):
         super().__init__()
 
         self.patch_size = patch_size
         self.no_vit = no_vit
+        self.old = old
 
         seq_lens = {8: 4681,  4: 37448, 2: 299584}
 
-        self.embedders = nn.ModuleList([
-            ViTEmbedder(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
-        ])
+        if old:
 
-        self.de_embedders = nn.ModuleList([
-            ViTDeEmbedder(patch_size=patch_size, out_channels=c, embed_dim=embed_dim) for c in channels
-        ])
+            self.embedders = nn.ModuleList([
+                ViTEmbedder(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
+            ])
+
+            self.de_embedders = nn.ModuleList([
+                ViTDeEmbedder(patch_size=patch_size, out_channels=c, embed_dim=embed_dim) for c in channels
+            ])
+        
+        else:
+
+            self.embedders = nn.ModuleList([
+                PatchEmbedding(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
+            ])
+
+            self.de_embedders = nn.ModuleList([
+                InversePatchEmbedding(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
+            ])
+
 
 
 #         encoder_layer = torch.nn.TransformerEncoderLayer(d_model=embed_dim, nhead=NUM_HEADS, dim_feedforward=embed_dim * HIDDEN_FACTOR,
@@ -41,22 +55,36 @@ class ViT(nn.Module):
     def forward(self, xs):
         shapes = [int(x.shape[-1] / self.patch_size) for x in xs]
 
-        # Embed
-        # xs = [einops.rearrange(em(x), "b em x y z -> b (x y z) em") for x, em in zip(xs, self.embedders)]
-        xs = [einops.rearrange(em(xs[i]), "b em x y z -> b (x y z) em") for i, em in enumerate(self.embedders)]
+        if self.old:
+            # Embed
+            xs = [einops.rearrange(em(xs[i]), "b em x y z -> b (x y z) em") for i, em in enumerate(self.embedders)]
 
-        token_counts = [x.shape[1] for x in xs]
+            token_counts = [x.shape[1] for x in xs]
 
-        # ViT
-        if not self.no_vit:
-            xs = torch.cat(xs, dim=1)
-            xs = self.vit(xs)
-            xs = torch.split(xs, token_counts, dim=1)
+            # ViT
+            if not self.no_vit:
+                xs = torch.cat(xs, dim=1)
+                xs = self.vit(xs)
+                xs = torch.split(xs, token_counts, dim=1)
 
-        # De-Embed
-        xs = [einops.rearrange(xs[i], "b (x y z) em -> b em x y z", x=s, y=s, z=s) for i, s in enumerate(shapes)]
-        xs = [dem(xs[i]) for i, dem in enumerate(self.de_embedders)]
+            # De-Embed
+            xs = [einops.rearrange(xs[i], "b (x y z) em -> b em x y z", x=s, y=s, z=s) for i, s in enumerate(shapes)]
+            xs = [dem(xs[i]) for i, dem in enumerate(self.de_embedders)]
 
+
+        else:
+
+            a = [e(x) for e, x in zip(self.embedders, xs)]
+            xs = [i[0] for i in a]
+            token_counts = [x.shape[1] for x in xs]
+            shapes = [i[1] for i in a]
+
+            if not self.no_vit:
+                xs = torch.cat(xs, dim=1)
+                xs = self.vit(xs)
+                xs = torch.split(xs, token_counts, dim=1)
+
+            xs = [e(x, s) for e, x, s in zip(self.de_embedders, xs, shapes)]
 
         return xs
 
