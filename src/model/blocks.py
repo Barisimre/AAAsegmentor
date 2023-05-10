@@ -119,26 +119,21 @@ class PatchEmbedding(nn.Module):
         self.patch_size = patch_size
         self.in_channels = in_channels
         self.embed_dim = embed_dim
-        self.projection = nn.Linear(in_channels * patch_size**3, embed_dim)
-        
+        self.projection = nn.Linear(in_channels * patch_size**3, embed_dim, bias=False)
+
     def forward(self, x):
-        # x shape: (batch, channels, x, y, z)
         batch_size, channels, x_dim, y_dim, z_dim = x.shape
 
-        # Create non-overlapping patches
-        patches = x.unfold(2, self.patch_size, self.patch_size)
-        patches = patches.unfold(3, self.patch_size, self.patch_size)
-        patches = patches.unfold(4, self.patch_size, self.patch_size)
+        patches_x = x.unfold(2, self.patch_size, self.patch_size)
+        patches_y = patches_x.unfold(3, self.patch_size, self.patch_size)
+        patches_z = patches_y.unfold(4, self.patch_size, self.patch_size)
 
-        # Flatten patches
-        patches_flat = patches.contiguous().view(batch_size, -1, channels * self.patch_size**3)
+        patches = patches_z.permute(0, 2, 3, 4, 1, 5, 6, 7).contiguous()
+        patches = patches.view(batch_size, -1, self.patch_size**3 * channels)
 
-        # Apply linear embeddings
-        embeddings = self.projection(patches_flat)
+        embeddings = self.projection(patches)
 
-        print(embeddings.shape)
-
-        return embeddings, patches.shape
+        return embeddings
 
 class InversePatchEmbedding(nn.Module):
     def __init__(self, patch_size, in_channels, embed_dim):
@@ -146,28 +141,25 @@ class InversePatchEmbedding(nn.Module):
         self.patch_size = patch_size
         self.in_channels = in_channels
         self.embed_dim = embed_dim
-        self.inverse_projection = nn.Linear(embed_dim, in_channels * patch_size**3)
-        
-    def forward(self, x, patch_shape):
-        # x shape: (batch, num_patches, embed_dim)
-        batch_size = x.shape[0]
+        self.projection = nn.Linear(embed_dim, in_channels * patch_size**3, bias=False)
 
-        # Inverse linear embeddings
-        patches_flat = self.inverse_projection(x)
+    def forward(self, embeddings, x_shape):
+        batch_size, _, x_dim, y_dim, z_dim = x_shape
 
-        # Reshape patches
-        patches = patches_flat.view(*patch_shape).contiguous()
+        patches = self.projection(embeddings)
 
-        # Reconstruct the original tensor
-        x_dim, y_dim, z_dim = patch_shape[2] * self.patch_size, patch_shape[3] * self.patch_size, patch_shape[4] * self.patch_size
-        reconstructed = torch.zeros(batch_size, self.in_channels, x_dim, y_dim, z_dim, device=x.device).contiguous()
+        patches = patches.view(batch_size, -1, self.in_channels, self.patch_size, self.patch_size, self.patch_size)
 
-        for i in range(patch_shape[2]):
-            for j in range(patch_shape[3]):
-                for k in range(patch_shape[4]):
-                    reconstructed[:, :, i*self.patch_size:(i+1)*self.patch_size, j*self.patch_size:(j+1)*self.patch_size, k*self.patch_size:(k+1)*self.patch_size] = patches[:, :, i, j, k]
+        num_patches_x = x_dim // self.patch_size
+        num_patches_y = y_dim // self.patch_size
+        num_patches_z = z_dim // self.patch_size
 
-        return reconstructed
+        patches = patches.view(batch_size, num_patches_x, num_patches_y, num_patches_z, self.in_channels, self.patch_size, self.patch_size, self.patch_size)
+
+        x = patches.permute(0, 4, 1, 5, 2, 6, 3, 7).contiguous()
+        x = x.view(batch_size, self.in_channels, x_dim, y_dim, z_dim)
+
+        return x
 
 
 class Down(nn.Module):

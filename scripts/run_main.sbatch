@@ -4,10 +4,10 @@
 #SBATCH --mem=16gb
 #SBATCH --output out/main_output.log
 #SBATCH -c 16 
-#SBATCH --time=48:00:00
+#SBATCH --time=24:00:00
 #SBATCH --partition=mia
 #SBATCH --nodelist=ctit091
-#SBATCH --error=out/err2.err
+#SBATCH --error=out/skip_16.err
 
 module load anaconda3/2022.05
 source activate final

@@ -50,11 +50,18 @@ class MyModel(nn.Module):
         transformer_channels = [big_channel] + [lower_channels for i in range(4)]
         if mode == "half_half":
             transformer_channels = np.array(transformer_channels) // 2
-        if mode not in ["autoencoder", "skip"]:
+        if mode not in ["autoencoder", "skip", "no_down_vit"]:
             self.vit = ViT(embed_dim=embed_dim, channels=transformer_channels, patch_size=patch_size, no_vit=mode=="no_vit", old=old_embedder)
+
+        if mode == "no_down_vit":
+            self.vit =  ViT(embed_dim=embed_dim, channels=transformer_channels, patch_size=patch_size, no_vit=mode=="no_vit", old=old_embedder, ablation=True)
 
     def forward(self, x):
         residual = self.in_conv(x)
+
+        if self.mode == "no_down_vit":
+            residual = self.vit()
+
 
         x1 = self.down1(residual)
         x2 = self.down2(x1)
@@ -73,6 +80,7 @@ class MyModel(nn.Module):
         elif self.mode == "normal" or self.mode == "no_vit":
             residual, x1, x2, x3, x4 = self.vit([residual, x1, x2, x3, x4])
 
+
         if self.mode != "autoencoder":
             x = self.up1(x4, x3)
             x = self.up2(x, x2)
@@ -84,7 +92,6 @@ class MyModel(nn.Module):
             x = self.up2(x)
             x = self.up3(x)
             x = self.up4(x)
-        
         x = self.out_conv1(x)
         x = self.out_conv2(x)
 

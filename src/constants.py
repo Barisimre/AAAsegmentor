@@ -4,7 +4,7 @@ import torch
 
 # Constants
 
-RUN_NAME = "skip_32_8"
+RUN_NAME = "unet_monai"
 
 
 # Paths

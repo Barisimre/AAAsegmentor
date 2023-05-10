@@ -1,78 +1,186 @@
 	Adding anaconda3 2022.05 to your environment
 	Adding nVidia Cuda Toolkit 11.7
-[I 2023-05-08 18:14:48.593 ServerApp] jupyterlab | extension was successfully linked.
-[W 2023-05-08 18:14:48.617 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-05-08 18:14:48.617 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-05-08 18:14:48.617 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[I 2023-05-08 18:14:48.624 ServerApp] nbclassic | extension was successfully linked.
-[I 2023-05-08 18:14:53.361 ServerApp] notebook_shim | extension was successfully linked.
-[I 2023-05-08 18:14:53.678 ServerApp] notebook_shim | extension was successfully loaded.
-[I 2023-05-08 18:14:53.679 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/final/lib/python3.10/site-packages/jupyterlab
-[I 2023-05-08 18:14:53.679 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/final/share/jupyter/lab
-[I 2023-05-08 18:14:53.685 ServerApp] jupyterlab | extension was successfully loaded.
-[I 2023-05-08 18:14:53.740 ServerApp] nbclassic | extension was successfully loaded.
-[I 2023-05-08 18:14:53.740 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
-[I 2023-05-08 18:14:53.741 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
-[I 2023-05-08 18:14:53.741 ServerApp] Jupyter Server 1.23.6 is running at:
-[I 2023-05-08 18:14:53.741 ServerApp] http://ctit091.ewi.utwente.nl:8806/lab?token=9d6a10c402f707202ae18407d262e92a7cb3658ac8aa8f3c
-[I 2023-05-08 18:14:53.741 ServerApp]  or http://127.0.0.1:8806/lab?token=9d6a10c402f707202ae18407d262e92a7cb3658ac8aa8f3c
-[I 2023-05-08 18:14:53.741 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 2023-05-08 18:14:53.754 ServerApp] 
+[I 2023-05-10 11:38:12.069 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-05-10 11:38:12.071 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-05-10 11:38:12.072 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-05-10 11:38:12.072 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-05-10 11:38:12.074 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-05-10 11:38:12.413 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-05-10 11:38:12.437 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-05-10 11:38:12.437 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/final/lib/python3.10/site-packages/jupyterlab
+[I 2023-05-10 11:38:12.437 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/final/share/jupyter/lab
+[I 2023-05-10 11:38:12.440 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-05-10 11:38:12.445 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-05-10 11:38:12.445 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
+[I 2023-05-10 11:38:12.446 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
+[I 2023-05-10 11:38:12.446 ServerApp] Jupyter Server 1.23.6 is running at:
+[I 2023-05-10 11:38:12.446 ServerApp] http://ctit093.ewi.utwente.nl:8806/lab?token=297b2b7e8f943f7a1c2ee9d8af69f95453f618ad6f589884
+[I 2023-05-10 11:38:12.446 ServerApp]  or http://127.0.0.1:8806/lab?token=297b2b7e8f943f7a1c2ee9d8af69f95453f618ad6f589884
+[I 2023-05-10 11:38:12.446 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-05-10 11:38:12.450 ServerApp] 
     
     To access the server, open this file in a browser:
-        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-976705-open.html
+        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-1006470-open.html
     Or copy and paste one of these URLs:
-        http://ctit091.ewi.utwente.nl:8806/lab?token=9d6a10c402f707202ae18407d262e92a7cb3658ac8aa8f3c
-     or http://127.0.0.1:8806/lab?token=9d6a10c402f707202ae18407d262e92a7cb3658ac8aa8f3c
-[W 2023-05-08 18:15:09.627 LabApp] Could not determine jupyterlab build status without nodejs
-[I 2023-05-08 18:15:12.330 ServerApp] Kernel started: 708809d7-079e-4f63-8021-288460aa8322
-[I 2023-05-08 18:15:12.330 ServerApp] Culling kernels with idle durations > 3600 seconds at 300 second intervals ...
-[W 2023-05-08 18:15:13.542 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x7f8431e12890>
+        http://ctit093.ewi.utwente.nl:8806/lab?token=297b2b7e8f943f7a1c2ee9d8af69f95453f618ad6f589884
+     or http://127.0.0.1:8806/lab?token=297b2b7e8f943f7a1c2ee9d8af69f95453f618ad6f589884
+[W 2023-05-10 11:39:29.030 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2023-05-10 11:39:33.571 ServerApp] Kernel started: 80115333-2793-4d97-97f8-115c80b5e88c
+[I 2023-05-10 11:39:33.574 ServerApp] Culling kernels with idle durations > 3600 seconds at 300 second intervals ...
 [IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: a576c0b5-9b4b-4c43-9ac7-79629b1e6f42
-[I 2023-05-08 18:16:10.160 ServerApp] Kernel interrupted: 708809d7-079e-4f63-8021-288460aa8322
-[I 2023-05-08 18:16:10.371 ServerApp] Kernel interrupted: 708809d7-079e-4f63-8021-288460aa8322
-[I 2023-05-08 18:16:10.758 ServerApp] Kernel interrupted: 708809d7-079e-4f63-8021-288460aa8322
-[I 2023-05-08 18:16:10.903 ServerApp] Kernel interrupted: 708809d7-079e-4f63-8021-288460aa8322
-[I 2023-05-08 18:16:11.121 ServerApp] Kernel interrupted: 708809d7-079e-4f63-8021-288460aa8322
-[I 2023-05-08 18:16:11.950 ServerApp] Kernel interrupted: 708809d7-079e-4f63-8021-288460aa8322
-[I 2023-05-08 18:16:12.122 ServerApp] Kernel interrupted: 708809d7-079e-4f63-8021-288460aa8322
-[I 2023-05-08 18:16:12.295 ServerApp] Kernel interrupted: 708809d7-079e-4f63-8021-288460aa8322
-[I 2023-05-08 18:16:12.517 ServerApp] Kernel interrupted: 708809d7-079e-4f63-8021-288460aa8322
-[I 2023-05-08 18:16:30.277 ServerApp] Kernel restarted: 708809d7-079e-4f63-8021-288460aa8322
+[IPKernelApp] WARNING | No such comm: 2770a13f-af92-4e47-a8e4-57e8d2ac6c81
+[I 2023-05-10 11:40:27.646 ServerApp] Kernel started: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
 [IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 102de6eb-8da6-4035-a09b-1ab5d9db68c5
-[I 2023-05-08 18:16:55.644 ServerApp] Kernel interrupted: 708809d7-079e-4f63-8021-288460aa8322
-Mon May  8 18:16:57 2023       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 515.86.01    Driver Version: 515.86.01    CUDA Version: 11.7     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  NVIDIA A40          On   | 00000000:3B:00.0 Off |                    0 |
-|  0%   51C    P8    39W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   1  NVIDIA A40          On   | 00000000:5E:00.0 Off |                    0 |
-|  0%   43C    P8    38W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   2  NVIDIA A40          On   | 00000000:B1:00.0 Off |                    0 |
-|  0%   44C    P8    38W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-|   3  NVIDIA A40          On   | 00000000:D9:00.0 Off |                    0 |
-|  0%   44C    P8    38W / 300W |      0MiB / 46068MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|  No running processes found                                                 |
-+-----------------------------------------------------------------------------+
-[I 2023-05-08 18:17:12.136 ServerApp] Saving file at /notebooks/test_model_random_datat.ipynb
+[IPKernelApp] WARNING | No such comm: 41744723-698b-430c-ab25-cd072a3508cc
+[I 2023-05-10 11:41:45.790 ServerApp] Kernel restarted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 11:41:45.799 ServerApp] Starting buffering for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
+[I 2023-05-10 11:41:45.807 ServerApp] Restoring connection for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 44eab989-53c5-4d19-9136-f69e121cb8c8
+[I 2023-05-10 11:42:04.348 ServerApp] Kernel restarted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 11:42:04.361 ServerApp] Starting buffering for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
+[I 2023-05-10 11:42:04.379 ServerApp] Restoring connection for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: b7a3eb2b-3903-44bc-9a26-4b1413bf52b9
+[I 2023-05-10 11:42:27.598 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 11:44:27.853 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 11:46:28.030 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 11:48:28.082 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 11:49:32.878 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 11:50:28.137 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 11:52:28.201 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 11:54:28.245 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 11:56:28.303 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 11:58:28.387 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:00:28.833 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:02:34.694 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:04:35.318 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:06:05.627 ServerApp] Creating new directory in /results
+[I 2023-05-10 12:06:35.401 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:08:35.450 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:10:37.319 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:12:38.867 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:14:40.591 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:16:40.630 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:18:40.696 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:20:40.730 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:22:40.775 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:24:40.884 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:26:41.067 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:28:41.203 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:30:41.256 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:32:41.463 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:34:41.536 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:38:41.594 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:40:41.646 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:42:41.691 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:44:41.744 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:46:11.223 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:13.801 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:21.678 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:21.836 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:21.988 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:22.142 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:22.322 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:38.704 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:38.872 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:39.045 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:39.217 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:39.393 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:39.559 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:39.738 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:39.914 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:40.097 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:40.280 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:40.485 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:40.664 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:41.777 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 12:46:59.392 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:59.569 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:59.746 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:46:59.936 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:47:00.116 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:47:00.295 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:47:20.472 ServerApp] Kernel restarted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
+[I 2023-05-10 12:47:20.479 ServerApp] Starting buffering for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
+[I 2023-05-10 12:47:20.512 ServerApp] Restoring connection for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 012b6ce2-e631-4d48-8ad9-4001832e76a1
+[I 2023-05-10 12:48:43.770 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:04:47.235 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:08:49.183 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:12:49.321 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:16:49.362 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:17:45.142 ServerApp] Starting buffering for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
+[I 2023-05-10 13:17:45.143 ServerApp] Starting buffering for 80115333-2793-4d97-97f8-115c80b5e88c:6120e0a5-1873-4893-9aa0-cb780f95e34d
+[W 2023-05-10 13:17:49.130 LabApp] Could not determine jupyterlab build status without nodejs
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 7ab2e8c9-8ac8-47de-9377-776cc1962769
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 4dda02a4-3b49-49d1-a534-324138122034
+[I 2023-05-10 13:19:49.816 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:21:49.868 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:23:51.563 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:25:52.948 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:27:54.452 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:29:56.127 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:31:57.616 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:33:58.937 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:36:00.457 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:38:01.913 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:40:03.089 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:42:04.846 ServerApp] Saving file at /notebooks/inference.ipynb
+[W 2023-05-10 13:43:18.140 ServerApp] delete /results/Mine/1_image.npy
+[W 2023-05-10 13:43:18.235 ServerApp] delete /results/Mine/1_output.npy
+[W 2023-05-10 13:43:18.238 ServerApp] delete /results/Mine/1_mask.npy
+[W 2023-05-10 13:43:18.240 ServerApp] delete /results/Mine/10_image.npy
+[W 2023-05-10 13:43:18.242 ServerApp] delete /results/Mine/10_mask.npy
+[W 2023-05-10 13:43:18.244 ServerApp] delete /results/Mine/2_image.npy
+[W 2023-05-10 13:43:18.246 ServerApp] delete /results/Mine/10_output.npy
+[W 2023-05-10 13:43:18.250 ServerApp] delete /results/Mine/2_mask.npy
+[W 2023-05-10 13:43:18.252 ServerApp] delete /results/Mine/2_output.npy
+[W 2023-05-10 13:43:18.254 ServerApp] delete /results/Mine/3_image.npy
+[W 2023-05-10 13:43:18.255 ServerApp] delete /results/Mine/3_mask.npy
+[W 2023-05-10 13:43:18.257 ServerApp] delete /results/Mine/3_output.npy
+[W 2023-05-10 13:43:18.258 ServerApp] delete /results/Mine/4_image.npy
+[W 2023-05-10 13:43:18.262 ServerApp] delete /results/Mine/4_mask.npy
+[W 2023-05-10 13:43:18.264 ServerApp] delete /results/Mine/5_mask.npy
+[W 2023-05-10 13:43:18.265 ServerApp] delete /results/Mine/5_output.npy
+[W 2023-05-10 13:43:18.267 ServerApp] delete /results/Mine/6_mask.npy
+[W 2023-05-10 13:43:18.269 ServerApp] delete /results/Mine/6_image.npy
+[W 2023-05-10 13:43:18.281 ServerApp] delete /results/Mine/7_image.npy
+[W 2023-05-10 13:43:18.283 ServerApp] delete /results/Mine/7_mask.npy
+[W 2023-05-10 13:43:18.318 ServerApp] delete /results/Mine/7_output.npy
+[W 2023-05-10 13:43:18.321 ServerApp] delete /results/Mine/9_image.npy
+[W 2023-05-10 13:43:18.324 ServerApp] delete /results/Mine/8_mask.npy
+[W 2023-05-10 13:43:18.332 ServerApp] delete /results/Mine/4_output.npy
+[W 2023-05-10 13:43:18.334 ServerApp] delete /results/Mine/8_output.npy
+[W 2023-05-10 13:43:18.337 ServerApp] delete /results/Mine/5_image.npy
+[W 2023-05-10 13:43:18.338 ServerApp] delete /results/Mine/8_image.npy
+[W 2023-05-10 13:43:18.340 ServerApp] delete /results/Mine/6_output.npy
+[W 2023-05-10 13:43:18.341 ServerApp] delete /results/Mine/9_mask.npy
+[W 2023-05-10 13:43:18.344 ServerApp] delete /results/Mine/9_output.npy
+[I 2023-05-10 13:44:06.873 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:46:06.945 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:48:07.013 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:50:07.232 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 13:52:07.513 ServerApp] Saving file at /notebooks/inference.ipynb
+[I 2023-05-10 16:01:13.687 ServerApp] Kernel started: 43416e65-ba5d-4faf-9b52-610ec1c887da
+[I 2023-05-10 16:03:15.312 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+[I 2023-05-10 16:07:16.590 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+IOStream.flush timed out
+[I 2023-05-10 16:09:17.797 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+IOStream.flush timed out
+[I 2023-05-10 16:11:18.879 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+[I 2023-05-10 16:13:20.091 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+[I 2023-05-10 16:15:20.229 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: c78597cc-f44e-48a1-9cbb-7d6567b3c174
+[I 2023-05-10 16:17:22.304 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+[I 2023-05-10 16:19:24.072 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+[I 2023-05-10 16:35:24.981 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+[I 2023-05-10 16:37:26.972 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+[I 2023-05-10 16:39:27.030 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+[I 2023-05-10 16:41:27.075 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+[I 2023-05-10 16:43:27.149 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+[I 2023-05-10 16:45:28.576 ServerApp] Saving file at /notebooks/data_investigarion.ipynb

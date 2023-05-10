@@ -8,7 +8,7 @@ from src.constants import *
 
 class ViT(nn.Module):
 
-    def __init__(self, embed_dim, patch_size, channels, no_vit=False, old=False):
+    def __init__(self, embed_dim, patch_size, channels, no_vit=False, old=False, ablation=False):
         super().__init__()
 
         self.patch_size = patch_size
@@ -16,6 +16,8 @@ class ViT(nn.Module):
         self.old = old
 
         seq_lens = {8: 4681,  4: 37448, 2: 299584}
+        if ablation:
+            seq_length[8]: 3000
 
         if old:
 
@@ -73,11 +75,11 @@ class ViT(nn.Module):
 
 
         else:
-
-            a = [e(x) for e, x in zip(self.embedders, xs)]
-            xs = [i[0] for i in a]
+            shapes  = [x.shape for x in xs]
+            xs = [e(x) for e, x in zip(self.embedders, xs)]
             token_counts = [x.shape[1] for x in xs]
-            shapes = [i[1] for i in a]
+            
+            # shapes = [i[1] for i in a]
 
             if not self.no_vit:
                 xs = torch.cat(xs, dim=1)
@@ -85,6 +87,9 @@ class ViT(nn.Module):
                 xs = torch.split(xs, token_counts, dim=1)
 
             xs = [e(x, s) for e, x, s in zip(self.de_embedders, xs, shapes)]
+            # xs = [einops.rearrange(xs[i], "b (x y z) em -> b em x y z", x=s, y=s, z=s) for i, s in enumerate(shapes)]
+            # xs = [dem(xs[i]) for i, dem in enumerate(self.de_embedders)]
+
 
         return xs
 
