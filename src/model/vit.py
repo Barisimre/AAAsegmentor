@@ -14,30 +14,37 @@ class ViT(nn.Module):
         self.patch_size = patch_size
         self.no_vit = no_vit
         self.old = old
+        self.ablation = ablation
 
         seq_lens = {8: 4681,  4: 37448, 2: 299584}
+
         if ablation:
-            seq_length[8]: 3000
+            seq_lens[8]= 4096
 
-        if old:
+            self.embedder = PatchEmbedding(patch_size=patch_size, in_channels=channels[0], embed_dim=embed_dim)
+            self.de_embedder = InversePatchEmbedding(patch_size=patch_size, in_channels=channels[0], embed_dim=embed_dim)
 
-            self.embedders = nn.ModuleList([
-                ViTEmbedder(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
-            ])
-
-            self.de_embedders = nn.ModuleList([
-                ViTDeEmbedder(patch_size=patch_size, out_channels=c, embed_dim=embed_dim) for c in channels
-            ])
-        
         else:
 
-            self.embedders = nn.ModuleList([
-                PatchEmbedding(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
-            ])
+            if old:
 
-            self.de_embedders = nn.ModuleList([
-                InversePatchEmbedding(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
-            ])
+                self.embedders = nn.ModuleList([
+                    ViTEmbedder(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
+                ])
+
+                self.de_embedders = nn.ModuleList([
+                    ViTDeEmbedder(patch_size=patch_size, out_channels=c, embed_dim=embed_dim) for c in channels
+                ])
+            
+            else:
+
+                self.embedders = nn.ModuleList([
+                    PatchEmbedding(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
+                ])
+
+                self.de_embedders = nn.ModuleList([
+                    InversePatchEmbedding(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
+                ])
 
 
 
@@ -56,6 +63,13 @@ class ViT(nn.Module):
     # xs: one x per level of the encoder. They should all halve in every size. Channel counts don't matter.
     def forward(self, xs):
         shapes = [int(x.shape[-1] / self.patch_size) for x in xs]
+
+        if self.ablation:
+            shape = xs.shape
+            x = self.embedder(xs)
+            x = self.vit(x)
+            x = self.de_embedder(x, shape)
+            return x
 
         if self.old:
             # Embed

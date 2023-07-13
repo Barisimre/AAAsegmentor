@@ -60,8 +60,10 @@ class MyModel(nn.Module):
         residual = self.in_conv(x)
 
         if self.mode == "no_down_vit":
-            residual = self.vit()
-
+            x = self.vit(residual)
+            x = self.out_conv1(x)
+            x = self.out_conv2(x)
+            return x
 
         x1 = self.down1(residual)
         x2 = self.down2(x1)

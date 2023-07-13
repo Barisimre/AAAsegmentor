@@ -4,7 +4,7 @@ import torch
 
 # Constants
 
-RUN_NAME = "unet_monai"
+RUN_NAME = "just_one_level_vit"
 
 
 # Paths

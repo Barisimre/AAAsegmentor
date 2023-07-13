@@ -6,7 +6,7 @@
 #SBATCH -c 16 
 #SBATCH --time=24:00:00
 #SBATCH --partition=mia
-#SBATCH --nodelist=ctit091
+#SBATCH --nodelist=ctit093
 #SBATCH --error=out/skip_16.err
 
 module load anaconda3/2022.05
