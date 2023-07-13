@@ -1,10 +1,9 @@
 import monai
 import torch
 
-
 # Constants
 
-RUN_NAME = "just_one_level_vit"
+RUN_NAME = "run_name"
 
 
 # Paths
@@ -18,7 +17,6 @@ RESULTS_SAVE_PATH = f"{GENERAL_PATH}/results"
 CROP_SIZE = (128, 128, 128)
 PATCH_SIZE = 8
 SPACINGS = (1.2, 1.2, 0.9)
-# SPACINGS = (0.77, 0.77, 0.62)
 
 CT_WINDOW_MIN = -300
 CT_WINDOW_MAX = 300

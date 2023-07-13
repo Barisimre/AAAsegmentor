@@ -3,4 +3,5 @@ models/*
 results/*
 .idea
 src/wandb/*
-src/model/__pycache__
+**/__pycache__
+**/.ipynb_checkpoints

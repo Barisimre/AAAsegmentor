@@ -1,4 +1,3 @@
-import torch
 import wandb
 
 from src.constants import *

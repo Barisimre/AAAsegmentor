@@ -32,7 +32,7 @@ def main():
     optimizer = torch.optim.Adam(params=model.parameters(), lr=1e-4)
 
     wandb.init(
-        project="Meeting",
+        project="TreeTransformer",
         entity="barisimre",
         name=RUN_NAME
     )
@@ -51,8 +51,6 @@ def main():
             #  If test loss is the best, save the model
             if test_loss <= best_test_loss:
                 torch.save(model.state_dict(), f"{MODEL_SAVE_PATH}/{RUN_NAME}_{test_loss}.pt")
-                # model_scripted = torch.jit.script(model)
-                # model_scripted.save(f"{MODEL_SAVE_PATH}/{RUN_NAME}_{test_loss}.pt")
                 best_test_loss = test_loss
 
             # Set new learning rate if it is time

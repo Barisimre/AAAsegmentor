@@ -1,9 +1,6 @@
 from einops.layers.torch import Rearrange
 import torch.nn as nn
 import torch
-from functools import partial
-from typing import Any, Callable, Dict, List, NamedTuple, Optional
-from collections import OrderedDict
 
 
 class SingleConvBlock(nn.Module):

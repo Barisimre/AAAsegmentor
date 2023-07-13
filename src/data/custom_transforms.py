@@ -38,12 +38,3 @@ class GetFilesTest(monai.transforms.Transform):
 
     def __call__(self, item):
         return {'img': f"{DATA_PATH}/test_images/{item}", 'mask': f"{DATA_PATH}/test_masks/{item}", 'name': item}
-    
-    
-class GetAll(monai.transforms.Transform):
-
-    def __init__(self, keys=None):
-        pass
-
-    def __call__(self, item):
-        return {'img': f"{DATA_PATH}/all/images/{item}", 'mask': f"{DATA_PATH}/all/masks/{item}", 'name': item}

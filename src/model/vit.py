@@ -1,3 +1,6 @@
+from collections import OrderedDict
+from functools import partial
+from typing import Any, Callable, Dict, List, NamedTuple, Optional
 import einops
 import torch.nn as nn
 from src.model.blocks import *
@@ -47,15 +50,6 @@ class ViT(nn.Module):
                 ])
 
 
-
-#         encoder_layer = torch.nn.TransformerEncoderLayer(d_model=embed_dim, nhead=NUM_HEADS, dim_feedforward=embed_dim * HIDDEN_FACTOR,
-#                                                          dropout=0.1,
-#                                                          activation="gelu", layer_norm_eps=1e-5, batch_first=False,
-#                                                          norm_first=False)
-        
-#         encoder_norm = torch.nn.LayerNorm(embed_dim, eps=1e-5)
-#         self.vit = torch.nn.TransformerEncoder(encoder_layer, num_layers=NUM_LAYERS, norm=encoder_norm)
-        
         if not no_vit:
             self.vit = ViTEncoder(seq_length=seq_lens[patch_size], num_layers=NUM_LAYERS, num_heads=NUM_HEADS, hidden_dim=embed_dim, mlp_dim=embed_dim*HIDDEN_FACTOR, dropout=0.1, attention_dropout=0.1)
 
@@ -126,10 +120,10 @@ class MLP(torch.nn.Sequential):
     def __init__(
             self,
             in_channels: int,
-            hidden_channels: List[int],
-            norm_layer: Optional[Callable[..., torch.nn.Module]] = None,
-            activation_layer: Optional[Callable[..., torch.nn.Module]] = torch.nn.ReLU,
-            inplace: Optional[bool] = None,
+            hidden_channels,
+            norm_layer=None,
+            activation_layer=torch.nn.ReLU,
+            inplace= None,
             bias: bool = True,
             dropout: float = 0.0,
     ):
@@ -249,7 +243,7 @@ class ViTEncoder(nn.Module):
             dropout: float,
             attention_dropout: float,
             norm_layer: Callable[..., torch.nn.Module] = partial(nn.LayerNorm, eps=1e-6),
-    ):
+        ):
         super().__init__()
         # Note that batch_size is on the first dim because
         # we have batch_first=True in nn.MultiAttention() by default
