@@ -1,16 +1,19 @@
 from einops.layers.torch import Rearrange
 import torch.nn as nn
 import torch
+from functools import reduce
+from operator import mul
 
 
 class SingleConvBlock(nn.Module):
 
     def __init__(self, in_channels, out_channels, kernel_size=3, stride=1, padding=0, dropout=0.1, no_adn=False):
         super().__init__()
-        
+
         if no_adn:
-            self.block = nn.Conv3d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride, padding=padding)
-        
+            self.block = nn.Conv3d(in_channels=in_channels, out_channels=out_channels,
+                                   kernel_size=kernel_size, stride=stride, padding=padding)
+
         else:
             self.block = nn.Sequential(
                 nn.Conv3d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride,
@@ -28,13 +31,15 @@ class SingleConvBlockTransposed(nn.Module):
 
     def __init__(self, in_channels, out_channels, kernel_size=3, stride=1, dropout=0.1, no_adn=False):
         super().__init__()
-        
+
         if no_adn:
-            self.block = nn.ConvTranspose3d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride)
-        
+            self.block = nn.ConvTranspose3d(
+                in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride)
+
         else:
             self.block = nn.Sequential(
-                nn.ConvTranspose3d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride),
+                nn.ConvTranspose3d(
+                    in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride),
                 nn.PReLU(),
                 nn.Dropout(p=dropout, inplace=True),
                 nn.InstanceNorm3d(out_channels),
@@ -54,8 +59,10 @@ class DoubleConv(nn.Module):
             mid_channels = out_channels
 
         self.double_conv = nn.Sequential(
-            SingleConvBlock(in_channels=in_channels, out_channels=mid_channels, kernel_size=kernel_size, padding='same', no_adn=no_adn),
-            SingleConvBlock(in_channels=mid_channels, out_channels=out_channels, kernel_size=kernel_size, padding='same', no_adn=no_adn),
+            SingleConvBlock(in_channels=in_channels, out_channels=mid_channels,
+                            kernel_size=kernel_size, padding='same', no_adn=no_adn),
+            SingleConvBlock(in_channels=mid_channels, out_channels=out_channels,
+                            kernel_size=kernel_size, padding='same', no_adn=no_adn),
         )
 
         # Define a 1x1 convolution to match the number of channels for the residual connection
@@ -97,10 +104,11 @@ class ViTDeEmbedder(nn.Module):
     def __init__(self, patch_size, embed_dim, out_channels):
         super().__init__()
         self.conv = SingleConvBlockTransposed(kernel_size=patch_size, stride=patch_size, in_channels=embed_dim,
-                                       out_channels=out_channels, no_adn=True)
+                                              out_channels=out_channels, no_adn=True)
 
         self.block = nn.Sequential(
-            DoubleConv(in_channels=embed_dim, out_channels=out_channels, kernel_size=3, no_adn=True),
+            DoubleConv(in_channels=embed_dim,
+                       out_channels=out_channels, kernel_size=3, no_adn=True),
             SingleConvBlockTransposed(kernel_size=patch_size, stride=patch_size, in_channels=out_channels,
                                       out_channels=out_channels, no_adn=True),
             nn.PReLU(),
@@ -110,53 +118,44 @@ class ViTDeEmbedder(nn.Module):
         return self.block(x)
 
 
-class PatchEmbedding(nn.Module):
+class LinearPatchEmbedding(nn.Module):
     def __init__(self, patch_size, in_channels, embed_dim):
+
         super().__init__()
-        self.patch_size = patch_size
+
         self.in_channels = in_channels
         self.embed_dim = embed_dim
-        self.projection = nn.Linear(in_channels * patch_size**3, embed_dim, bias=False)
+
+        axes_len = {f"p{i+1}": p for i, p in enumerate(patch_size)}
+        self.embedder = nn.Sequential(
+            Rearrange(
+                "b c (h p1) (w p2) (d p3)-> b (h w d) (p1 p2 p3 c)", **axes_len),
+            nn.Linear(in_channels*reduce(mul, patch_size), embed_dim),
+        )
 
     def forward(self, x):
-        batch_size, channels, x_dim, y_dim, z_dim = x.shape
+        return self.embedder(x)
 
-        patches_x = x.unfold(2, self.patch_size, self.patch_size)
-        patches_y = patches_x.unfold(3, self.patch_size, self.patch_size)
-        patches_z = patches_y.unfold(4, self.patch_size, self.patch_size)
 
-        patches = patches_z.permute(0, 2, 3, 4, 1, 5, 6, 7).contiguous()
-        patches = patches.view(batch_size, -1, self.patch_size**3 * channels)
+class LinearPatchDeEmbedding(nn.Module):
+    def __init__(self, patch_size, embed_dim, out_channels, img_size):
 
-        embeddings = self.projection(patches)
-
-        return embeddings
-
-class InversePatchEmbedding(nn.Module):
-    def __init__(self, patch_size, in_channels, embed_dim):
         super().__init__()
-        self.patch_size = patch_size
-        self.in_channels = in_channels
+
         self.embed_dim = embed_dim
-        self.projection = nn.Linear(embed_dim, in_channels * patch_size**3, bias=False)
+        self.out_channels = out_channels
 
-    def forward(self, embeddings, x_shape):
-        batch_size, _, x_dim, y_dim, z_dim = x_shape
+        axes_len = {f"p{i+1}": p for i, p in enumerate(patch_size)}
+        h, w, d = [i//p for i, p in zip(img_size, patch_size)]
 
-        patches = self.projection(embeddings)
+        self.unembedder = nn.Sequential(
+            nn.Linear(embed_dim, out_channels*reduce(mul, patch_size)),
+            Rearrange("b (h w d) (p1 p2 p3 c) -> b c (h p1) (w p2) (d p3)",
+                      **axes_len, h=h, w=w, d=d),
+        )
 
-        patches = patches.view(batch_size, -1, self.in_channels, self.patch_size, self.patch_size, self.patch_size)
-
-        num_patches_x = x_dim // self.patch_size
-        num_patches_y = y_dim // self.patch_size
-        num_patches_z = z_dim // self.patch_size
-
-        patches = patches.view(batch_size, num_patches_x, num_patches_y, num_patches_z, self.in_channels, self.patch_size, self.patch_size, self.patch_size)
-
-        x = patches.permute(0, 4, 1, 5, 2, 6, 3, 7).contiguous()
-        x = x.view(batch_size, self.in_channels, x_dim, y_dim, z_dim)
-
-        return x
+    def forward(self, x):
+        return self.unembedder(x)
 
 
 class Down(nn.Module):
@@ -165,7 +164,8 @@ class Down(nn.Module):
         super().__init__()
 
         self.down_conv = nn.Sequential(
-            SingleConvBlock(in_channels=in_channels, out_channels=in_channels, kernel_size=3, stride=2, padding=1),
+            SingleConvBlock(in_channels=in_channels, out_channels=in_channels,
+                            kernel_size=3, stride=2, padding=1),
             DoubleConv(in_channels, out_channels)
         )
 
@@ -180,7 +180,8 @@ class SingleUp(nn.Module):
 
         self.up_conv = nn.Sequential(
 
-            SingleConvBlockTransposed(in_channels=in_channels, out_channels=in_channels, kernel_size=2, stride=2),
+            SingleConvBlockTransposed(
+                in_channels=in_channels, out_channels=in_channels, kernel_size=2, stride=2),
             DoubleConv(in_channels, out_channels)
         )
 
@@ -203,5 +204,3 @@ class Up(nn.Module):
         x = torch.concat([x1, x2], dim=1)
 
         return self.conv(x)
-
-
