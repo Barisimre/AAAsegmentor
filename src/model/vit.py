@@ -8,6 +8,8 @@ import torch
 import time
 from src.constants import *
 import numpy as np
+from flash_attn.flash_attention import FlashMHA
+
 
 
 class ViT(nn.Module):
@@ -28,7 +30,7 @@ class ViT(nn.Module):
             LinearPatchDeEmbedding(patch_size=patch_size, out_channels=channels, embed_dim=embed_dim, img_size=i) for i in img_sizes
         ])
 
-        self.vit = ViTEncoder(seq_len=37448, num_layers=NUM_LAYERS, num_heads=NUM_HEADS,
+        self.vit = ViTEncoder(seq_len=74896, num_layers=NUM_LAYERS, num_heads=NUM_HEADS,
                               hidden_dim=embed_dim, mlp_dim=embed_dim*HIDDEN_FACTOR, dropout=0.1, attention_dropout=0.1)
 
     # xs: one x per level of the encoder. They should all halve in every size. Channel counts don't matter.
@@ -156,8 +158,10 @@ class EncoderBlock(nn.Module):
 
         # Attention block
         self.ln_1 = norm_layer(hidden_dim)
-        self.self_attention = nn.MultiheadAttention(
-            hidden_dim, num_heads, dropout=attention_dropout, batch_first=False)
+        # self.self_attention = nn.MultiheadAttention(
+        #     hidden_dim, num_heads, dropout=attention_dropout, batch_first=False)
+        
+        self.flash_attn = FlashMHA(embed_dim=hidden_dim, num_heads=num_heads)
         self.dropout = nn.Dropout(dropout)
 
         # MLP block
@@ -168,7 +172,8 @@ class EncoderBlock(nn.Module):
         torch._assert(input.dim(
         ) == 3, f"Expected (batch_size, seq_length, hidden_dim) got {input.shape}")
         x = self.ln_1(input)
-        x, _ = self.self_attention(x, x, x, need_weights=False)
+        # x, _ = self.self_attention(x, x, x, need_weights=False)
+        x, _ = self.flash_attn(x)
         x = self.dropout(x)
         x = x + input
 
