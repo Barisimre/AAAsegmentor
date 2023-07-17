@@ -9,10 +9,10 @@
 
 
 module load anaconda3/2022.05
-source activate final
+source activate aaasegmentor
 module load nvidia/cuda-11.7 
 
-export PYTHONPATH="${PYTHONPATH}:/home/s1797743/thesis/final/AAAsegmentor/"
+export PYTHONPATH="${PYTHONPATH}:/home/imreb/AAAsegmentor/"
 
 # Warning !
 # Do not modify the sbatch script bolow this line !

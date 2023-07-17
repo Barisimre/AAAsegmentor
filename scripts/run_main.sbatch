@@ -10,10 +10,10 @@
 #SBATCH --error=out/skip_16.err
 
 module load anaconda3/2022.05
-source activate final
+source activate aaasegmentor
 module load nvidia/cuda-11.7 
 
-export PYTHONPATH="${PYTHONPATH}:/home/s1797743/thesis/final/AAAsegmentor/"
+export PYTHONPATH="${PYTHONPATH}:/home/imreb/AAAsegmentor/"
 
 cd /local
 mkdir ${SLURM_JOBID}
