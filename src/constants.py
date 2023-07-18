@@ -7,33 +7,28 @@ RUN_NAME = "run_name"
 
 
 # Paths
-GENERAL_PATH = "/home/s1797743/thesis/final/AAAsegmentor"
-DATA_PATH = f"/home/s1797743/thesis/AAAdata"
-# DATA_PATH = "/data/AAA"
+GENERAL_PATH = "/home/imreb/AAAsegmentor"
+DATA_PATH = f"{GENERAL_PATH}/data"
 MODEL_SAVE_PATH = f"{GENERAL_PATH}/models"
 RESULTS_SAVE_PATH = f"{GENERAL_PATH}/results"
 
 # Sizes and transformations
-CROP_SIZE = (128, 128, 128)
-PATCH_SIZE = 8
+CROP_SIZE = (256, 256, 64)
+PATCH_SIZE = (4, 4, 4)
 SPACINGS = (1.2, 1.2, 0.9)
+EMBED_DIM = 256
 
-CT_WINDOW_MIN = -300
-CT_WINDOW_MAX = 300
+CT_WINDOW_MIN = -20
+CT_WINDOW_MAX = 120
 
 
 # Training hyper-parameters
 DEVICE = "cuda"
-# LEARNING_RATES = {0: 1e-3, 25: 6e-4, 75: 3e-4, 800: 1e-4, 1250: 5e-5, 2000: 1e-5}
-
 LEARNING_RATES = {0: 3e-4, 1000: 1e-4, 1750: 7e-5, 2000: 2e-5}
-
 
 NUM_EPOCHS = 2500
 BATCH_SIZE = 4
 LOSS = monai.losses.DiceCELoss(lambda_ce=0.4)
-# LOSS = monai.losses.GeneralizedDiceFocalLoss(lambda_gdl=0.5, lambda_focal=1.0)
-#
 
 # Transformer stuff
 NUM_HEADS = 16

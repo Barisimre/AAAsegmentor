@@ -7,10 +7,10 @@
 #SBATCH --partition=mia
 #SBATCH --nodelist=ctit093
 
-export PATH="/deepstore/software/anaconda3/2022.05/condabin:$PATH"
+export PATH="/home/imreb/.conda/envs/aaasegmentor:$PATH"
 
 module load anaconda3/2022.05
-source activate aaasegmentor
+conda activate aaasegmentor
 module load nvidia/cuda-11.7 
 
 export PYTHONPATH="${PYTHONPATH}:/home/imreb/AAAsegmentor/"

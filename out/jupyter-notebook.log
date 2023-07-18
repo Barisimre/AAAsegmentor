@@ -1,186 +1,1395 @@
-	Adding anaconda3 2022.05 to your environment
-	Adding nVidia Cuda Toolkit 11.7
-[I 2023-05-10 11:38:12.069 ServerApp] jupyterlab | extension was successfully linked.
-[W 2023-05-10 11:38:12.071 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-05-10 11:38:12.072 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-05-10 11:38:12.072 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[I 2023-05-10 11:38:12.074 ServerApp] nbclassic | extension was successfully linked.
-[I 2023-05-10 11:38:12.413 ServerApp] notebook_shim | extension was successfully linked.
-[I 2023-05-10 11:38:12.437 ServerApp] notebook_shim | extension was successfully loaded.
-[I 2023-05-10 11:38:12.437 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/final/lib/python3.10/site-packages/jupyterlab
-[I 2023-05-10 11:38:12.437 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/final/share/jupyter/lab
-[I 2023-05-10 11:38:12.440 ServerApp] jupyterlab | extension was successfully loaded.
-[I 2023-05-10 11:38:12.445 ServerApp] nbclassic | extension was successfully loaded.
-[I 2023-05-10 11:38:12.445 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
-[I 2023-05-10 11:38:12.446 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
-[I 2023-05-10 11:38:12.446 ServerApp] Jupyter Server 1.23.6 is running at:
-[I 2023-05-10 11:38:12.446 ServerApp] http://ctit093.ewi.utwente.nl:8806/lab?token=297b2b7e8f943f7a1c2ee9d8af69f95453f618ad6f589884
-[I 2023-05-10 11:38:12.446 ServerApp]  or http://127.0.0.1:8806/lab?token=297b2b7e8f943f7a1c2ee9d8af69f95453f618ad6f589884
-[I 2023-05-10 11:38:12.446 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 2023-05-10 11:38:12.450 ServerApp] 
+/tmp/slurmd/job227051/slurm_script: line 13: activate: No such file or directory
+[I 2023-07-17 11:37:54.181 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2023-07-17 11:37:54.212 ServerApp] Package jupyter_collaboration took 0.0303s to import
+[I 2023-07-17 11:37:54.233 ServerApp] Package jupyter_lsp took 0.0209s to import
+[W 2023-07-17 11:37:54.233 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-07-17 11:37:54.233 ServerApp] Package jupyter_server_fileid took 0.0000s to import
+[I 2023-07-17 11:37:54.242 ServerApp] Package jupyter_server_terminals took 0.0084s to import
+[I 2023-07-17 11:37:54.243 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2023-07-17 11:37:54.243 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-07-17 11:37:54.247 ServerApp] jupyter_collaboration | extension was successfully linked.
+[I 2023-07-17 11:37:54.247 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2023-07-17 11:37:54.250 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2023-07-17 11:37:54.253 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-07-17 11:37:54.257 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-07-17 11:37:54.548 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-07-17 11:37:54.599 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-07-17 11:37:54.601 ServerApp] jupyter_collaboration | extension was successfully loaded.
+[I 2023-07-17 11:37:54.603 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2023-07-17 11:37:54.603 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2023-07-17 11:37:54.603 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /home/imreb/AAAsegmentor
+[I 2023-07-17 11:37:54.603 FileIdExtension] ArbitraryFileIdManager : Configured database path: /home/imreb/.local/share/jupyter/file_id_manager.db
+[I 2023-07-17 11:37:54.604 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2023-07-17 11:37:54.604 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2023-07-17 11:37:54.607 FileIdExtension] Attached event listeners.
+[I 2023-07-17 11:37:54.607 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2023-07-17 11:37:54.607 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-07-17 11:37:54.611 LabApp] JupyterLab extension loaded from /home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyterlab
+[I 2023-07-17 11:37:54.611 LabApp] JupyterLab application directory is /home/imreb/.conda/envs/aaasegmentor/share/jupyter/lab
+[I 2023-07-17 11:37:54.611 LabApp] Extension Manager is 'pypi'.
+[I 2023-07-17 11:37:54.613 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-07-17 11:37:54.614 ServerApp] Serving notebooks from local directory: /home/imreb/AAAsegmentor
+[I 2023-07-17 11:37:54.614 ServerApp] Jupyter Server 2.7.0 is running at:
+[I 2023-07-17 11:37:54.614 ServerApp] http://ctit093.ewi.utwente.nl:8800/lab?token=7c1f8c5815a5b3e423f0b6848425ad2f55148418e70f1492
+[I 2023-07-17 11:37:54.614 ServerApp]     http://127.0.0.1:8800/lab?token=7c1f8c5815a5b3e423f0b6848425ad2f55148418e70f1492
+[I 2023-07-17 11:37:54.614 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-07-17 11:37:54.618 ServerApp] 
     
     To access the server, open this file in a browser:
-        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-1006470-open.html
+        file:///home/imreb/.local/share/jupyter/runtime/jpserver-2702727-open.html
     Or copy and paste one of these URLs:
-        http://ctit093.ewi.utwente.nl:8806/lab?token=297b2b7e8f943f7a1c2ee9d8af69f95453f618ad6f589884
-     or http://127.0.0.1:8806/lab?token=297b2b7e8f943f7a1c2ee9d8af69f95453f618ad6f589884
-[W 2023-05-10 11:39:29.030 LabApp] Could not determine jupyterlab build status without nodejs
-[I 2023-05-10 11:39:33.571 ServerApp] Kernel started: 80115333-2793-4d97-97f8-115c80b5e88c
-[I 2023-05-10 11:39:33.574 ServerApp] Culling kernels with idle durations > 3600 seconds at 300 second intervals ...
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 2770a13f-af92-4e47-a8e4-57e8d2ac6c81
-[I 2023-05-10 11:40:27.646 ServerApp] Kernel started: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 41744723-698b-430c-ab25-cd072a3508cc
-[I 2023-05-10 11:41:45.790 ServerApp] Kernel restarted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 11:41:45.799 ServerApp] Starting buffering for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[I 2023-05-10 11:41:45.807 ServerApp] Restoring connection for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 44eab989-53c5-4d19-9136-f69e121cb8c8
-[I 2023-05-10 11:42:04.348 ServerApp] Kernel restarted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 11:42:04.361 ServerApp] Starting buffering for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[I 2023-05-10 11:42:04.379 ServerApp] Restoring connection for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: b7a3eb2b-3903-44bc-9a26-4b1413bf52b9
-[I 2023-05-10 11:42:27.598 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:44:27.853 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:46:28.030 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:48:28.082 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:49:32.878 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 11:50:28.137 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:52:28.201 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:54:28.245 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:56:28.303 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:58:28.387 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:00:28.833 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:02:34.694 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:04:35.318 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:06:05.627 ServerApp] Creating new directory in /results
-[I 2023-05-10 12:06:35.401 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:08:35.450 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:10:37.319 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:12:38.867 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:14:40.591 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:16:40.630 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:18:40.696 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:20:40.730 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:22:40.775 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:24:40.884 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:26:41.067 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:28:41.203 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:30:41.256 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:32:41.463 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:34:41.536 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:38:41.594 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:40:41.646 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:42:41.691 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:44:41.744 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:46:11.223 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:13.801 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:21.678 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:21.836 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:21.988 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:22.142 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:22.322 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:38.704 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:38.872 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:39.045 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:39.217 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:39.393 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:39.559 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:39.738 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:39.914 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:40.097 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:40.280 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:40.485 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:40.664 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:41.777 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:46:59.392 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:59.569 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:59.746 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:59.936 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:47:00.116 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:47:00.295 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:47:20.472 ServerApp] Kernel restarted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:47:20.479 ServerApp] Starting buffering for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[I 2023-05-10 12:47:20.512 ServerApp] Restoring connection for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 012b6ce2-e631-4d48-8ad9-4001832e76a1
-[I 2023-05-10 12:48:43.770 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:04:47.235 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:08:49.183 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:12:49.321 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:16:49.362 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:17:45.142 ServerApp] Starting buffering for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[I 2023-05-10 13:17:45.143 ServerApp] Starting buffering for 80115333-2793-4d97-97f8-115c80b5e88c:6120e0a5-1873-4893-9aa0-cb780f95e34d
-[W 2023-05-10 13:17:49.130 LabApp] Could not determine jupyterlab build status without nodejs
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 7ab2e8c9-8ac8-47de-9377-776cc1962769
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 4dda02a4-3b49-49d1-a534-324138122034
-[I 2023-05-10 13:19:49.816 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:21:49.868 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:23:51.563 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:25:52.948 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:27:54.452 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:29:56.127 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:31:57.616 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:33:58.937 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:36:00.457 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:38:01.913 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:40:03.089 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:42:04.846 ServerApp] Saving file at /notebooks/inference.ipynb
-[W 2023-05-10 13:43:18.140 ServerApp] delete /results/Mine/1_image.npy
-[W 2023-05-10 13:43:18.235 ServerApp] delete /results/Mine/1_output.npy
-[W 2023-05-10 13:43:18.238 ServerApp] delete /results/Mine/1_mask.npy
-[W 2023-05-10 13:43:18.240 ServerApp] delete /results/Mine/10_image.npy
-[W 2023-05-10 13:43:18.242 ServerApp] delete /results/Mine/10_mask.npy
-[W 2023-05-10 13:43:18.244 ServerApp] delete /results/Mine/2_image.npy
-[W 2023-05-10 13:43:18.246 ServerApp] delete /results/Mine/10_output.npy
-[W 2023-05-10 13:43:18.250 ServerApp] delete /results/Mine/2_mask.npy
-[W 2023-05-10 13:43:18.252 ServerApp] delete /results/Mine/2_output.npy
-[W 2023-05-10 13:43:18.254 ServerApp] delete /results/Mine/3_image.npy
-[W 2023-05-10 13:43:18.255 ServerApp] delete /results/Mine/3_mask.npy
-[W 2023-05-10 13:43:18.257 ServerApp] delete /results/Mine/3_output.npy
-[W 2023-05-10 13:43:18.258 ServerApp] delete /results/Mine/4_image.npy
-[W 2023-05-10 13:43:18.262 ServerApp] delete /results/Mine/4_mask.npy
-[W 2023-05-10 13:43:18.264 ServerApp] delete /results/Mine/5_mask.npy
-[W 2023-05-10 13:43:18.265 ServerApp] delete /results/Mine/5_output.npy
-[W 2023-05-10 13:43:18.267 ServerApp] delete /results/Mine/6_mask.npy
-[W 2023-05-10 13:43:18.269 ServerApp] delete /results/Mine/6_image.npy
-[W 2023-05-10 13:43:18.281 ServerApp] delete /results/Mine/7_image.npy
-[W 2023-05-10 13:43:18.283 ServerApp] delete /results/Mine/7_mask.npy
-[W 2023-05-10 13:43:18.318 ServerApp] delete /results/Mine/7_output.npy
-[W 2023-05-10 13:43:18.321 ServerApp] delete /results/Mine/9_image.npy
-[W 2023-05-10 13:43:18.324 ServerApp] delete /results/Mine/8_mask.npy
-[W 2023-05-10 13:43:18.332 ServerApp] delete /results/Mine/4_output.npy
-[W 2023-05-10 13:43:18.334 ServerApp] delete /results/Mine/8_output.npy
-[W 2023-05-10 13:43:18.337 ServerApp] delete /results/Mine/5_image.npy
-[W 2023-05-10 13:43:18.338 ServerApp] delete /results/Mine/8_image.npy
-[W 2023-05-10 13:43:18.340 ServerApp] delete /results/Mine/6_output.npy
-[W 2023-05-10 13:43:18.341 ServerApp] delete /results/Mine/9_mask.npy
-[W 2023-05-10 13:43:18.344 ServerApp] delete /results/Mine/9_output.npy
-[I 2023-05-10 13:44:06.873 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:46:06.945 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:48:07.013 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:50:07.232 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:52:07.513 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 16:01:13.687 ServerApp] Kernel started: 43416e65-ba5d-4faf-9b52-610ec1c887da
-[I 2023-05-10 16:03:15.312 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:07:16.590 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-IOStream.flush timed out
-[I 2023-05-10 16:09:17.797 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-IOStream.flush timed out
-[I 2023-05-10 16:11:18.879 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:13:20.091 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:15:20.229 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: c78597cc-f44e-48a1-9cbb-7d6567b3c174
-[I 2023-05-10 16:17:22.304 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:19:24.072 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:35:24.981 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:37:26.972 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:39:27.030 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:41:27.075 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:43:27.149 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:45:28.576 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+        http://ctit093.ewi.utwente.nl:8800/lab?token=7c1f8c5815a5b3e423f0b6848425ad2f55148418e70f1492
+        http://127.0.0.1:8800/lab?token=7c1f8c5815a5b3e423f0b6848425ad2f55148418e70f1492
+[I 2023-07-17 11:37:54.871 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2023-07-17 11:38:20.874 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-07-17 11:38:21.307 ServerApp] 404 GET /api/contents/Untitled.ipynb?content=0&1689586701298 (130.89.142.105): No such file or directory: Untitled.ipynb
+[W 2023-07-17 11:38:21.308 ServerApp] wrote error: 'No such file or directory: Untitled.ipynb'
+    Traceback (most recent call last):
+      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/tornado/web.py", line 1713, in _execute
+        result = await result
+      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_server/services/contents/handlers.py", line 121, in get
+        model = await ensure_async(
+      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 110, in ensure_async
+        result = await obj
+      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_server/services/contents/filemanager.py", line 877, in get
+        raise web.HTTPError(404, "No such file or directory: %s" % path)
+    tornado.web.HTTPError: HTTP 404: Not Found (No such file or directory: Untitled.ipynb)
+[W 2023-07-17 11:38:21.365 ServerApp] 404 GET /api/contents/Untitled.ipynb?content=0&1689586701298 (a2d5bf6c8f984d8eb83641f0f4f60ffa@130.89.142.105) 59.10ms referer=http://ctit093.ewi.utwente.nl:8800/lab
+[I 2023-07-17 11:38:29.095 ServerApp] Request for Y document 'notebooks/test_model.ipynb' with room ID: 43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:38:31.214 YDocExtension] Creating FileLoader for: notebooks/test_model.ipynb
+[I 2023-07-17 11:38:31.220 YDocExtension] Watching file: notebooks/test_model.ipynb
+[I 2023-07-17 11:38:31.224 ServerApp] Initializing room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[W 2023-07-17 11:38:31.321 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:38:31.332 ServerApp] Content in room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d loaded from file notebooks/test_model.ipynb
+[I 2023-07-17 11:38:31.644 ServerApp] Kernel started: 368f471a-2d54-4b83-890f-ed913bae0ab5
+[I 2023-07-17 11:38:32.932 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:38:32.938 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:38:32.939 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:38:32.999 ServerApp] Connecting to kernel 368f471a-2d54-4b83-890f-ed913bae0ab5.
+[I 2023-07-17 11:38:33.008 ServerApp] Connecting to kernel 368f471a-2d54-4b83-890f-ed913bae0ab5.
+[I 2023-07-17 11:38:33.019 ServerApp] Connecting to kernel 368f471a-2d54-4b83-890f-ed913bae0ab5.
+[I 2023-07-17 11:38:34.059 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:38:34.065 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:38:34.066 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:38:38.476 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:38:38.482 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:38:38.482 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:38:43.442 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:38:43.448 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:38:43.449 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:39:20.881 YDocExtension] Processed 27 Y patches in one minute
+[I 2023-07-17 11:39:20.881 YDocExtension] Connected Y users: 2
+[I 2023-07-17 11:39:29.693 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:39:29.699 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:39:29.699 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:40:14.212 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:40:14.217 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:40:14.218 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:40:18.676 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:40:18.682 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:40:18.683 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:40:20.883 YDocExtension] Processed 19 Y patches in one minute
+[I 2023-07-17 11:40:20.883 YDocExtension] Connected Y users: 2
+[I 2023-07-17 11:40:37.561 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:40:37.567 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:40:37.567 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:40:39.616 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:40:39.622 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:40:39.623 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:40:41.865 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:40:41.871 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:40:41.872 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:40:47.220 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:40:47.225 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:40:47.225 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:41:15.006 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:41:15.013 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:41:15.014 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:41:20.886 YDocExtension] Processed 19 Y patches in one minute
+[I 2023-07-17 11:41:20.886 YDocExtension] Connected Y users: 2
+[I 2023-07-17 11:42:20.889 YDocExtension] Processed 8 Y patches in one minute
+[I 2023-07-17 11:42:20.890 YDocExtension] Connected Y users: 2
+[I 2023-07-17 11:43:20.891 YDocExtension] Processed 8 Y patches in one minute
+[I 2023-07-17 11:43:20.892 YDocExtension] Connected Y users: 2
+[I 2023-07-17 11:44:20.892 YDocExtension] Processed 8 Y patches in one minute
+[I 2023-07-17 11:44:20.892 YDocExtension] Connected Y users: 2
+[I 2023-07-17 11:44:38.755 ServerApp] Request for Y document 'src/model/blocks.py' with room ID: 99385703-2465-454d-ac4d-e2b5f8465b2f
+[I 2023-07-17 11:44:38.932 YDocExtension] Creating FileLoader for: src/model/blocks.py
+[I 2023-07-17 11:44:38.936 YDocExtension] Watching file: src/model/blocks.py
+[I 2023-07-17 11:44:38.938 ServerApp] Initializing room text:file:99385703-2465-454d-ac4d-e2b5f8465b2f
+[I 2023-07-17 11:44:38.958 ServerApp] Content in room text:file:99385703-2465-454d-ac4d-e2b5f8465b2f loaded from file src/model/blocks.py
+[I 2023-07-17 11:44:40.023 ServerApp] Saving the content from room text:file:99385703-2465-454d-ac4d-e2b5f8465b2f
+[I 2023-07-17 11:44:40.026 YDocExtension] Saving file: src/model/blocks.py
+[I 2023-07-17 11:44:48.386 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:44:48.392 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:44:48.393 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:44:48.852 ServerApp] Out-of-band changes. Overwriting the content in room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[W 2023-07-17 11:44:48.862 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:44:49.547 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:44:49.553 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:44:49.553 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:44:54.059 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:44:54.065 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:44:54.066 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:44:55.986 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:44:55.991 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:44:55.992 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:44:59.045 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:44:59.051 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:44:59.051 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:45:01.674 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:45:01.679 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:45:01.680 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:45:06.899 ServerApp] Kernel restarted: 368f471a-2d54-4b83-890f-ed913bae0ab5
+[I 2023-07-17 11:45:06.907 ServerApp] Starting buffering for 368f471a-2d54-4b83-890f-ed913bae0ab5:fe61ffb9-e033-4787-8240-251a3c09485d
+[I 2023-07-17 11:45:06.918 ServerApp] Connecting to kernel 368f471a-2d54-4b83-890f-ed913bae0ab5.
+[I 2023-07-17 11:45:06.919 ServerApp] Restoring connection for 368f471a-2d54-4b83-890f-ed913bae0ab5:fe61ffb9-e033-4787-8240-251a3c09485d
+[I 2023-07-17 11:45:10.969 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:45:10.973 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:45:10.974 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:45:13.752 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:45:13.757 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:45:13.758 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:45:15.206 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:45:15.211 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:45:15.212 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:45:17.736 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:45:17.741 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:45:17.741 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:45:20.894 YDocExtension] Processed 70 Y patches in one minute
+[I 2023-07-17 11:45:20.894 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:45:25.618 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:45:25.623 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:45:25.624 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:45:26.020 ServerApp] Out-of-band changes. Overwriting the content in room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[W 2023-07-17 11:45:26.030 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:45:26.648 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:45:26.652 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:45:26.653 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:45:31.969 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:45:31.974 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:45:31.975 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:45:40.353 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:45:40.358 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:45:40.359 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:45:45.334 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:45:45.339 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:45:45.340 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:46:06.488 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:46:06.493 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:46:06.493 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:46:20.896 YDocExtension] Processed 42 Y patches in one minute
+[I 2023-07-17 11:46:20.896 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:46:36.032 ServerApp] Kernel restarted: 368f471a-2d54-4b83-890f-ed913bae0ab5
+[I 2023-07-17 11:46:36.089 ServerApp] Starting buffering for 368f471a-2d54-4b83-890f-ed913bae0ab5:fe61ffb9-e033-4787-8240-251a3c09485d
+[I 2023-07-17 11:46:36.101 ServerApp] Connecting to kernel 368f471a-2d54-4b83-890f-ed913bae0ab5.
+[I 2023-07-17 11:46:36.101 ServerApp] Restoring connection for 368f471a-2d54-4b83-890f-ed913bae0ab5:fe61ffb9-e033-4787-8240-251a3c09485d
+[I 2023-07-17 11:46:36.273 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:46:36.278 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:46:36.278 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:46:39.004 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:46:39.010 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:46:39.010 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:46:41.958 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:46:41.963 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:46:41.964 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:46:43.350 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:46:43.355 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:46:43.355 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:46:45.055 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:46:45.060 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:46:45.061 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:46:47.135 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:46:47.140 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:46:47.140 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:46:54.513 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:46:54.518 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:46:54.518 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:47:20.898 YDocExtension] Processed 37 Y patches in one minute
+[I 2023-07-17 11:47:20.898 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:48:20.900 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 11:48:20.900 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:49:20.901 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 11:49:20.902 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:50:20.904 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 11:50:20.904 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:51:20.905 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 11:51:20.906 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:52:20.906 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 11:52:20.907 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:53:20.907 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 11:53:20.908 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:54:20.909 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 11:54:20.909 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:55:20.911 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 11:55:20.911 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:55:54.012 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
+[I 2023-07-17 11:55:54.018 YDocExtension] Saving file: notebooks/test_model.ipynb
+[W 2023-07-17 11:55:54.019 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-17 11:56:20.912 YDocExtension] Processed 18 Y patches in one minute
+[I 2023-07-17 11:56:20.912 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:57:20.913 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 11:57:20.914 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:58:20.915 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 11:58:20.916 YDocExtension] Connected Y users: 3
+[I 2023-07-17 11:59:20.917 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 11:59:20.917 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:00:20.919 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:00:20.919 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:01:20.921 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:01:20.921 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:02:20.923 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:02:20.923 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:03:20.925 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:03:20.925 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:04:20.929 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:04:20.929 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:05:20.930 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:05:20.931 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:06:20.932 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:06:20.932 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:07:20.933 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:07:20.933 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:08:20.935 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:08:20.935 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:09:20.937 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:09:20.937 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:10:20.938 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:10:20.939 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:11:20.940 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:11:20.940 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:12:20.941 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:12:20.942 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:13:20.943 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:13:20.943 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:14:20.946 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:14:20.946 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:15:20.947 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:15:20.948 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:16:20.951 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:16:20.951 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:17:20.952 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:17:20.952 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:18:20.954 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:18:20.954 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:19:20.957 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:19:20.957 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:20:20.959 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:20:20.959 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:21:20.961 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:21:20.962 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:22:20.962 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:22:20.963 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:23:20.966 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:23:20.966 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:24:20.968 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:24:20.968 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:25:20.970 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:25:20.970 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:26:20.972 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:26:20.972 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:27:20.974 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:27:20.974 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:28:20.976 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:28:20.977 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:29:20.978 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:29:20.978 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:30:20.980 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:30:20.980 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:31:20.982 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:31:20.982 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:32:20.983 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:32:20.984 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:33:20.984 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:33:20.984 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:34:20.985 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:34:20.986 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:35:20.988 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:35:20.988 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:36:20.989 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:36:20.990 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:37:20.991 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:37:20.992 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:38:20.992 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:38:20.992 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:39:20.994 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:39:20.994 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:40:20.996 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:40:20.996 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:41:20.997 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:41:20.998 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:42:21.000 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:42:21.000 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:43:21.003 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:43:21.003 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:44:21.004 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:44:21.004 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:45:21.006 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:45:21.006 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:46:21.007 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:46:21.008 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:47:21.009 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:47:21.009 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:48:21.010 YDocExtension] Processed 11 Y patches in one minute
+[I 2023-07-17 12:48:21.010 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:49:21.012 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:49:21.013 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:50:21.014 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:50:21.014 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:51:21.014 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:51:21.015 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:52:21.016 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:52:21.017 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:53:21.018 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:53:21.018 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:54:21.019 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:54:21.019 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:55:21.021 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:55:21.022 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:56:21.023 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:56:21.023 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:57:21.024 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:57:21.024 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:58:21.026 YDocExtension] Processed 11 Y patches in one minute
+[I 2023-07-17 12:58:21.026 YDocExtension] Connected Y users: 3
+[I 2023-07-17 12:59:21.026 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 12:59:21.027 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:00:21.028 YDocExtension] Processed 11 Y patches in one minute
+[I 2023-07-17 13:00:21.028 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:01:21.029 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:01:21.029 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:02:21.031 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:02:21.031 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:03:21.032 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:03:21.032 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:04:21.033 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:04:21.034 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:05:21.036 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:05:21.036 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:06:21.037 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:06:21.037 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:07:21.038 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:07:21.038 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:08:21.039 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:08:21.039 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:09:21.039 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:09:21.040 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:10:21.041 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:10:21.041 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:11:21.042 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:11:21.042 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:12:21.043 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:12:21.043 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:13:21.045 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:13:21.045 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:14:21.046 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:14:21.046 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:15:21.047 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:15:21.047 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:16:21.049 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:16:21.050 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:17:21.050 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:17:21.050 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:18:21.051 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:18:21.051 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:19:21.053 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:19:21.053 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:20:21.054 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:20:21.054 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:21:21.055 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:21:21.055 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:22:21.056 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:22:21.056 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:23:21.057 YDocExtension] Processed 37 Y patches in one minute
+[I 2023-07-17 13:23:21.057 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:24:21.059 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:24:21.060 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:25:21.061 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:25:21.061 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:26:21.061 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:26:21.062 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:27:21.063 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:27:21.063 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:28:21.063 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:28:21.064 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:29:21.065 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:29:21.065 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:30:21.067 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:30:21.067 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:31:21.068 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:31:21.068 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:32:21.069 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:32:21.069 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:33:21.070 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:33:21.071 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:34:21.071 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:34:21.071 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:35:21.073 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:35:21.073 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:36:21.075 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:36:21.075 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:37:21.076 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:37:21.076 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:38:21.077 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:38:21.077 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:39:21.078 YDocExtension] Processed 11 Y patches in one minute
+[I 2023-07-17 13:39:21.079 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:40:21.079 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:40:21.080 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:41:21.081 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:41:21.081 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:42:21.082 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:42:21.082 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:43:21.083 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:43:21.083 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:44:21.084 YDocExtension] Processed 11 Y patches in one minute
+[I 2023-07-17 13:44:21.084 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:45:21.086 YDocExtension] Processed 11 Y patches in one minute
+[I 2023-07-17 13:45:21.086 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:46:21.087 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:46:21.087 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:47:21.088 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:47:21.088 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:48:21.089 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:48:21.089 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:49:21.091 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:49:21.091 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:50:21.092 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:50:21.092 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:51:21.095 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:51:21.095 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:52:21.096 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:52:21.096 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:53:21.097 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:53:21.097 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:54:21.099 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:54:21.099 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:55:21.099 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:55:21.100 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:56:21.101 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:56:21.101 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:57:21.102 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:57:21.102 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:58:21.103 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:58:21.103 YDocExtension] Connected Y users: 3
+[I 2023-07-17 13:59:21.105 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 13:59:21.105 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:00:21.105 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:00:21.106 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:01:21.107 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:01:21.107 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:02:21.108 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:02:21.108 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:03:21.109 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:03:21.109 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:04:21.111 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:04:21.111 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:05:21.112 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:05:21.112 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:06:21.113 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:06:21.113 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:07:21.114 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:07:21.114 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:08:21.115 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:08:21.116 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:09:21.117 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:09:21.117 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:10:21.118 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:10:21.118 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:11:21.119 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:11:21.119 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:12:21.120 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:12:21.120 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:13:21.121 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:13:21.122 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:14:21.122 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:14:21.123 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:15:21.124 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:15:21.124 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:16:21.125 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:16:21.125 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:17:21.127 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:17:21.128 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:18:21.130 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:18:21.130 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:19:21.131 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:19:21.132 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:20:21.133 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:20:21.133 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:21:21.134 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:21:21.134 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:22:21.135 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:22:21.136 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:23:21.137 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:23:21.137 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:24:21.139 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:24:21.139 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:25:21.141 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:25:21.141 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:26:21.142 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:26:21.143 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:27:21.143 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:27:21.143 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:28:21.144 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:28:21.144 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:29:21.145 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:29:21.145 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:30:21.146 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:30:21.146 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:31:21.147 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:31:21.148 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:32:21.149 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:32:21.149 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:33:21.150 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:33:21.150 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:34:21.151 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:34:21.152 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:35:21.152 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:35:21.153 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:36:21.153 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:36:21.154 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:37:21.156 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:37:21.156 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:38:21.158 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:38:21.158 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:39:21.159 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:39:21.160 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:40:21.161 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:40:21.161 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:41:21.162 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:41:21.162 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:42:21.163 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:42:21.163 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:43:21.164 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:43:21.164 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:44:21.166 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:44:21.167 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:45:21.168 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:45:21.169 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:46:21.170 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:46:21.170 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:47:21.172 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:47:21.172 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:48:21.173 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:48:21.173 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:49:21.174 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:49:21.174 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:50:21.175 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:50:21.175 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:51:21.177 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:51:21.177 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:52:21.179 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:52:21.179 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:53:21.180 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:53:21.181 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:54:21.182 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:54:21.182 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:55:21.184 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:55:21.184 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:56:21.185 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:56:21.186 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:57:21.187 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:57:21.187 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:58:21.188 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:58:21.188 YDocExtension] Connected Y users: 3
+[I 2023-07-17 14:59:21.189 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 14:59:21.190 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:00:21.191 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:00:21.191 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:01:21.192 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:01:21.192 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:02:21.193 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:02:21.193 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:03:21.194 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:03:21.194 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:04:21.195 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:04:21.195 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:05:21.196 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:05:21.196 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:06:21.198 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:06:21.198 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:07:21.199 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:07:21.200 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:08:21.200 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:08:21.200 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:09:21.201 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:09:21.202 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:10:21.203 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:10:21.203 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:11:21.203 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:11:21.204 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:12:21.205 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:12:21.205 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:13:21.207 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:13:21.207 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:14:21.208 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:14:21.208 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:15:21.210 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:15:21.210 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:16:21.211 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:16:21.212 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:17:21.213 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:17:21.213 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:18:21.214 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:18:21.215 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:19:21.216 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:19:21.216 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:20:21.217 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:20:21.218 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:21:21.218 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:21:21.218 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:22:21.220 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:22:21.220 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:23:21.221 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:23:21.221 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:24:21.222 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:24:21.222 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:25:21.223 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:25:21.223 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:26:21.224 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:26:21.225 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:27:21.226 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:27:21.226 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:28:21.228 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:28:21.229 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:29:21.230 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:29:21.231 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:30:21.232 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:30:21.232 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:31:21.234 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:31:21.234 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:32:21.235 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:32:21.235 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:33:21.236 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:33:21.236 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:34:21.237 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:34:21.237 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:35:21.238 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:35:21.239 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:36:21.240 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:36:21.240 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:37:21.242 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:37:21.242 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:38:21.243 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:38:21.243 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:39:21.244 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:39:21.244 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:40:21.246 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:40:21.246 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:41:21.246 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:41:21.247 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:42:21.247 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:42:21.248 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:43:21.249 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:43:21.249 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:44:21.250 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:44:21.251 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:45:21.252 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:45:21.252 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:46:21.253 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:46:21.253 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:47:21.255 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:47:21.255 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:48:21.257 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:48:21.257 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:49:21.258 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:49:21.259 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:50:21.261 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:50:21.261 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:51:21.262 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:51:21.263 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:52:21.264 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:52:21.264 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:53:21.265 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:53:21.265 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:54:21.267 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:54:21.267 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:55:21.269 YDocExtension] Processed 11 Y patches in one minute
+[I 2023-07-17 15:55:21.269 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:56:21.270 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:56:21.270 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:57:21.271 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:57:21.272 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:58:21.272 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:58:21.273 YDocExtension] Connected Y users: 3
+[I 2023-07-17 15:59:21.274 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 15:59:21.275 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:00:21.276 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:00:21.277 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:01:21.277 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:01:21.278 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:02:21.280 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:02:21.280 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:03:21.281 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:03:21.281 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:04:21.283 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:04:21.283 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:05:21.283 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:05:21.284 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:06:21.285 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:06:21.285 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:07:21.286 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:07:21.287 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:08:21.289 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:08:21.289 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:09:21.290 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:09:21.290 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:10:21.291 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:10:21.291 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:11:21.292 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:11:21.292 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:12:21.293 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:12:21.293 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:13:21.295 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:13:21.295 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:14:21.296 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:14:21.296 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:15:21.297 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:15:21.297 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:16:21.298 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:16:21.298 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:17:21.300 YDocExtension] Processed 11 Y patches in one minute
+[I 2023-07-17 16:17:21.300 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:18:21.301 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:18:21.301 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:19:21.302 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:19:21.303 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:20:21.304 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:20:21.304 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:21:21.306 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:21:21.306 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:22:21.308 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:22:21.308 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:23:21.308 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:23:21.308 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:24:21.311 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:24:21.311 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:25:21.312 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:25:21.313 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:26:21.314 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:26:21.314 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:27:21.316 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:27:21.316 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:28:21.317 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:28:21.318 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:29:21.319 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:29:21.319 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:30:21.320 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:30:21.320 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:31:21.322 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:31:21.322 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:32:21.323 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:32:21.324 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:33:21.325 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:33:21.325 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:34:21.326 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:34:21.326 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:35:21.327 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:35:21.328 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:36:21.329 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:36:21.329 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:37:21.330 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:37:21.330 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:38:21.332 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:38:21.332 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:39:21.333 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:39:21.334 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:40:21.334 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:40:21.335 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:41:21.336 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:41:21.336 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:42:21.336 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:42:21.337 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:43:21.338 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:43:21.338 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:44:21.340 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:44:21.340 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:45:21.341 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:45:21.341 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:46:21.342 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:46:21.342 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:47:21.343 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:47:21.344 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:48:21.344 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:48:21.345 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:49:21.346 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:49:21.346 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:50:21.347 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:50:21.347 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:51:21.348 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:51:21.348 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:52:21.350 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:52:21.350 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:53:21.351 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:53:21.352 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:54:21.353 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:54:21.353 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:55:21.354 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:55:21.354 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:56:21.355 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:56:21.355 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:57:21.357 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:57:21.357 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:58:21.358 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:58:21.358 YDocExtension] Connected Y users: 3
+[I 2023-07-17 16:59:21.360 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 16:59:21.360 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:00:21.361 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:00:21.361 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:01:21.363 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:01:21.363 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:02:21.364 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:02:21.364 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:03:21.366 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:03:21.366 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:04:21.367 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:04:21.368 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:05:21.368 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:05:21.369 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:06:21.371 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:06:21.372 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:07:21.373 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:07:21.373 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:08:21.375 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:08:21.375 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:09:21.376 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:09:21.376 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:10:21.378 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:10:21.378 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:11:21.379 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:11:21.380 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:12:21.381 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:12:21.381 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:13:21.383 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:13:21.383 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:14:21.385 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:14:21.385 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:15:21.386 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:15:21.386 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:16:21.388 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:16:21.388 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:17:21.389 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:17:21.389 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:18:21.391 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:18:21.391 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:19:21.393 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:19:21.393 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:20:21.394 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:20:21.394 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:21:21.395 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:21:21.396 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:22:21.397 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:22:21.398 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:23:21.398 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:23:21.399 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:24:21.400 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:24:21.400 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:25:21.401 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:25:21.401 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:26:21.402 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:26:21.402 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:27:21.403 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:27:21.403 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:28:21.404 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:28:21.405 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:29:21.406 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:29:21.406 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:30:21.407 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:30:21.407 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:31:21.408 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:31:21.409 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:32:21.411 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:32:21.411 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:33:21.413 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:33:21.413 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:34:21.415 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:34:21.415 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:35:21.416 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:35:21.417 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:36:21.417 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:36:21.417 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:37:21.418 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:37:21.419 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:38:21.420 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:38:21.420 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:39:21.421 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:39:21.422 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:40:21.423 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:40:21.423 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:41:21.424 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:41:21.425 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:42:21.425 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:42:21.426 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:43:21.427 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:43:21.427 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:44:21.428 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:44:21.428 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:45:21.430 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:45:21.430 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:46:21.431 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:46:21.431 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:47:21.433 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:47:21.433 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:48:21.435 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:48:21.435 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:49:21.437 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:49:21.437 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:50:21.439 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:50:21.439 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:51:21.440 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:51:21.440 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:52:21.442 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:52:21.442 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:53:21.443 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:53:21.443 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:54:21.445 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:54:21.445 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:55:21.446 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:55:21.446 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:56:21.448 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:56:21.448 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:57:21.449 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:57:21.449 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:58:21.451 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:58:21.451 YDocExtension] Connected Y users: 3
+[I 2023-07-17 17:59:21.452 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 17:59:21.452 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:00:21.454 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:00:21.454 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:01:21.455 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:01:21.455 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:02:21.456 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:02:21.456 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:03:21.458 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:03:21.458 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:04:21.459 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:04:21.459 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:05:21.461 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:05:21.461 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:06:21.462 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:06:21.462 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:07:21.464 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:07:21.464 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:08:21.466 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:08:21.466 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:09:21.466 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:09:21.467 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:10:21.468 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:10:21.468 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:11:21.470 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:11:21.470 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:12:21.472 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:12:21.472 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:13:21.473 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:13:21.473 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:14:21.474 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:14:21.474 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:15:21.476 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:15:21.476 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:16:21.477 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:16:21.478 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:17:21.482 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:17:21.482 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:18:21.483 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:18:21.484 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:19:21.485 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:19:21.486 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:20:21.487 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:20:21.487 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:21:21.488 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:21:21.488 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:22:21.489 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:22:21.490 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:23:21.490 YDocExtension] Processed 11 Y patches in one minute
+[I 2023-07-17 18:23:21.490 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:24:21.491 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:24:21.491 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:25:21.493 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:25:21.493 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:26:21.495 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:26:21.496 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:27:21.497 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:27:21.497 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:28:21.499 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:28:21.515 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:29:21.516 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:29:21.516 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:30:21.518 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:30:21.518 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:31:21.519 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:31:21.519 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:32:21.520 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:32:21.521 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:33:21.523 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:33:21.523 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:34:21.524 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:34:21.524 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:35:21.526 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:35:21.526 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:36:21.527 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:36:21.527 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:37:21.528 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:37:21.529 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:38:21.530 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:38:21.530 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:39:21.531 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:39:21.532 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:40:21.533 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:40:21.533 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:41:21.534 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:41:21.534 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:42:21.535 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:42:21.535 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:43:21.537 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:43:21.537 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:44:21.538 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:44:21.538 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:45:21.540 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:45:21.540 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:46:21.541 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:46:21.541 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:47:21.542 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:47:21.542 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:48:21.544 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:48:21.544 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:49:21.545 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:49:21.545 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:50:21.546 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:50:21.547 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:51:21.548 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:51:21.549 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:52:21.551 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:52:21.551 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:53:21.552 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:53:21.553 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:54:21.554 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:54:21.554 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:55:21.555 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:55:21.555 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:56:21.556 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:56:21.556 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:57:21.558 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:57:21.558 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:58:21.559 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:58:21.559 YDocExtension] Connected Y users: 3
+[I 2023-07-17 18:59:21.560 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 18:59:21.561 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:00:21.563 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:00:21.563 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:01:21.564 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:01:21.564 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:02:21.566 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:02:21.566 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:03:21.568 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:03:21.568 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:04:21.569 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:04:21.569 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:05:21.570 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:05:21.570 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:06:21.572 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:06:21.572 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:07:21.573 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:07:21.573 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:08:21.574 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:08:21.574 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:09:21.576 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:09:21.576 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:10:21.578 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:10:21.578 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:11:21.579 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:11:21.580 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:12:21.581 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:12:21.581 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:13:21.582 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:13:21.582 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:14:21.584 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:14:21.584 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:15:21.586 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:15:21.586 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:16:21.588 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:16:21.589 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:17:21.590 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:17:21.590 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:18:21.593 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:18:21.593 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:19:21.595 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:19:21.596 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:20:21.597 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:20:21.597 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:21:21.598 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:21:21.599 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:22:21.599 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:22:21.600 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:23:21.601 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:23:21.601 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:24:21.603 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:24:21.603 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:25:21.605 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:25:21.605 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:26:21.606 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:26:21.606 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:27:21.608 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:27:21.609 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:28:21.611 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:28:21.611 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:29:21.614 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:29:21.614 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:30:21.615 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:30:21.615 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:31:21.616 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:31:21.617 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:32:21.619 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:32:21.619 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:33:21.621 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:33:21.621 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:34:21.622 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:34:21.622 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:35:21.623 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:35:21.624 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:36:21.625 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:36:21.625 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:37:21.626 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:37:21.626 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:38:21.628 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:38:21.628 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:39:21.629 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:39:21.630 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:40:21.633 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:40:21.633 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:41:21.634 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:41:21.634 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:42:21.636 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:42:21.636 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:43:21.637 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:43:21.637 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:44:21.638 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:44:21.638 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:45:21.640 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:45:21.640 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:46:21.642 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:46:21.642 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:47:21.643 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:47:21.644 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:48:21.645 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:48:21.645 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:49:21.647 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:49:21.647 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:50:21.649 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:50:21.649 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:51:21.650 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:51:21.650 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:52:21.651 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:52:21.651 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:53:21.653 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:53:21.653 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:54:21.654 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:54:21.654 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:55:21.656 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:55:21.656 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:56:21.657 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:56:21.657 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:57:21.658 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:57:21.659 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:58:21.660 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:58:21.660 YDocExtension] Connected Y users: 3
+[I 2023-07-17 19:59:21.661 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 19:59:21.661 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:00:21.663 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:00:21.663 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:01:21.665 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:01:21.665 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:02:21.667 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:02:21.667 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:03:21.668 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:03:21.669 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:04:21.670 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:04:21.670 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:05:21.672 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:05:21.672 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:06:21.673 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:06:21.674 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:07:21.675 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:07:21.675 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:08:21.677 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:08:21.677 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:09:21.678 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:09:21.678 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:10:21.680 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:10:21.681 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:11:21.682 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:11:21.682 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:12:21.683 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:12:21.683 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:13:21.684 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:13:21.685 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:14:21.686 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:14:21.686 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:15:21.688 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:15:21.689 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:16:21.690 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:16:21.690 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:17:21.691 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:17:21.691 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:18:21.693 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:18:21.693 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:19:21.694 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:19:21.694 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:20:21.695 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:20:21.695 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:21:21.696 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:21:21.696 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:22:21.698 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:22:21.699 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:23:21.700 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:23:21.700 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:24:21.702 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:24:21.702 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:25:21.704 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:25:21.704 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:26:21.705 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:26:21.706 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:27:21.707 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:27:21.707 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:28:21.708 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:28:21.708 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:29:21.710 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:29:21.710 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:30:21.712 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:30:21.712 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:31:21.714 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:31:21.714 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:32:21.717 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:32:21.717 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:33:21.720 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:33:21.720 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:34:21.722 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:34:21.722 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:35:21.723 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:35:21.723 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:36:21.726 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:36:21.726 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:37:21.728 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:37:21.728 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:38:21.730 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:38:21.730 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:39:21.731 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:39:21.731 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:40:21.733 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:40:21.733 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:41:21.735 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:41:21.735 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:42:21.737 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:42:21.737 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:43:21.739 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:43:21.739 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:44:21.740 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:44:21.741 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:45:21.742 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:45:21.742 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:46:21.743 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:46:21.744 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:47:21.745 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:47:21.745 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:48:21.747 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:48:21.747 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:49:21.748 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:49:21.748 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:50:21.749 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:50:21.749 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:51:21.751 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:51:21.751 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:52:21.752 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:52:21.752 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:53:21.754 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:53:21.754 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:54:21.756 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:54:21.756 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:55:21.757 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:55:21.757 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:56:21.758 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:56:21.758 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:57:21.760 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:57:21.760 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:58:21.761 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:58:21.762 YDocExtension] Connected Y users: 3
+[I 2023-07-17 20:59:21.763 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 20:59:21.763 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:00:21.765 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:00:21.765 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:01:21.767 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:01:21.767 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:02:21.769 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:02:21.769 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:03:21.770 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:03:21.770 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:04:21.771 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:04:21.772 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:05:21.773 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:05:21.774 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:06:21.775 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:06:21.775 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:07:21.777 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:07:21.777 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:08:21.778 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:08:21.779 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:09:21.779 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:09:21.780 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:10:21.781 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:10:21.782 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:11:21.783 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:11:21.783 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:12:21.785 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:12:21.785 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:13:21.786 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:13:21.786 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:14:21.787 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:14:21.788 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:15:21.789 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:15:21.790 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:16:21.791 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:16:21.791 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:17:21.792 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:17:21.792 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:18:21.793 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:18:21.794 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:19:21.796 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:19:21.796 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:20:21.797 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:20:21.798 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:21:21.799 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:21:21.800 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:22:21.802 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:22:21.802 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:23:21.803 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:23:21.803 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:24:21.804 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:24:21.805 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:25:21.807 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:25:21.807 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:26:21.809 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:26:21.809 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:27:21.810 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:27:21.810 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:28:21.811 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:28:21.811 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:29:21.813 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:29:21.813 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:30:21.814 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:30:21.815 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:31:21.816 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:31:21.816 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:32:21.817 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:32:21.817 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:33:21.819 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:33:21.819 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:34:21.820 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:34:21.820 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:35:21.822 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:35:21.822 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:36:21.824 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:36:21.824 YDocExtension] Connected Y users: 3
+[I 2023-07-17 21:37:21.825 YDocExtension] Processed 12 Y patches in one minute
+[I 2023-07-17 21:37:21.826 YDocExtension] Connected Y users: 3
+slurmstepd-ctit093: error: *** JOB 227051 ON ctit093 CANCELLED AT 2023-07-17T21:38:18 DUE TO TIME LIMIT ***
+[C 2023-07-17 21:38:18.371 ServerApp] received signal 15, stopping
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.

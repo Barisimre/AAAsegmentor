@@ -15,18 +15,17 @@ def main():
 
     # modes = normal, skip, autoencoder, half_half, no_vit
 
+
     model = MyModel(in_channels=1,
-                    out_channels=3,
-                    lower_channels=16,
-                    big_channel=16,
-                    patch_size=8,
-                    embed_dim=512,
-                    mode="no_down_vit",
-                    old_embedder=False)
+                mid_channels=8,
+                out_channels=3,
+                patch_size=constants.PATCH_SIZE,
+                embed_dim=constants.EMBED_DIM,
+                img_size=constants.CROP_SIZE)
 
     # model.load_state_dict(torch.load(f"{MODEL_SAVE_PATH}/focus/all_transformer_seed.pt"))
 
-    model = model.to(DEVICE)
+    model = model.to(DEVICE).half()
 
 
     optimizer = torch.optim.Adam(params=model.parameters(), lr=1e-4)
