@@ -19,9 +19,9 @@ def main():
     model = MyModel(in_channels=1,
                 mid_channels=8,
                 out_channels=3,
-                patch_size=constants.PATCH_SIZE,
-                embed_dim=constants.EMBED_DIM,
-                img_size=constants.CROP_SIZE)
+                patch_size=PATCH_SIZE,
+                embed_dim=EMBED_DIM,
+                img_size=CROP_SIZE)
 
     # model.load_state_dict(torch.load(f"{MODEL_SAVE_PATH}/focus/all_transformer_seed.pt"))
 

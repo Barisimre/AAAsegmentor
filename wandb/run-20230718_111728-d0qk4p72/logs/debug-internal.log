@@ -1,0 +1,67 @@
+2023-07-18 11:17:28,205 INFO    StreamThr :2911 [internal.py:wandb_internal():86] W&B internal server running at pid: 2911, started at: 2023-07-18 11:17:28.205135
+2023-07-18 11:17:28,206 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: status
+2023-07-18 11:17:28,207 INFO    WriterThread:2911 [datastore.py:open_for_write():85] open: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_111728-d0qk4p72/run-d0qk4p72.wandb
+2023-07-18 11:17:28,207 DEBUG   SenderThread:2911 [sender.py:send():369] send: header
+2023-07-18 11:17:28,210 DEBUG   SenderThread:2911 [sender.py:send():369] send: run
+2023-07-18 11:17:28,715 INFO    SenderThread:2911 [dir_watcher.py:__init__():211] watching files in: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_111728-d0qk4p72/files
+2023-07-18 11:17:28,715 INFO    SenderThread:2911 [sender.py:_start_run_threads():1100] run started: d0qk4p72 with start time 1689671848.205613
+2023-07-18 11:17:28,715 DEBUG   SenderThread:2911 [sender.py:send_request():396] send_request: summary_record
+2023-07-18 11:17:28,716 INFO    SenderThread:2911 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-18 11:17:28,718 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: check_version
+2023-07-18 11:17:28,718 DEBUG   SenderThread:2911 [sender.py:send_request():396] send_request: check_version
+2023-07-18 11:17:28,802 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: run_start
+2023-07-18 11:17:28,805 DEBUG   HandlerThread:2911 [system_info.py:__init__():31] System info init
+2023-07-18 11:17:28,805 DEBUG   HandlerThread:2911 [system_info.py:__init__():46] System info init done
+2023-07-18 11:17:28,806 INFO    HandlerThread:2911 [system_monitor.py:start():181] Starting system monitor
+2023-07-18 11:17:28,806 INFO    SystemMonitor:2911 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-18 11:17:28,806 INFO    HandlerThread:2911 [system_monitor.py:probe():201] Collecting system info
+2023-07-18 11:17:28,806 INFO    SystemMonitor:2911 [interfaces.py:start():190] Started cpu monitoring
+2023-07-18 11:17:28,807 INFO    SystemMonitor:2911 [interfaces.py:start():190] Started disk monitoring
+2023-07-18 11:17:28,807 INFO    SystemMonitor:2911 [interfaces.py:start():190] Started gpu monitoring
+2023-07-18 11:17:28,808 INFO    SystemMonitor:2911 [interfaces.py:start():190] Started memory monitoring
+2023-07-18 11:17:28,808 INFO    SystemMonitor:2911 [interfaces.py:start():190] Started network monitoring
+2023-07-18 11:17:28,815 DEBUG   HandlerThread:2911 [system_info.py:probe():195] Probing system
+2023-07-18 11:17:28,816 DEBUG   HandlerThread:2911 [system_info.py:_probe_git():180] Probing git
+2023-07-18 11:17:28,819 DEBUG   HandlerThread:2911 [system_info.py:_probe_git():188] Probing git done
+2023-07-18 11:17:28,819 DEBUG   HandlerThread:2911 [system_info.py:probe():240] Probing system done
+2023-07-18 11:17:28,819 DEBUG   HandlerThread:2911 [system_monitor.py:probe():210] {'os': 'Linux-5.19.0-35-generic-x86_64-with-glibc2.35', 'python': '3.11.4', 'heartbeatAt': '2023-07-18T09:17:28.815719', 'startedAt': '2023-07-18T09:17:28.199534', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/baris/Documents/work/AAAsegmentor/src/main.py', 'codePath': 'src/main.py', 'git': {'remote': 'git@github.com:Barisimre/AAAsegmentor.git', 'commit': '8f8cfcc219e9714b39b3332fa0c1e183a367834c'}, 'email': 'barisimre98@gmail.com', 'root': '/home/baris/Documents/work/AAAsegmentor', 'host': 'baris-ubuntu', 'username': 'baris', 'executable': '/home/baris/anaconda3/envs/AAAsegmentor/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 4.286875, 'min': 800.0, 'max': 4700.0}, 'cpu_freq_per_core': [{'current': 4.299, 'min': 800.0, 'max': 4700.0}, {'current': 4.111, 'min': 800.0, 'max': 4700.0}, {'current': 4.298, 'min': 800.0, 'max': 4700.0}, {'current': 4.299, 'min': 800.0, 'max': 4700.0}, {'current': 4.3, 'min': 800.0, 'max': 4700.0}, {'current': 4.299, 'min': 800.0, 'max': 4700.0}, {'current': 4.299, 'min': 800.0, 'max': 4700.0}, {'current': 4.39, 'min': 800.0, 'max': 4700.0}], 'disk': {'total': 456.8834915161133, 'used': 392.9789581298828}, 'gpu': 'NVIDIA GeForce RTX 2080', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080', 'memory_total': 8589934592}], 'memory': {'total': 31.28515625}}
+2023-07-18 11:17:28,819 INFO    HandlerThread:2911 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-18 11:17:28,819 INFO    HandlerThread:2911 [system_monitor.py:probe():214] Publishing system info
+2023-07-18 11:17:28,820 DEBUG   HandlerThread:2911 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-18 11:17:28,820 DEBUG   HandlerThread:2911 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-18 11:17:28,820 DEBUG   HandlerThread:2911 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-18 11:17:29,716 INFO    Thread-12 :2911 [dir_watcher.py:_on_file_created():272] file/dir created: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_111728-d0qk4p72/files/wandb-summary.json
+2023-07-18 11:17:29,716 INFO    Thread-12 :2911 [dir_watcher.py:_on_file_created():272] file/dir created: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_111728-d0qk4p72/files/conda-environment.yaml
+2023-07-18 11:17:29,716 INFO    Thread-12 :2911 [dir_watcher.py:_on_file_created():272] file/dir created: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_111728-d0qk4p72/files/requirements.txt
+2023-07-18 11:17:30,245 DEBUG   HandlerThread:2911 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-18 11:17:30,245 INFO    HandlerThread:2911 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-18 11:17:30,247 DEBUG   SenderThread:2911 [sender.py:send():369] send: files
+2023-07-18 11:17:30,247 INFO    SenderThread:2911 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-18 11:17:30,250 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-18 11:17:30,250 DEBUG   SenderThread:2911 [sender.py:send_request():396] send_request: stop_status
+2023-07-18 11:17:30,446 DEBUG   SenderThread:2911 [sender.py:send():369] send: telemetry
+2023-07-18 11:17:30,713 INFO    wandb-upload_0:2911 [upload_job.py:push():133] Uploaded file /tmp/tmphm4ykyq4wandb/jck6xpus-wandb-metadata.json
+2023-07-18 11:17:30,716 INFO    Thread-12 :2911 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_111728-d0qk4p72/files/conda-environment.yaml
+2023-07-18 11:17:30,716 INFO    Thread-12 :2911 [dir_watcher.py:_on_file_created():272] file/dir created: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_111728-d0qk4p72/files/wandb-metadata.json
+2023-07-18 11:17:30,716 INFO    Thread-12 :2911 [dir_watcher.py:_on_file_created():272] file/dir created: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_111728-d0qk4p72/files/output.log
+2023-07-18 11:17:32,716 INFO    Thread-12 :2911 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_111728-d0qk4p72/files/output.log
+2023-07-18 11:17:33,448 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:17:38,448 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:17:43,449 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:17:46,606 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-18 11:17:46,606 DEBUG   SenderThread:2911 [sender.py:send_request():396] send_request: stop_status
+2023-07-18 11:17:48,758 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:17:53,759 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:17:58,761 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:17:58,806 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-18 11:17:59,721 INFO    Thread-12 :2911 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_111728-d0qk4p72/files/config.yaml
+2023-07-18 11:18:02,231 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-18 11:18:02,231 DEBUG   SenderThread:2911 [sender.py:send_request():396] send_request: stop_status
+2023-07-18 11:18:04,415 DEBUG   HandlerThread:2911 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:18:06,815 INFO    cpu       :2911 [interfaces.py:monitor():140] Process cpu has exited.
+2023-07-18 11:18:06,816 INFO    memory    :2911 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2023-07-18 11:18:06,816 DEBUG   SystemMonitor:2911 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-18 11:18:06,816 DEBUG   SystemMonitor:2911 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-18 11:18:06,816 DEBUG   SystemMonitor:2911 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-18 11:18:06,819 DEBUG   SenderThread:2911 [sender.py:send():369] send: stats
+2023-07-18 11:18:08,884 INFO    MainThread:2911 [internal.py:handle_exit():76] Internal process exited

@@ -1,0 +1,184 @@
+2023-07-18 11:00:06,515 INFO    StreamThr :104960 [internal.py:wandb_internal():86] W&B internal server running at pid: 104960, started at: 2023-07-18 11:00:06.513996
+2023-07-18 11:00:06,518 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: status
+2023-07-18 11:00:06,527 INFO    WriterThread:104960 [datastore.py:open_for_write():85] open: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/run-1szk2fde.wandb
+2023-07-18 11:00:06,528 DEBUG   SenderThread:104960 [sender.py:send():369] send: header
+2023-07-18 11:00:06,539 DEBUG   SenderThread:104960 [sender.py:send():369] send: run
+2023-07-18 11:00:06,971 INFO    SenderThread:104960 [dir_watcher.py:__init__():211] watching files in: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files
+2023-07-18 11:00:06,971 INFO    SenderThread:104960 [sender.py:_start_run_threads():1100] run started: 1szk2fde with start time 1689670806.518847
+2023-07-18 11:00:06,971 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: summary_record
+2023-07-18 11:00:06,971 INFO    SenderThread:104960 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-18 11:00:06,974 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: check_version
+2023-07-18 11:00:06,974 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: check_version
+2023-07-18 11:00:07,055 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: run_start
+2023-07-18 11:00:07,063 DEBUG   HandlerThread:104960 [system_info.py:__init__():31] System info init
+2023-07-18 11:00:07,063 DEBUG   HandlerThread:104960 [system_info.py:__init__():46] System info init done
+2023-07-18 11:00:07,063 INFO    HandlerThread:104960 [system_monitor.py:start():181] Starting system monitor
+2023-07-18 11:00:07,064 INFO    SystemMonitor:104960 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-18 11:00:07,064 INFO    HandlerThread:104960 [system_monitor.py:probe():201] Collecting system info
+2023-07-18 11:00:07,064 INFO    SystemMonitor:104960 [interfaces.py:start():190] Started cpu monitoring
+2023-07-18 11:00:07,065 INFO    SystemMonitor:104960 [interfaces.py:start():190] Started disk monitoring
+2023-07-18 11:00:07,065 INFO    SystemMonitor:104960 [interfaces.py:start():190] Started gpu monitoring
+2023-07-18 11:00:07,066 INFO    SystemMonitor:104960 [interfaces.py:start():190] Started memory monitoring
+2023-07-18 11:00:07,066 INFO    SystemMonitor:104960 [interfaces.py:start():190] Started network monitoring
+2023-07-18 11:00:07,073 DEBUG   HandlerThread:104960 [system_info.py:probe():195] Probing system
+2023-07-18 11:00:07,074 DEBUG   HandlerThread:104960 [system_info.py:_probe_git():180] Probing git
+2023-07-18 11:00:07,076 DEBUG   HandlerThread:104960 [system_info.py:_probe_git():188] Probing git done
+2023-07-18 11:00:07,077 DEBUG   HandlerThread:104960 [system_info.py:probe():240] Probing system done
+2023-07-18 11:00:07,077 DEBUG   HandlerThread:104960 [system_monitor.py:probe():210] {'os': 'Linux-5.19.0-35-generic-x86_64-with-glibc2.35', 'python': '3.11.4', 'heartbeatAt': '2023-07-18T09:00:07.073251', 'startedAt': '2023-07-18T09:00:06.492235', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/baris/Documents/work/AAAsegmentor/src/main.py', 'codePath': 'src/main.py', 'git': {'remote': 'git@github.com:Barisimre/AAAsegmentor.git', 'commit': '8f8cfcc219e9714b39b3332fa0c1e183a367834c'}, 'email': 'barisimre98@gmail.com', 'root': '/home/baris/Documents/work/AAAsegmentor', 'host': 'baris-ubuntu', 'username': 'baris', 'executable': '/home/baris/anaconda3/envs/AAAsegmentor/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1.384875, 'min': 800.0, 'max': 4700.0}, 'cpu_freq_per_core': [{'current': 4.517, 'min': 800.0, 'max': 4700.0}, {'current': 4.499, 'min': 800.0, 'max': 4700.0}, {'current': 4.502, 'min': 800.0, 'max': 4700.0}, {'current': 4.503, 'min': 800.0, 'max': 4700.0}, {'current': 4.401, 'min': 800.0, 'max': 4700.0}, {'current': 4.508, 'min': 800.0, 'max': 4700.0}, {'current': 4.501, 'min': 800.0, 'max': 4700.0}, {'current': 4.508, 'min': 800.0, 'max': 4700.0}], 'disk': {'total': 456.8834915161133, 'used': 392.97889709472656}, 'gpu': 'NVIDIA GeForce RTX 2080', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080', 'memory_total': 8589934592}], 'memory': {'total': 31.28515625}}
+2023-07-18 11:00:07,077 INFO    HandlerThread:104960 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-18 11:00:07,077 INFO    HandlerThread:104960 [system_monitor.py:probe():214] Publishing system info
+2023-07-18 11:00:07,077 DEBUG   HandlerThread:104960 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-18 11:00:07,077 DEBUG   HandlerThread:104960 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-18 11:00:07,077 DEBUG   HandlerThread:104960 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-18 11:00:07,971 INFO    Thread-12 :104960 [dir_watcher.py:_on_file_created():272] file/dir created: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/requirements.txt
+2023-07-18 11:00:07,972 INFO    Thread-12 :104960 [dir_watcher.py:_on_file_created():272] file/dir created: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/wandb-summary.json
+2023-07-18 11:00:07,972 INFO    Thread-12 :104960 [dir_watcher.py:_on_file_created():272] file/dir created: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/conda-environment.yaml
+2023-07-18 11:00:08,433 DEBUG   HandlerThread:104960 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-18 11:00:08,433 INFO    HandlerThread:104960 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-18 11:00:08,434 DEBUG   SenderThread:104960 [sender.py:send():369] send: files
+2023-07-18 11:00:08,434 INFO    SenderThread:104960 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-18 11:00:08,437 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-18 11:00:08,437 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: stop_status
+2023-07-18 11:00:08,599 DEBUG   SenderThread:104960 [sender.py:send():369] send: telemetry
+2023-07-18 11:00:08,600 DEBUG   SenderThread:104960 [sender.py:send():369] send: exit
+2023-07-18 11:00:08,600 INFO    SenderThread:104960 [sender.py:send_exit():574] handling exit code: 1
+2023-07-18 11:00:08,601 INFO    SenderThread:104960 [sender.py:send_exit():576] handling runtime: 1
+2023-07-18 11:00:08,601 INFO    SenderThread:104960 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-18 11:00:08,601 INFO    SenderThread:104960 [sender.py:send_exit():582] send defer
+2023-07-18 11:00:08,601 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:08,601 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 0
+2023-07-18 11:00:08,601 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:08,601 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-07-18 11:00:08,601 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 1
+2023-07-18 11:00:08,601 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:08,601 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 1
+2023-07-18 11:00:08,601 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:08,601 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-07-18 11:00:08,601 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 2
+2023-07-18 11:00:08,601 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:08,601 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 2
+2023-07-18 11:00:08,602 INFO    HandlerThread:104960 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-18 11:00:08,602 DEBUG   SystemMonitor:104960 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-18 11:00:08,602 DEBUG   SystemMonitor:104960 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-18 11:00:08,602 INFO    HandlerThread:104960 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-18 11:00:08,602 DEBUG   SystemMonitor:104960 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-18 11:00:08,602 INFO    HandlerThread:104960 [interfaces.py:finish():202] Joined disk monitor
+2023-07-18 11:00:08,626 INFO    HandlerThread:104960 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-18 11:00:08,626 INFO    HandlerThread:104960 [interfaces.py:finish():202] Joined memory monitor
+2023-07-18 11:00:08,626 INFO    HandlerThread:104960 [interfaces.py:finish():202] Joined network monitor
+2023-07-18 11:00:08,627 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:08,627 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-07-18 11:00:08,627 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 3
+2023-07-18 11:00:08,627 DEBUG   SenderThread:104960 [sender.py:send():369] send: stats
+2023-07-18 11:00:08,627 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:08,627 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 3
+2023-07-18 11:00:08,627 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:08,627 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-07-18 11:00:08,627 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 4
+2023-07-18 11:00:08,627 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:08,627 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 4
+2023-07-18 11:00:08,627 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:08,627 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-07-18 11:00:08,627 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 5
+2023-07-18 11:00:08,627 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:08,628 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 5
+2023-07-18 11:00:08,628 DEBUG   SenderThread:104960 [sender.py:send():369] send: summary
+2023-07-18 11:00:08,628 INFO    SenderThread:104960 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-18 11:00:08,628 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:08,628 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-07-18 11:00:08,628 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 6
+2023-07-18 11:00:08,628 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:08,628 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 6
+2023-07-18 11:00:08,628 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:08,628 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-07-18 11:00:08,630 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:00:08,847 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 7
+2023-07-18 11:00:08,847 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:08,847 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 7
+2023-07-18 11:00:08,847 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:08,847 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-07-18 11:00:08,972 INFO    Thread-12 :104960 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/config.yaml
+2023-07-18 11:00:08,972 INFO    Thread-12 :104960 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/wandb-summary.json
+2023-07-18 11:00:08,973 INFO    Thread-12 :104960 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/conda-environment.yaml
+2023-07-18 11:00:08,973 INFO    Thread-12 :104960 [dir_watcher.py:_on_file_created():272] file/dir created: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/output.log
+2023-07-18 11:00:08,974 INFO    Thread-12 :104960 [dir_watcher.py:_on_file_created():272] file/dir created: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/wandb-metadata.json
+2023-07-18 11:00:08,981 INFO    wandb-upload_0:104960 [upload_job.py:push():133] Uploaded file /tmp/tmpmlynoi6_wandb/4r3hzb5i-wandb-metadata.json
+2023-07-18 11:00:09,439 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-18 11:00:10,973 INFO    Thread-12 :104960 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/output.log
+2023-07-18 11:00:12,615 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 8
+2023-07-18 11:00:12,615 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: poll_exit
+2023-07-18 11:00:12,616 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:12,616 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 8
+2023-07-18 11:00:12,616 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:12,616 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-07-18 11:00:12,616 INFO    SenderThread:104960 [job_builder.py:build():240] Attempting to build job artifact
+2023-07-18 11:00:12,616 INFO    SenderThread:104960 [job_builder.py:build():264] is repo sourced job
+2023-07-18 11:00:12,617 INFO    SenderThread:104960 [job_builder.py:build():305] adding wandb-job metadata file
+2023-07-18 11:00:12,618 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 9
+2023-07-18 11:00:12,618 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:12,618 DEBUG   SenderThread:104960 [sender.py:send():369] send: artifact
+2023-07-18 11:00:12,618 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 9
+2023-07-18 11:00:12,974 INFO    Thread-12 :104960 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/output.log
+2023-07-18 11:00:14,362 INFO    wandb-upload_0:104960 [upload_job.py:push():91] Uploaded file /home/baris/.local/share/wandb/artifacts/staging/tmpak64tk6h
+2023-07-18 11:00:14,364 INFO    wandb-upload_1:104960 [upload_job.py:push():91] Uploaded file /home/baris/.local/share/wandb/artifacts/staging/tmpcf6m0zko
+2023-07-18 11:00:14,441 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-18 11:00:15,723 INFO    SenderThread:104960 [sender.py:send_artifact():1450] sent artifact job-git_github.com_Barisimre_AAAsegmentor.git_src_main.py - {'id': 'QXJ0aWZhY3Q6NTE1NDcyNjM2', 'digest': 'df535e0014a237065f734ff09677b4b8', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjgzNjgzOTE5', 'latestArtifact': None}, 'version': 'latest'}
+2023-07-18 11:00:15,723 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:15,723 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 9
+2023-07-18 11:00:15,723 INFO    SenderThread:104960 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-07-18 11:00:15,976 INFO    SenderThread:104960 [dir_watcher.py:finish():389] scan: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files
+2023-07-18 11:00:15,976 INFO    SenderThread:104960 [dir_watcher.py:finish():403] scan save: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/wandb-metadata.json wandb-metadata.json
+2023-07-18 11:00:15,977 INFO    SenderThread:104960 [dir_watcher.py:finish():403] scan save: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/output.log output.log
+2023-07-18 11:00:15,977 INFO    SenderThread:104960 [dir_watcher.py:finish():403] scan save: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/wandb-summary.json wandb-summary.json
+2023-07-18 11:00:15,978 INFO    SenderThread:104960 [dir_watcher.py:finish():403] scan save: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/conda-environment.yaml conda-environment.yaml
+2023-07-18 11:00:15,979 INFO    SenderThread:104960 [dir_watcher.py:finish():403] scan save: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/config.yaml config.yaml
+2023-07-18 11:00:15,984 INFO    SenderThread:104960 [dir_watcher.py:finish():403] scan save: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/requirements.txt requirements.txt
+2023-07-18 11:00:16,002 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 10
+2023-07-18 11:00:16,002 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:16,002 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 10
+2023-07-18 11:00:16,003 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:16,010 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 10
+2023-07-18 11:00:16,010 INFO    SenderThread:104960 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-18 11:00:16,453 INFO    wandb-upload_0:104960 [upload_job.py:push():133] Uploaded file /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/output.log
+2023-07-18 11:00:16,502 INFO    wandb-upload_2:104960 [upload_job.py:push():133] Uploaded file /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/wandb-summary.json
+2023-07-18 11:00:16,556 INFO    wandb-upload_3:104960 [upload_job.py:push():133] Uploaded file /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/config.yaml
+2023-07-18 11:00:16,583 INFO    wandb-upload_1:104960 [upload_job.py:push():133] Uploaded file /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/conda-environment.yaml
+2023-07-18 11:00:16,584 INFO    wandb-upload_4:104960 [upload_job.py:push():133] Uploaded file /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/files/requirements.txt
+2023-07-18 11:00:16,785 INFO    Thread-11 (_thread_body):104960 [sender.py:transition_state():602] send defer: 11
+2023-07-18 11:00:16,785 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:16,786 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 11
+2023-07-18 11:00:16,786 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:16,787 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 11
+2023-07-18 11:00:16,787 INFO    SenderThread:104960 [file_pusher.py:join():164] waiting for file pusher
+2023-07-18 11:00:16,788 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 12
+2023-07-18 11:00:16,788 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:16,788 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 12
+2023-07-18 11:00:16,789 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:16,789 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 12
+2023-07-18 11:00:17,105 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 13
+2023-07-18 11:00:17,105 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:17,105 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 13
+2023-07-18 11:00:17,106 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:17,106 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 13
+2023-07-18 11:00:17,106 INFO    SenderThread:104960 [sender.py:transition_state():602] send defer: 14
+2023-07-18 11:00:17,107 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:00:17,107 INFO    HandlerThread:104960 [handler.py:handle_request_defer():170] handle defer: 14
+2023-07-18 11:00:17,108 DEBUG   SenderThread:104960 [sender.py:send():369] send: final
+2023-07-18 11:00:17,108 DEBUG   SenderThread:104960 [sender.py:send():369] send: footer
+2023-07-18 11:00:17,109 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: defer
+2023-07-18 11:00:17,109 INFO    SenderThread:104960 [sender.py:send_request_defer():598] handle sender defer: 14
+2023-07-18 11:00:17,110 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-18 11:00:17,111 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: poll_exit
+2023-07-18 11:00:17,112 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: server_info
+2023-07-18 11:00:17,113 DEBUG   SenderThread:104960 [sender.py:send_request():396] send_request: server_info
+2023-07-18 11:00:17,117 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: get_summary
+2023-07-18 11:00:17,117 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: sampled_history
+2023-07-18 11:00:17,361 INFO    MainThread:104960 [wandb_run.py:_footer_history_summary_info():3464] rendering history
+2023-07-18 11:00:17,361 INFO    MainThread:104960 [wandb_run.py:_footer_history_summary_info():3496] rendering summary
+2023-07-18 11:00:17,361 INFO    MainThread:104960 [wandb_run.py:_footer_sync_info():3423] logging synced files
+2023-07-18 11:00:17,362 DEBUG   HandlerThread:104960 [handler.py:handle_request():144] handle_request: shutdown
+2023-07-18 11:00:17,362 INFO    HandlerThread:104960 [handler.py:finish():854] shutting down handler
+2023-07-18 11:00:18,113 INFO    WriterThread:104960 [datastore.py:close():298] close: /home/baris/Documents/work/AAAsegmentor/wandb/run-20230718_110006-1szk2fde/run-1szk2fde.wandb
+2023-07-18 11:00:18,361 INFO    SenderThread:104960 [sender.py:finish():1526] shutting down sender
+2023-07-18 11:00:18,361 INFO    SenderThread:104960 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-18 11:00:18,361 INFO    SenderThread:104960 [file_pusher.py:join():164] waiting for file pusher
