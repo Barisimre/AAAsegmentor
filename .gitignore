@@ -7,3 +7,4 @@ src/wandb/*
 **/.ipynb_checkpoints/
 .vscode
 env
+wandb/
