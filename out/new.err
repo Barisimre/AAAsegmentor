@@ -1,0 +1,53 @@
+<class 'monai.transforms.utility.dictionary.AddChanneld'>: Class `AddChanneld` has been deprecated since version 0.8. It will be removed in version 1.3. please use MetaTensor data type and monai.transforms.EnsureChannelFirstd instead with `channel_dim='no_channel'`.
+monai.transforms.utility.dictionary EnsureChannelFirstd.__init__:meta_keys: Argument `meta_keys` has been deprecated since version 0.9. not needed if image is type `MetaTensor`.
+<class 'monai.transforms.utility.dictionary.AsChannelFirstd'>: Class `AsChannelFirstd` has been deprecated since version 0.8. It will be removed in version 1.3. please use MetaTensor data type and monai.transforms.EnsureChannelFirstd instead.
+wandb: Currently logged in as: barisimre. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.15.5
+wandb: Run data is saved locally in /home/imreb/AAAsegmentor/wandb/run-20230718_152816-c2pdway5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run run_name
+wandb: ⭐️ View project at https://wandb.ai/barisimre/TreeTransformer
+wandb: 🚀 View run at https://wandb.ai/barisimre/TreeTransformer/runs/c2pdway5
+Loading dataset:   0%|          | 0/10 [00:00<?, ?it/s]Loading dataset:  10%|█         | 1/10 [01:25<12:47, 85.24s/it]Loading dataset:  30%|███       | 3/10 [01:29<02:46, 23.78s/it]Loading dataset:  50%|█████     | 5/10 [01:29<00:57, 11.58s/it]Loading dataset: 100%|██████████| 10/10 [01:29<00:00,  8.99s/it]
+Loading dataset:   0%|          | 0/3 [00:00<?, ?it/s]Loading dataset:  33%|███▎      | 1/3 [00:23<00:46, 23.18s/it]Loading dataset: 100%|██████████| 3/3 [00:23<00:00,  7.73s/it]
+  0%|          | 0/2500 [00:00<?, ?it/s]  0%|          | 0/2500 [00:07<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/imreb/AAAsegmentor/src/main.py", line 61, in <module>
+    main()
+  File "/home/imreb/AAAsegmentor/src/main.py", line 45, in main
+    train_single_epoch(model=model, optimizer=optimizer, train_loader=train_loader)
+  File "/home/imreb/AAAsegmentor/src/training/train.py", line 16, in train_single_epoch
+    outputs = model(img)
+  File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/imreb/AAAsegmentor/src/model/my_model.py", line 51, in forward
+    residual, x1, x2, x3, x4 = self.vit([residual, x1, x2, x3, x4])
+  File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/imreb/AAAsegmentor/src/model/vit.py", line 44, in forward
+    xs = self.vit(xs)
+  File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/imreb/AAAsegmentor/src/model/vit.py", line 225, in forward
+    return self.ln(self.layers(self.dropout(input)))
+  File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/imreb/AAAsegmentor/src/model/vit.py", line 176, in forward
+    x, _ = self.flash_attn(x)
+  File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/flash_attn/flash_attention.py", line 99, in forward
+    context, attn_weights = self.inner_attn(qkv, key_padding_mask=key_padding_mask,
+  File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/flash_attn/flash_attention.py", line 36, in forward
+    assert qkv.dtype in [torch.float16, torch.bfloat16]
+AssertionError
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: 🚀 View run run_name at: https://wandb.ai/barisimre/TreeTransformer/runs/c2pdway5
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230718_152816-c2pdway5/logs
