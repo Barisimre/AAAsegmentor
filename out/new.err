@@ -3,21 +3,23 @@ monai.transforms.utility.dictionary EnsureChannelFirstd.__init__:meta_keys: Argu
 <class 'monai.transforms.utility.dictionary.AsChannelFirstd'>: Class `AsChannelFirstd` has been deprecated since version 0.8. It will be removed in version 1.3. please use MetaTensor data type and monai.transforms.EnsureChannelFirstd instead.
 wandb: Currently logged in as: barisimre. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.15.5
-wandb: Run data is saved locally in /home/imreb/AAAsegmentor/wandb/run-20230718_152816-c2pdway5
+wandb: Run data is saved locally in /home/imreb/AAAsegmentor/wandb/run-20230720_143532-mcg3hbov
 wandb: Run `wandb offline` to turn off syncing.
 wandb: Syncing run run_name
 wandb: ⭐️ View project at https://wandb.ai/barisimre/TreeTransformer
-wandb: 🚀 View run at https://wandb.ai/barisimre/TreeTransformer/runs/c2pdway5
-Loading dataset:   0%|          | 0/10 [00:00<?, ?it/s]Loading dataset:  10%|█         | 1/10 [01:25<12:47, 85.24s/it]Loading dataset:  30%|███       | 3/10 [01:29<02:46, 23.78s/it]Loading dataset:  50%|█████     | 5/10 [01:29<00:57, 11.58s/it]Loading dataset: 100%|██████████| 10/10 [01:29<00:00,  8.99s/it]
-Loading dataset:   0%|          | 0/3 [00:00<?, ?it/s]Loading dataset:  33%|███▎      | 1/3 [00:23<00:46, 23.18s/it]Loading dataset: 100%|██████████| 3/3 [00:23<00:00,  7.73s/it]
-  0%|          | 0/2500 [00:00<?, ?it/s]  0%|          | 0/2500 [00:07<?, ?it/s]
+wandb: 🚀 View run at https://wandb.ai/barisimre/TreeTransformer/runs/mcg3hbov
+Loading dataset:   0%|          | 0/76 [00:00<?, ?it/s]Loading dataset:   1%|▏         | 1/76 [02:39<3:19:50, 159.87s/it]Loading dataset:   3%|▎         | 2/76 [03:14<1:46:32, 86.38s/it] Loading dataset:   4%|▍         | 3/76 [03:43<1:13:16, 60.23s/it]Loading dataset:   5%|▌         | 4/76 [04:05<53:52, 44.90s/it]  Loading dataset:   7%|▋         | 5/76 [04:06<34:26, 29.11s/it]Loading dataset:   8%|▊         | 6/76 [04:06<22:29, 19.28s/it]Loading dataset:   9%|▉         | 7/76 [04:07<15:05, 13.12s/it]Loading dataset:  22%|██▏       | 17/76 [04:14<02:52,  2.92s/it]Loading dataset:  24%|██▎       | 18/76 [05:29<10:08, 10.49s/it]Loading dataset:  25%|██▌       | 19/76 [05:29<08:41,  9.14s/it]Loading dataset:  32%|███▏      | 24/76 [06:01<06:46,  7.81s/it]Loading dataset:  33%|███▎      | 25/76 [06:03<06:04,  7.14s/it]Loading dataset:  34%|███▍      | 26/76 [06:04<05:09,  6.19s/it]Loading dataset:  36%|███▌      | 27/76 [06:17<06:05,  7.46s/it]Loading dataset:  37%|███▋      | 28/76 [06:38<06:56,  8.69s/it]Loading dataset:  38%|███▊      | 29/76 [06:39<06:39,  8.50s/it]Loading dataset:  39%|███▉      | 30/76 [06:40<05:08,  6.72s/it]Loading dataset:  41%|████      | 31/76 [06:57<07:07,  9.50s/it]Loading dataset:  42%|████▏     | 32/76 [07:06<06:13,  8.50s/it]Loading dataset:  43%|████▎     | 33/76 [07:07<05:05,  7.11s/it]Loading dataset:  45%|████▍     | 34/76 [07:56<13:25, 19.19s/it]Loading dataset:  46%|████▌     | 35/76 [08:04<10:47, 15.78s/it]Loading dataset:  51%|█████▏    | 39/76 [08:36<06:46, 10.98s/it]Loading dataset:  54%|█████▍    | 41/76 [08:47<05:26,  9.34s/it]Loading dataset:  55%|█████▌    | 42/76 [08:48<04:21,  7.70s/it]Loading dataset:  57%|█████▋    | 43/76 [08:57<04:17,  7.81s/it]Loading dataset:  58%|█████▊    | 44/76 [10:03<11:17, 21.18s/it]Loading dataset:  59%|█████▉    | 45/76 [10:03<08:20, 16.14s/it]Loading dataset:  66%|██████▌   | 50/76 [11:06<05:59, 13.82s/it]Loading dataset:  67%|██████▋   | 51/76 [11:23<05:56, 14.27s/it]Loading dataset:  68%|██████▊   | 52/76 [11:23<04:43, 11.79s/it]Loading dataset:  70%|██████▉   | 53/76 [11:23<03:36,  9.42s/it]Loading dataset:  72%|███████▏  | 55/76 [11:38<03:02,  8.71s/it]Loading dataset:  74%|███████▎  | 56/76 [11:48<03:00,  9.02s/it]Loading dataset:  75%|███████▌  | 57/76 [12:04<03:19, 10.50s/it]Loading dataset:  76%|███████▋  | 58/76 [12:07<02:37,  8.74s/it]Loading dataset:  78%|███████▊  | 59/76 [12:12<02:12,  7.80s/it]Loading dataset:  79%|███████▉  | 60/76 [12:46<03:58, 14.90s/it]Loading dataset:  86%|████████▌ | 65/76 [12:54<01:06,  6.08s/it]Loading dataset:  87%|████████▋ | 66/76 [13:02<01:03,  6.39s/it]Loading dataset:  88%|████████▊ | 67/76 [13:09<00:58,  6.55s/it]Loading dataset:  91%|█████████ | 69/76 [13:11<00:31,  4.52s/it]Loading dataset:  93%|█████████▎| 71/76 [13:12<00:16,  3.24s/it]Loading dataset:  96%|█████████▌| 73/76 [13:16<00:08,  2.79s/it]Loading dataset:  97%|█████████▋| 74/76 [13:25<00:08,  4.04s/it]Loading dataset: 100%|██████████| 76/76 [13:25<00:00, 10.60s/it]
+Loading dataset:   0%|          | 0/2 [00:00<?, ?it/s]Loading dataset:  50%|█████     | 1/2 [00:16<00:16, 16.93s/it]Loading dataset: 100%|██████████| 2/2 [00:16<00:00,  8.46s/it]
+  0%|          | 0/2500 [00:00<?, ?it/s]  0%|          | 0/2500 [11:08<?, ?it/s]
 Traceback (most recent call last):
-  File "/home/imreb/AAAsegmentor/src/main.py", line 61, in <module>
+  File "/home/imreb/AAAsegmentor/src/main.py", line 62, in <module>
     main()
-  File "/home/imreb/AAAsegmentor/src/main.py", line 45, in main
-    train_single_epoch(model=model, optimizer=optimizer, train_loader=train_loader)
-  File "/home/imreb/AAAsegmentor/src/training/train.py", line 16, in train_single_epoch
-    outputs = model(img)
+  File "/home/imreb/AAAsegmentor/src/main.py", line 49, in main
+    test_loss = test_single_epoch(model=model, test_loader=test_loader)
+  File "/home/imreb/AAAsegmentor/src/training/test.py", line 21, in test_single_epoch
+    out = monai.inferers.sliding_window_inference(img,
+  File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/monai/inferers/utils.py", line 223, in sliding_window_inference
+    seg_prob_out = predictor(win_data, *args, **kwargs)  # batched patch
   File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
     return forward_call(*args, **kwargs)
   File "/home/imreb/AAAsegmentor/src/model/my_model.py", line 51, in forward
@@ -48,6 +50,13 @@ Traceback (most recent call last):
     assert qkv.dtype in [torch.float16, torch.bfloat16]
 AssertionError
 wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
-wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: 🚀 View run run_name at: https://wandb.ai/barisimre/TreeTransformer/runs/c2pdway5
-wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
-wandb: Find logs at: ./wandb/run-20230718_152816-c2pdway5/logs
+wandb: 
+wandb: Run history:
+wandb: train_loss ▁
+wandb: 
+wandb: Run summary:
+wandb: train_loss 1.25502
+wandb: 
+wandb: 🚀 View run run_name at: https://wandb.ai/barisimre/TreeTransformer/runs/mcg3hbov
+wandb: Synced 6 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230720_143532-mcg3hbov/logs

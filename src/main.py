@@ -17,7 +17,7 @@ def main():
     # modes = normal, skip, autoencoder, half_half, no_vit
 
     model = MyModel(in_channels=1,
-                    mid_channels=8,
+                    mid_channels=4,
                     out_channels=3,
                     patch_size=PATCH_SIZE,
                     embed_dim=EMBED_DIM,

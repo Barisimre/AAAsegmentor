@@ -16,7 +16,7 @@ MODEL_SAVE_PATH = f"{GENERAL_PATH}/models"
 RESULTS_SAVE_PATH = f"{GENERAL_PATH}/results"
 
 TEST_PATIENTS = [10, 20, 31, 42, 55, 82]
-DATA_LIMIT = -1
+DATA_LIMIT = 4
 
 # Sizes and transformations
 CROP_SIZE = (256, 256, 64)
