@@ -46,7 +46,7 @@ def main():
         train_single_epoch(model=model, optimizer=optimizer, train_loader=train_loader, scaler=scaler)
 
         if e % 25 == 0:
-            test_loss = test_single_epoch(model=model, test_loader=test_loader)
+            test_loss = test_single_epoch(model=model, test_loader=test_loader, scaler=scaler)
 
             #  If test loss is the best, save the model
             if test_loss <= best_test_loss:
