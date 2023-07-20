@@ -25,7 +25,7 @@ def main():
 
     # model.load_state_dict(torch.load(f"{MODEL_SAVE_PATH}/focus/all_transformer_seed.pt"))
 
-    model = model.to(DEVICE).half()
+    model = model.to(DEVICE)
 
 
     optimizer = torch.optim.Adam(params=model.parameters(), lr=1e-4)
