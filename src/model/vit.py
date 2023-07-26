@@ -158,10 +158,10 @@ class EncoderBlock(nn.Module):
 
         # Attention block
         self.ln_1 = norm_layer(hidden_dim)
-        # self.self_attention = nn.MultiheadAttention(
-        #     hidden_dim, num_heads, dropout=attention_dropout, batch_first=False)
+        self.self_attention = nn.MultiheadAttention(
+            hidden_dim, num_heads, dropout=attention_dropout, batch_first=False)
         
-        self.flash_attn = FlashMHA(embed_dim=hidden_dim, num_heads=num_heads)
+        # self.flash_attn = FlashMHA(embed_dim=hidden_dim, num_heads=num_heads)
         self.dropout = nn.Dropout(dropout)
 
         # MLP block
@@ -172,8 +172,8 @@ class EncoderBlock(nn.Module):
         torch._assert(input.dim(
         ) == 3, f"Expected (batch_size, seq_length, hidden_dim) got {input.shape}")
         x = self.ln_1(input)
-        # x, _ = self.self_attention(x, x, x, need_weights=False)
-        x, _ = self.flash_attn(x)
+        x, _ = self.self_attention(x, x, x, need_weights=False)
+        # x, _ = self.flash_attn(x)
         x = self.dropout(x)
         x = x + input
 

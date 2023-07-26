@@ -42,7 +42,7 @@ class MyModel(nn.Module):
 
     def forward(self, x):
         residual = self.in_conv(x)
-
+        
         x1 = self.down1(residual)
         x2 = self.down2(x1)
         x3 = self.down3(x2)
@@ -57,5 +57,6 @@ class MyModel(nn.Module):
 
         x = self.out_conv1(x)
         x = self.out_conv2(x)
+
 
         return x

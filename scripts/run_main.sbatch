@@ -6,8 +6,8 @@
 #SBATCH -c 16 
 #SBATCH --time=24:00:00
 #SBATCH --partition=mia
-#SBATCH --nodelist=ctit091
-#SBATCH --error=out/new.err
+#SBATCH --nodelist=ctit094
+#SBATCH --error=out/swin.err
 
 # module load anaconda3/2022.05
 # source activate aaasegmentor

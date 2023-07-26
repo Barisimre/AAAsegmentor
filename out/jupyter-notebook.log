@@ -1,1138 +1,550 @@
-[I 2023-07-20 15:34:52.449 ServerApp] Package jupyterlab took 0.0001s to import
-[I 2023-07-20 15:34:52.876 ServerApp] Package jupyter_collaboration took 0.4254s to import
-[I 2023-07-20 15:34:53.553 ServerApp] Package jupyter_lsp took 0.6758s to import
-[W 2023-07-20 15:34:53.553 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
-[I 2023-07-20 15:34:53.554 ServerApp] Package jupyter_server_fileid took 0.0001s to import
-[I 2023-07-20 15:34:53.852 ServerApp] Package jupyter_server_terminals took 0.2968s to import
-[I 2023-07-20 15:34:53.854 ServerApp] Package notebook_shim took 0.0001s to import
-[W 2023-07-20 15:34:53.854 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
-[I 2023-07-20 15:34:53.894 ServerApp] jupyter_collaboration | extension was successfully linked.
-[I 2023-07-20 15:34:53.894 ServerApp] jupyter_lsp | extension was successfully linked.
-[I 2023-07-20 15:34:53.900 ServerApp] jupyter_server_fileid | extension was successfully linked.
-[I 2023-07-20 15:34:53.907 ServerApp] jupyter_server_terminals | extension was successfully linked.
-[I 2023-07-20 15:34:53.915 ServerApp] jupyterlab | extension was successfully linked.
-[I 2023-07-20 15:34:54.832 ServerApp] notebook_shim | extension was successfully linked.
-[I 2023-07-20 15:34:55.349 ServerApp] notebook_shim | extension was successfully loaded.
-[I 2023-07-20 15:34:55.381 ServerApp] jupyter_collaboration | extension was successfully loaded.
-[I 2023-07-20 15:34:55.387 ServerApp] jupyter_lsp | extension was successfully loaded.
-[I 2023-07-20 15:34:55.387 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
-[I 2023-07-20 15:34:55.388 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /home/imreb/AAAsegmentor
-[I 2023-07-20 15:34:55.388 FileIdExtension] ArbitraryFileIdManager : Configured database path: /home/imreb/.local/share/jupyter/file_id_manager.db
-[I 2023-07-20 15:34:55.542 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
-[I 2023-07-20 15:34:55.542 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
-[I 2023-07-20 15:34:55.630 FileIdExtension] Attached event listeners.
-[I 2023-07-20 15:34:55.630 ServerApp] jupyter_server_fileid | extension was successfully loaded.
-[I 2023-07-20 15:34:55.633 ServerApp] jupyter_server_terminals | extension was successfully loaded.
-[I 2023-07-20 15:34:55.707 LabApp] JupyterLab extension loaded from /home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyterlab
-[I 2023-07-20 15:34:55.707 LabApp] JupyterLab application directory is /home/imreb/.conda/envs/aaasegmentor/share/jupyter/lab
-[I 2023-07-20 15:34:55.723 LabApp] Extension Manager is 'pypi'.
-[I 2023-07-20 15:34:55.731 ServerApp] jupyterlab | extension was successfully loaded.
-[I 2023-07-20 15:34:55.732 ServerApp] Serving notebooks from local directory: /home/imreb/AAAsegmentor
-[I 2023-07-20 15:34:55.732 ServerApp] Jupyter Server 2.7.0 is running at:
-[I 2023-07-20 15:34:55.732 ServerApp] http://ctit091.ewi.utwente.nl:8802/lab?token=0ef45ce0bb79803377ad90acc7daad75b51523f55f06229f
-[I 2023-07-20 15:34:55.732 ServerApp]     http://127.0.0.1:8802/lab?token=0ef45ce0bb79803377ad90acc7daad75b51523f55f06229f
-[I 2023-07-20 15:34:55.732 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 2023-07-20 15:34:55.760 ServerApp] 
+[I 2023-07-21 10:48:53.292 ServerApp] Package jupyterlab took 0.0001s to import
+[I 2023-07-21 10:48:53.853 ServerApp] Package jupyter_collaboration took 0.5589s to import
+[I 2023-07-21 10:48:54.351 ServerApp] Package jupyter_lsp took 0.4974s to import
+[W 2023-07-21 10:48:54.352 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-07-21 10:48:54.353 ServerApp] Package jupyter_server_fileid took 0.0001s to import
+[I 2023-07-21 10:48:54.580 ServerApp] Package jupyter_server_terminals took 0.2255s to import
+[I 2023-07-21 10:48:54.581 ServerApp] Package notebook_shim took 0.0001s to import
+[W 2023-07-21 10:48:54.581 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-07-21 10:48:54.604 ServerApp] jupyter_collaboration | extension was successfully linked.
+[I 2023-07-21 10:48:54.604 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2023-07-21 10:48:54.611 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2023-07-21 10:48:54.615 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-07-21 10:48:54.619 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-07-21 10:48:57.113 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-07-21 10:48:57.556 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-07-21 10:48:57.581 ServerApp] jupyter_collaboration | extension was successfully loaded.
+[I 2023-07-21 10:48:57.586 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2023-07-21 10:48:57.586 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2023-07-21 10:48:57.586 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /home/imreb/AAAsegmentor
+[I 2023-07-21 10:48:57.586 FileIdExtension] ArbitraryFileIdManager : Configured database path: /home/imreb/.local/share/jupyter/file_id_manager.db
+[I 2023-07-21 10:48:57.587 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2023-07-21 10:48:57.587 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2023-07-21 10:48:57.617 FileIdExtension] Attached event listeners.
+[I 2023-07-21 10:48:57.617 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2023-07-21 10:48:57.620 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-07-21 10:48:57.700 LabApp] JupyterLab extension loaded from /home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyterlab
+[I 2023-07-21 10:48:57.700 LabApp] JupyterLab application directory is /home/imreb/.conda/envs/aaasegmentor/share/jupyter/lab
+[I 2023-07-21 10:48:57.719 LabApp] Extension Manager is 'pypi'.
+[I 2023-07-21 10:48:57.727 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-07-21 10:48:57.728 ServerApp] Serving notebooks from local directory: /home/imreb/AAAsegmentor
+[I 2023-07-21 10:48:57.728 ServerApp] Jupyter Server 2.7.0 is running at:
+[I 2023-07-21 10:48:57.728 ServerApp] http://ctit091.ewi.utwente.nl:8805/lab?token=7a0cda2c757221de4cf0493261969005bdc910983da68bc0
+[I 2023-07-21 10:48:57.728 ServerApp]     http://127.0.0.1:8805/lab?token=7a0cda2c757221de4cf0493261969005bdc910983da68bc0
+[I 2023-07-21 10:48:57.728 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-07-21 10:48:57.753 ServerApp] 
     
     To access the server, open this file in a browser:
-        file:///home/imreb/.local/share/jupyter/runtime/jpserver-933362-open.html
+        file:///home/imreb/.local/share/jupyter/runtime/jpserver-1094719-open.html
     Or copy and paste one of these URLs:
-        http://ctit091.ewi.utwente.nl:8802/lab?token=0ef45ce0bb79803377ad90acc7daad75b51523f55f06229f
-        http://127.0.0.1:8802/lab?token=0ef45ce0bb79803377ad90acc7daad75b51523f55f06229f
-[I 2023-07-20 15:34:56.128 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
-[W 2023-07-20 15:35:29.039 LabApp] Could not determine jupyterlab build status without nodejs
-[I 2023-07-20 15:35:29.185 ServerApp] Request for Y document 'notebooks/test_model.ipynb' with room ID: 43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:35:32.716 YDocExtension] Creating FileLoader for: notebooks/test_model.ipynb
-[I 2023-07-20 15:35:32.725 ServerApp] Request for Y document 'src/model/blocks.py' with room ID: 99385703-2465-454d-ac4d-e2b5f8465b2f
-[I 2023-07-20 15:35:32.754 YDocExtension] Watching file: notebooks/test_model.ipynb
-[I 2023-07-20 15:35:32.781 ServerApp] Initializing room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:35:32.793 YDocExtension] Creating FileLoader for: src/model/blocks.py
-[I 2023-07-20 15:35:32.796 YDocExtension] Watching file: src/model/blocks.py
-[I 2023-07-20 15:35:32.798 ServerApp] Initializing room text:file:99385703-2465-454d-ac4d-e2b5f8465b2f
-[W 2023-07-20 15:35:32.914 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-YStore version mismatch, moving .jupyter_ystore.db to .jupyter_ystore(1).db
-[I 2023-07-20 15:35:32.930 ServerApp] Content in room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d loaded from file notebooks/test_model.ipynb
-[E 2023-07-20 15:35:32.939 ServerApp] Error initializing: notebooks/test_model.ipynb
-    OperationalError('no such table: yupdates')
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/handlers.py", line 186, in open
-        await self.room.initialize()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 145, in initialize
-        await self.ystore.encode_state_as_update(self.ydoc)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/ypy_websocket/ystore.py", line 121, in encode_state_as_update
-        await self.write(update)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/ypy_websocket/ystore.py", line 415, in write
-        cursor = await db.execute(
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/aiosqlite/core.py", line 190, in execute
-        cursor = await self._execute(self._conn.execute, sql, parameters)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/aiosqlite/core.py", line 133, in _execute
-        return await future
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/aiosqlite/core.py", line 106, in run
-        result = function()
-    sqlite3.OperationalError: no such table: yupdates
-[I 2023-07-20 15:35:33.039 ServerApp] Cleaning room: json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:35:33.066 ServerApp] Content in room text:file:99385703-2465-454d-ac4d-e2b5f8465b2f loaded from file src/model/blocks.py
-[E 2023-07-20 15:35:33.760 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[I 2023-07-20 15:35:34.124 ServerApp] Saving the content from room text:file:99385703-2465-454d-ac4d-e2b5f8465b2f
-[I 2023-07-20 15:35:34.127 YDocExtension] Saving file: src/model/blocks.py
-[E 2023-07-20 15:35:34.789 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:35.796 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:36.803 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:37.809 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:38.816 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:39.822 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:40.829 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:41.835 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:42.841 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:43.849 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:44.855 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:45.865 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:46.872 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:47.878 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:48.885 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:49.891 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:50.898 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:51.904 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:52.911 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:53.917 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:54.924 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:55.930 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:56.937 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:57.942 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:58.949 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:35:59.956 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:00.962 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:01.969 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:02.976 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:03.983 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:04.989 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:05.996 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:07.002 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:08.008 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:09.014 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:10.020 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:11.025 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:12.031 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:13.037 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:14.044 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:15.050 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:16.057 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:17.063 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:18.068 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:19.074 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:20.080 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:21.086 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:22.092 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:23.098 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:24.104 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:25.110 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:26.116 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:27.122 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:28.127 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[I 2023-07-20 15:36:29.035 YDocExtension] Processed 22 Y patches in one minute
-[I 2023-07-20 15:36:29.035 YDocExtension] Connected Y users: 2
-[E 2023-07-20 15:36:29.133 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[E 2023-07-20 15:36:30.138 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[I 2023-07-20 15:36:31.101 ServerApp] Request for Y document 'notebooks/test_model.ipynb' with room ID: 43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[E 2023-07-20 15:36:31.144 YDocExtension] Error watching file: notebooks/test_model.ipynb
-    TypeError("'<' not supported between instances of 'NoneType' and 'datetime.datetime'")
-    Traceback (most recent call last):
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 170, in _watch_file
-        await self.notify()
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/loaders.py", line 187, in notify
-        await callback("metadata", model)
-      File "/home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyter_collaboration/rooms.py", line 190, in _on_content_change
-        if event == "metadata" and self._last_modified < args["last_modified"]:
-    TypeError: '<' not supported between instances of 'NoneType' and 'datetime.datetime'
-[I 2023-07-20 15:36:31.157 ServerApp] Initializing room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[W 2023-07-20 15:36:31.167 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:36:31.176 ServerApp] Content in room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d loaded from file notebooks/test_model.ipynb
-[I 2023-07-20 15:36:31.328 ServerApp] Kernel started: 82dda16b-d8ff-4a2c-a038-1c80fefde810
-[I 2023-07-20 15:36:32.231 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:36:32.236 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:36:32.237 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:36:33.344 ServerApp] Connecting to kernel 82dda16b-d8ff-4a2c-a038-1c80fefde810.
-[I 2023-07-20 15:36:33.352 ServerApp] Connecting to kernel 82dda16b-d8ff-4a2c-a038-1c80fefde810.
-[I 2023-07-20 15:36:33.413 ServerApp] Connecting to kernel 82dda16b-d8ff-4a2c-a038-1c80fefde810.
-[I 2023-07-20 15:36:34.490 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:36:34.495 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:36:34.496 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:36:37.926 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:36:37.931 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:36:37.932 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:36:42.771 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:36:42.776 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:36:42.777 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:37:16.597 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:37:16.602 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:37:16.603 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:37:18.505 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:37:18.510 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:37:18.511 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:37:21.467 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:37:21.473 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:37:21.474 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:37:22.702 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:37:22.708 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:37:22.708 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:37:29.036 YDocExtension] Processed 36 Y patches in one minute
-[I 2023-07-20 15:37:29.036 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:37:30.594 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:37:30.599 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:37:30.600 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:37:31.971 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:37:31.976 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:37:31.977 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:00.036 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:00.042 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:00.043 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:06.961 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:06.967 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:06.967 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:08.934 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:08.939 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:08.940 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:11.431 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:11.436 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:11.437 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:21.970 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:21.975 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:21.976 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:24.544 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:24.549 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:24.550 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:29.038 YDocExtension] Processed 40 Y patches in one minute
-[I 2023-07-20 15:38:29.038 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:38:38.832 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:38.838 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:38.838 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:41.255 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:41.260 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:41.260 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:47.145 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:47.150 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:47.151 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:48.574 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:48.579 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:48.580 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:51.368 ServerApp] Kernel restarted: 82dda16b-d8ff-4a2c-a038-1c80fefde810
-[I 2023-07-20 15:38:51.373 ServerApp] Starting buffering for 82dda16b-d8ff-4a2c-a038-1c80fefde810:fd052d98-54c8-4e74-95dd-d24e8050674a
-[I 2023-07-20 15:38:51.380 ServerApp] Connecting to kernel 82dda16b-d8ff-4a2c-a038-1c80fefde810.
-[I 2023-07-20 15:38:51.380 ServerApp] Restoring connection for 82dda16b-d8ff-4a2c-a038-1c80fefde810:fd052d98-54c8-4e74-95dd-d24e8050674a
-[I 2023-07-20 15:38:53.931 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:53.936 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:53.936 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:55.421 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:55.426 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:55.427 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:59.090 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:38:59.095 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:38:59.096 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:38:59.772 ServerApp] Out-of-band changes. Overwriting the content in room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[W 2023-07-20 15:38:59.781 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:39:00.576 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:39:00.582 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:39:00.582 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[W 2023-07-20 15:39:01.282 LabApp] Could not determine jupyterlab build status without nodejs
-[I 2023-07-20 15:39:01.335 ServerApp] Connecting to kernel 82dda16b-d8ff-4a2c-a038-1c80fefde810.
-[I 2023-07-20 15:39:01.449 ServerApp] 302 GET /kernelspecs/python3/logo-64x64.png (@130.89.15.81) 1.30ms
-[I 2023-07-20 15:39:01.676 ServerApp] Request for Y document 'notebooks/test_model.ipynb' with room ID: 43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:39:01.680 ServerApp] Request for Y document 'src/model/blocks.py' with room ID: 99385703-2465-454d-ac4d-e2b5f8465b2f
-[I 2023-07-20 15:39:01.853 ServerApp] Connecting to kernel 82dda16b-d8ff-4a2c-a038-1c80fefde810.
-[I 2023-07-20 15:39:02.756 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:39:02.761 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:39:02.762 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:39:02.840 ServerApp] Saving the content from room text:file:99385703-2465-454d-ac4d-e2b5f8465b2f
-[I 2023-07-20 15:39:02.843 YDocExtension] Saving file: src/model/blocks.py
-[I 2023-07-20 15:39:07.914 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:39:07.919 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:39:07.920 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:39:17.939 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:39:17.944 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:39:17.945 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:39:29.040 YDocExtension] Processed 100 Y patches in one minute
-[I 2023-07-20 15:39:29.040 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:39:29.123 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:39:29.129 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:39:29.130 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:39:32.310 ServerApp] Kernel restarted: 82dda16b-d8ff-4a2c-a038-1c80fefde810
-[I 2023-07-20 15:39:32.314 ServerApp] Starting buffering for 82dda16b-d8ff-4a2c-a038-1c80fefde810:fd052d98-54c8-4e74-95dd-d24e8050674a
-[I 2023-07-20 15:39:32.320 ServerApp] Connecting to kernel 82dda16b-d8ff-4a2c-a038-1c80fefde810.
-[I 2023-07-20 15:39:32.320 ServerApp] Restoring connection for 82dda16b-d8ff-4a2c-a038-1c80fefde810:fd052d98-54c8-4e74-95dd-d24e8050674a
-[I 2023-07-20 15:39:34.223 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:39:34.228 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:39:34.229 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:39:36.361 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:39:36.366 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:39:36.366 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:39:40.122 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:39:40.128 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:39:40.128 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:39:41.906 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:39:41.911 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:39:41.912 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:39:43.362 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:39:43.367 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:39:43.368 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:40:05.915 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:40:05.920 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:40:05.921 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:40:09.368 ServerApp] Kernel restarted: 82dda16b-d8ff-4a2c-a038-1c80fefde810
-[I 2023-07-20 15:40:09.372 ServerApp] Starting buffering for 82dda16b-d8ff-4a2c-a038-1c80fefde810:fd052d98-54c8-4e74-95dd-d24e8050674a
-[I 2023-07-20 15:40:09.378 ServerApp] Connecting to kernel 82dda16b-d8ff-4a2c-a038-1c80fefde810.
-[I 2023-07-20 15:40:09.378 ServerApp] Restoring connection for 82dda16b-d8ff-4a2c-a038-1c80fefde810:fd052d98-54c8-4e74-95dd-d24e8050674a
-[I 2023-07-20 15:40:10.950 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:40:10.955 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:40:10.956 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:40:13.414 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:40:13.417 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:40:13.418 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:40:17.065 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:40:17.071 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:40:17.072 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:40:18.612 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:40:18.617 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:40:18.618 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:40:20.087 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:40:20.093 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:40:20.094 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:40:29.042 YDocExtension] Processed 44 Y patches in one minute
-[I 2023-07-20 15:40:29.042 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:41:29.044 YDocExtension] Processed 12 Y patches in one minute
-[I 2023-07-20 15:41:29.045 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:42:29.047 YDocExtension] Processed 12 Y patches in one minute
-[I 2023-07-20 15:42:29.047 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:43:18.865 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:43:18.870 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:43:18.871 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:43:27.197 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:43:27.209 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:43:27.210 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:43:29.048 YDocExtension] Processed 16 Y patches in one minute
-[I 2023-07-20 15:43:29.048 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:44:29.050 YDocExtension] Processed 12 Y patches in one minute
-[I 2023-07-20 15:44:29.050 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:45:29.051 YDocExtension] Processed 12 Y patches in one minute
-[I 2023-07-20 15:45:29.051 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:46:19.802 ServerApp] Kernel restarted: 82dda16b-d8ff-4a2c-a038-1c80fefde810
-[I 2023-07-20 15:46:19.806 ServerApp] Starting buffering for 82dda16b-d8ff-4a2c-a038-1c80fefde810:fd052d98-54c8-4e74-95dd-d24e8050674a
-[I 2023-07-20 15:46:19.813 ServerApp] Connecting to kernel 82dda16b-d8ff-4a2c-a038-1c80fefde810.
-[I 2023-07-20 15:46:19.814 ServerApp] Restoring connection for 82dda16b-d8ff-4a2c-a038-1c80fefde810:fd052d98-54c8-4e74-95dd-d24e8050674a
-[I 2023-07-20 15:46:25.162 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:46:25.167 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:46:25.168 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:46:27.127 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:46:27.132 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:46:27.133 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:46:29.053 YDocExtension] Processed 16 Y patches in one minute
-[I 2023-07-20 15:46:29.053 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:46:31.912 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:46:31.917 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:46:31.918 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:46:33.456 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:46:33.462 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:46:33.463 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:46:37.052 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:46:37.056 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:46:37.057 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:46:39.321 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:46:39.327 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:46:39.327 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:46:40.676 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:46:40.682 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:46:40.682 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:47:29.054 YDocExtension] Processed 27 Y patches in one minute
-[I 2023-07-20 15:47:29.054 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:48:29.055 YDocExtension] Processed 12 Y patches in one minute
-[I 2023-07-20 15:48:29.055 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:49:29.056 YDocExtension] Processed 12 Y patches in one minute
-[I 2023-07-20 15:49:29.056 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:50:00.693 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:50:00.697 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:50:00.698 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:50:29.057 YDocExtension] Processed 14 Y patches in one minute
-[I 2023-07-20 15:50:29.057 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:51:29.057 YDocExtension] Processed 12 Y patches in one minute
-[I 2023-07-20 15:51:29.058 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:51:32.257 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:51:32.262 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:51:32.263 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:51:40.986 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:51:40.992 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:51:40.992 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:51:45.157 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:51:45.162 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:51:45.162 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:51:59.865 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:51:59.869 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:51:59.870 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:52:27.041 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:52:27.047 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:52:27.047 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:52:29.060 YDocExtension] Processed 26 Y patches in one minute
-[I 2023-07-20 15:52:29.060 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:52:31.038 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:52:31.044 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:52:31.044 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:53:29.061 YDocExtension] Processed 13 Y patches in one minute
-[I 2023-07-20 15:53:29.062 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:53:30.357 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:53:30.362 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:53:30.363 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:53:40.297 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:53:40.312 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:53:40.313 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:54:16.561 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:54:16.567 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:54:16.568 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:54:20.034 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:54:20.037 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:54:20.037 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:54:29.062 YDocExtension] Processed 17 Y patches in one minute
-[I 2023-07-20 15:54:29.063 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:54:41.215 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:54:41.219 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:54:41.220 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+        http://ctit091.ewi.utwente.nl:8805/lab?token=7a0cda2c757221de4cf0493261969005bdc910983da68bc0
+        http://127.0.0.1:8805/lab?token=7a0cda2c757221de4cf0493261969005bdc910983da68bc0
+[I 2023-07-21 10:48:58.084 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2023-07-21 10:49:15.584 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2023-07-21 10:49:18.781 ServerApp] Kernel started: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 10:49:19.910 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 10:49:19.917 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 10:49:19.923 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 10:50:15.582 YDocExtension] Processed 10 Y patches in one minute
+[I 2023-07-21 10:50:15.582 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:51:15.584 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:51:15.585 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:51:18.631 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 10:52:15.587 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:52:15.587 YDocExtension] Connected Y users: 1
 IOStream.flush timed out
-[I 2023-07-20 15:55:09.756 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:55:09.760 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:55:09.761 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:55:12.419 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:55:12.425 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:55:12.426 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:55:29.063 YDocExtension] Processed 16 Y patches in one minute
-[I 2023-07-20 15:55:29.064 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:56:28.982 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:56:28.986 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:56:28.986 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:56:29.064 YDocExtension] Processed 14 Y patches in one minute
-[I 2023-07-20 15:56:29.064 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:56:32.123 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:56:32.127 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:56:32.127 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:57:08.505 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:57:08.509 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:57:08.510 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
+[I 2023-07-21 10:53:15.588 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:53:15.588 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:53:19.626 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 10:54:15.589 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:54:15.590 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:55:15.592 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:55:15.592 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:55:19.664 ServerApp] Saving file at /notebooks/test_model.ipynb
 IOStream.flush timed out
-[I 2023-07-20 15:57:28.290 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:57:28.296 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:57:28.297 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:57:29.066 YDocExtension] Processed 19 Y patches in one minute
-[I 2023-07-20 15:57:29.066 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:57:31.414 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:57:31.417 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:57:31.418 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:58:20.385 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:58:20.388 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:58:20.388 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:58:23.511 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:58:23.520 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:58:23.522 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:58:24.732 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:58:24.736 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:58:24.736 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 15:58:29.067 YDocExtension] Processed 17 Y patches in one minute
-[I 2023-07-20 15:58:29.068 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:59:29.068 YDocExtension] Processed 12 Y patches in one minute
-[I 2023-07-20 15:59:29.069 YDocExtension] Connected Y users: 3
-[I 2023-07-20 15:59:55.608 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 15:59:55.612 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 15:59:55.612 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:00:06.682 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:00:06.687 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:00:06.687 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:00:25.564 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:00:25.567 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:00:25.567 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:00:27.291 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:00:27.297 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:00:27.297 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:00:29.069 YDocExtension] Processed 19 Y patches in one minute
-[I 2023-07-20 16:00:29.070 YDocExtension] Connected Y users: 3
-[I 2023-07-20 16:00:32.845 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:00:32.849 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:00:32.850 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:00:43.308 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:00:43.314 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:00:43.315 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:00:55.549 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:00:55.555 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:00:55.556 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:00:59.904 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:00:59.910 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:00:59.911 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:01:02.665 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:01:02.671 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:01:02.671 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:01:06.670 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:01:06.676 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:01:06.677 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:01:09.640 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:01:09.646 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:01:09.647 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:01:11.524 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:01:11.530 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:01:11.531 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:01:15.241 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:01:15.247 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:01:15.248 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:01:16.968 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:01:16.973 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:01:16.974 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:01:19.595 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:01:19.600 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:01:19.601 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:01:22.478 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:01:22.484 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:01:22.484 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:01:29.071 YDocExtension] Processed 84 Y patches in one minute
-[I 2023-07-20 16:01:29.071 YDocExtension] Connected Y users: 3
-[I 2023-07-20 16:01:30.703 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:01:30.709 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:01:30.710 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:01:34.790 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:01:34.794 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:01:34.794 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:01:51.660 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:01:51.666 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:01:51.667 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:01:55.725 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:01:55.730 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:01:55.731 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:02:07.109 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:02:07.115 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:02:07.116 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:02:11.153 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:02:11.158 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:02:11.159 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:02:13.073 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:02:13.080 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:02:13.080 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:02:29.073 YDocExtension] Processed 41 Y patches in one minute
-[I 2023-07-20 16:02:29.073 YDocExtension] Connected Y users: 3
-[I 2023-07-20 16:02:29.521 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:02:29.527 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:02:29.528 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:02:30.935 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:02:30.942 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:02:30.943 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:02:32.838 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:02:32.844 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:02:32.845 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:02:35.973 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:02:35.980 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:02:35.981 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:02:58.119 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:02:58.126 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:02:58.127 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:03:12.363 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:03:12.366 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:03:12.367 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:03:13.676 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:03:13.682 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:03:13.683 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:03:29.074 YDocExtension] Processed 32 Y patches in one minute
-[I 2023-07-20 16:03:29.074 YDocExtension] Connected Y users: 3
-[I 2023-07-20 16:03:53.015 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:03:53.022 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:03:53.023 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:03:56.569 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:03:56.575 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:03:56.576 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:03:58.613 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:03:58.620 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:03:58.621 ServerApp] Notebook notebooks/test_model.ipynb is not trusted
-[I 2023-07-20 16:04:09.586 ServerApp] Request for Y document 'src/constants.py' with room ID: 57618804-57c2-470c-97b1-6b7992d19e17
-[I 2023-07-20 16:04:09.657 YDocExtension] Creating FileLoader for: src/constants.py
-[I 2023-07-20 16:04:09.660 YDocExtension] Watching file: src/constants.py
-[I 2023-07-20 16:04:09.662 ServerApp] Initializing room text:file:57618804-57c2-470c-97b1-6b7992d19e17
-[I 2023-07-20 16:04:09.684 ServerApp] Content in room text:file:57618804-57c2-470c-97b1-6b7992d19e17 loaded from file src/constants.py
-[I 2023-07-20 16:04:10.715 ServerApp] Saving the content from room text:file:57618804-57c2-470c-97b1-6b7992d19e17
-[I 2023-07-20 16:04:10.718 YDocExtension] Saving file: src/constants.py
-[I 2023-07-20 16:04:14.237 ServerApp] Saving the content from room text:file:57618804-57c2-470c-97b1-6b7992d19e17
-[I 2023-07-20 16:04:14.240 YDocExtension] Saving file: src/constants.py
-[I 2023-07-20 16:04:21.324 ServerApp] Kernel restarted: 82dda16b-d8ff-4a2c-a038-1c80fefde810
-[I 2023-07-20 16:04:21.328 ServerApp] Starting buffering for 82dda16b-d8ff-4a2c-a038-1c80fefde810:fd052d98-54c8-4e74-95dd-d24e8050674a
-[I 2023-07-20 16:04:21.337 ServerApp] Connecting to kernel 82dda16b-d8ff-4a2c-a038-1c80fefde810.
-[I 2023-07-20 16:04:21.337 ServerApp] Restoring connection for 82dda16b-d8ff-4a2c-a038-1c80fefde810:fd052d98-54c8-4e74-95dd-d24e8050674a
-[I 2023-07-20 16:04:22.364 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:04:22.370 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:04:25.853 ServerApp] Nudge: attempt 10 on kernel 82dda16b-d8ff-4a2c-a038-1c80fefde810
-[I 2023-07-20 16:04:27.681 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:04:27.686 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:04:29.075 YDocExtension] Processed 51 Y patches in one minute
-[I 2023-07-20 16:04:29.075 YDocExtension] Connected Y users: 4
-[I 2023-07-20 16:04:33.419 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:04:33.425 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:04:35.027 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:04:35.033 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:05:12.441 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:05:12.445 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:05:15.222 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:05:15.228 YDocExtension] Saving file: notebooks/test_model.ipynb
-[W 2023-07-20 16:05:21.326 ServerApp] Timeout waiting for kernel_info_reply: 82dda16b-d8ff-4a2c-a038-1c80fefde810
 IOStream.flush timed out
-[I 2023-07-20 16:05:25.925 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:05:25.930 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:05:29.076 YDocExtension] Processed 27 Y patches in one minute
-[I 2023-07-20 16:05:29.076 YDocExtension] Connected Y users: 4
-[I 2023-07-20 16:05:39.131 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:05:39.137 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:05:45.112 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:05:45.117 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:06:20.109 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:06:20.114 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:06:21.829 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:06:21.835 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:06:29.077 YDocExtension] Processed 30 Y patches in one minute
-[I 2023-07-20 16:06:29.077 YDocExtension] Connected Y users: 4
-[I 2023-07-20 16:07:11.014 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:07:11.020 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:07:13.413 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:07:13.419 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:07:22.939 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:07:22.946 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:07:28.580 ServerApp] Kernel restarted: 82dda16b-d8ff-4a2c-a038-1c80fefde810
-[I 2023-07-20 16:07:28.584 ServerApp] Starting buffering for 82dda16b-d8ff-4a2c-a038-1c80fefde810:fd052d98-54c8-4e74-95dd-d24e8050674a
-[I 2023-07-20 16:07:29.078 YDocExtension] Processed 43 Y patches in one minute
-[I 2023-07-20 16:07:29.079 YDocExtension] Connected Y users: 4
-[I 2023-07-20 16:07:29.592 ServerApp] Connecting to kernel 82dda16b-d8ff-4a2c-a038-1c80fefde810.
-[I 2023-07-20 16:07:29.592 ServerApp] Restoring connection for 82dda16b-d8ff-4a2c-a038-1c80fefde810:fd052d98-54c8-4e74-95dd-d24e8050674a
-[I 2023-07-20 16:07:29.607 ServerApp] Replaying 2 buffered messages
-[I 2023-07-20 16:07:30.609 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:07:30.615 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:07:34.625 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:07:34.630 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:07:38.243 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:07:38.249 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:07:39.821 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:07:39.827 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:08:16.530 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:08:16.534 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:08:19.289 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:08:19.292 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:08:29.080 YDocExtension] Processed 39 Y patches in one minute
-[I 2023-07-20 16:08:29.081 YDocExtension] Connected Y users: 4
-[I 2023-07-20 16:08:29.476 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:08:29.499 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:08:42.969 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:08:42.975 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:08:49.881 ServerApp] Saving the content from room json:notebook:43b93e0b-824c-4e9a-bef7-f7105d1c490d
-[I 2023-07-20 16:08:49.887 YDocExtension] Saving file: notebooks/test_model.ipynb
-[I 2023-07-20 16:09:29.083 YDocExtension] Processed 26 Y patches in one minute
-[I 2023-07-20 16:09:29.083 YDocExtension] Connected Y users: 4
-[I 2023-07-20 16:10:29.084 YDocExtension] Processed 35 Y patches in one minute
-[I 2023-07-20 16:10:29.084 YDocExtension] Connected Y users: 4
+[I 2023-07-21 10:56:15.594 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:56:15.594 YDocExtension] Connected Y users: 1
+IOStream.flush timed out
+[I 2023-07-21 10:57:15.596 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:57:15.596 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:57:19.701 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 10:58:15.597 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:58:15.598 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:59:15.599 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:59:15.599 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:59:19.809 ServerApp] Saving file at /notebooks/test_model.ipynb
+IOStream.flush timed out
+[I 2023-07-21 11:00:15.601 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:00:15.601 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:01:15.602 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:01:15.602 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:01:19.844 ServerApp] Saving file at /notebooks/test_model.ipynb
+IOStream.flush timed out
+[I 2023-07-21 11:02:15.604 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:02:15.604 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:03:15.605 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:03:15.605 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:03:19.881 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:04:15.607 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:04:15.607 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:05:15.609 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:05:15.609 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:05:19.968 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:06:15.609 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:06:15.610 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:07:15.611 YDocExtension] Processed 3 Y patches in one minute
+[I 2023-07-21 11:07:15.611 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:08:15.613 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:08:15.613 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:09:15.614 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:09:15.615 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:10:15.616 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:10:15.616 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:11:15.617 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:11:15.618 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:12:15.618 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:12:15.619 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:13:15.619 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:13:15.620 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:13:20.007 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:14:15.621 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:14:15.621 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:15:15.624 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:15:15.624 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:15:20.043 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:16:15.626 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:16:15.627 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:17:15.629 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:17:15.630 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:17:20.077 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:18:15.632 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:18:15.632 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:19:15.636 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:19:15.636 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:19:20.297 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:20:15.640 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:20:15.640 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:21:15.644 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:21:15.644 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:21:20.381 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:22:15.648 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:22:15.648 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:23:15.652 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:23:15.652 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:23:20.478 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:24:15.655 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:24:15.655 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:25:15.658 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:25:15.658 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:25:20.546 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:26:15.662 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:26:15.662 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:27:15.665 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:27:15.665 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:27:20.608 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:28:15.667 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:28:15.668 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:29:15.670 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:29:15.670 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:29:20.650 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:30:15.672 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:30:15.672 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:31:15.677 YDocExtension] Processed 3 Y patches in one minute
+[I 2023-07-21 11:31:15.677 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:31:20.979 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:32:15.681 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:32:15.681 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:33:15.685 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:33:15.685 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:34:15.689 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:34:15.689 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:35:15.693 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:35:15.693 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:35:21.997 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:36:15.696 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:36:15.697 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:37:15.701 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:37:15.701 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:37:22.035 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:38:15.705 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:38:15.705 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:39:15.709 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:39:15.710 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:39:22.075 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:40:15.714 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:40:15.714 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:41:15.718 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:41:15.718 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:41:22.113 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:41:41.099 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:41:41.104 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:41:41.113 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 11:41:41.113 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:42:15.721 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:42:15.721 YDocExtension] Connected Y users: 1
+[W 2023-07-21 11:42:41.102 ServerApp] Timeout waiting for kernel_info_reply: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:43:15.723 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:43:15.724 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:43:22.155 ServerApp] Saving file at /notebooks/test_model.ipynb
+Future exception was never retrieved
+future: <Future finished exception=TimeoutError('Timeout waiting for restart')>
+TimeoutError: Timeout waiting for restart
+[I 2023-07-21 11:44:15.726 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:44:15.726 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:45:15.728 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:45:15.728 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:45:22.197 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:46:15.729 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:46:15.729 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:46:29.544 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:46:29.548 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:46:29.556 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 11:46:29.556 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:46:37.436 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:46:37.440 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:46:37.446 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 11:46:37.446 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:47:15.733 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:47:15.733 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:47:22.232 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:48:15.735 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:48:15.735 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:48:20.919 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:48:22.479 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:49:15.738 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:49:15.738 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:49:22.267 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:49:35.407 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:49:35.412 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:49:35.419 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 11:49:35.419 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:50:08.023 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:50:15.740 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:50:15.740 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:51:13.121 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:15.160 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:15.312 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:15.742 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:51:15.742 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:51:22.304 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:51:29.634 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:29.793 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:29.952 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:30.113 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:30.264 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:30.432 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:30.600 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:30.760 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:30.920 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:31.079 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:31.232 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:31.393 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:31.560 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:31.712 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:31.880 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:32.056 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:32.229 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:32.392 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:32.568 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:32.736 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:32.912 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:33.104 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:33.272 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:33.431 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:33.599 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:33.776 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:33.960 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:52:15.744 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:52:15.745 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:53:15.747 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:53:15.747 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:53:22.338 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:54:15.749 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:54:15.750 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:54:17.723 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:54:18.195 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:54:18.362 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:54:18.545 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:55:00.371 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:55:15.752 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:55:15.752 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:55:22.373 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:55:38.667 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:55:44.312 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:55:44.316 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:55:44.324 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 11:55:44.324 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:56:01.307 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:56:15.754 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:56:15.754 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:56:20.077 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:56:20.211 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:57:00.787 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:57:00.791 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:57:00.797 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 11:57:00.797 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:57:15.756 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:57:15.756 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:57:22.413 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:58:15.760 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:58:15.760 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:59:15.761 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:59:15.762 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:59:22.533 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:00:15.763 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:00:15.763 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:01:15.765 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:01:15.766 YDocExtension] Connected Y users: 1
+IOStream.flush timed out
+[I 2023-07-21 12:02:15.769 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:02:15.770 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:03:15.773 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:03:15.774 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:03:22.589 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:04:15.778 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:04:15.778 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:05:15.779 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:05:15.779 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:05:22.627 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:06:15.780 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:06:15.780 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:07:15.782 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:07:15.782 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:07:22.667 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:08:15.782 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:08:15.783 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:09:15.784 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:09:15.784 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:09:22.703 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:10:15.785 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:10:15.785 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:11:15.786 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:11:15.786 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:11:22.734 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:12:15.787 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:12:15.787 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:12:39.980 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:12:39.984 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:12:39.991 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:12:39.991 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:13:15.791 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:13:15.791 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:13:18.725 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:19.045 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:19.197 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:19.372 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:19.548 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:19.700 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:19.860 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:20.020 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:20.197 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:20.372 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:20.549 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:20.724 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:20.900 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:21.085 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:22.776 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:13:33.874 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:33.879 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:13:33.885 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:13:33.885 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:14:15.793 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:14:15.794 YDocExtension] Connected Y users: 1
+IOStream.flush timed out
+[I 2023-07-21 12:15:15.798 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:15:15.798 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:15:22.808 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:16:05.846 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:16:05.850 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:16:05.857 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:16:05.857 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:16:15.800 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:16:15.800 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:17:15.802 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:17:15.802 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:17:22.838 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:18:15.805 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:18:15.805 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:19:15.807 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:19:15.807 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:19:22.866 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:20:15.809 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:20:15.809 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:21:15.811 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:21:15.812 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:22:15.814 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:22:15.814 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:23:15.816 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:23:15.816 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:24:15.818 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:24:15.818 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:25:15.821 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:25:15.821 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:26:15.823 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:26:15.823 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:27:08.782 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:27:08.787 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:27:08.794 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:27:08.794 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:27:15.825 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:27:15.825 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:27:23.032 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:28:15.828 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:28:15.828 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:28:49.917 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:28:49.921 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:28:49.927 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:28:49.928 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:28:57.343 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:28:57.347 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:28:57.353 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:28:57.353 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:29:15.830 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:29:15.830 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:29:23.065 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:30:15.831 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:30:15.831 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:31:15.833 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:31:15.833 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:32:15.834 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:32:15.834 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:33:15.836 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:33:15.836 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:34:15.838 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:34:15.838 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:35:15.839 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:35:15.839 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:36:15.841 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:36:15.841 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:36:26.455 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:36:26.459 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:36:26.466 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:36:26.466 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:37:15.842 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:37:15.842 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:37:23.357 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:38:15.844 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:38:15.845 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:39:15.846 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:39:15.846 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:39:23.387 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:40:15.848 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:40:15.848 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:41:15.849 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:41:15.849 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:41:23.420 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:42:15.851 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:42:15.851 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:43:15.854 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:43:15.854 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:43:23.490 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:44:15.855 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:44:15.856 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:45:15.858 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:45:15.858 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:45:23.523 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:46:15.860 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:46:15.860 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:47:15.863 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:47:15.863 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:47:23.591 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:48:15.865 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:48:15.865 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:49:15.867 YDocExtension] Processed 3 Y patches in one minute
+[I 2023-07-21 12:49:15.867 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:49:23.623 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:50:15.869 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:50:15.869 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:50:59.794 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:51:15.871 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:51:15.871 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:51:23.657 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:52:15.872 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:52:15.872 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:53:15.873 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:53:15.873 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:53:23.688 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:54:15.876 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:54:15.876 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:55:15.878 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:55:15.878 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:55:23.720 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:56:15.879 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:56:15.879 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:57:15.880 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:57:15.881 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:58:15.882 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:58:15.882 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:59:15.884 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:59:15.885 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:00:15.886 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:00:15.886 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:01:15.888 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:01:15.889 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:02:15.891 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:02:15.891 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:03:15.893 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:03:15.893 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:04:15.896 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:04:15.896 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:05:15.899 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:05:15.899 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:06:15.902 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:06:15.903 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:07:15.905 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:07:15.906 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:08:15.908 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:08:15.908 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:09:15.911 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:09:15.911 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:10:15.913 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:10:15.913 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:11:15.915 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:11:15.916 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:12:15.918 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:12:15.919 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:13:15.921 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:13:15.921 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:14:15.924 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:14:15.924 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:15:15.926 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:15:15.926 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:16:15.929 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:16:15.929 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:17:15.931 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:17:15.932 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:18:15.934 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:18:15.934 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:19:15.936 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:19:15.936 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:20:15.939 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:20:15.939 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:21:15.941 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:21:15.941 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:22:15.944 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:22:15.944 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:23:15.947 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:23:15.947 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:24:15.949 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:24:15.949 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:25:15.951 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:25:15.952 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:26:15.955 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:26:15.955 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:27:15.958 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:27:15.958 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:28:15.961 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:28:15.961 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:29:15.964 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:29:15.964 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:30:15.967 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:30:15.967 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:30:44.420 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 13:31:15.970 YDocExtension] Processed 3 Y patches in one minute
+[I 2023-07-21 13:31:15.970 YDocExtension] Connected Y users: 0
+[I 2023-07-21 13:32:15.973 YDocExtension] Processed 0 Y patches in one minute
+[I 2023-07-21 13:32:15.973 YDocExtension] Connected Y users: 0
+slurmstepd-ctit091: error: *** JOB 228194 ON ctit091 CANCELLED AT 2023-07-21T13:33:03 ***
+[C 2023-07-21 13:33:03.974 ServerApp] received signal 15, stopping
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
