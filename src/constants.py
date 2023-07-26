@@ -3,7 +3,7 @@ import torch
 
 # Constants
 
-RUN_NAME = "swin"
+RUN_NAME = "new_maxpool_128"
 
 
 # Paths
@@ -22,7 +22,6 @@ DATA_LIMIT = -1
 CROP_SIZE = (256, 256, 64)
 PATCH_SIZE = (4, 4, 4)
 SPACINGS = (1.2, 1.2, 0.9)
-EMBED_DIM = 256
 
 CT_WINDOW_MIN = -50
 CT_WINDOW_MAX = 150
@@ -41,3 +40,4 @@ NUM_HEADS = 16
 NUM_LAYERS = 12
 HIDDEN_FACTOR = 3
 CHANNELS = 2
+EMBED_DIM = 128

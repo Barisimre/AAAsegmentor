@@ -9,9 +9,9 @@ class MyModel(nn.Module):
 
     def __init__(self,
                  in_channels=1,
-                 mid_channels=4,
+                 mid_channels=1,
                  out_channels=3,
-                 patch_size=(4,4,4),
+                 patch_size=(4, 4, 4),
                  embed_dim=256,
                  img_size=(128, 128, 128)):
         super(MyModel, self).__init__()
@@ -19,44 +19,33 @@ class MyModel(nn.Module):
         self.n_classes = out_channels
         self.patch_size = patch_size
 
-        self.in_conv = DoubleConv(in_channels=in_channels, out_channels=mid_channels)
+        self.pool = nn.MaxPool3d(kernel_size=3, stride=2, padding=1)
 
-        # Unet encoder
-        self.down1 = Down(mid_channels, mid_channels)
-        self.down2 = Down(mid_channels, mid_channels)
-        self.down3 = Down(mid_channels, mid_channels)
-        self.down4 = Down(mid_channels, mid_channels)
+        self.out_conv1 = DoubleConv(5, out_channels)
+        self.out_conv2 = DoubleConv(out_channels, out_channels)
 
-        # Unet decoder
-        self.up1 = Up(mid_channels, mid_channels, mid_channels)
-        self.up2 = Up(mid_channels, mid_channels, mid_channels)
-        self.up3 = Up(mid_channels, mid_channels, mid_channels)
-        self.up4 = Up(mid_channels, mid_channels, mid_channels)
-
-        self.out_conv1 = DoubleConv(mid_channels, out_channels)
-        self.out_conv2 = nn.Conv3d(in_channels=out_channels, out_channels=out_channels, kernel_size=3, stride=1, padding='same')
 
         # Vision Transformer
-        self.vit = ViT(embed_dim=embed_dim, channels=mid_channels, patch_size=patch_size, original_img_size=img_size, depth=5)
-
+        self.vit = ViT(embed_dim=embed_dim, channels=mid_channels, patch_size=patch_size, original_img_size=img_size,
+                       depth=5)
 
     def forward(self, x):
-        residual = self.in_conv(x)
-        
-        x1 = self.down1(residual)
-        x2 = self.down2(x1)
-        x3 = self.down3(x2)
-        x4 = self.down4(x3)
 
-        residual, x1, x2, x3, x4 = self.vit([residual, x1, x2, x3, x4])
+        x1 = self.pool(x)
+        x2 = self.pool(x1)
+        x3 = self.pool(x2)
+        x4 = self.pool(x3)
 
-        x = self.up1(x4, x3)
-        x = self.up2(x, x2)
-        x = self.up3(x, x1)
-        x = self.up4(x, residual)
+        x, x1, x2, x3, x4 = self.vit([x, x1, x2, x3, x4])
 
-        x = self.out_conv1(x)
+        x1 = torch.nn.functional.interpolate(x1, scale_factor=2, mode='trilinear')
+        x2 = torch.nn.functional.interpolate(x2, scale_factor=4, mode='trilinear')
+        x3 = torch.nn.functional.interpolate(x3, scale_factor=8, mode='trilinear')
+        x4 = torch.nn.functional.interpolate(x4, scale_factor=16, mode='trilinear')
+
+        xs = torch.cat([x, x1, x2, x3, x4], dim=1)
+
+        x = self.out_conv1(xs)
         x = self.out_conv2(x)
-
 
         return x
