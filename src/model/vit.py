@@ -9,6 +9,7 @@ import time
 from src.constants import *
 import numpy as np
 from flash_attn.flash_attention import FlashMHA
+import math
 
 
 
@@ -181,6 +182,26 @@ class EncoderBlock(nn.Module):
         y = self.mlp(y)
         return x + y
 
+class PositionalEncoding(nn.Module):
+
+    def __init__(self, d_model: int, dropout: float = 0.1, max_len: int = 50000):
+        super().__init__()
+        self.dropout = nn.Dropout(p=dropout)
+
+        position = torch.arange(max_len).unsqueeze(1)
+        div_term = torch.exp(torch.arange(0, d_model, 2) * (-math.log(100.0) / d_model))
+        pe = torch.zeros(max_len, 1, d_model)
+        pe[:, 0, 0::2] = torch.sin(position * div_term)
+        pe[:, 0, 1::2] = torch.cos(position * div_term)
+        self.register_buffer('pe', pe)
+
+    def forward(self, x):
+        """
+        Arguments:
+            x: Tensor, shape ``[seq_len, batch_size, embedding_dim]``
+        """
+        x = x + self.pe[:x.size(0)]
+        return self.dropout(x)
 
 class ViTEncoder(nn.Module):
     """Transformer Model Encoder for sequence to sequence translation."""
@@ -201,8 +222,10 @@ class ViTEncoder(nn.Module):
         # Note that batch_size is on the first dim because
         # we have batch_first=True in nn.MultiAttention() by default
 
-        self.pos_embedding = nn.Parameter(torch.empty(
-            1, seq_len, hidden_dim).normal_(std=0.02))  # from BERT
+        # self.pos_embedding = nn.Parameter(torch.empty(
+        #     1, seq_len, hidden_dim).normal_(std=0.02))  # from BERT
+
+        self.positional_encoding = PositionalEncoding(hidden_dim, dropout)
 
         self.dropout = nn.Dropout(dropout)
         layers: OrderedDict[str, nn.Module] = OrderedDict()
@@ -221,5 +244,5 @@ class ViTEncoder(nn.Module):
     def forward(self, input: torch.Tensor):
         torch._assert(input.dim(
         ) == 3, f"Expected (batch_size, seq_length, hidden_dim) got {input.shape}")
-        input = input + self.pos_embedding
+        input = self.positional_encoding(input)
         return self.ln(self.layers(self.dropout(input)))
