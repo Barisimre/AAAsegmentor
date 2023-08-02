@@ -3,7 +3,7 @@ import torch
 
 # Constants
 
-RUN_NAME = "swin"
+RUN_NAME = "fixed_8heads_4channel"
 
 
 # Paths
@@ -37,7 +37,7 @@ BATCH_SIZE = 2
 LOSS = monai.losses.DiceCELoss(lambda_ce=0.4)
 
 # Transformer stuff
-NUM_HEADS = 16
+NUM_HEADS = 8
 NUM_LAYERS = 12
 HIDDEN_FACTOR = 3
-CHANNELS = 2
+CHANNELS = 4

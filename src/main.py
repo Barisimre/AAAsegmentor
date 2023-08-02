@@ -12,18 +12,18 @@ from torch.cuda.amp import GradScaler
 
 def main():
     # Model to be trained. Baseline options are UNet, SWINUNETR
-    model = SWINUNETR
+    # model = SWINUNETR
 
     # modes = normal, skip, autoencoder, half_half, no_vit
 
     torch.set_float32_matmul_precision("medium")
 
-    # model = MyModel(in_channels=1,
-    #                 mid_channels=CHANNELS,
-    #                 out_channels=3,
-    #                 patch_size=PATCH_SIZE,
-    #                 embed_dim=EMBED_DIM,
-    #                 img_size=CROP_SIZE)
+    model = MyModel(in_channels=1,
+                    mid_channels=CHANNELS,
+                    out_channels=3,
+                    patch_size=PATCH_SIZE,
+                    embed_dim=EMBED_DIM,
+                    img_size=CROP_SIZE)
 
     # model.load_state_dict(torch.load(f"{MODEL_SAVE_PATH}/focus/all_transformer_seed.pt"))
 
