@@ -8,7 +8,7 @@ import torch
 import time
 from src.constants import *
 import numpy as np
-from flash_attn.flash_attention import FlashMHA
+# from flash_attn.flash_attention import FlashMHA
 import math
 
 
