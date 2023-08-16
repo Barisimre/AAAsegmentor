@@ -6,22 +6,20 @@
 #SBATCH -c 16 
 #SBATCH --time=24:00:00
 #SBATCH --partition=mia
-#SBATCH --nodelist=ctit093
-#SBATCH --error=out/skip_16.err
+#SBATCH --nodelist=ctit094
+#SBATCH --error=out/swin.err
 
-module load anaconda3/2022.05
-source activate final
-module load nvidia/cuda-11.7 
+# module load anaconda3/2022.05
+# source activate aaasegmentor
+# module load nvidia/cuda-11.7 
 
-export PYTHONPATH="${PYTHONPATH}:/home/s1797743/thesis/final/AAAsegmentor/"
+export PYTHONPATH="${PYTHONPATH}:/home/imreb/AAAsegmentor/"
 
-cd /local
-mkdir ${SLURM_JOBID}
-cd ${SLURM_JOBID}
-cp -r ${SLURM_SUBMIT_DIR}/src .
+# cd /local
+# mkdir ${SLURM_JOBID}
+# cd ${SLURM_JOBID}
+# cp -r ${SLURM_SUBMIT_DIR}/src .
 
+python src/main.py
 
-
-python3 src/main.py
-
-rm -r /local/${SLURM_JOBID}
+# rm -r /local/${SLURM_JOBID}

@@ -5,14 +5,15 @@
 #SBATCH --output out/jupyter-notebook.log
 #SBATCH -c 16
 #SBATCH --partition=mia
-#SBATCH --nodelist=ctit094
+#SBATCH --nodelist=ctit091
 
+# export PATH="/deepstore/software/anaconda3/2022.05/condabin:$PATH"
 
-module load anaconda3/2022.05
-source activate final
-module load nvidia/cuda-11.7 
+# module load anaconda3/2022.05
+# source activate aaasegmentor
+# module load nvidia/cuda-11.7 
 
-export PYTHONPATH="${PYTHONPATH}:/home/s1797743/thesis/final/AAAsegmentor/"
+export PYTHONPATH="${PYTHONPATH}:/home/imreb/AAAsegmentor/"
 
 # Warning !
 # Do not modify the sbatch script bolow this line !

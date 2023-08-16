@@ -7,27 +7,27 @@ from tqdm import tqdm
 from src.model.baselines import *
 from src.training.lr_schedule import set_learning_rate
 from src.model.my_model import MyModel
+from torch.cuda.amp import GradScaler
 
 
 def main():
     # Model to be trained. Baseline options are UNet, SWINUNETR
-    # model = UNet
+    # model = SWINUNETR
 
     # modes = normal, skip, autoencoder, half_half, no_vit
 
+    torch.set_float32_matmul_precision("medium")
+
     model = MyModel(in_channels=1,
+                    mid_channels=CHANNELS,
                     out_channels=3,
-                    lower_channels=16,
-                    big_channel=16,
-                    patch_size=8,
-                    embed_dim=512,
-                    mode="no_down_vit",
-                    old_embedder=False)
+                    patch_size=PATCH_SIZE,
+                    embed_dim=EMBED_DIM,
+                    img_size=CROP_SIZE)
 
     # model.load_state_dict(torch.load(f"{MODEL_SAVE_PATH}/focus/all_transformer_seed.pt"))
 
     model = model.to(DEVICE)
-
 
     optimizer = torch.optim.Adam(params=model.parameters(), lr=1e-4)
 
@@ -43,10 +43,12 @@ def main():
 
         best_test_loss = 2.0
 
-        train_single_epoch(model=model, optimizer=optimizer, train_loader=train_loader)
+        scaler = GradScaler()
+
+        train_single_epoch(model=model, optimizer=optimizer, train_loader=train_loader, scaler=scaler)
 
         if e % 25 == 0:
-            test_loss = test_single_epoch(model=model, test_loader=test_loader)
+            test_loss = test_single_epoch(model=model, test_loader=test_loader, scaler=scaler)
 
             #  If test loss is the best, save the model
             if test_loss <= best_test_loss:

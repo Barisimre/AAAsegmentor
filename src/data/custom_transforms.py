@@ -37,4 +37,4 @@ class GetFilesTest(monai.transforms.Transform):
         pass
 
     def __call__(self, item):
-        return {'img': f"{DATA_PATH}/test_images/{item}", 'mask': f"{DATA_PATH}/test_masks/{item}", 'name': item}
+        return {'img': f"{DATA_PATH}/images/{item}", 'mask': f"{DATA_PATH}/masks/{item}", 'name': item}

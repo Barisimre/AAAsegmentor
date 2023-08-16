@@ -1,186 +1,550 @@
-	Adding anaconda3 2022.05 to your environment
-	Adding nVidia Cuda Toolkit 11.7
-[I 2023-05-10 11:38:12.069 ServerApp] jupyterlab | extension was successfully linked.
-[W 2023-05-10 11:38:12.071 NotebookApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-05-10 11:38:12.072 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2023-05-10 11:38:12.072 NotebookApp] 'terminals_enabled' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[I 2023-05-10 11:38:12.074 ServerApp] nbclassic | extension was successfully linked.
-[I 2023-05-10 11:38:12.413 ServerApp] notebook_shim | extension was successfully linked.
-[I 2023-05-10 11:38:12.437 ServerApp] notebook_shim | extension was successfully loaded.
-[I 2023-05-10 11:38:12.437 LabApp] JupyterLab extension loaded from /home/s1797743/.conda/envs/final/lib/python3.10/site-packages/jupyterlab
-[I 2023-05-10 11:38:12.437 LabApp] JupyterLab application directory is /home/s1797743/.conda/envs/final/share/jupyter/lab
-[I 2023-05-10 11:38:12.440 ServerApp] jupyterlab | extension was successfully loaded.
-[I 2023-05-10 11:38:12.445 ServerApp] nbclassic | extension was successfully loaded.
-[I 2023-05-10 11:38:12.445 ServerApp] Will shut down after 3600 seconds with no kernels or terminals.
-[I 2023-05-10 11:38:12.446 ServerApp] Serving notebooks from local directory: /home/s1797743/thesis/final/AAAsegmentor
-[I 2023-05-10 11:38:12.446 ServerApp] Jupyter Server 1.23.6 is running at:
-[I 2023-05-10 11:38:12.446 ServerApp] http://ctit093.ewi.utwente.nl:8806/lab?token=297b2b7e8f943f7a1c2ee9d8af69f95453f618ad6f589884
-[I 2023-05-10 11:38:12.446 ServerApp]  or http://127.0.0.1:8806/lab?token=297b2b7e8f943f7a1c2ee9d8af69f95453f618ad6f589884
-[I 2023-05-10 11:38:12.446 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 2023-05-10 11:38:12.450 ServerApp] 
+[I 2023-07-21 10:48:53.292 ServerApp] Package jupyterlab took 0.0001s to import
+[I 2023-07-21 10:48:53.853 ServerApp] Package jupyter_collaboration took 0.5589s to import
+[I 2023-07-21 10:48:54.351 ServerApp] Package jupyter_lsp took 0.4974s to import
+[W 2023-07-21 10:48:54.352 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-07-21 10:48:54.353 ServerApp] Package jupyter_server_fileid took 0.0001s to import
+[I 2023-07-21 10:48:54.580 ServerApp] Package jupyter_server_terminals took 0.2255s to import
+[I 2023-07-21 10:48:54.581 ServerApp] Package notebook_shim took 0.0001s to import
+[W 2023-07-21 10:48:54.581 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-07-21 10:48:54.604 ServerApp] jupyter_collaboration | extension was successfully linked.
+[I 2023-07-21 10:48:54.604 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2023-07-21 10:48:54.611 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2023-07-21 10:48:54.615 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-07-21 10:48:54.619 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-07-21 10:48:57.113 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-07-21 10:48:57.556 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-07-21 10:48:57.581 ServerApp] jupyter_collaboration | extension was successfully loaded.
+[I 2023-07-21 10:48:57.586 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2023-07-21 10:48:57.586 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2023-07-21 10:48:57.586 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /home/imreb/AAAsegmentor
+[I 2023-07-21 10:48:57.586 FileIdExtension] ArbitraryFileIdManager : Configured database path: /home/imreb/.local/share/jupyter/file_id_manager.db
+[I 2023-07-21 10:48:57.587 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2023-07-21 10:48:57.587 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2023-07-21 10:48:57.617 FileIdExtension] Attached event listeners.
+[I 2023-07-21 10:48:57.617 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2023-07-21 10:48:57.620 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-07-21 10:48:57.700 LabApp] JupyterLab extension loaded from /home/imreb/.conda/envs/aaasegmentor/lib/python3.10/site-packages/jupyterlab
+[I 2023-07-21 10:48:57.700 LabApp] JupyterLab application directory is /home/imreb/.conda/envs/aaasegmentor/share/jupyter/lab
+[I 2023-07-21 10:48:57.719 LabApp] Extension Manager is 'pypi'.
+[I 2023-07-21 10:48:57.727 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-07-21 10:48:57.728 ServerApp] Serving notebooks from local directory: /home/imreb/AAAsegmentor
+[I 2023-07-21 10:48:57.728 ServerApp] Jupyter Server 2.7.0 is running at:
+[I 2023-07-21 10:48:57.728 ServerApp] http://ctit091.ewi.utwente.nl:8805/lab?token=7a0cda2c757221de4cf0493261969005bdc910983da68bc0
+[I 2023-07-21 10:48:57.728 ServerApp]     http://127.0.0.1:8805/lab?token=7a0cda2c757221de4cf0493261969005bdc910983da68bc0
+[I 2023-07-21 10:48:57.728 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-07-21 10:48:57.753 ServerApp] 
     
     To access the server, open this file in a browser:
-        file:///home/s1797743/.local/share/jupyter/runtime/jpserver-1006470-open.html
+        file:///home/imreb/.local/share/jupyter/runtime/jpserver-1094719-open.html
     Or copy and paste one of these URLs:
-        http://ctit093.ewi.utwente.nl:8806/lab?token=297b2b7e8f943f7a1c2ee9d8af69f95453f618ad6f589884
-     or http://127.0.0.1:8806/lab?token=297b2b7e8f943f7a1c2ee9d8af69f95453f618ad6f589884
-[W 2023-05-10 11:39:29.030 LabApp] Could not determine jupyterlab build status without nodejs
-[I 2023-05-10 11:39:33.571 ServerApp] Kernel started: 80115333-2793-4d97-97f8-115c80b5e88c
-[I 2023-05-10 11:39:33.574 ServerApp] Culling kernels with idle durations > 3600 seconds at 300 second intervals ...
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 2770a13f-af92-4e47-a8e4-57e8d2ac6c81
-[I 2023-05-10 11:40:27.646 ServerApp] Kernel started: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 41744723-698b-430c-ab25-cd072a3508cc
-[I 2023-05-10 11:41:45.790 ServerApp] Kernel restarted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 11:41:45.799 ServerApp] Starting buffering for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[I 2023-05-10 11:41:45.807 ServerApp] Restoring connection for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 44eab989-53c5-4d19-9136-f69e121cb8c8
-[I 2023-05-10 11:42:04.348 ServerApp] Kernel restarted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 11:42:04.361 ServerApp] Starting buffering for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[I 2023-05-10 11:42:04.379 ServerApp] Restoring connection for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: b7a3eb2b-3903-44bc-9a26-4b1413bf52b9
-[I 2023-05-10 11:42:27.598 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:44:27.853 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:46:28.030 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:48:28.082 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:49:32.878 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 11:50:28.137 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:52:28.201 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:54:28.245 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:56:28.303 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 11:58:28.387 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:00:28.833 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:02:34.694 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:04:35.318 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:06:05.627 ServerApp] Creating new directory in /results
-[I 2023-05-10 12:06:35.401 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:08:35.450 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:10:37.319 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:12:38.867 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:14:40.591 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:16:40.630 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:18:40.696 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:20:40.730 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:22:40.775 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:24:40.884 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:26:41.067 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:28:41.203 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:30:41.256 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:32:41.463 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:34:41.536 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:38:41.594 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:40:41.646 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:42:41.691 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:44:41.744 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:46:11.223 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:13.801 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:21.678 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:21.836 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:21.988 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:22.142 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:22.322 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:38.704 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:38.872 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:39.045 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:39.217 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:39.393 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:39.559 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:39.738 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:39.914 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:40.097 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:40.280 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:40.485 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:40.664 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:41.777 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 12:46:59.392 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:59.569 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:59.746 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:46:59.936 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:47:00.116 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:47:00.295 ServerApp] Kernel interrupted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:47:20.472 ServerApp] Kernel restarted: 4ed0b91f-9e83-4934-9337-e21a5ff335d0
-[I 2023-05-10 12:47:20.479 ServerApp] Starting buffering for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[I 2023-05-10 12:47:20.512 ServerApp] Restoring connection for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 012b6ce2-e631-4d48-8ad9-4001832e76a1
-[I 2023-05-10 12:48:43.770 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:04:47.235 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:08:49.183 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:12:49.321 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:16:49.362 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:17:45.142 ServerApp] Starting buffering for 4ed0b91f-9e83-4934-9337-e21a5ff335d0:9fc9cd15-6819-41cd-990d-fb9823be78b2
-[I 2023-05-10 13:17:45.143 ServerApp] Starting buffering for 80115333-2793-4d97-97f8-115c80b5e88c:6120e0a5-1873-4893-9aa0-cb780f95e34d
-[W 2023-05-10 13:17:49.130 LabApp] Could not determine jupyterlab build status without nodejs
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 7ab2e8c9-8ac8-47de-9377-776cc1962769
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 4dda02a4-3b49-49d1-a534-324138122034
-[I 2023-05-10 13:19:49.816 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:21:49.868 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:23:51.563 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:25:52.948 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:27:54.452 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:29:56.127 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:31:57.616 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:33:58.937 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:36:00.457 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:38:01.913 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:40:03.089 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:42:04.846 ServerApp] Saving file at /notebooks/inference.ipynb
-[W 2023-05-10 13:43:18.140 ServerApp] delete /results/Mine/1_image.npy
-[W 2023-05-10 13:43:18.235 ServerApp] delete /results/Mine/1_output.npy
-[W 2023-05-10 13:43:18.238 ServerApp] delete /results/Mine/1_mask.npy
-[W 2023-05-10 13:43:18.240 ServerApp] delete /results/Mine/10_image.npy
-[W 2023-05-10 13:43:18.242 ServerApp] delete /results/Mine/10_mask.npy
-[W 2023-05-10 13:43:18.244 ServerApp] delete /results/Mine/2_image.npy
-[W 2023-05-10 13:43:18.246 ServerApp] delete /results/Mine/10_output.npy
-[W 2023-05-10 13:43:18.250 ServerApp] delete /results/Mine/2_mask.npy
-[W 2023-05-10 13:43:18.252 ServerApp] delete /results/Mine/2_output.npy
-[W 2023-05-10 13:43:18.254 ServerApp] delete /results/Mine/3_image.npy
-[W 2023-05-10 13:43:18.255 ServerApp] delete /results/Mine/3_mask.npy
-[W 2023-05-10 13:43:18.257 ServerApp] delete /results/Mine/3_output.npy
-[W 2023-05-10 13:43:18.258 ServerApp] delete /results/Mine/4_image.npy
-[W 2023-05-10 13:43:18.262 ServerApp] delete /results/Mine/4_mask.npy
-[W 2023-05-10 13:43:18.264 ServerApp] delete /results/Mine/5_mask.npy
-[W 2023-05-10 13:43:18.265 ServerApp] delete /results/Mine/5_output.npy
-[W 2023-05-10 13:43:18.267 ServerApp] delete /results/Mine/6_mask.npy
-[W 2023-05-10 13:43:18.269 ServerApp] delete /results/Mine/6_image.npy
-[W 2023-05-10 13:43:18.281 ServerApp] delete /results/Mine/7_image.npy
-[W 2023-05-10 13:43:18.283 ServerApp] delete /results/Mine/7_mask.npy
-[W 2023-05-10 13:43:18.318 ServerApp] delete /results/Mine/7_output.npy
-[W 2023-05-10 13:43:18.321 ServerApp] delete /results/Mine/9_image.npy
-[W 2023-05-10 13:43:18.324 ServerApp] delete /results/Mine/8_mask.npy
-[W 2023-05-10 13:43:18.332 ServerApp] delete /results/Mine/4_output.npy
-[W 2023-05-10 13:43:18.334 ServerApp] delete /results/Mine/8_output.npy
-[W 2023-05-10 13:43:18.337 ServerApp] delete /results/Mine/5_image.npy
-[W 2023-05-10 13:43:18.338 ServerApp] delete /results/Mine/8_image.npy
-[W 2023-05-10 13:43:18.340 ServerApp] delete /results/Mine/6_output.npy
-[W 2023-05-10 13:43:18.341 ServerApp] delete /results/Mine/9_mask.npy
-[W 2023-05-10 13:43:18.344 ServerApp] delete /results/Mine/9_output.npy
-[I 2023-05-10 13:44:06.873 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:46:06.945 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:48:07.013 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:50:07.232 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 13:52:07.513 ServerApp] Saving file at /notebooks/inference.ipynb
-[I 2023-05-10 16:01:13.687 ServerApp] Kernel started: 43416e65-ba5d-4faf-9b52-610ec1c887da
-[I 2023-05-10 16:03:15.312 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:07:16.590 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+        http://ctit091.ewi.utwente.nl:8805/lab?token=7a0cda2c757221de4cf0493261969005bdc910983da68bc0
+        http://127.0.0.1:8805/lab?token=7a0cda2c757221de4cf0493261969005bdc910983da68bc0
+[I 2023-07-21 10:48:58.084 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2023-07-21 10:49:15.584 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2023-07-21 10:49:18.781 ServerApp] Kernel started: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 10:49:19.910 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 10:49:19.917 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 10:49:19.923 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 10:50:15.582 YDocExtension] Processed 10 Y patches in one minute
+[I 2023-07-21 10:50:15.582 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:51:15.584 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:51:15.585 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:51:18.631 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 10:52:15.587 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:52:15.587 YDocExtension] Connected Y users: 1
 IOStream.flush timed out
-[I 2023-05-10 16:09:17.797 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+[I 2023-07-21 10:53:15.588 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:53:15.588 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:53:19.626 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 10:54:15.589 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:54:15.590 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:55:15.592 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:55:15.592 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:55:19.664 ServerApp] Saving file at /notebooks/test_model.ipynb
 IOStream.flush timed out
-[I 2023-05-10 16:11:18.879 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:13:20.091 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:15:20.229 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: c78597cc-f44e-48a1-9cbb-7d6567b3c174
-[I 2023-05-10 16:17:22.304 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:19:24.072 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:35:24.981 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:37:26.972 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:39:27.030 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:41:27.075 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:43:27.149 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
-[I 2023-05-10 16:45:28.576 ServerApp] Saving file at /notebooks/data_investigarion.ipynb
+IOStream.flush timed out
+[I 2023-07-21 10:56:15.594 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:56:15.594 YDocExtension] Connected Y users: 1
+IOStream.flush timed out
+[I 2023-07-21 10:57:15.596 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:57:15.596 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:57:19.701 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 10:58:15.597 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:58:15.598 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:59:15.599 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 10:59:15.599 YDocExtension] Connected Y users: 1
+[I 2023-07-21 10:59:19.809 ServerApp] Saving file at /notebooks/test_model.ipynb
+IOStream.flush timed out
+[I 2023-07-21 11:00:15.601 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:00:15.601 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:01:15.602 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:01:15.602 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:01:19.844 ServerApp] Saving file at /notebooks/test_model.ipynb
+IOStream.flush timed out
+[I 2023-07-21 11:02:15.604 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:02:15.604 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:03:15.605 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:03:15.605 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:03:19.881 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:04:15.607 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:04:15.607 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:05:15.609 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:05:15.609 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:05:19.968 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:06:15.609 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:06:15.610 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:07:15.611 YDocExtension] Processed 3 Y patches in one minute
+[I 2023-07-21 11:07:15.611 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:08:15.613 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:08:15.613 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:09:15.614 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:09:15.615 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:10:15.616 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:10:15.616 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:11:15.617 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:11:15.618 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:12:15.618 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:12:15.619 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:13:15.619 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:13:15.620 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:13:20.007 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:14:15.621 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:14:15.621 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:15:15.624 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:15:15.624 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:15:20.043 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:16:15.626 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:16:15.627 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:17:15.629 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:17:15.630 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:17:20.077 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:18:15.632 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:18:15.632 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:19:15.636 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:19:15.636 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:19:20.297 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:20:15.640 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:20:15.640 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:21:15.644 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:21:15.644 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:21:20.381 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:22:15.648 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:22:15.648 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:23:15.652 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:23:15.652 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:23:20.478 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:24:15.655 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:24:15.655 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:25:15.658 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:25:15.658 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:25:20.546 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:26:15.662 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:26:15.662 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:27:15.665 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:27:15.665 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:27:20.608 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:28:15.667 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:28:15.668 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:29:15.670 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:29:15.670 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:29:20.650 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:30:15.672 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:30:15.672 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:31:15.677 YDocExtension] Processed 3 Y patches in one minute
+[I 2023-07-21 11:31:15.677 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:31:20.979 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:32:15.681 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:32:15.681 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:33:15.685 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:33:15.685 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:34:15.689 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:34:15.689 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:35:15.693 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:35:15.693 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:35:21.997 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:36:15.696 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:36:15.697 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:37:15.701 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:37:15.701 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:37:22.035 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:38:15.705 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:38:15.705 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:39:15.709 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:39:15.710 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:39:22.075 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:40:15.714 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:40:15.714 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:41:15.718 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:41:15.718 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:41:22.113 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:41:41.099 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:41:41.104 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:41:41.113 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 11:41:41.113 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:42:15.721 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:42:15.721 YDocExtension] Connected Y users: 1
+[W 2023-07-21 11:42:41.102 ServerApp] Timeout waiting for kernel_info_reply: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:43:15.723 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:43:15.724 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:43:22.155 ServerApp] Saving file at /notebooks/test_model.ipynb
+Future exception was never retrieved
+future: <Future finished exception=TimeoutError('Timeout waiting for restart')>
+TimeoutError: Timeout waiting for restart
+[I 2023-07-21 11:44:15.726 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:44:15.726 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:45:15.728 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:45:15.728 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:45:22.197 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:46:15.729 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:46:15.729 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:46:29.544 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:46:29.548 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:46:29.556 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 11:46:29.556 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:46:37.436 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:46:37.440 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:46:37.446 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 11:46:37.446 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:47:15.733 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:47:15.733 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:47:22.232 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:48:15.735 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:48:15.735 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:48:20.919 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:48:22.479 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:49:15.738 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:49:15.738 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:49:22.267 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:49:35.407 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:49:35.412 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:49:35.419 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 11:49:35.419 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:50:08.023 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:50:15.740 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:50:15.740 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:51:13.121 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:15.160 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:15.312 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:15.742 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:51:15.742 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:51:22.304 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:51:29.634 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:29.793 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:29.952 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:30.113 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:30.264 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:30.432 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:30.600 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:30.760 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:30.920 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:31.079 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:31.232 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:31.393 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:31.560 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:31.712 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:31.880 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:32.056 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:32.229 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:32.392 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:32.568 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:32.736 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:32.912 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:33.104 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:33.272 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:33.431 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:33.599 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:33.776 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:51:33.960 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:52:15.744 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:52:15.745 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:53:15.747 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:53:15.747 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:53:22.338 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:54:15.749 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:54:15.750 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:54:17.723 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:54:18.195 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:54:18.362 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:54:18.545 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:55:00.371 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:55:15.752 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:55:15.752 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:55:22.373 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:55:38.667 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:55:44.312 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:55:44.316 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:55:44.324 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 11:55:44.324 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:56:01.307 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:56:15.754 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:56:15.754 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:56:20.077 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:56:20.211 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:57:00.787 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 11:57:00.791 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:57:00.797 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 11:57:00.797 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 11:57:15.756 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:57:15.756 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:57:22.413 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 11:58:15.760 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:58:15.760 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:59:15.761 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 11:59:15.762 YDocExtension] Connected Y users: 1
+[I 2023-07-21 11:59:22.533 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:00:15.763 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:00:15.763 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:01:15.765 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:01:15.766 YDocExtension] Connected Y users: 1
+IOStream.flush timed out
+[I 2023-07-21 12:02:15.769 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:02:15.770 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:03:15.773 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:03:15.774 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:03:22.589 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:04:15.778 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:04:15.778 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:05:15.779 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:05:15.779 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:05:22.627 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:06:15.780 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:06:15.780 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:07:15.782 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:07:15.782 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:07:22.667 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:08:15.782 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:08:15.783 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:09:15.784 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:09:15.784 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:09:22.703 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:10:15.785 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:10:15.785 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:11:15.786 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:11:15.786 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:11:22.734 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:12:15.787 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:12:15.787 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:12:39.980 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:12:39.984 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:12:39.991 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:12:39.991 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:13:15.791 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:13:15.791 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:13:18.725 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:19.045 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:19.197 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:19.372 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:19.548 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:19.700 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:19.860 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:20.020 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:20.197 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:20.372 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:20.549 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:20.724 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:20.900 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:21.085 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:22.776 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:13:33.874 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:13:33.879 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:13:33.885 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:13:33.885 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:14:15.793 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:14:15.794 YDocExtension] Connected Y users: 1
+IOStream.flush timed out
+[I 2023-07-21 12:15:15.798 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:15:15.798 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:15:22.808 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:16:05.846 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:16:05.850 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:16:05.857 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:16:05.857 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:16:15.800 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:16:15.800 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:17:15.802 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:17:15.802 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:17:22.838 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:18:15.805 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:18:15.805 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:19:15.807 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:19:15.807 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:19:22.866 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:20:15.809 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:20:15.809 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:21:15.811 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:21:15.812 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:22:15.814 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:22:15.814 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:23:15.816 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:23:15.816 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:24:15.818 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:24:15.818 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:25:15.821 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:25:15.821 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:26:15.823 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:26:15.823 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:27:08.782 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:27:08.787 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:27:08.794 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:27:08.794 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:27:15.825 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:27:15.825 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:27:23.032 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:28:15.828 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:28:15.828 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:28:49.917 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:28:49.921 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:28:49.927 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:28:49.928 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:28:57.343 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:28:57.347 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:28:57.353 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:28:57.353 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:29:15.830 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:29:15.830 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:29:23.065 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:30:15.831 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:30:15.831 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:31:15.833 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:31:15.833 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:32:15.834 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:32:15.834 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:33:15.836 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:33:15.836 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:34:15.838 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:34:15.838 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:35:15.839 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:35:15.839 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:36:15.841 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:36:15.841 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:36:26.455 ServerApp] Kernel restarted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:36:26.459 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:36:26.466 ServerApp] Connecting to kernel 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8.
+[I 2023-07-21 12:36:26.466 ServerApp] Restoring connection for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 12:37:15.842 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:37:15.842 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:37:23.357 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:38:15.844 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:38:15.845 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:39:15.846 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:39:15.846 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:39:23.387 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:40:15.848 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:40:15.848 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:41:15.849 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:41:15.849 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:41:23.420 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:42:15.851 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:42:15.851 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:43:15.854 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:43:15.854 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:43:23.490 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:44:15.855 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:44:15.856 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:45:15.858 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:45:15.858 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:45:23.523 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:46:15.860 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:46:15.860 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:47:15.863 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:47:15.863 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:47:23.591 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:48:15.865 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:48:15.865 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:49:15.867 YDocExtension] Processed 3 Y patches in one minute
+[I 2023-07-21 12:49:15.867 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:49:23.623 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:50:15.869 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:50:15.869 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:50:59.794 ServerApp] Kernel interrupted: 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8
+[I 2023-07-21 12:51:15.871 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:51:15.871 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:51:23.657 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:52:15.872 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:52:15.872 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:53:15.873 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:53:15.873 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:53:23.688 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:54:15.876 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:54:15.876 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:55:15.878 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:55:15.878 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:55:23.720 ServerApp] Saving file at /notebooks/test_model.ipynb
+[I 2023-07-21 12:56:15.879 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:56:15.879 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:57:15.880 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:57:15.881 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:58:15.882 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:58:15.882 YDocExtension] Connected Y users: 1
+[I 2023-07-21 12:59:15.884 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 12:59:15.885 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:00:15.886 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:00:15.886 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:01:15.888 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:01:15.889 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:02:15.891 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:02:15.891 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:03:15.893 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:03:15.893 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:04:15.896 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:04:15.896 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:05:15.899 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:05:15.899 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:06:15.902 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:06:15.903 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:07:15.905 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:07:15.906 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:08:15.908 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:08:15.908 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:09:15.911 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:09:15.911 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:10:15.913 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:10:15.913 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:11:15.915 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:11:15.916 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:12:15.918 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:12:15.919 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:13:15.921 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:13:15.921 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:14:15.924 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:14:15.924 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:15:15.926 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:15:15.926 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:16:15.929 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:16:15.929 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:17:15.931 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:17:15.932 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:18:15.934 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:18:15.934 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:19:15.936 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:19:15.936 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:20:15.939 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:20:15.939 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:21:15.941 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:21:15.941 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:22:15.944 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:22:15.944 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:23:15.947 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:23:15.947 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:24:15.949 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:24:15.949 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:25:15.951 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:25:15.952 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:26:15.955 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:26:15.955 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:27:15.958 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:27:15.958 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:28:15.961 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:28:15.961 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:29:15.964 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:29:15.964 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:30:15.967 YDocExtension] Processed 4 Y patches in one minute
+[I 2023-07-21 13:30:15.967 YDocExtension] Connected Y users: 1
+[I 2023-07-21 13:30:44.420 ServerApp] Starting buffering for 901cdd5f-716a-4ac1-8b4f-86a103d8a9c8:a78948a5-cb62-4e22-9e62-9255a26d3ab0
+[I 2023-07-21 13:31:15.970 YDocExtension] Processed 3 Y patches in one minute
+[I 2023-07-21 13:31:15.970 YDocExtension] Connected Y users: 0
+[I 2023-07-21 13:32:15.973 YDocExtension] Processed 0 Y patches in one minute
+[I 2023-07-21 13:32:15.973 YDocExtension] Connected Y users: 0
+slurmstepd-ctit091: error: *** JOB 228194 ON ctit091 CANCELLED AT 2023-07-21T13:33:03 ***
+[C 2023-07-21 13:33:03.974 ServerApp] received signal 15, stopping
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.

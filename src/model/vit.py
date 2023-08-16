@@ -7,100 +7,47 @@ from src.model.blocks import *
 import torch
 import time
 from src.constants import *
+import numpy as np
+# from flash_attn.flash_attention import FlashMHA
+import math
+
 
 
 class ViT(nn.Module):
 
-    def __init__(self, embed_dim, patch_size, channels, no_vit=False, old=False, ablation=False):
+    def __init__(self, embed_dim, patch_size, channels, original_img_size, depth):
         super().__init__()
 
         self.patch_size = patch_size
-        self.no_vit = no_vit
-        self.old = old
-        self.ablation = ablation
 
-        seq_lens = {8: 4681,  4: 37448, 2: 299584}
+        original_img_size = np.array(original_img_size)
+        img_sizes = [original_img_size//(2**i) for i in range(depth)]
 
-        if ablation:
-            seq_lens[8]= 4096
+        self.embedders = nn.ModuleList([
+            LinearPatchEmbedding(patch_size=patch_size, in_channels=channels, embed_dim=embed_dim) for d in range(depth)
+        ])
 
-            self.embedder = PatchEmbedding(patch_size=patch_size, in_channels=channels[0], embed_dim=embed_dim)
-            self.de_embedder = InversePatchEmbedding(patch_size=patch_size, in_channels=channels[0], embed_dim=embed_dim)
+        self.de_embedders = nn.ModuleList([
+            LinearPatchDeEmbedding(patch_size=patch_size, out_channels=channels, embed_dim=embed_dim, img_size=i) for i in img_sizes
+        ])
 
-        else:
-
-            if old:
-
-                self.embedders = nn.ModuleList([
-                    ViTEmbedder(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
-                ])
-
-                self.de_embedders = nn.ModuleList([
-                    ViTDeEmbedder(patch_size=patch_size, out_channels=c, embed_dim=embed_dim) for c in channels
-                ])
-            
-            else:
-
-                self.embedders = nn.ModuleList([
-                    PatchEmbedding(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
-                ])
-
-                self.de_embedders = nn.ModuleList([
-                    InversePatchEmbedding(patch_size=patch_size, in_channels=c, embed_dim=embed_dim) for c in channels
-                ])
-
-
-        if not no_vit:
-            self.vit = ViTEncoder(seq_length=seq_lens[patch_size], num_layers=NUM_LAYERS, num_heads=NUM_HEADS, hidden_dim=embed_dim, mlp_dim=embed_dim*HIDDEN_FACTOR, dropout=0.1, attention_dropout=0.1)
-
+        self.vit = ViTEncoder(seq_len=74896, num_layers=NUM_LAYERS, num_heads=NUM_HEADS,
+                              hidden_dim=embed_dim, mlp_dim=embed_dim*HIDDEN_FACTOR, dropout=0.1, attention_dropout=0.1)
 
     # xs: one x per level of the encoder. They should all halve in every size. Channel counts don't matter.
+
     def forward(self, xs):
-        shapes = [int(x.shape[-1] / self.patch_size) for x in xs]
+        
+        xs = [e(x) for e, x in zip(self.embedders, xs)]
+        split_points = [i.shape[1] for i in xs]
 
-        if self.ablation:
-            shape = xs.shape
-            x = self.embedder(xs)
-            x = self.vit(x)
-            x = self.de_embedder(x, shape)
-            return x
+        xs = torch.concat(xs, dim=1)
+        xs = self.vit(xs)
 
-        if self.old:
-            # Embed
-            xs = [einops.rearrange(em(xs[i]), "b em x y z -> b (x y z) em") for i, em in enumerate(self.embedders)]
-
-            token_counts = [x.shape[1] for x in xs]
-
-            # ViT
-            if not self.no_vit:
-                xs = torch.cat(xs, dim=1)
-                xs = self.vit(xs)
-                xs = torch.split(xs, token_counts, dim=1)
-
-            # De-Embed
-            xs = [einops.rearrange(xs[i], "b (x y z) em -> b em x y z", x=s, y=s, z=s) for i, s in enumerate(shapes)]
-            xs = [dem(xs[i]) for i, dem in enumerate(self.de_embedders)]
-
-
-        else:
-            shapes  = [x.shape for x in xs]
-            xs = [e(x) for e, x in zip(self.embedders, xs)]
-            token_counts = [x.shape[1] for x in xs]
-            
-            # shapes = [i[1] for i in a]
-
-            if not self.no_vit:
-                xs = torch.cat(xs, dim=1)
-                xs = self.vit(xs)
-                xs = torch.split(xs, token_counts, dim=1)
-
-            xs = [e(x, s) for e, x, s in zip(self.de_embedders, xs, shapes)]
-            # xs = [einops.rearrange(xs[i], "b (x y z) em -> b em x y z", x=s, y=s, z=s) for i, s in enumerate(shapes)]
-            # xs = [dem(xs[i]) for i, dem in enumerate(self.de_embedders)]
-
+        xs = torch.split(xs, split_points, dim=1)
+        xs = [e(x) for e, x in zip(self.de_embedders, xs)]
 
         return xs
-
 
 
 class MLP(torch.nn.Sequential):
@@ -123,7 +70,7 @@ class MLP(torch.nn.Sequential):
             hidden_channels,
             norm_layer=None,
             activation_layer=torch.nn.ReLU,
-            inplace= None,
+            inplace=None,
             bias: bool = True,
             dropout: float = 0.0,
     ):
@@ -153,7 +100,8 @@ class MLPBlock(MLP):
     _version = 2
 
     def __init__(self, in_dim: int, mlp_dim: int, dropout: float):
-        super().__init__(in_dim, [mlp_dim, in_dim], activation_layer=nn.GELU, inplace=None, dropout=dropout)
+        super().__init__(in_dim, [
+            mlp_dim, in_dim], activation_layer=nn.GELU, inplace=None, dropout=dropout)
 
         for m in self.modules():
             if isinstance(m, nn.Linear):
@@ -193,7 +141,6 @@ class MLPBlock(MLP):
         )
 
 
-
 class EncoderBlock(nn.Module):
     """Transformer encoder block."""
 
@@ -204,14 +151,18 @@ class EncoderBlock(nn.Module):
             mlp_dim: int,
             dropout: float,
             attention_dropout: float,
-            norm_layer: Callable[..., torch.nn.Module] = partial(nn.LayerNorm, eps=1e-6),
+            norm_layer: Callable[..., torch.nn.Module] = partial(
+                nn.LayerNorm, eps=1e-6),
     ):
         super().__init__()
         self.num_heads = num_heads
 
         # Attention block
         self.ln_1 = norm_layer(hidden_dim)
-        self.self_attention = nn.MultiheadAttention(hidden_dim, num_heads, dropout=attention_dropout, batch_first=False)
+        self.self_attention = nn.MultiheadAttention(
+            hidden_dim, num_heads, dropout=attention_dropout, batch_first=False)
+        
+        # self.flash_attn = FlashMHA(embed_dim=hidden_dim, num_heads=num_heads)
         self.dropout = nn.Dropout(dropout)
 
         # MLP block
@@ -219,9 +170,11 @@ class EncoderBlock(nn.Module):
         self.mlp = MLPBlock(hidden_dim, mlp_dim, dropout)
 
     def forward(self, input: torch.Tensor):
-        torch._assert(input.dim() == 3, f"Expected (batch_size, seq_length, hidden_dim) got {input.shape}")
+        torch._assert(input.dim(
+        ) == 3, f"Expected (batch_size, seq_length, hidden_dim) got {input.shape}")
         x = self.ln_1(input)
         x, _ = self.self_attention(x, x, x, need_weights=False)
+        # x, _ = self.flash_attn(x)
         x = self.dropout(x)
         x = x + input
 
@@ -229,26 +182,50 @@ class EncoderBlock(nn.Module):
         y = self.mlp(y)
         return x + y
 
+class PositionalEncoding(nn.Module):
+
+    def __init__(self, d_model: int, dropout: float = 0.1, max_len: int = 50000):
+        super().__init__()
+        self.dropout = nn.Dropout(p=dropout)
+
+        position = torch.arange(max_len).unsqueeze(1)
+        div_term = torch.exp(torch.arange(0, d_model, 2) * (-math.log(100.0) / d_model))
+        pe = torch.zeros(max_len, 1, d_model)
+        pe[:, 0, 0::2] = torch.sin(position * div_term)
+        pe[:, 0, 1::2] = torch.cos(position * div_term)
+        self.register_buffer('pe', pe)
+
+    def forward(self, x):
+        """
+        Arguments:
+            x: Tensor, shape ``[seq_len, batch_size, embedding_dim]``
+        """
+        x = x + self.pe[:x.size(0)]
+        return self.dropout(x)
 
 class ViTEncoder(nn.Module):
     """Transformer Model Encoder for sequence to sequence translation."""
 
     def __init__(
-            self,
-            seq_length: int,
-            num_layers: int,
-            num_heads: int,
-            hidden_dim: int,
-            mlp_dim: int,
-            dropout: float,
-            attention_dropout: float,
-            norm_layer: Callable[..., torch.nn.Module] = partial(nn.LayerNorm, eps=1e-6),
-        ):
+        self,
+        seq_len: int,
+        num_layers: int,
+        num_heads: int,
+        hidden_dim: int,
+        mlp_dim: int,
+        dropout: float,
+        attention_dropout: float,
+        norm_layer: Callable[..., torch.nn.Module] = partial(
+            nn.LayerNorm, eps=1e-6),
+    ):
         super().__init__()
         # Note that batch_size is on the first dim because
         # we have batch_first=True in nn.MultiAttention() by default
-        
-        self.pos_embedding = nn.Parameter(torch.empty(1, seq_length, hidden_dim).normal_(std=0.02))  # from BERT
+
+        # self.pos_embedding = nn.Parameter(torch.empty(
+        #     1, seq_len, hidden_dim).normal_(std=0.02))  # from BERT
+
+        self.positional_encoding = PositionalEncoding(hidden_dim, dropout)
 
         self.dropout = nn.Dropout(dropout)
         layers: OrderedDict[str, nn.Module] = OrderedDict()
@@ -265,6 +242,7 @@ class ViTEncoder(nn.Module):
         self.ln = norm_layer(hidden_dim)
 
     def forward(self, input: torch.Tensor):
-        torch._assert(input.dim() == 3, f"Expected (batch_size, seq_length, hidden_dim) got {input.shape}")
-        input = input + self.pos_embedding
+        torch._assert(input.dim(
+        ) == 3, f"Expected (batch_size, seq_length, hidden_dim) got {input.shape}")
+        input = self.positional_encoding(input)
         return self.ln(self.layers(self.dropout(input)))

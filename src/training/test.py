@@ -3,9 +3,10 @@ from src.utils.metrics import dice_scores
 import numpy as np
 import wandb
 from src.utils.visualisations import visualize_sample_to_wandb
+from torch.cuda.amp import GradScaler, autocast
 
 
-def test_single_epoch(model, test_loader):
+def test_single_epoch(model, test_loader, scaler=None):
     model.eval()
     scores = []
 
@@ -17,19 +18,19 @@ def test_single_epoch(model, test_loader):
         for d in test_loader:
             img = d['img'].to(DEVICE)
             mask = d['mask'].to(DEVICE)
-
-            out = monai.inferers.sliding_window_inference(img,
-                                                          roi_size=CROP_SIZE,
-                                                          sw_batch_size=BATCH_SIZE,
-                                                          predictor=model,
-                                                          overlap=0.5,
-                                                          sw_device=DEVICE,
-                                                          device="cpu",
-                                                          progress=False,
-                                                          mode="constant")
-            out = torch.argmax(out, 1, keepdim=True).to(DEVICE)
-            out = largest_component(out)
-            s = dice_scores(out, mask)
+            with autocast():
+                out = monai.inferers.sliding_window_inference(img,
+                                                              roi_size=CROP_SIZE,
+                                                              sw_batch_size=BATCH_SIZE,
+                                                              predictor=model,
+                                                              overlap=0.5,
+                                                              sw_device=DEVICE,
+                                                              device="cpu",
+                                                              progress=False,
+                                                              mode="constant")
+                out = torch.argmax(out, 1, keepdim=True).to(DEVICE)
+                out = largest_component(out)
+                s = dice_scores(out, mask)
             scores.append(s)
 
             # Send one sample to wandb

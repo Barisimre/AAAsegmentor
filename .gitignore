@@ -3,5 +3,8 @@ models/*
 results/*
 .idea
 src/wandb/*
-**/__pycache__
-**/.ipynb_checkpoints
+**/__pycache__/
+**/.ipynb_checkpoints/
+.vscode
+env
+wandb/
